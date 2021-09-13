@@ -5,9 +5,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="#" class="dropdown-item">By Price</a>
-                <a href="#" class="dropdown-item">By Rating</a>
-                <a href="#" class="dropdown-item">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -35,11 +35,12 @@
                 <a href="{% url 'products' %}?category=bags" class="dropdown-item">Bags</a>
                 <a href="{% url 'products' %}?category=jewellery" class="dropdown-item">Jewellery</a>
                 <a href="{% url 'products' %}?category=sunglasses" class="dropdown-item">Sunglasses</a>
+                <a href="{% url 'products' %}?category=bags,jewellery,sunglasses" class="dropdown-item">All Accessories</a>
             </div>
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="outlet-link">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products' %}?category=outlet" id="outlet-link">
                 Outlet
             </a>
         </li>

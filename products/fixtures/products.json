@@ -7,10 +7,66 @@
       "name": "T-shirt Force Majeure",
       "description": "A classic soft t-shirt with a crewneck and regular fit. Super-soft quality. Made from 100% organic cotton,Total wardrobe winner!",
       "price": 9.99,
-      "category": 1,
+      "category": 2,
       "rating": 4.1,
       "image_url": "https://imgur.com/a/5zHUHeE",
-      "image": "product_1.jpg"
+      "image": "t_shirt_force_majeure.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Jeans Baggy & Trashed",
+      "description": "Nice jeans",
+      "price": 20.99,
+      "category": 3,
+      "rating": 3.9,
+      "image_url": "https://imgur.com/B6fctr1",
+      "image": "jeans_baggy_trashed.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Midi Dress",
+      "description": "This midi dress has a gathered elasticized waist, a flowy, layered, ruffled skirt and full underlining.",
+      "price": 30.99,
+      "category": 4,
+      "rating": 4.4,
+      "image_url": "https://imgur.com/ObJFI5H",
+      "image": "dress_flower.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Sunglasses",
+      "description": "Green sunglasses...",
+      "price": 129.99,
+      "category": 8,
+      "rating": 3.6,
+      "image_url": "https://imgur.com/pRWmppm",
+      "image": "sunglasses_green.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Earrings gold braided hoops",
+      "description": "Earrings",
+      "price": 119.99,
+      "category": 9,
+      "rating": 3.5,
+      "image_url": "https://imgur.com/3FYM5JL",
+      "image": "earrings_gold_braided_hoops.jpg"
     }
   }
 ]

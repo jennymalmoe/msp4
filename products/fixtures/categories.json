@@ -3,20 +3,68 @@
       "pk": 1,
       "model": "products.category",
       "fields": {
-        "name": "clothing",
-        "friendly_name": "Clothing"
+        "name": "new_in",
+        "friendly_name": "New In"
       }
     },
     {
       "pk": 2,
       "model": "products.category",
       "fields": {
-        "name": "accessories",
-        "friendly_name": "Accessories"
+        "name": "tops_t-shirts",
+        "friendly_name": "Tops & T-shirts"
       }
     },
     {
       "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "jeans",
+        "friendly_name": "Jeans"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "dresses",
+        "friendly_name": "Dresses"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.category",
+      "fields": {
+        "name": "knitwear",
+        "friendly_name": "Knitwear"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "bags",
+        "friendly_name": "Bags"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.category",
+      "fields": {
+        "name": "jewellery",
+        "friendly_name": "Jewellery"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.category",
+      "fields": {
+        "name": "sunglasses",
+        "friendly_name": "Sunglasses"
+      }
+    },
+    {
+      "pk": 9,
       "model": "products.category",
       "fields": {
         "name": "outlet",
