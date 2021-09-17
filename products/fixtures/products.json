@@ -68,5 +68,19 @@
       "image_url": "https://imgur.com/3FYM5JL",
       "image": "earrings_gold_braided_hoops.jpg"
     }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Crop Top Yellow",
+      "description": "Crop top",
+      "price": 19.99,
+      "category": 2,
+      "rating": 3.7,
+      "image_url": "https://imgur.com/MAtN9JJ",
+      "image": "top_yellow_hoodie.jpg"
+    }
   }
 ]

@@ -3,7 +3,6 @@ from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Category
 
-# Create your views here.
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -20,8 +19,9 @@ def all_products(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                productsn= products.annotate(lower_name=Lower('name'))
-               
+                products = products.annotate(lower_name=Lower('name'))
+            if sortkey == 'category':
+                sortkey = 'category__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
