@@ -8,6 +8,9 @@ bug hade inte bs in data-toggle först, ska va data-bs-toggle. Bootstrap General
 postgres as a server based db, installed a package (psycopg2) to allow usage of postgres and gunicorn package to act as our web server and replace our my development server once the app is deployed to heroku. 
 git
 miniwebtool.com - Django Secret Key Generator
+https://django-allauth.readthedocs.io/en/latest/installation.html
+https://jsonformatter.org/
+
 
 User Stories
 | ID  | As A/An    | I want to...                                                      | So I can...                                                                           |

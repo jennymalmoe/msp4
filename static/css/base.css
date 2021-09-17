@@ -71,10 +71,23 @@ body {
     z-index: -1;
 }
 
-/*Category badges */
+/* Category badges */
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #ffffff !important;
+}
+
+/* Back to top btn */
+.btt-button {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
 }
 
 /* -------------------------------- Media Queries */
