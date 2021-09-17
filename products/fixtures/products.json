@@ -4,13 +4,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5001340155",
-      "name": "T-shirt Force Majeure",
-      "description": "A classic soft t-shirt with a crewneck and regular fit. Super-soft quality. Made from 100% organic cotton,Total wardrobe winner!",
+      "name": "Macrame",
+      "description": "Macrame wall hanging",
       "price": 9.99,
-      "category": 2,
+      "category": 3,
       "rating": 4.1,
-      "image_url": "https://imgur.com/a/5zHUHeE",
-      "image": "t_shirt_force_majeure.jpg"
+      "image_url": "https://imgur.com/njTiu4a",
+      "image": "macrame_1.jpg"
     }
   },
   {
@@ -18,13 +18,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5001340155",
-      "name": "Jeans Baggy & Trashed",
-      "description": "Nice jeans",
+      "name": "Boho Pillow",
+      "description": "Boho Pillow Tassel White Woven Pillow Cover",
       "price": 20.99,
-      "category": 3,
+      "category": 4,
       "rating": 3.9,
-      "image_url": "https://imgur.com/B6fctr1",
-      "image": "jeans_baggy_trashed.jpg"
+      "image_url": "https://imgur.com/l41OqNL",
+      "image": "pillow_white_1.jpg"
     }
   },
   {
@@ -32,13 +32,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5001340155",
-      "name": "Midi Dress",
+      "name": "Pillow",
       "description": "This midi dress has a gathered elasticized waist, a flowy, layered, ruffled skirt and full underlining.",
-      "price": 30.99,
+      "price": 8.99,
       "category": 4,
       "rating": 4.4,
-      "image_url": "https://imgur.com/ObJFI5H",
-      "image": "dress_flower.jpg"
+      "image_url": "https://imgur.com/eJui3Pq",
+      "image": "pillow_white_2.jpg"
     }
   },
   {
@@ -46,13 +46,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5001340155",
-      "name": "Sunglasses",
-      "description": "Green sunglasses...",
-      "price": 129.99,
-      "category": 8,
+      "name": "Bracelets",
+      "description": "Bracelet multi",
+      "price": 12.99,
+      "category": 7,
       "rating": 3.6,
-      "image_url": "https://imgur.com/pRWmppm",
-      "image": "sunglasses_green.jpg"
+      "image_url": "https://imgur.com/OqTkKUe",
+      "image": "bracelets_multi.jpg"
     }
   },
   {
@@ -60,13 +60,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5001340155",
-      "name": "Earrings gold braided hoops",
-      "description": "Earrings",
+      "name": "Rattan Chair",
+      "description": "Rattan chair",
       "price": 119.99,
-      "category": 9,
+      "category": 2,
       "rating": 3.5,
-      "image_url": "https://imgur.com/3FYM5JL",
-      "image": "earrings_gold_braided_hoops.jpg"
+      "image_url": "https://imgur.com/2fyNae1",
+      "image": "rattan_chair.jpg"
     }
   },
   {
@@ -74,13 +74,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5001340155",
-      "name": "Crop Top Yellow",
-      "description": "Crop top",
-      "price": 19.99,
-      "category": 2,
+      "name": "Incense",
+      "description": "This exotic stick helps to uplift and open the mind. Its main ingredients – amber and sandalwood – release qualities to help purify and spiritualize the environment, making this incense an ideal companion for meditation, prayer and spiritual practice. Aroma: This scent features Gum Resinoid, Benzoin, Agarwood, Sandalwood, and Amber. Herbs, flowers and resins are blended together with pure oils and pure sandalwood, combined in accordance with ancient traditional wisdom and hand rolled onto a thin bamboo stick.",
+      "price": 6.99,
+      "category": 5,
       "rating": 3.7,
-      "image_url": "https://imgur.com/MAtN9JJ",
-      "image": "top_yellow_hoodie.jpg"
+      "image_url": "https://imgur.com/edOdJG4",
+      "image": "incense_1.jpg"
     }
   }
 ]

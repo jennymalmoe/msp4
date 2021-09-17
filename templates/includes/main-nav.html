@@ -14,28 +14,28 @@
 
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Clothing
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="hoem_decor-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Home Decor
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0" aria-labelledby="home-decor-link">
                 <a href="{% url 'products' %}?category=new_in" class="dropdown-item">New In</a>
-                <a href="{% url 'products' %}?category=tops_t-shirts" class="dropdown-item">Tops & T-shirts</a>
-                <a href="{% url 'products' %}?category=jeans" class="dropdown-item">Jeans</a>
-                <a href="{% url 'products' %}?category=dresses" class="dropdown-item">Dresses</a>
-                <a href="{% url 'products' %}?category=knitwear" class="dropdown-item">Knitwear</a>
-                <a href="{% url 'products' %}?category=new_in,tops,t-shirts,jeans,dresses,knitwear" class="dropdown-item">All Clothing</a>
+                <a href="{% url 'products' %}?category=furnitures" class="dropdown-item">Furnitures</a>
+                <a href="{% url 'products' %}?category=decor" class="dropdown-item">Decor</a>
+                <a href="{% url 'products' %}?category=textiles" class="dropdown-item">Textiles</a>
+                <a href="{% url 'products' %}?category=incense" class="dropdown-item">Incense</a>
+                <a href="{% url 'products' %}?category=new_in,furnitures,t-shirts,decor,textiles,incense" class="dropdown-item">All Home Decor</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="accessories-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Accessories
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="fashion-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Fashion
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
+            <div class="dropdown-menu border-0" aria-labelledby="fashion-link">
+                <a href="{% url 'products' %}?category=clothes" class="dropdown-item">Clothes</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
                 <a href="{% url 'products' %}?category=bags" class="dropdown-item">Bags</a>
-                <a href="{% url 'products' %}?category=jewellery" class="dropdown-item">Jewellery</a>
-                <a href="{% url 'products' %}?category=sunglasses" class="dropdown-item">Sunglasses</a>
-                <a href="{% url 'products' %}?category=bags,jewellery,sunglasses" class="dropdown-item">All Accessories</a>
+                <a href="{% url 'products' %}?category=clothes,accessories,bags" class="dropdown-item">All Fashion</a>
             </div>
         </li>
 

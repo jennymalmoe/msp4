@@ -11,56 +11,56 @@
       "pk": 2,
       "model": "products.category",
       "fields": {
-        "name": "tops_t-shirts",
-        "friendly_name": "Tops & T-shirts"
+        "name": "furnitures",
+        "friendly_name": "Furnitures"
       }
     },
     {
       "pk": 3,
       "model": "products.category",
       "fields": {
-        "name": "jeans",
-        "friendly_name": "Jeans"
+        "name": "decor",
+        "friendly_name": "Decor"
       }
     },
     {
       "pk": 4,
       "model": "products.category",
       "fields": {
-        "name": "dresses",
-        "friendly_name": "Dresses"
+        "name": "textiles",
+        "friendly_name": "Textiles"
       }
     },
     {
       "pk": 5,
       "model": "products.category",
       "fields": {
-        "name": "knitwear",
-        "friendly_name": "Knitwear"
+        "name": "incense",
+        "friendly_name": "Incense"
       }
     },
     {
       "pk": 6,
       "model": "products.category",
       "fields": {
-        "name": "bags",
-        "friendly_name": "Bags"
+        "name": "clothes",
+        "friendly_name": "Clothes"
       }
     },
     {
       "pk": 7,
       "model": "products.category",
       "fields": {
-        "name": "jewellery",
-        "friendly_name": "Jewellery"
+        "name": "accessories",
+        "friendly_name": "Accessories"
       }
     },
     {
       "pk": 8,
       "model": "products.category",
       "fields": {
-        "name": "sunglasses",
-        "friendly_name": "Sunglasses"
+        "name": "bags",
+        "friendly_name": "Bags"
       }
     },
     {

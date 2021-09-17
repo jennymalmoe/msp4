@@ -10,6 +10,9 @@ git
 miniwebtool.com - Django Secret Key Generator
 https://django-allauth.readthedocs.io/en/latest/installation.html
 https://jsonformatter.org/
+pixlmatr for creating my logo
+
+
 
 
 User Stories
