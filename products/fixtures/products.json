@@ -82,5 +82,19 @@
       "image_url": "https://imgur.com/edOdJG4",
       "image": "incense_1.jpg"
     }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Floral print dress",
+      "description": "White floral print chiffon maxi dress",
+      "price": 39.99,
+      "category": 6,
+      "rating": 4.6,
+      "image_url": "https://imgur.com/JkTb0Cr",
+      "image": "dress_white_1.png"
+    }
   }
 ]
