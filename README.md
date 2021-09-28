@@ -11,6 +11,16 @@ miniwebtool.com - Django Secret Key Generator
 https://django-allauth.readthedocs.io/en/latest/installation.html
 https://jsonformatter.org/
 pixlmatr for creating my logo
+bug1: needed <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"> for bootstrap 5. added data-bs-autohide="false". Instead of <div class="toast custom-toast rounded-0 border-top-0" data-autohide="false">
+bug2:changed js from $('toast').toast('show') to 
+{% block postloadjs %}
+      <script type="text/javascript">
+          $('.toast').show()
+      </script>
+    {% endblock %}
+    notification/success messages didn't show. 
+
+bug3: needed data-bs-autohide="false" BS pga bootstrap 5.
 
 
 
