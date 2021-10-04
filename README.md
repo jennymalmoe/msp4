@@ -7,6 +7,7 @@ imgur url img
 bug hade inte bs in data-toggle först, ska va data-bs-toggle. Bootstrap Generally, we recommend using a button with the data-bs-target attribute. 
 postgres as a server based db, installed a package (psycopg2) to allow usage of postgres and gunicorn package to act as our web server and replace our my development server once the app is deployed to heroku. 
 git
+stripe payment platform
 miniwebtool.com - Django Secret Key Generator
 https://django-allauth.readthedocs.io/en/latest/installation.html
 https://jsonformatter.org/
