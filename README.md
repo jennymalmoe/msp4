@@ -23,6 +23,8 @@ bug2:changed js from $('toast').toast('show') to
 
 bug3: needed data-bs-autohide="false" BS pga bootstrap 5.
 
+If user accendentally or intentionally closes the browser window after the payment is confirmed but before the form is submitted, there would be a payment in stripe but no order in our database. to prevent this situation I've build in some redundancy, each time an event occurs on stripe (such as a payment intent being created) a payment being completed on stripe a webhook is sent out that we can listen for. webhooks are like the signals django sends each time a model is saved or deleted. except that they are sent securely from stripe to a url we specify. (Boutique Adi - stripe - part 10)
+
 
 
 
