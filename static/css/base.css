@@ -10,10 +10,6 @@ body {
     font-family: 'Lato';
 }
 
-.logo-font {
-    text-transform: uppercase;
-}
-
 /* from Bulma */
 .icon {
     align-items: center;
