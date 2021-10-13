@@ -1,3 +1,8 @@
+.order-hitory {
+    max-height: 416px; /* height of profile form and submit btn */
+    overflow-y: auto;
+}
+
 #profile-update-form .form-control {
     color: #000000;
  }
