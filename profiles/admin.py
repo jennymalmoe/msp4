@@ -1,3 +1,10 @@
 from django.contrib import admin
+from profiles.models import UserProfile
 
-# Register your models here.
+class UserProfileAdmin(admin.ModelAdmin):
+    list_display = (
+        '__str__',
+        )
+
+
+admin.site.register(UserProfile, UserProfileAdmin)
