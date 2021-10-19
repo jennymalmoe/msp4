@@ -519,7 +519,9 @@ code taken from boutique ado
 
 security features
 
-test credit card to use
+test credit card to use To use the stripe function use the following details. card number : 4242 4242 4242 4242
+Any date
+Any CVV number.
 
 lägga in requiremets in handbook for msp4 in user stories
 

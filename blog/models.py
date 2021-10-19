@@ -5,6 +5,8 @@ from django.conf import settings
 from django.db.models.signals import post_delete, pre_save
 from django.dispatch import receiver
 
+from profiles.models import UserProfile
+
 
 def upload_location(instance, filename, **kwargs):
     file_path = 'blog/{author_id}/{title}-{filename}'.format(
@@ -13,12 +15,12 @@ def upload_location(instance, filename, **kwargs):
     return file_path
 
 class BlogPost(models.Model):
-    title                   = models.CharField(max_length=50, null=False, blank=False)
+    title                   = models.CharField(max_length=50, unique=True, null=False, blank=False)
     body                    = models.TextField(max_length=5000, null=False, blank=False)
     image                   = models.ImageField(upload_to=upload_location, null=False, blank=False)
     date_published          = models.DateTimeField(auto_now_add=True, verbose_name="date published")
     date_updated            = models.DateTimeField(auto_now=True, verbose_name="date updated")
-    author                  = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user_profile            = models.ForeignKey(UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='blogs')
     slug                    = models.SlugField(blank=True, unique=True)
    
 
