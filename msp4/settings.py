@@ -32,6 +32,8 @@ ALLOWED_HOSTS = ['msp4.herokuapp.com', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
+
+    # Django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,16 +44,20 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+
+    # Other
     'home',
     'products',
     'bag',
     'checkout',
     'profiles',
+    'blog',
 
-    # Other
     'crispy_forms',
     'storages',
 ]
+
+# AUTH_USER_MODEL = 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

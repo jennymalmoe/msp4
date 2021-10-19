@@ -96,5 +96,19 @@
       "image_url": "https://imgur.com/JkTb0Cr",
       "image": "dress_white_1.png"
     }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Floral print dress",
+      "description": "White floral print chiffon midi dress",
+      "price": 69.99,
+      "category": 6,
+      "rating": 4.0,
+      "image_url": "https://imgur.com/SsOpFOK",
+      "image": "dress_flower.png"
+    }
   }
 ]

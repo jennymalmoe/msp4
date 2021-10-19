@@ -523,6 +523,6 @@ test credit card to use
 
 lägga in requiremets in handbook for msp4 in user stories
 
-
+https://www.youtube.com/watch?v=GcqURKYfv00 https://codingwithmitch.com/ bloggen
 
 
