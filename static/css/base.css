@@ -306,7 +306,7 @@ input[name='q']::placeholder {
     }
 
     .display-4.logo-font.text-black {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .nav-link {
@@ -326,13 +326,13 @@ input[name='q']::placeholder {
         font-size: .9rem;
     }
 
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-outline-dark.rounded-0,
+    .btn.btn-dark.rounded-0 {
         padding: .375rem .375rem;
     }
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-outline-dark.rounded-0.btn-lg,
+    .btn.btn-dark.rounded-0.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
     }

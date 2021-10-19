@@ -80,7 +80,7 @@ Create a web application that allows users/store owner to:
 
 <br>
 
-This e-commerce website focus on maximizing direct sales to new and returning customers (convert a website visitor into a customer) by simplify and optimize content to be easy to shop (user friendly site). Also establishing brand recognition in the industry.  
+This e-commerce website focus on maximizing direct sales to new and returning customers (convert a website visitor into a customer) by simplify and optimize content to be easy to shop (user friendly site). Also establishing brand recognition in the industry.  Target audience?
 
 In addition to the goals above; also blog etc
 
@@ -510,6 +510,18 @@ If user accendentally or intentionally closes the browser window after the payme
 AWS Amazon Web Services, s3 (Simple Storage Service) to host/store  media and static files (as well as the product images). Heroku for the rest of our code. 
 
 Postgres
+
+https://10minutemail.com/ to test registration in my account
+
+bug register my account got an SMTPAuthenticationError at /accounts/signup/. whenever I tried registrate a new user, it said "Already have an account? Then please sign in." I had DEVELOPMENT in my gitpod settings, but scope was set for my msp3 not to my msp4 or */* (to access all). It was trying to use the gmail smtp from Gitpod but gmail was expecting the Heroku app to access it, so it wasn't authenticated and thats why it didn't work. 
+
+code taken from boutique ado 
+
+security features
+
+test credit card to use
+
+lägga in requiremets in handbook for msp4 in user stories
 
 
 
