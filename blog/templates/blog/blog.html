@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="col-12 col-md-6 text-center">
+    <h1>Boho Blog</h1>
+    <p class="blog-text">Here is the blog!</p>
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+
+        <!-- Create post bar -->
+        <div class="create-post d-lg-none col-lg-7 offset-lg-1">
+            <a href="{% url 'blog:create' %}">Create post</a>
+        </div>
+        <!-- Blog feed -->
+        <div class="left-column col-lg-7 offset-lg-1">
+            <div class="blog-post-container">
+                <p>Stuff</p>
+            </div>
+
+            <div class="blog-post-container">
+                <p>Stuff</p>
+            </div>
+
+            <div class="blog-post-container">
+                <p>Stuff</p>
+            </div>
+
+
+        </div>
+        <!-- Create post col-->
+        <div class="right-column col-lg-3 d-lg-flex d-none flex-column">
+            <div class="create-post-bar">
+                <p>Thingy</p>
+                <p>Thingy</p>
+                <p>Thingy</p>
+                <a href="{% url 'blog:create' %}">Create post</a>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="d-flex flex_column">
+        <h4>Registered users:</h4>
+        {% for users in profile %}
+            <p>{{user}}</p>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}
