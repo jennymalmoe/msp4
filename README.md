@@ -12,6 +12,18 @@
 
 BOHO Living is an online home decor shop that offers a selection of trendy home decor items inspired by the modern bohemian style.
 
+This is an e-commerce web application for a fictional company. The application features e-commerce functionality, payments using stripe, a blog section, confirmation emails, CRUD functionality for admin to add blog posts and stock items, and an admin section, for the admin user to access database records.
+
+This website is only for educational purposes and the stripe functionality is set up to accept the test card details please don't enter your personal card details.
+
+To use the stripe function use the following details:
+
+card number: 4242 4242 4242 4242
+
+date:
+
+CVV number:
+
 <br>
 
 ## Table of contents
@@ -311,18 +323,16 @@ MongoDB Atlas is used as database backend for storing user and recipes details. 
 
 <br>
 
-* [BSON](https://bsonspec.org/) - bson.objectid is a required dependency for MongoDB management system.
+* [Bootstrap](https://getbootstrap.com/) - Bootstrap 5.1 used to design and build responsive, mobile-first sites. 
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - used to create the styling throughout the site.
 * [Google fonts](https://fonts.google.com/) - used to import fonts.
+* [Django](https://www.djangoproject.com/) - framework used to create this project.
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - used to create the user sign-in function for the site.
+* [Django Countries](https://pypi.org/project/django-countries/) - used for the country select field in the order form.
+* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - used to utilise the bootstrap form classes.
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - used to create the site structure.
-* [Flask](https://flask.palletsprojects.com/en/1.1.x/) - framework used to create and populate the templates.
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - used for the sidenav, back-to-top button, image preview.
-* [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Jinja templating language was used to simplify and display backend data in html.
-* [jQuery](https://jquery.com/) - used to activate the Materialize functionality.
-* [Materialize](https://materializecss.com/) - library used for styling and responsiveness.
-* [PyMongo](https://pypi.org/project/pymongo/) - flask_pymongo was used for interacting with MongoDB database from Python.
 * [Python](https://www.python.org/) - used to write the logic that operates the site.
-* [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/) - used for password hashing and authentication.
     
 <br>
 
@@ -331,7 +341,9 @@ MongoDB Atlas is used as database backend for storing user and recipes details. 
 <br>
 
 * [Am I Responsive](http://ami.responsivedesign.is/) - used to validate the responsiveness. 
+* [AWS Amazon Web Services](https://aws.amazon.com/s3/) - Cloud computing platform. S3 (Simple Storage Service) used to store media and static files.
 * [Balsamiq](https://balsamiq.com/) - used to create the wireframes.
+* [Bulma](https://balsamiq.com/) - an open source CSS framework, used for icon class.
 * [Chrome DevTools](https://developer.chrome.com/docs/devtools/)  - used Lighthouse to check sites performance and the dev tool to check responsiveness.
 * [Designwizard](https://www.designwizard.com/) - used for inspirations regarding color combinations.
 * [Font-Awesome](https://fontawesome.com/) - used for icons.
@@ -339,16 +351,22 @@ MongoDB Atlas is used as database backend for storing user and recipes details. 
 * [Git](https://git-scm.com/) - used for version control to commit to Git and push to Heroku.
 * [GitHub](https://github.com/) - used to store the projects code after being pushed from Git.
 * [Gitpod](https://gitpod.io/) - IDE used for development.
+* [Gunicorn](https://gunicorn.org/) - used for deploying the project to Heroku.
 * [Heroku](https://www.heroku.com/home) - cloud platform used to deploy application.
+* [Imgur](https://imgur.com/) - used to create url:s for images.
+* [JSONFormatter](https://jsonformatter.org/) - helps to format your JSON text.
 * [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Jinja templating language was used to simplify and display backend data in html.
 * [JSHint](https://jshint.com/) - used to test JS code to ensure there were no errors.
-* [Unsplash](https://unsplash.com/) - Images used were obtained from Unsplash.
-* [PEP8](https://www.python.org/dev/peps/pep-0008/) - Used as style guide for Python code.
-* [PEP8online](http://pep8online.com/) - Used to check code for PEP8 requirements
-* [Pixelmator](https://www.pixelmator.com/mac/) - used to resize images.
+* [Miniwebtool](https://miniwebtool.com/) - Django Secret Key Generator.
+* [Unsplash](https://unsplash.com/) - images used were obtained from Unsplash.
+* [PEP8](https://www.python.org/dev/peps/pep-0008/) - used as style guide for Python code.
+* [PEP8online](http://pep8online.com/) - used to check code for PEP8 requirements
+* [Pixelmator](https://www.pixelmator.com/mac/) - used to resize images and creating a logo image.
 * [Postimages](https://postimages.org/) - used to create url for images. 
 * [RandomKeygen](https://randomkeygen.com/) - used to generate secure password to Secret Key. 
+* [Stripe](https://stripe.com/) - Payment platform.
 * [TechSini](https://techsini.com/) - mockup generator used for preview of the  website.
+* [TenMinuteMail](https://10minutemail.com/) - used to test registration and get confirmation mail.
 * [Visual Studio Code](https://code.visualstudio.com/) - IDE used for code editing.
 * [W3C Validator](https://validator.w3.org/) - used to test HTML code to ensure there were no errors.
 * [W3C Validator CSS](https://validator.w3.org/) - used to test CSS code to ensure there were no errors.
@@ -460,12 +478,12 @@ Making a copy of the original repository on our GitHub account to view or to mak
 <br>
 
 # Credits
-* My mentor Oluwaseun Owonikoko for helpfull feedback througout the project.
+* My mentor Moosa for helpfull feedback througout the project.
 * Code Institute tutor support.
 * Fellow students on Slack for a helping hand when I've got stuck.
 * Google!
 
-Site for educational purposes only.
+
 
 
 
@@ -483,17 +501,17 @@ Site for educational purposes only.
 superuser
 installing django-allauth
 installed pillow 
-bootstrap v5.1
-bulma Bulma is a free, open source CSS framework based on Flexbox and built with Sass. iconclass in base.css.
-imgur url img
+
+
+
 bug hade inte bs in data-toggle först, ska va data-bs-toggle. Bootstrap Generally, we recommend using a button with the data-bs-target attribute. 
 postgres as a server based db, installed a package (psycopg2) to allow usage of postgres and gunicorn package to act as our web server and replace our my development server once the app is deployed to heroku. 
 git
-stripe payment platform
-miniwebtool.com - Django Secret Key Generator
+
+
 https://django-allauth.readthedocs.io/en/latest/installation.html
-https://jsonformatter.org/
-pixlmatr for creating my logo
+
+
 bug1: needed <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"> for bootstrap 5. added data-bs-autohide="false". Instead of <div class="toast custom-toast rounded-0 border-top-0" data-autohide="false">
 bug2:changed js from $('toast').toast('show') to 
 {% block postloadjs %}
@@ -507,11 +525,11 @@ bug3: needed data-bs-autohide="false" BS pga bootstrap 5.
 
 If user accendentally or intentionally closes the browser window after the payment is confirmed but before the form is submitted, there would be a payment in stripe but no order in our database. to prevent this situation I've build in some redundancy, each time an event occurs on stripe (such as a payment intent being created) a payment being completed on stripe a webhook is sent out that we can listen for. webhooks are like the signals django sends each time a model is saved or deleted. except that they are sent securely from stripe to a url we specify. (Boutique Adi - stripe - part 10)
 
-AWS Amazon Web Services, s3 (Simple Storage Service) to host/store  media and static files (as well as the product images). Heroku for the rest of our code. 
+
 
 Postgres
 
-https://10minutemail.com/ to test registration in my account
+
 
 bug register my account got an SMTPAuthenticationError at /accounts/signup/. whenever I tried registrate a new user, it said "Already have an account? Then please sign in." I had DEVELOPMENT in my gitpod settings, but scope was set for my msp3 not to my msp4 or */* (to access all). It was trying to use the gmail smtp from Gitpod but gmail was expecting the Heroku app to access it, so it wasn't authenticated and thats why it didn't work. 
 
@@ -519,9 +537,7 @@ code taken from boutique ado
 
 security features
 
-test credit card to use To use the stripe function use the following details. card number : 4242 4242 4242 4242
-Any date
-Any CVV number.
+
 
 lägga in requiremets in handbook for msp4 in user stories
 
@@ -534,19 +550,10 @@ https://django-allauth.readthedocs.io/en/latest/installation.html
 
 google applösenord
 
-I have built an e-commerce web application for a fictional furniture company.
-
-My application features e-commerce functionality, payments using stripe, a blog section, user login using Facebook, a wishlist section for registered users, confirmation emails, CRUD functionality for admin to add blog posts and stock items, and an admin section, for the admin user to access database records.
 
 For the assessor, I have included the admin login details in the comments section when submitting the project.
 
-This website is for educational purposes and the stripe functionality is set up to accept the test card details please don't enter your personal card details.
 
-To use the stripe function use the following details.
-
-card number : 4242 4242 4242 4242
-Any date
-Any CVV number.
 
 from django.db import models
 
