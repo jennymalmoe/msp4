@@ -102,3 +102,7 @@ def remove_from_bag(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
+
+
+def must_authenticate_view(request):
+    return render(request, 'account/must_authenticate.html', {})

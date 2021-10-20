@@ -9,8 +9,8 @@ from profiles.models import UserProfile
 
 
 def upload_location(instance, filename, **kwargs):
-    file_path = 'blog/{user_profile_id}/{title}-{filename}'.format(
-            user_profile_id=str(instance.user_profile.id), title=str(instance.title), filename=filename
+    file_path = 'blog/{author_id}/{title}-{filename}'.format(
+            author_id=str(instance.author.id), title=str(instance.title), filename=filename
         )
     return file_path
 
@@ -22,6 +22,7 @@ class BlogPost(models.Model):
     date_updated            = models.DateTimeField(auto_now=True, verbose_name="date updated")
     user_profile            = models.ForeignKey(UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='blogs')
     slug                    = models.SlugField(blank=True, unique=True)
+    author                  = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
    
 
 
@@ -35,6 +36,6 @@ def submission_delete(sender, instance, **kwargs):
 
 def pre_save_blog_post_receiver(sender, instance, *args, **kwargs):
     if not instance.slug:
-        instance.slug = slugify(instance.user-profile.username + "-" + instance.title)
+        instance.slug = slugify(instance.author.username + "-" + instance.title)
 
 pre_save.connect(pre_save_blog_post_receiver, sender=BlogPost)
