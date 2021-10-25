@@ -19,10 +19,6 @@ from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
 
-from account.views import (
-    profile_view
-    must_authenticate_view
-)
 
 urlpatterns = [
     path('', include('home.urls')),
@@ -31,7 +27,6 @@ urlpatterns = [
     path('bag/', include('bag.urls')),
     path('blog/', include('blog.urls', 'blog')),
     path('checkout/', include('checkout.urls')),
-    path('must_authenticate/', must_authenticate_view, name="must_authenticate"),
     path('products/', include('products.urls')),
     path('profile/', include('profiles.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

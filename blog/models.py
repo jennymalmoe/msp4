@@ -4,6 +4,7 @@ from django.utils.text import slugify
 from django.conf import settings
 from django.db.models.signals import post_delete
 from django.dispatch import receiver
+from django.contrib.auth.models import User
 
 def upload_location(instance, filename):
 	file_path = 'blog/{author_id}/{title}-{filename}'.format(
@@ -17,7 +18,7 @@ class BlogPost(models.Model):
 	image		 			= models.ImageField(upload_to=upload_location, null=True, blank=True)
 	date_published 			= models.DateTimeField(auto_now_add=True, verbose_name="date published")
 	date_updated 			= models.DateTimeField(auto_now=True, verbose_name="date updated")
-	author 					= models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+	author 					= models.ForeignKey(User, on_delete=models.CASCADE)
 	slug 					= models.SlugField(blank=True, unique=True)
 
 	def __str__(self):

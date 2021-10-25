@@ -2,27 +2,27 @@
 
 <br>
 
-[View live website here!](https://flask-milestone-3-project.herokuapp.com/home)
+[View live website here!](https://msp4.herokuapp.com/)
 
-[View GitHub repository here!](https://github.com/jennymalmoe/MSP3)
+[View GitHub repository here!](https://github.com/jennymalmoe/MSP4)
 
 <br>
 
 ![site on different devices](static/images/mock_up.png) 
 
-BOHO Living is an online home decor shop that offers a selection of trendy home decor items inspired by the modern bohemian style.
+BOHO Living is an online home decor shop that offers a selection of trendy home decor and fashion items inspired by the modern bohemian style.
 
 This is an e-commerce web application for a fictional company. The application features e-commerce functionality, payments using stripe, a blog section, confirmation emails, CRUD functionality for admin to add blog posts and stock items, and an admin section, for the admin user to access database records.
 
-This website is only for educational purposes and the stripe functionality is set up to accept the test card details please don't enter your personal card details.
+This website is only for educational purposes and the stripe functionality is set up to accept test card details, please don't enter your personal card details.
 
 To use the stripe function use the following details:
 
-card number: 4242 4242 4242 4242
+Card number: 4242 4242 4242 4242
 
-date:
+Date: 4242?
 
-CVV number:
+CVV Number:424?
 
 <br>
 
@@ -30,47 +30,46 @@ CVV number:
 
 ___
 
-1. [**User Experience**](#ux)
-    * Project Goals
-    * Business Goals
-    * User Goals
-    * User Stories
-    * Design Choices
-        * Color scheme
-        * Typography
-        * Imagery
-        * Icons
-    * Wireframes
+## [User Experience](#user-experience)
+* [**Project Goals**](#project-goals)
+* [**Business Goals**](#business-goals)
+* [**User Stories**](#user-stories)
+* [**Design Choices**](#design-choices)
+    * [Color scheme](#color-scheme)
+    * [Typography](#typography)
+    * [Imagery](#imagery)
+    * [Icons](#icons)
+* [**Wireframes**](#wireframes)
 
-2. [**Features**](#features)
-    * Existing Features
-    * Features Left to Implement
+## [Features](#features)
+* [**Existing Features**](#existing-features)
+* [**Features Left to Implement**](#features-left-to-implement)
 
-3. [**Database Design**](#database-design)
+## [Database Design](#database-design)
 
-4. [**Technologies Used**](#technologies-used)
-    * Languages 
-    * Frameworks, Libraries & Programs
+## [Technologies Used](#technologies-used)
+* [**Languages**](#languages)
+* [**Frameworks, Libraries & Programs**](#frameworks,libraries-programs)
 
-5. [**Testing**](#testing)
-    * Testing User Stories from User Experience (UX) Section
-    * Further Testing
-    * Known Bugs
+## [Testing](#testing)
+* [**Testing User Stories from User Experience (UX) Section**](#testing-user-stories-from-user-experience-(UX)-section)
+* [**Further Testing**](#further-teseting**)
+* [**Known Bugs**](#known-bugs**)
 
-6. [**Deployment**](#deployment)
-    * GitHub Pages
-    * Forking the GitHub Repository
-    * Making a Local Clone
+## [Deployment](#deployment)
+* [**GitHub Pages**](#github-pages)
+* [**Forking the GitHub Repository**](#forking-the-github-repository)
+* [**Making a Local Clone**](#making-a-local-clone)
 
-7. [**Credits**](#credits)
-    * Code 
-    * Content
-    * Media
-    * Acknowledgements
+## [Credits](#credits)
+* [**Code**](#code)
+* [**Content**](#content)
+* [**Media**](#media)
+* [**Acknowledgements**](#acknowledgements)
 
 <br>
 
-# UX
+# User Experience
 
 ## Project Goals
 
@@ -100,13 +99,17 @@ In addition to the goals above; also blog etc
 
 <br>
 
-| ID  | As A/An    | I want to...                                                      | So I can...                                                                           |
+| ID  | As a..    | I want to..                                                    | So I..                                                                           |
 | --- | ---------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 |     |            | **_Viewing and Navigation_**                                      |                                                                                       |
-| 1   | Shopper    | View list of products                                             | Find something to purchase                                                            |
-| 2   | Shopper    | View details of product                                           | See Price, Description, Image, Sizes if any                                          |
-| 3   | Shopper    | See list of deals, special offers etc                           | Take advantage of deals to save money                                                |
-| 4   | Shopper    | See my cart's total at any time                                   | Avoid spending too much                                                               |
+| 1   | Shopper    | Be presented with an intutive site navigation that is user friendly and over all ease-of-use                              |  Get a good impression about the site and company
+| 2   | Shopper    |    Visit a structured and professional website                       | Understand the main purpose of the site/business  
+| 3   | Shopper    | View list of products                                             | Can see what the website has to offer                                                            |
+| 4   | Shopper    | View details of the products                                           | Easily can see price, description, image, sizes if any                                          |                                             |
+| 5   | Shopper    | See my cart's total at any time                                   | Avoid spending too much                                                               |
+| 6   | Shopper    | Be inspired by the site, the products and the design                              |  Find products to buy (both for visitors that searched for products online and got presented to this site as well for those visitors that visited the site by entering sites address) and return to make more purchase. 
+| 7   | Shopper    | Be presented to some kind of contact information/social media links                              |  Feeling a sence of crediblity
+| 8   | Shopper    | Be able to reach out to siteowner                              |  Get answers to any possible questions
 |     |            | **_Registration and User Accounts_**                              |                                                                                       |
 | 5   | Reg User   | Register for an account                                           | Save my delivery details and order history, get mails with news and offers                                          |
 | 6   | Reg User   | Quickly login/out                                                 | Access my account                                                                     |
@@ -495,7 +498,7 @@ Making a copy of the original repository on our GitHub account to view or to mak
 
 
 
-
+https://www.youtube.com/c/CodingWithMitch/videos code to blog section
 
 
 superuser

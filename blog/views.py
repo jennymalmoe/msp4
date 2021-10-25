@@ -4,9 +4,10 @@ from django.http import HttpResponse
 
 from blog.models import BlogPost
 from blog.forms import CreateBlogPostForm, UpdateBlogPostForm
-from account.models import Account
 
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def create_blog_view(request):
 
 	context = {}
@@ -18,7 +19,7 @@ def create_blog_view(request):
 	form = CreateBlogPostForm(request.POST or None, request.FILES or None)
 	if form.is_valid():
 		obj = form.save(commit=False)
-		author = Account.objects.filter(email=user.email).first()
+		author = request.user
 		obj.author = author
 		obj.save()
 		form = CreateBlogPostForm()
@@ -85,3 +86,15 @@ def get_blog_queryset(query=None):
 			queryset.append(post)
 
 	return list(set(queryset))	
+
+def all_blog_posts(requests):
+
+	all_posts = BlogPost.objects.all()
+
+	context = {
+		'blog_posts': all_posts,
+	}
+
+	return render(request, "blog/blog.html", context)
+
+

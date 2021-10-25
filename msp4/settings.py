@@ -57,8 +57,6 @@ INSTALLED_APPS = [
     'storages',
 ]
 
-AUTH_USER_MODEL = 'profile.Profile'
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
