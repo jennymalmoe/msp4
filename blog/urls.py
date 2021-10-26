@@ -6,10 +6,10 @@ from blog.views import (
 	edit_blog_view,
 )
 
-app_name = 'blog'
+# app_name = 'blog'
 
 urlpatterns = [
-    path('blog', all_blog_posts, name="blog"),
+    path('', all_blog_posts, name="blog"),
     path('create/', create_blog_view, name="create"),
     path('<slug>/', detail_blog_view, name="detail"),
     path('<slug>/edit/', edit_blog_view, name="edit"),

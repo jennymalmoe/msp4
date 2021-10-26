@@ -87,7 +87,8 @@ def get_blog_queryset(query=None):
 
 	return list(set(queryset))	
 
-def all_blog_posts(requests):
+
+def all_blog_posts(request):
 
 	all_posts = BlogPost.objects.all()
 

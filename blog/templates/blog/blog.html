@@ -2,45 +2,6 @@
 
 {% block content %}
 
-
-<!DOCTYPE html>
-<html lang=en>
-
-<head>
-	<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	
-</head>
-
-<body>
-{% include 'snippets/base_css.html' %}
-{% include 'snippets/header.html' %}
-
-<!-- Body -->
-<style type="text/css">
-	.main{
-		min-height: 100vh;
-		height: 100%;
-	}
-</style>
-<div class="main">
-	{% block content %}
-
-	{% endblock content %}
-</div>
-<!-- End Body -->
-
-{% include 'snippets/footer.html' %}
-
-</body>
-
-
-</html>
-
-
-
 <div class="col-12 col-md-6 text-center">
     <h1>Boho Blog</h1>
     <p class="blog-text">Here is the blog!</p>
@@ -52,7 +13,7 @@
 
         <!-- Create post bar -->
         <div class="create-post d-lg-none col-lg-7 offset-lg-1">
-            <a href="{% url 'blog:create' %}">Create post</a>
+            <a href="{% url 'create' %}">Create post</a>
         </div>
         <!-- Blog feed -->
         <div class="left-column col-lg-7 offset-lg-1">
@@ -76,7 +37,7 @@
                 <p>Thingy</p>
                 <p>Thingy</p>
                 <p>Thingy</p>
-                <a href="{% url 'blog:create' %}">Create post</a>
+                <a href="{% url 'create' %}">Create post</a>
             </div>
         </div>
 
