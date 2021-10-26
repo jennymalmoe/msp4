@@ -600,3 +600,7 @@ def pre_save_blog_post_receiver(sender, instance, *args, **kwargs):
 
 pre_save.connect(pre_save_blog_post_receiver, sender=BlogPost)
 
+bug OperationalError at /admin/auth/user, no such column: blog_blogpost.author_id -> which is the reset the migrations, which also resets the database, i will back up your products first though, one moment
+Sean profile
+Ok, would you liek me to reset everything and then restore the prodcuts?
+
