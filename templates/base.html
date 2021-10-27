@@ -132,21 +132,19 @@
             {% endfor %}
         </div>
     {% endif %}
-
+    
     {% block page_header %}
     {% endblock %}
-
+    
     {% block content %}
     {% endblock %}
-
+    
     {% block postloadjs %}
       <script type="text/javascript">
           $('.toast').show()
       </script>
     {% endblock %}
-
-
-
+    <button class="z-depth-5" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 
       <!-- Footer -->
       <footer class="page-footer thin">
@@ -154,8 +152,8 @@
         <a target="_blank" type="submit" href="https://www.pinterest.se/">
         <i class="fab fa-pinterest soc-media" aria-hidden="true"></i></a>
       </footer>
-
-  
+        
+      
     
   </body>
 </html>
