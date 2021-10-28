@@ -43,7 +43,7 @@
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="text-black my-0">BOHO Living</h2>
+                    <h2 class="text-black my-0">➳BOHO Living➳</h2>
                   </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -60,7 +60,7 @@
                 </div>
               </form>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 account-bag">
               <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                   <li class="list-inline-item dropdown">
                       <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -85,7 +85,7 @@
                   <li class="list-inline-item">
                       <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                           <div class="text-center">
-                              <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                              <div><i class="fas fa-shopping-bag fa-lg account-bag"></i></div>
                               <p class="my-0">
                                   {% if grand_total %}
                                       ${{ grand_total|floatformat:2 }}
@@ -110,7 +110,7 @@
         </div>
         <div id="delivery-banner" class="row text-center">
           <div class="col bg-black text-white">
-            <h4 class="delivery logo-font my-1">➳➳➳ Free delivery on orders over ${{ free_delivery_threshold }} ➳➳➳</h4>                
+            <h4 class="delivery logo-font my-1">➳ Free delivery on orders over ${{ free_delivery_threshold }} ➳</h4>                
           </div>            
         </div>
     </header>
@@ -144,13 +144,17 @@
           $('.toast').show()
       </script>
     {% endblock %}
+
+    <div class="footer-border">➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳</div>
+
+    <!-- Back to top btn -->
     <button class="z-depth-5" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 
       <!-- Footer -->
       <footer class="page-footer">
        
         <a target="_blank" type="submit" href="https://www.facebook.com/">
-          <i class="far fa-hand-peace soc-media fa-2x" aria-hidden="true"></i>
+          <i class="far fa-hand-peace fa-3x soc-media" aria-hidden="true"></i>
         </a>
 
         <div class="row">
@@ -163,7 +167,7 @@
                 <button type="button" class="btn btn-outline-dark btn-lg inspire-btn">Register to join our community</button>
             </div>
           </div> 
-
+          <div class="footer-border">➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳</div>
         <br>
 
         <a target="_blank" type="submit" href="https://www.facebook.com/">
@@ -194,7 +198,7 @@
 
         <div class="copy">Copyright©2021 | Jenny Borglin | All rights reserved</div>
         
-      
-    
+        
+    <script src="{% static 'js/script.js' %}"></script>
   </body>
 </html>

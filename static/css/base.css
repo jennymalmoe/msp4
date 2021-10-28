@@ -7,15 +7,15 @@ html {
 }
 
 body {
-    background: url('/media/hero_img.png') no-repeat center center;
+    background: url('/media/color_2.jpg') no-repeat center center;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: rgb(0, 0, 0);
     font-family: lato;
     margin-top: 30px;
 }
 
-/* from Bulma */
+/* Search (from Bulma) */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -23,7 +23,7 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
-
+/* Logo */
 .main-logo-link {
     width: fit-content;
     font-family: architects daughter;
@@ -31,24 +31,26 @@ body {
     margin-left: 80px;
 }
 
-/* delivery alert */
+/* Delivery alert */
 .delivery {
     font-family: architects daughter;
     text-transform: uppercase;
 }
 
+/* Products headline */
 .products {
     font-family: architects daughter;
     text-transform: uppercase;
-    color: #000000;
 }
 
 
-/* buttons */
+/* Shop now btn */
 .shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
+    color: #ffffff;
+    background: #000000;
+    min-width: 160px;
+    font-family: lato;
+    font-weight: lighter;
 }
 
 .btn-black {
@@ -83,21 +85,24 @@ btn-outline-black {
     color: #000 !important;
 }
 
+/* Search */
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid rgb(0, 0, 0) !important;
 }
 
+/* ? */
 .bg.black {
-    background: #000 !important;
+    background: rgb(0, 0, 0) !important;
 }
 
+/* bg  */
 .overlay {
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     position: fixed;
-    background: #FFFFFF;
+    background: #ffffff;
     z-index: -1;
 }
 
@@ -105,9 +110,11 @@ btn-outline-black {
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #ffffff !important;
+    font-family: architects daughter;
+    text-transform: capitalize;
 }
 
-
+/* Placeholder search box */
 input[name='q']::placeholder {
    color: #aab7c4;
 }
@@ -137,7 +144,7 @@ input[name='q']::placeholder {
 }
 
 .arrow-primary {
-    border-bottom-color: #007bff !important;
+    border-bottom-color: rgb(247, 162, 4); !important;
 }
 
 .arrow-secondary {
@@ -157,7 +164,7 @@ input[name='q']::placeholder {
 }
 
 .arrow-info {
-    border-bottom-color: #17a2b8 !important;
+    border-bottom-color: #f7aa04 !important;
 }
 
 .arrow-light {
@@ -185,6 +192,11 @@ input[name='q']::placeholder {
 }
 
 /* Text over carousel */
+.home-text {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .home-page-text {
     color: #000000;
     text-align: center;
@@ -259,7 +271,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: rgb(247, 162, 4); /* text-info */
 }
 
 /* Product Form */
@@ -319,6 +331,7 @@ input[name='q']::placeholder {
 
     .display-4.logo-font.text-black {
         font-size: 4rem;
+        font-family: architects daughter;
     }
 
     .nav-link {
@@ -373,7 +386,7 @@ main {
 }
 
 .page-footer {
-	padding-bottom: 30px;
+	padding-top: 20px;
     text-align: center;
     position: relative;
     
@@ -384,6 +397,14 @@ main {
     margin-top: 30px;
     margin-bottom: 30px;
     margin-right: 15px;
+}
+
+.footer-border {
+    text-align: center;
+}
+
+.hand-icon {
+    padding-top: 30px;
 }
 
 .copy {
@@ -425,8 +446,34 @@ main {
 	padding: 20px;
 	border-radius: 2px;
 	font-size: 20px;
+    display: none;
 }
 
 #myBtn:hover {
 	background-color: rgb(248, 134, 4);
 }
+
+.hero-bg {
+    background-color: #69400325;
+    padding-left: 30px;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+      
+}
+
+.account-bag {
+    padding-right: 30px;
+}
+
+/* Checkout form */
+.checkout-form {
+    padding-top: 10px;
+}
+
+
+
