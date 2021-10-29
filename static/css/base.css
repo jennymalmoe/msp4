@@ -6,14 +6,29 @@ html {
     height: 100%;
 }
 
-body {
+.container-fluid {
     background: url('/media/color_2.jpg') no-repeat center center;
     background-size: cover;
     height: calc(100vh - 164px);
     color: rgb(0, 0, 0);
     font-family: lato;
-    margin-top: 30px;
+    margin-top: 0px;
+    width: 100%;
+    position: relative;
+    
 }
+
+
+.hero-info {
+    margin-left: 100px;
+}
+
+
+body {
+     font-family: lato;
+}
+
+
 
 /* Search (from Bulma) */
 .icon {
@@ -95,7 +110,7 @@ btn-outline-black {
     background: rgb(0, 0, 0) !important;
 }
 
-/* bg  */
+/*bg  
 .overlay {
     height: 100%;
     width: 100%;
@@ -104,12 +119,12 @@ btn-outline-black {
     position: fixed;
     background: #ffffff;
     z-index: -1;
-}
+}*/
 
 /* Category badges */
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #ffffff !important;
+    background: #ffffff !important;
+    color: #000000 !important;
     font-family: architects daughter;
     text-transform: capitalize;
 }
@@ -208,6 +223,11 @@ input[name='q']::placeholder {
     margin-left: 50px;
     margin-top: 25px;
     margin-bottom: 50px;
+}
+
+.btn-carousel {
+    background-color: #ffffff56;
+    font-weight: bold;
 }
 
 
@@ -400,15 +420,31 @@ main {
 }
 
 .footer-border {
-    text-align: center;
+    text-align: center; 
 }
+
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (min-width: 1200px) {
+    .footer-border {
+      font-size: 80px;
+    }
+  }
+  /* If the screen size is smaller than 1200px, set the font-size to 80px */
+  @media (max-width: 1199.98px) {
+    .footer-border {
+      font-size: 30px;
+    }
+  }
+
+
 
 .hand-icon {
     padding-top: 30px;
 }
 
 .copy {
-    
+    padding-bottom: 30px;
+    font-size: 15px;
 }
 
 .community {
@@ -422,7 +458,7 @@ main {
 
 .inspire-btn {
    margin-bottom: 60px;
-   margin-top: 10px;
+   margin-top: 20px;
 }
 
 .share-style {
@@ -453,18 +489,11 @@ main {
 	background-color: rgb(248, 134, 4);
 }
 
-.hero-bg {
-    background-color: #69400325;
-    padding-left: 30px;
-    padding-top: 30px;
-    margin-left: 30px;
-}
 
-.responsive {
-    width: 100%;
-    height: auto;
+
+
       
-}
+
 
 .account-bag {
     padding-right: 30px;
