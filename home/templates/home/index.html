@@ -2,21 +2,23 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+<div class="container header-container">
+  <div class="row">
+      <div class="col"></div>
+  </div>
+</div>
 {% endblock %}
 
+
+<!-- Hero section -->
 {% block content %}
-<div class="container-fluid">
+<div class="container-fluid container-fluid-hero">
     <div class="row">
         <div class="col-7 col-md-4 my-auto hero-info">
-            <h1 class="h1 logo-font text-black">
+            <h1 class="logo-font text-black" style="font-size: 4vw;">
                     Boho Living.<br>Good vibes only!<br>
-                </h1>
-                <p>Homedecor - Fashion - Free spirit</p>
+            </h1>
+                <p style="font-size: 2vw;">Homedecor - Fashion - Free spirit</p>
                 <div class="my-5">
                     <h4>
                         <a href="{% url 'products' %}" class="shop-now-button btn rounded-0 logo-font text-uppercase py-2 hero-text">Shop Now</a>
@@ -24,8 +26,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
+    <!-- Home page text -->
     <div class="row home-text">
         <div class="col-12 home-page-text">
           <h3>Boho style is for the lovers of all things, travel, culture and a passion for life</h3>
@@ -51,25 +54,25 @@
           <div class="carousel-item active" data-bs-interval="10000">
             <img src="media/carousel_1.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-md-block">
-              <h5>NEW ARRIVALS</h5>
+              <h4><strong>NEW ARRIVALS</strong></h4>
               <p>Carefully handpicked cool stuff arriving weekly.</p>
-              <a href="{% url 'products' %}?category=new_in" type="button" class="btn btn-outline-dark btn-sm btn-carousel">Check them out!</a> 
+              <a href="{% url 'products' %}?category=new_in" type="button" class="btn btn-sm btn-carousel">Check them out!</a> 
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img src="media/carousel_3.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-              <a href="{% url 'products' %}?category=new_in" type="button" class="btn btn-outline-dark btn-sm btn-carousel">Check them out!</a>
+              <h4><strong>BOHO OUTLET</strong></h4>
+              <p>Discover great prices on high-quality pieces.</p>
+              <a href="{% url 'products' %}?category=outlet" type="button" class="btn btn-sm btn-carousel">Outlet</a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="media/carousel_2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-              <a href="{% url 'products' %}?category=new_in" type="button" class="btn btn-outline-dark btn-sm btn-carousel">Check them out!</a>
+              <h4><strong>ACCESSORIES</strong></h4>
+              <p>Express your personal style!</p>
+              <a href="{% url 'products' %}?category=accessories" type="button" class="btn btn-sm btn-carousel">Check them out!</a>
             </div>
           </div>
         </div>

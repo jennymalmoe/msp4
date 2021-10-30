@@ -6,27 +6,44 @@ html {
     height: 100%;
 }
 
+body {
+    font-family: lato;
+    margin: 0;
+}
+
+h4 {
+    color:rgb(247, 162, 4);
+}
+
+
 .container-fluid {
+    max-width: 100%;
+}
+
+.container-fluid-hero {
     background: url('/media/color_2.jpg') no-repeat center center;
     background-size: cover;
     height: calc(100vh - 164px);
     color: rgb(0, 0, 0);
-    font-family: lato;
-    margin-top: 0px;
+    margin-bottom: 50px;
     width: 100%;
     position: relative;
     
+    
 }
-
 
 .hero-info {
     margin-left: 100px;
+    padding-top: 150px;
+    background-color:
+}
+
+.text-black {
+    color: #000 !important;
 }
 
 
-body {
-     font-family: lato;
-}
+
 
 
 
@@ -50,6 +67,7 @@ body {
 .delivery {
     font-family: architects daughter;
     text-transform: uppercase;
+    color: #FFFFFF !important;
 }
 
 /* Products headline */
@@ -96,9 +114,7 @@ btn-outline-black {
     color: white;
 }
 
-.text-black {
-    color: #000 !important;
-}
+
 
 /* Search */
 .border-black {
@@ -121,18 +137,39 @@ btn-outline-black {
     z-index: -1;
 }*/
 
+.border-info {
+    border-color: #000000!important;
+}
+
 /* Category badges */
+
 a.category-badge > span.badge:hover {
-    background: #ffffff !important;
-    color: #000000 !important;
-    font-family: architects daughter;
-    text-transform: capitalize;
+    background:rgb(247, 162, 4)!important;
+    color: rgb(247, 162, 4)!important;
+}
+
+.badge-style {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    
+}
+
+.products {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.line-break {
+    margin-top: 30px;
 }
 
 /* Placeholder search box */
 input[name='q']::placeholder {
    color: #aab7c4;
 }
+
+/* My profile */
+
 
 /* ------------------------------- Bootstrap toasts */
 
@@ -225,10 +262,16 @@ input[name='q']::placeholder {
     margin-bottom: 50px;
 }
 
-.btn-carousel {
-    background-color: #ffffff56;
-    font-weight: bold;
+.carousel-caption {
+    font-weight: bolder;
+    color:rgb(247, 162, 4);
 }
+
+.btn-carousel {
+    color: #ffffff;
+    background-color:rgb(247, 162, 4);
+}
+
 
 
 /* -------------------------------- Media Queries */
@@ -387,6 +430,10 @@ input[name='q']::placeholder {
     }
 }
 
+.del-row {
+    margin: auto;
+}
+
 /* Toast success */
 .added {
     font-family: architects daughter;
@@ -409,6 +456,7 @@ main {
 	padding-top: 20px;
     text-align: center;
     position: relative;
+    margin: 0;
     
 }
 
@@ -459,6 +507,7 @@ main {
 .inspire-btn {
    margin-bottom: 60px;
    margin-top: 20px;
+   font-size: larger;
 }
 
 .share-style {
@@ -503,6 +552,3 @@ main {
 .checkout-form {
     padding-top: 10px;
 }
-
-
-

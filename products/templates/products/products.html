@@ -17,10 +17,10 @@
                 <h2 class="logo-font products">Products</h2>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge badge-white rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                        <span class="p-2 mt-2 badge-style rounded-0 border">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
-                <hr class="w-100 mb-1">
+                <hr class="w-100 mb-1 line-break">
             </div>
         </div>
         <div class="row">
