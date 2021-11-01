@@ -14,14 +14,14 @@
 {% block content %}
 <div class="container-fluid container-fluid-hero">
     <div class="row">
-        <div class="col-7 col-md-4 my-auto hero-info">
-            <h1 class="logo-font text-black" style="font-size: 4vw;">
+        <div class="col-12 col-md-6 col-sm-6 hero-info">
+            <h1 class="logo-font text-black text-1">
                     Boho Living.<br>Good vibes only!<br>
             </h1>
-                <p style="font-size: 2vw;">Homedecor - Fashion - Free spirit</p>
+                <p class="text-2">Homedecor - Fashion - Free spirit</p>
                 <div class="my-5">
                     <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn rounded-0 logo-font text-uppercase py-2 hero-text">Shop Now</a>
+                        <a href="{% url 'products' %}" class="shop-now-button btn rounded-0 logo-font text-uppercase py-2 hero-text text-3">Shop Now</a>
                     </h4>
                 </div>
             </div>
@@ -54,7 +54,7 @@
           <div class="carousel-item active" data-bs-interval="10000">
             <img src="media/carousel_1.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-md-block">
-              <h4><strong>NEW ARRIVALS</strong></h4>
+              <h4 class="hero-info"><strong>NEW ARRIVALS</strong></h4>
               <p>Carefully handpicked cool stuff arriving weekly.</p>
               <a href="{% url 'products' %}?category=new_in" type="button" class="btn btn-sm btn-carousel">Check them out!</a> 
             </div>

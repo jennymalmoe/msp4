@@ -33,10 +33,15 @@ h4 {
 }
 
 .hero-info {
-    margin-left: 100px;
+    margin-left: 70px;
     padding-top: 150px;
-    background-color:
+    text-shadow: #FC0 1px 0 10px;
+    color: #000000;
 }
+
+@media screen and (max-width: 600px) {
+    
+  }
 
 .text-black {
     color: #000 !important;
@@ -74,6 +79,8 @@ h4 {
 .products {
     font-family: architects daughter;
     text-transform: uppercase;
+    padding-top: 10px;
+
 }
 
 
@@ -268,8 +275,9 @@ input[name='q']::placeholder {
 }
 
 .btn-carousel {
-    color: #ffffff;
-    background-color:rgb(247, 162, 4);
+    color: #000000;
+    background-color:rgba(255, 255, 255, 0.404);
+    text-shadow: #FC0 1px 0 10px;
 }
 
 
@@ -453,7 +461,7 @@ main {
 }
 
 .page-footer {
-	padding-top: 20px;
+	padding-top: 10px;
     text-align: center;
     position: relative;
     margin: 0;
@@ -474,7 +482,7 @@ main {
 /* If the screen size is 1200px wide or more, set the font-size to 80px */
 @media (min-width: 1200px) {
     .footer-border {
-      font-size: 80px;
+      font-size: 50px;
     }
   }
   /* If the screen size is smaller than 1200px, set the font-size to 80px */
@@ -551,4 +559,47 @@ main {
 /* Checkout form */
 .checkout-form {
     padding-top: 10px;
+}
+
+.form-group {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#id_default_country {
+   background-color: #dc3545; 
+}
+
+
+/* Sort select box */
+.sort-select-wrapper {
+    padding-top: 10px;
+}
+
+
+/* Quantity box + - */
+.input-group-append {
+    background-color: #000000;
+}
+
+/* Blog */
+
+.blog-headline {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.blog-text {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.create-post {
+    text-align: center;
+    color: #ffffff;
+}
+
+.registered-users {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
