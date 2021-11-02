@@ -8,7 +8,6 @@ html {
 
 body {
     font-family: lato;
-    margin: 0;
 }
 
 h4 {
@@ -158,6 +157,7 @@ a.category-badge > span.badge:hover {
 .badge-style {
     background-color: rgb(0, 0, 0);
     color: #ffffff;
+    font-family: architects daughter;
     
 }
 
@@ -276,8 +276,8 @@ input[name='q']::placeholder {
 
 .btn-carousel {
     color: #000000;
-    background-color:rgba(255, 255, 255, 0.404);
-    text-shadow: #FC0 1px 0 10px;
+    background-color:rgba(255, 255, 255, 0.514);
+    border-color: #000000;
 }
 
 
@@ -535,12 +535,12 @@ main {
 	outline: none;
 	background-color: rgb(247, 162, 4);
 	color: rgb(255, 253, 253);
-	cursor: pointer;
 	padding: 20px;
-	border-radius: 2px;
 	font-size: 20px;
     display: none;
 }
+
+
 
 #myBtn:hover {
 	background-color: rgb(248, 134, 4);
@@ -603,3 +603,4 @@ main {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
