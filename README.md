@@ -604,3 +604,8 @@ bug OperationalError at /admin/auth/user, no such column: blog_blogpost.author_i
 Sean profile
 Ok, would you liek me to reset everything and then restore the prodcuts?
 
+BLOG:Better engagement with your content, i.e., increased comments, social shares, etc.
+Having an active community around your blog is proof and validation that your blog has credibility and authority. This is a critical ingredient for attracting more people into your community.
+Potential to convert more readers into paying customers and clients.
+
+future blog: email lists, push notifications, share on social media, comments, movies, 

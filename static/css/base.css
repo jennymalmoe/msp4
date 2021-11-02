@@ -8,6 +8,16 @@ html {
 
 body {
     font-family: lato;
+    color: rgb(0, 0, 0);
+    
+}
+
+.hero-container {
+    background: url('/media/color_2.jpg') no-repeat center center;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    position: relative;
+    margin-bottom: 30px;
 }
 
 h4 {
@@ -19,17 +29,7 @@ h4 {
     max-width: 100%;
 }
 
-.container-fluid-hero {
-    background: url('/media/color_2.jpg') no-repeat center center;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: rgb(0, 0, 0);
-    margin-bottom: 50px;
-    width: 100%;
-    position: relative;
-    
-    
-}
+
 
 .hero-info {
     margin-left: 70px;
@@ -42,16 +42,14 @@ h4 {
     
   }
 
-.text-black {
-    color: #000 !important;
-}
 
 
 
 
 
 
-/* Search (from Bulma) */
+
+/* Icon class from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -60,19 +58,18 @@ h4 {
     width: 1.5rem;
 }
 /* Logo */
-.main-logo-link {
-    width: fit-content;
+
+.logo-font {
     font-family: architects daughter;
     text-transform: uppercase;
-    margin-left: 80px;
+    color: #ffffff;
+}
+.main-logo-link {
+    width: fit-content;
 }
 
 /* Delivery alert */
-.delivery {
-    font-family: architects daughter;
-    text-transform: uppercase;
-    color: #FFFFFF !important;
-}
+
 
 /* Products headline */
 .products {
@@ -83,7 +80,7 @@ h4 {
 }
 
 
-/* Shop now btn */
+/* Buttons */
 .shop-now-button {
     color: #ffffff;
     background: #000000;
@@ -92,45 +89,30 @@ h4 {
     font-weight: lighter;
 }
 
-.btn-black {
-    background: black;
-    color: white;
-}
-
-btn-outline-black {
-    background: #ffffff;
-    color: black !important; /*to override link colors for <a> elements */
-    border: 1px solid black;  
-}
-
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: #000;
+.btn-outline-dark:hover,
+.btn-outline-dark:active,
+.btn-outline-dark:focus {
+    background: rgb(247, 162, 4)!important;
     color: #ffffff !important;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
+.btn-dark:hover,
+.btn-dark:active,
+.btn-dark:focus {
+    background: rgb(247, 162, 4);
     color: white;
 }
 
-
-
-/* Search */
-.border-black {
-    border: 1px solid rgb(0, 0, 0) !important;
+.bg-black {
+    background: #000000;
 }
 
-/* ? */
-.bg.black {
-    background: rgb(0, 0, 0) !important;
-}
+
+
+
 
 /*bg  
 .overlay {
@@ -178,7 +160,7 @@ input[name='q']::placeholder {
 /* My profile */
 
 
-/* ------------------------------- Bootstrap toasts */
+/* Bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -281,14 +263,28 @@ input[name='q']::placeholder {
 }
 
 
-
 /* -------------------------------- Media Queries */
 
-/* large and xl screens */
+/* Large and xl screens */
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
   }
+}
+
+/* Fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
 }
 
 /* Allauth form formatting */
@@ -375,32 +371,23 @@ input[name='q']::placeholder {
 }
 
 
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
 
-    .header-container {
-        padding-top: 164px;
-    }
-}
 
 /* padding for when navbar is collapses on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        
     }
 
     body {
         height: calc(100vh - 116px);
     }
 
-    .display-4.logo-font.text-black {
+    .text-black {
+        color: #000 !important;
+    }
+
+    .display-4.logo-font {
         font-size: 4rem;
         font-family: architects daughter;
     }
@@ -420,6 +407,8 @@ input[name='q']::placeholder {
 
     #delivery-banner h4 {
         font-size: .9rem;
+        color: #FFFFFF !important;
+        }
     }
 
     .btn.btn-outline-dark.rounded-0,
@@ -464,8 +453,6 @@ main {
 	padding-top: 10px;
     text-align: center;
     position: relative;
-    margin: 0;
-    
 }
 
 .soc-media  {
@@ -552,9 +539,7 @@ main {
       
 
 
-.account-bag {
-    padding-right: 30px;
-}
+
 
 /* Checkout form */
 .checkout-form {

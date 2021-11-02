@@ -1,10 +1,12 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <!-- Menu "Home" -->
         <li class="nav-item d-block d-md-none">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
                 Home
             </a>
         </li>
+        <!-- Menu "All Products" -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
@@ -16,8 +18,7 @@
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
-
-
+        <!-- Menu "Home Decor" -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="home_decor-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Home Decor
@@ -31,7 +32,7 @@
                 <a href="{% url 'products' %}?category=new_in,furnitures,t-shirts,decor,textiles,incense" class="dropdown-item">All Home Decor</a>
             </div>
         </li>
-
+        <!-- Menu "Fashion" -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="fashion-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Fashion
@@ -43,13 +44,13 @@
                 <a href="{% url 'products' %}?category=clothes,accessories,bags" class="dropdown-item">All Fashion</a>
             </div>
         </li>
-
+        <!-- Menu "Outlet" -->
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products' %}?category=outlet" id="outlet-link">
                 Outlet
             </a>
         </li>
-
+        <!-- Menu "Blog" -->
         <li class="nav-item">
             <a class="logo-font nav-link text-black" href="{% url 'blog' %}" id="blog-link">BOHO Blog</a>
         </li>
