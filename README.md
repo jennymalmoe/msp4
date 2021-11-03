@@ -99,6 +99,8 @@ In addition to the goals above; also blog etc
 
 <br>
 
+This user story template consists of three sections; As a (decription of user), I want (functionality/goal), So that (benefit). It has short descriptions, requirements (who and why), general guidance, no technical details. 
+
 | ID  | As a..    | I want to..                                                    | So I..                                                                           |
 | --- | ---------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 |     |            | **_Viewing and Navigation_**                                      |                                                                                       |
@@ -110,30 +112,42 @@ In addition to the goals above; also blog etc
 | 6   | Shopper    | Be inspired by the site, the products and the design                              |  Find products to buy (both for visitors that searched for products online and got presented to this site as well for those visitors that visited the site by entering sites address) and return to make more purchase. 
 | 7   | Shopper    | Be presented to some kind of contact information/social media links                              |  Feeling a sence of crediblity
 | 8   | Shopper    | Be able to reach out to siteowner                              |  Get answers to any possible questions
-|     |            | **_Registration and User Accounts_**                              |                                                                                       |
-| 5   | Reg User   | Register for an account                                           | Save my delivery details and order history, get mails with news and offers                                          |
+|     |            | **_Registration_**                              |                                                                                       |
+| 5   | User   | Register for an account by entering email, password and confirming my password                                         | Can access to Boho Living                                          |
+| 5   | User   | Register for an account                                           | Save my delivery details and order history, get mails with news and offers                                          |
 | 6   | Reg User   | Quickly login/out                                                 | Access my account                                                                     |
-| 7   | Reg User   | Request a password reset                                          | Receive an email to reset my password in case I forget it                            |
-| 8   | Reg User   | Receive an email confirming my registration                       | Verify my account was registered successfully                                         |
-| 9   | Reg User   | Access my user profile                                            | View my order history, manage my personal details                                     |
+| 7   | User   | Request a password reset                                          | Receive an email to reset my password in case I forget it                            |
+| 8   | User   | Receive an email confirming my registration                       | Verify my account was registered successfully                                         |
+| 9   | User   | Access my user profile                                            | View my order history, manage my personal details                                     |
+|     |            | **_Login_**                                  |                                                                                       |
+| 25  | Registered User | Login by entering email and password                                            | Can access the application
+| 25  | Registered User | Reset my password  
+|     |            | **_Logout_**                                  |                                                                                       |
+| 25  | Registered User | Be able to logout                                            | Ensure that nobody else are in my account                                          | If I forgot the password
 |     |            | **_Sorting and Searching_**                                       |                                                                                       |
 | 10  | Shopper    | Sort the list of available products                               | See the products in a list sorted by price, rating etc            |
 | 11  | Shopper    | Sort a category of products                                       | See the products in a category sorted by name, price, rating, etc                     |
 | 12  | Shopper    | Sort multiple categories simultaneously                           | Find the best rated or best priced across broad categories |
 | 13  | Shopper    | Search for product                                                | Find a specific product I wish to purchase                                               |
-| 14  | Shopper    | View a list of search results                                     | See if the product I want is available to purchase                                    |
+| 14  | Shopper    | View a list of search results                                     | See if the product I want is available to purchase  
+| 15  | Shopper    | View an image and details for each product                                     | So I can decide if I want to add to cart from the detail or search pages or not.                                   |
 |     |            | **_Purchasing and Checkout_**                                     |                                                                                       |
 | 15  | Shopper    | Easily select the size and quantity whilst purchasing a product     | Ensure I don't accidentally select the wrong product, quantity, or size               |
-| 16  | Shopper    | View products in my bag                                           | See what products are in my bag at a glance to ensure the items are correct           |
+| 16  | Shopper    | Review my cart                                          | Can make adjustments prior to checkout           |
 | 17  | Shopper    | Adjust the quantity of individual items in my bag                 | Easily adjust the amount of an item I intended to purchase (including removing)       |
 | 18  | Shopper    | Easily enter my payment information                               | Checkout quickly and easily                                                      |
 | 19  | Shopper    | Feel my payment and personal information is secure                | Provide the needed payment and personal information, and feel it is handled safely    |
 | 20  | Shopper    | View confirmation of order before completing purchase             | Verify I haven't made any mistakes                                                    |
-| 21  | Shopper    | Receive confirmation email after checking out                     | To keep record of the purchase                                                 |
+| 21  | Shopper    | Receive confirmation email after checking out                     | To keep record of the purchase
+| 22  | Shopper    | The store to have some kind of custom service                     | Can get in touch if I have questions, if something is wrong.                                                   |
 |     |            | **_Admin and Store Management_**                                  |                                                                                       |
-| 22  | Site Owner | Add a product                                                     | Add new products to my store                                                          |
-| 23  | Site Owner | Edit/update a product                                             | Change the price, description, image etc of a product                                |
-| 24  | Site Owner | Delete a product                                                  | Remove products that aren't for sale anymore                                             |
+| 22  | Administrator | Modify the list of products                                                     | Can adjust our offerings over time                                                       |
+|     |            | **_Site manager_**                                  |                                                                                       |
+| 25  | Shopper | Be able to manage/edit the site                                            | Keep the site relevant and with correct information/sortiment                                        |
+|     |            | **_Community_**                                  |                                                                                       |
+| 26  | Shopper | Get inspired and get ideas                                            | Buy items that matches my idea of home decoration                                                          |
+| 27  | Shopper | Be able to contibute with my own ideas by adding a post                                             | Be/feel like a part of the community and contrbute with inspiration and ideas                               |
+                                             |
 
 
 * First Time Visitor Goals
@@ -223,14 +237,14 @@ While the project relied on these wireframes, there are some differences between
 Every page of the website features a consistently responsive and intuitive layout and navigational system:
 
 **General features**
-* Fixed navbar to be seen at all times.
-* Footer on all pages.  
-* Responsive site on all devices. 
-* Fixed on top of the page on all device sizes.
+* Responsive site on all devices.
+* Fixed navbar to be seen at all times. 
+* Navigation bar works as intended. When you click on the site name, you will be taken directly to the home page. When you press the home button from the drop-down menu, you'll be taken to the home page. The site has four categories, all products, clothing, household items and specials listed in the Large Appliances Center and a drop-down menu for medium and small appliances. In the upper right corner there is a login that takes the user to the page where he can log in or register.
+* Footer on all pages.
 * Shown as a collapsible navbar (hamburger button) triggered at tablets and mobile devices. 
-* Search bar allowing visitors to search for recipes. 
-* Visitor can contact Lazy Vegan (mail) by clicking at mail address in footer.
-* Visitor/Users can follow Lazy Vegan at Pinterest by clicking Pinterest icon.
+* Search bar allowing visitors to search for products. 
+* Visitor can contact BOHO Living by clicking at mail address in footer.
+* Visitor can follow BOHO Living at Pinterest by clicking Pinterest icon.
 
 **Home Page**
 * Features a modern design and eye catching image.
