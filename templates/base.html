@@ -69,7 +69,7 @@
                   <li class="list-inline-item dropdown">
                       <a class="nav-link text-black" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <div class="text-center">
-                              <div><i class="fas fa-user fa-lg"></i></div>
+                              <div><i class="far fa-user fa-lg"></i></div>
                               <p class="my-0">My Account</p>
                           </div>
                       </a>
@@ -93,10 +93,10 @@
                   <!-- Shopping bag -->
                   <li class="list-inline-item">
                       <!-- If something in bag -->
-                      <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                      <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-dark{% endif %} nav-link" href="{% url 'view_bag' %}">
                           <div class="text-center">
-                              <div><i class="fas fa-shopping-cart fa-lg account-bag"></i></div>
-                              <p class="my-0">
+                              <div><i class="fas fa-shopping-cart fa-lg account-bag text-dark"></i></div>
+                              <p class="my-0 text-dark">
                                   {% if grand_total %}
                                       ${{ grand_total|floatformat:2 }}
                                   {% else %}
@@ -157,7 +157,7 @@
       </script>
     {% endblock %}
 
-    <div class="footer-border">➳➳➳➳➳</div>
+    <div class="footer-border1">➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳</div>
 
     <!-- Back to top btn -->
     <button class="z-depth-5" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
@@ -169,7 +169,7 @@
               <div class="col-12">
                 
                 <a type="submit" href="{% url 'blog' %}">
-                  <i class="far fa-hand-peace fa-2x soc-media" aria-hidden="true"></i>
+                  <i class="far fa-hand-peace fa-2x hand" aria-hidden="true"></i>
                 </a>
 
       
@@ -180,8 +180,15 @@
                 </p>
                 <button type="button" class="btn btn-outline-dark btn-sm inspire-btn">Register to join our community</button>
             
-                <div class="footer-border">➳➳➳➳➳</div>
+                <div class="footer-border2">➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳</div>
                 <br>
+
+                <div>
+                  <p><strong>Customer Service</strong></p>
+                  <p>Do you have any questions? Feel free to contact BOHO Living Customer Service and we will be happy to help you!</p>
+                  <a role="button" href="mailto:customerservice@boholiving.com" class="btn btn-dark contact-btn">Contact Us</a>
+                </div>
+                
 
                 <a target="_blank" type="submit" href="https://www.facebook.com/">
                   <i class="fab fa-facebook dark soc-media fa-lg" aria-hidden="true"></i>

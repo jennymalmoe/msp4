@@ -102,8 +102,8 @@
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
 								<label class="form-check-label" for="id-save-info">
-                                    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
-                                    <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                                    <a class="text-alerts" href="{% url 'account_signup' %}">Create an account</a> or 
+                                    <a class="text-alerts" href="{% url 'account_login' %}">login</a> to save this information
                                 </label>
 							{% endif %}
 						</div>
@@ -130,11 +130,12 @@
 								<i class="fas fa-lock"></i>
 							</span>
 						</button>
-						<p class="small text-danger my-0">
+						<p class="small text-alerts my-0">
 							<span class="icon">
 								<i class="fas fa-exclamation-circle"></i>
-							</span>
+                            </span>
 							<span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+
 						</p>
 					</div>
                 </form>
