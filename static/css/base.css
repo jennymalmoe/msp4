@@ -66,7 +66,7 @@ h4 {
 .logo-font {
     font-family: architects daughter;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #FFF;
 }
 .main-logo-link {
     width: fit-content;
@@ -85,6 +85,7 @@ input[name='q']::placeholder {
     height: calc(100vh - 164px);
     position: relative;
     margin-bottom: 30px;
+    max-width: 100%;
 }
 
 .hero-info {
@@ -108,10 +109,12 @@ input[name='q']::placeholder {
     color:rgb(247, 162, 4);
 }
 
-.btn-carousel {
-    color: #000000;
-    background-color:rgba(255, 255, 255, 0.514);
-    border-color: #000000;
+.carousel-bg {
+    background-color: rgba(127, 255, 212, 0.575);
+}
+
+.carousel-text {
+    color: #ffffff;
 }
 
 .home-text {
@@ -187,7 +190,7 @@ a.category-badge > span.badge:hover {
     margin-top: 30px;
 }
 
-toast from him
+/*toast from him*/
 .message-container {
     position: fixed;
     top: 60rem;
@@ -207,8 +210,8 @@ toast from him
 
 /* My profile */
 
-/* ------------------------------ Toasts */
-/* 
+/* ------------------------------ Toasts 
+
 
 .message-container {
     position: fixed;
@@ -231,9 +234,9 @@ toast from him
 
 .toast-capper {
     height: 4px;
-}
+}*/
 
-/* Toast success 
+/* Toast success */
 .added {
     font-family: architects daughter;
     text-transform: uppercase;
@@ -249,7 +252,7 @@ toast from him
     z-index: 99999999999;
     
 }
-*/
+
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-up {
@@ -318,6 +321,10 @@ toast from him
   .container {
     max-width: 80%;
   }
+
+  .hero-container {
+    max-width: 100%;
+ }
 }
 
 /* Fixed top navbar only on medium and up */
@@ -333,6 +340,11 @@ toast from him
     .header-container {
         padding-top: 164px;
     }
+
+    .hero-container {
+        max-width: 100%;
+     }
+
 }
 
 /* Allauth form formatting */
@@ -423,8 +435,8 @@ toast from him
 
 /* padding for when navbar is collapses on mobile */
 @media (max-width: 991px) {
-    .header-container {
-        
+    .hero-container {
+       max-width: 100%;
     }
 
     body {
@@ -456,7 +468,6 @@ toast from him
     #delivery-banner h4 {
         font-size: .9rem;
         color: #FFFFFF !important;
-        }
     }
 
     .btn.btn-outline-dark.rounded-0,
@@ -471,10 +482,15 @@ toast from him
     }
 
     .increment-qty, .decrement-qty {
-        padding: .25rem .5rem !important;
+        padding: .25rem .5rem;
         color: #fff;
         background-color: black;
     }
+}
+
+.plus_minus {
+    color: #FFF;
+    
 }
 
 .del-row {
@@ -591,6 +607,10 @@ main {
     background-color: #000000;
 }
 
+.input-group-prepend {
+    background-color: #000000;
+}
+
 /* ------------------------------ Blog */
 /* Blog */
 .blog-headline {
@@ -654,3 +674,9 @@ main {
 .text-alerts {
     color: chocolate;
 }
+
+/* form personlig info när handlar*/
+.check-out-content {
+    padding-top: 50px;
+}
+
