@@ -105,12 +105,7 @@ input[name='q']::placeholder {
 }
 
 .carousel-caption {
-    font-weight: bolder;
     color:rgb(247, 162, 4);
-}
-
-.carousel-bg {
-    background-color: rgba(127, 255, 212, 0.575);
 }
 
 .carousel-text {
@@ -190,24 +185,7 @@ a.category-badge > span.badge:hover {
     margin-top: 30px;
 }
 
-/*toast from him*/
-.message-container {
-    position: fixed;
-    top: 60rem;
-    right: 1rem;
-    z-index: 500;
-}
-
-.toast {
-    border-radius: 0;
-}
-
-.btn-close {
-    font-size: 1.5rem;
-    padding: .5rem;
-    margin-right: 2rem;
-}
-
+/
 /* My profile */
 
 /* ------------------------------ Toasts 
@@ -248,10 +226,53 @@ a.category-badge > span.badge:hover {
     background-color: #ffc107;
     position: fixed;
     top: 80px;
-    right: 15px;
+    right: 5px;
     z-index: 99999999999;
+    color: #FFF;
+    font-family: architects daughter;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-right: 5px;
+    
     
 }
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 4px;
+}
+
+/*toast from him*/
+.message-container {
+    position: fixed;
+    top: 60rem;
+    right: 1rem;
+    z-index: 9999999999;
+}
+
+.toast-body {
+    position: fixed;
+    top: 180px;
+    right: 15px;
+    z-index: 99999999999;
+    background-color: #ffc107;
+    color: #FFF;
+    margin-right: 5px;
+}
+
+.toast {
+    border-radius: 0;
+}
+
+.btn-close {
+    font-size: 1.5rem;
+    padding: .5rem;
+    margin-right: 2rem;
+}
+
 
 
 /* Convenience classes - colors copied from Bootstrap */
