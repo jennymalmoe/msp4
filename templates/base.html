@@ -140,8 +140,8 @@
                     {% else %}
                         {% include 'includes/toasts/toast_info.html' %}
                     {% endif %}
-                {% endwith %}
-            {% endfor %}
+                        {% endwith %}
+                    {% endfor %}
         </div>
     {% endif %}
     
@@ -152,11 +152,13 @@
     {% endblock %}
     
     {% block postloadjs %}
-      <script type="text/javascript">
-         $('.toast').show();
-      </script>
-    {% endblock %}
+      <!-- To show toasts -->
+        <script type="text/javascript">
+          $('.toast').show();
+        </script>
+      {% endblock %}
     
+  
     <div class="footer-border1">➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳</div>
 
     <!-- Back to top btn -->
@@ -224,7 +226,7 @@
       </footer>
 
         
-        
+      
     <script src="{% static 'js/script.js' %}"></script>
   </body>
 </html>

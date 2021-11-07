@@ -147,16 +147,7 @@ input[name='q']::placeholder {
 
 
 
-/*bg  
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: #ffffff;
-    z-index: -1;
-}*/
+
 
 .border-info {
     border-color: #000000!important;
@@ -185,95 +176,28 @@ a.category-badge > span.badge:hover {
     margin-top: 30px;
 }
 
-/
-/* My profile */
-
-/* ------------------------------ Toasts 
-
-
-.message-container {
-    position: fixed;
-    top: 6rem;
-    right: 1rem;
-    z-index: 9999999999;
-}
-
-.toast-body {
-    position: fixed;
-    top: 80px;
-    right: 15px;
-    z-index: 99999999999;
-}
+/* ------------------------------ Toasts */
+/* Toasts */
 
 .custom-toast {
     overflow: visible;
-
 }
 
 .toast-capper {
-    height: 4px;
-}*/
-
-/* Toast success */
-.added {
-    font-family: architects daughter;
-    text-transform: uppercase;
-    font-size: 30px;
-    margin-right: 60px;
+    height: 6px;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
 }
 
 .toast-header {
-    background-color: #ffc107;
-    position: fixed;
-    top: 80px;
-    right: 5px;
-    z-index: 99999999999;
-    color: #FFF;
-    font-family: architects daughter;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-right: 5px;
-    
-    
+    display: flex;
 }
 
-.custom-toast {
-    overflow: visible;
-}
-
-.toast-capper {
-    height: 4px;
-}
-
-/*toast from him*/
 .message-container {
     position: fixed;
-    top: 60rem;
-    right: 1rem;
-    z-index: 9999999999;
-}
-
-.toast-body {
-    position: fixed;
-    top: 180px;
+    top: 72px;
     right: 15px;
     z-index: 99999999999;
-    background-color: #ffc107;
-    color: #FFF;
-    margin-right: 5px;
 }
-
-.toast {
-    border-radius: 0;
-}
-
-.btn-close {
-    font-size: 1.5rem;
-    padding: .5rem;
-    margin-right: 2rem;
-}
-
-
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-up {
@@ -281,7 +205,7 @@ a.category-badge > span.badge:hover {
 }
 
 .arrow-primary {
-    border-bottom-color: rgb(247, 162, 4); !important;
+    border-bottom-color: rgb(247, 162, 4) !important;
 }
 
 .arrow-secondary {
@@ -310,12 +234,6 @@ a.category-badge > span.badge:hover {
 
 .arrow-dark {
     border-bottom-color: #343a40 !important;
-}
-
-.bag-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 .bag-notification-wrapper {

@@ -1,4 +1,4 @@
-//Back to top btn
+//BACK TO TOP BTN
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
@@ -20,3 +20,17 @@ function topFunction() {
 	document.body.scrollTop = 0; // For Safari
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// TOAST
+// Bootstrap 5 toast initialisation
+let toastElList = [].slice.call(document.querySelectorAll('.toast'))
+let toastList = toastElList.map(function (toastEl) {
+    let option = {
+        animation: true,
+        autohide: true,
+        delay: 5000,
+    }
+  let bsToast = new bootstrap.Toast(toastEl, option)
+  bsToast.show();
+})
+C
