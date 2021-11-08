@@ -157,9 +157,6 @@
           $('.toast').show();
         </script>
       {% endblock %}
-    
-  
-    <div class="footer-border1">➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳</div>
 
     <!-- Back to top btn -->
     <button class="z-depth-5" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
@@ -169,31 +166,26 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                
-                <a type="submit" href="{% url 'blog' %}">
-                  <i class="far fa-hand-peace fa-2x hand" aria-hidden="true"></i>
-                </a>
 
-      
+                <div class="footer-arrow">➳</div>
                 <h1>BOHO Living<span style="color:rgb(247, 162, 4);"> Community</span></h1>
                 <h3>Inspire and get inspired</h3>
                 <p class="share-style">Welcome to your community. This is your space - a place to release your inner stylist, help out fellow Boho's and join in discussions
                   <br>about all things BOHO Living, interior design and life in general. Don't be selfish, share your style! Not registered?
                 </p>
-                <button type="button" class="btn btn-outline-dark btn-sm inspire-btn">Register to join our community</button>
+                <a role="button" href="{% url 'account_signup' %}" class="btn btn-light btn-sm contact-btn">Register to join our community</a>
             
-                <div class="footer-border2">➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳</div>
-                <br>
+                
 
                 <div>
-                  <p><strong>Customer Service</strong></p>
+                  <h3>Customer Service</h3>
                   <p>Do you have any questions? Feel free to contact BOHO Living Customer Service and we will be happy to help you!</p>
-                  <a role="button" href="mailto:customerservice@boholiving.com" class="btn btn-dark contact-btn">Contact Us</a>
+                  <a role="button" href="mailto:customerservice@boholiving.com" class="btn btn-light btn-sm contact-btn">Contact Us</a>
                 </div>
                 
 
                 <a target="_blank" type="submit" href="https://www.facebook.com/">
-                  <i class="fab fa-facebook dark soc-media fa-lg" aria-hidden="true"></i>
+                  <i class="fab fa-facebook soc-media fa-lg" aria-hidden="true"></i>
                 </a>
 
                 <a target="_blank" type="submit" href="https://www.instagram.com/">
@@ -213,7 +205,7 @@
                 </a>
 
                 <a target="_blank" type="submit" href="https://accounts.snapchat.com/">
-                  <i class="fab fa-snapchat-ghost snap fa-lg" aria-hidden="true"></i>
+                  <i class="fab fa-snapchat-ghost soc-media fa-lg" aria-hidden="true"></i>
                 </a>
 
                 <br>

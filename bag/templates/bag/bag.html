@@ -33,7 +33,7 @@
                         <div class="row">
                             <div class="col">
                                 {% include "bag/checkout-buttons.html" %}
-                                <p class="text-muted mb-5">A summary of your bag contents is below</p>
+                                <p class="text-muted mb-5 summary-text">A summary of your bag contents is below:</p>
                             </div>
                         </div>
                         {% for item in bag_items %}
@@ -100,8 +100,8 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <p class="lead mb-3 margin-t">Your bag is empty.</p>
+                    <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 btn-sm margin-b">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
