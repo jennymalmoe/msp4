@@ -28,7 +28,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
-                    <p class="mb-0">{{ product.name }}</p>
+                    <p class="mb-0"><strong>{{ product.name }}</strong></p>
                     <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
@@ -58,7 +58,7 @@
                             {% if s %}
                                 <div class="col-12">
                                     <p><strong>Size:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                    <select class="form-control rounded-0 w-50 form-select" name="product_size" id='id_product_size'>
                                         <option value="xs">XS</option>
                                         <option value="s">S</option>
                                         <option value="m" selected>M</option>
@@ -96,13 +96,11 @@
                             </div>
                             <!-- Column 2, submit btn, keep shopping btn and hidden input that redirect user back to same page as before once the product is added to the bag -->
                             <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 mt-5">
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
+                                <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 mt-2">
+                                    
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-dark rounded-0 text-uppercase mt-5" value="Add to Bag">
+                                <input type="submit" class="btn btn-dark rounded-0 text-uppercase mt-2" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% endwith %}

@@ -1,6 +1,6 @@
 /* ------------------------------ General */
 /* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lato:wght@100;300;400;700&display=swap');
 
 
 html {
@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: lato;
+    font-family: lato 100;
     color: rgb(0, 0, 0);
     
 }
@@ -20,6 +20,8 @@ h4 {
 .container-fluid {
     max-width: 100%;
 }
+
+
 
 /* Icon class from Bulma */
 .icon {
@@ -184,7 +186,7 @@ a.category-badge > span.badge:hover {
 }
 
 .toast-capper {
-    height: 6px;
+    height: 20px;
     background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
 }
 
@@ -199,42 +201,6 @@ a.category-badge > span.badge:hover {
     z-index: 99999999999;
 }
 
-/* Convenience classes - colors copied from Bootstrap */
-.arrow-up {
-    border-bottom-color: #ffc107 !important;
-}
-
-.arrow-primary {
-    border-bottom-color: rgb(247, 162, 4) !important;
-}
-
-.arrow-secondary {
-    border-bottom-color: #6c757d !important;
-}
-
-.arrow-success {
-    border-bottom-color: #ffc107 !important;
-}
-
-.arrow-danger {
-    border-bottom-color: #dc3545 !important;
-}
-
-.arrow-warning {
-    border-bottom-color: $yellow-600 !important;
-}
-
-.arrow-info {
-    border-bottom-color: #f7aa04 !important;
-}
-
-.arrow-light {
-    border-bottom-color: #f8f9fa !important;
-}
-
-.arrow-dark {
-    border-bottom-color: #343a40 !important;
-}
 
 .bag-notification-wrapper {
     height: 100px;
@@ -449,7 +415,6 @@ main {
     position: relative;
     background-color: #000000;
     color:#FFF;
-    font-weight: lighter;
 }
 
 .hand {
@@ -530,11 +495,19 @@ main {
 /* ------------------------------ Checkout */
 .update-link {
     color: rgb(247, 162, 4);
+    cursor: pointer;
+}
+.update-link:hover {
+    color: rgb(247, 162, 4);
+}
+
+.remove-item {
+    cursor: pointer;
 }
 
 /* Checkout form */
 .form-group {
-    padding-top: 10px;
+    
     padding-bottom: 10px;
 }
 
@@ -644,7 +617,7 @@ main {
 
 .card-img-top {
     border-radius: 0px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 /* On screens that are 600px or less, set the image-container to padding-top 70 px */
@@ -652,7 +625,7 @@ main {
     .image-container, 
     .bag-total-mobile,
     .card-img-top {
-      margin-top: 70px;
+      margin-top: 80px;
     }
   }
 
@@ -670,9 +643,22 @@ main {
      .margin-t {
         margin-top: 30px;
     }
+
+    .margin-less {
+        margin-bottom: 5px;
+    }
+
     .margin-more {
         margin-top: 130px;
     }
   }
 
+/* Checkout page*/
+.keep-shopping {
+    font-size: small;
+}
 
+/* Cart icon in navbar */
+.account-bag:active {
+    color:#dc3545 !important;
+}

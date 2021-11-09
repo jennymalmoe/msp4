@@ -95,7 +95,7 @@
                       <!-- If something in bag -->
                       <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-dark{% endif %} nav-link" href="{% url 'view_bag' %}">
                           <div class="text-center">
-                              <div><i class="fas fa-shopping-cart fa-lg account-bag text-dark"></i></div>
+                              <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                               <p class="my-0 text-dark">
                                   {% if grand_total %}
                                       ${{ grand_total|floatformat:2 }}
