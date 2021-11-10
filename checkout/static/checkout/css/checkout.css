@@ -63,4 +63,5 @@ select:invalid {
     justify-content: center;
     margin: 0;
     height: 100%;
+    color: red;
 }

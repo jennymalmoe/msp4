@@ -43,9 +43,9 @@
   <body>
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <a href="{% url 'home' %}" class="nav-link logo-font main-logo-link">
-                    <h2 class="logo-font my-0 text-dark">➳BOHO Living➳</h2>
+                    <h2 class="logo-font my-3 text-dark logo">➳BOHO Living➳</h2>
                   </a>
             </div>
             <!-- Search -->
@@ -64,7 +64,7 @@
               </form>
             </div>
             <!-- My Account -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 account-bag">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
               <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                   <li class="list-inline-item dropdown">
                       <a class="nav-link text-black" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -119,7 +119,7 @@
             {% include 'includes/main-nav.html' %}
           </nav>
         </div>
-        <!-- Delivery banner -->
+        <!-- Delivery alert-->
         <div id="delivery-banner" class="row text-center">
           <div class="col bg-black">
             <h4 class="logo-font my-1">➳ Free delivery on orders over ${{ free_delivery_threshold }} ➳</h4>                
