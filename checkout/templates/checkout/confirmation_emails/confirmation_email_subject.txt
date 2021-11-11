@@ -1,1 +1,1 @@
-BOHO Living Confirmation for Order Number {{ order.order_number }}
+Order confirmation BOHO Living {{ order.order_number }}
