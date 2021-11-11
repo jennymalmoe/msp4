@@ -114,7 +114,7 @@ This user story template consists of three sections; As a (decription of user), 
 | 8   | Shopper    | Be able to reach out to siteowner                              |  Get answers to any possible questions
 |     |            | **_Registration_**                              |                                                                                       |
 | 5   | User   | Register for an account by entering email, password and confirming my password                                         | Can access to Boho Living                                          |
-| 5   | User   | Register for an account                                           | Save my delivery details and order history, get mails with news and offers                                          |
+| 5   | User   | Register for an account                                           | Save default delivery information and keep a record of order history, get mails with news and offers                                          |
 | 6   | Reg User   | Quickly login/out                                                 | Access my account                                                                     |
 | 7   | User   | Request a password reset                                          | Receive an email to reset my password in case I forget it                            |
 | 8   | User   | Receive an email confirming my registration                       | Verify my account was registered successfully                                         |
