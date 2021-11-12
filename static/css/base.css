@@ -10,6 +10,11 @@ body {
     color: rgb(0, 0, 0);
 }
 
+h1 {
+    font-family: architects daughter;
+    text-transform: uppercase;
+}
+
 h4 {
     color:rgb(247, 162, 4);
 }
@@ -447,7 +452,7 @@ main {
     font-size: small;
 }
 
-/* ------------------------------ Sign in */
+/* ------------------------------ Sign up */
 .margin-b {
     margin-bottom: 30px;
 }
@@ -456,6 +461,13 @@ main {
 .confirm {
     margin-top: 200px;
 }
+
+/* ------------------------------ Logout */
+.margin-b {
+    margin-bottom: 300px;
+    margin-top: 200px;
+}
+
 
 /* -------------------------------- Media Queries */
 
