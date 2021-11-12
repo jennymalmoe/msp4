@@ -395,7 +395,7 @@ main {
 }
 
 #id_default_country {
-   background-color: #dc3545; 
+   
 }
 
 /* ------------------------------ Blog */
@@ -452,6 +452,10 @@ main {
     margin-bottom: 30px;
 }
 
+/* ------------------------------ Confirm email */
+.confirm {
+    margin-top: 200px;
+}
 
 /* -------------------------------- Media Queries */
 

@@ -21,7 +21,7 @@ function topFunction() {
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// TOAST
+// Toasts
 // Bootstrap 5 toast initialisation
 let toastElList = [].slice.call(document.querySelectorAll('.toast'))
 let toastList = toastElList.map(function (toastEl) {
