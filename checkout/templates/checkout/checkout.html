@@ -106,7 +106,7 @@
                         <div class="form-check form-check-inline float-end mr-0">
                             <!-- Checkbox for authenticated users allowing them to save their info and autofill next time -->
 							{% if user.is_authenticated %}
-								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
+								<label class="form-check-label float-end" for="id-save-info">Save this delivery information to my profile</label>
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
                             <!-- If not authenticated -> links to signup or login -->
 							{% else %}

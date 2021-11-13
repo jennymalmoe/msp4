@@ -106,7 +106,7 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        # Attempt to prefill the form with any info the user maintains in their profile
+        # Prefill form with info user has in profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
@@ -121,6 +121,7 @@ def checkout(request):
                     'street_address2': profile.default_street_address2,
                     'county': profile.default_county,
                 })
+            # If user not authenticated -> empty form
             except UserProfile.DoesNotExist:
                 order_form = OrderForm()
         else:
