@@ -209,7 +209,7 @@ This user story template consists of three sections; As a (decription of user), 
 ## Wireframes 
 
 
-* [Mobile](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/mobile/wireframes_mobile.pdf) 
+* [Mobile](readme_img/wireframes/mobile/wireframes_mobile_1.png) 
 * [Tablet](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/tablet/wireframes_tablet.pdf)
 * [Desktop](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/desktop/wireframes_desktop.pdf)
 
