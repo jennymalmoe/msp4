@@ -33,4 +33,3 @@ let toastList = toastElList.map(function (toastEl) {
   let bsToast = new bootstrap.Toast(toastEl, option)
   bsToast.show();
 })
-C

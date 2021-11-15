@@ -624,4 +624,6 @@ Potential to convert more readers into paying customers and clients.
 
 future blog: email lists, push notifications, share on social media, comments, movies, 
 
-bug when stripe no confirmation mail in terminal 404 error, "edit webhook endpoint" in stripe and then got an 200 error in terminal, payment_intent.succeeded in stripe, but no conf mail still,  then changed from private to public  8000 port 
+bug when stripe no confirmation mail in terminal 404 error, "edit webhook endpoint" in stripe and then got an 200 error in terminal, payment_intent.succeeded in stripe, but no conf mail still,  then changed from private to public  8000 port. Well, the webhook itself wasn't set up quite right either, so a combo. (STRIPE_WH_SECRET not KEY till slut) så det va det och att the webhook it self wasn't set up right. added 8000- i början and checkout/wh/ in the end. 
+
+So a word of warning about your webhooks still. This all works fine for your local endpoint, but if you're going to use the heroku one it will need a different WH_SECRET_KEY in your Heroku cvars. You can find this by Reveal the signing secret you find for the heroku endpoint in Stripe website. So both local and deployed site have the same STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY but they will have different STRIPE_WH_SECRET.
