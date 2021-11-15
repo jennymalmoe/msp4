@@ -209,9 +209,9 @@ This user story template consists of three sections; As a (decription of user), 
 ## Wireframes 
 
 
-* [Mobile](wireframes/mobile) 
-* [Tablet](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/tablet/wireframes_tablet.pdf)
-* [Desktop](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/desktop/wireframes_desktop.pdf)
+* [Mobile](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/mobile) 
+* [Tablet](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/tablet)
+* [Desktop](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/desktop)
 
 <br>
 
@@ -623,3 +623,5 @@ Having an active community around your blog is proof and validation that your bl
 Potential to convert more readers into paying customers and clients.
 
 future blog: email lists, push notifications, share on social media, comments, movies, 
+
+bug when stripe no confirmation mail in terminal 404 error, "edit webhook endpoint" in stripe and then got an 200 error in terminal, payment_intent.succeeded in stripe, but no conf mail still,  then changed from private to public  8000 port 
