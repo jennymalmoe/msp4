@@ -24,7 +24,7 @@
                 Home Decor
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="home-decor-link">
-                <a href="{% url 'products' %}?category=new_in" class="dropdown-item">New In</a>
+                <a href="{% url 'products' %}?category=new_in_home" class="dropdown-item">New In Home Decor</a>
                 <a href="{% url 'products' %}?category=furnitures" class="dropdown-item">Furnitures</a>
                 <a href="{% url 'products' %}?category=decor" class="dropdown-item">Decor</a>
                 <a href="{% url 'products' %}?category=textiles" class="dropdown-item">Textiles</a>
@@ -38,10 +38,11 @@
                 Fashion
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="fashion-link">
+                <a href="{% url 'products' %}?category=new_in_fashion" class="dropdown-item">New In Fashion</a>
                 <a href="{% url 'products' %}?category=clothes" class="dropdown-item">Clothes</a>
                 <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
                 <a href="{% url 'products' %}?category=bags" class="dropdown-item">Bags</a>
-                <a href="{% url 'products' %}?category=clothes,accessories,bags" class="dropdown-item">All Fashion</a>
+                <a href="{% url 'products' %}?category=new_in,clothes,accessories,bags" class="dropdown-item">All Fashion</a>
             </div>
         </li>
         <!-- Menu "Outlet" -->

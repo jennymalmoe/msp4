@@ -16,13 +16,9 @@ This is an e-commerce web application for a fictional company. The application f
 
 This website is only for educational purposes and the stripe functionality is set up to accept test card details, please don't enter your personal card details.
 
-To use the stripe function use the following details:
+To use the Stripe function use the following details:
 
-Card number: 4242 4242 4242 4242
-
-Date: 4242?
-
-CVV Number:424?
+Card number: 4242 4242 4242 4242 Date: 4242 CVV Number:424
 
 <br>
 

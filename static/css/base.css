@@ -326,6 +326,11 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 }
 
+/* ------------------------------ Profile */
+.profile {
+    margin-top: 100px;
+}
+
 /* ------------------------------ Footer */
 main {
 	flex: 1 0 auto;
@@ -470,8 +475,12 @@ main {
 
 /* ------------------------------ Logout */
 .margin-b {
-    margin-bottom: 300px;
-    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-top: 150px;
+    margin-left: 30px;
+}
+.sign-out {
+    display: block;
 }
 
 
@@ -517,7 +526,10 @@ main {
   
     .hero-container {
         max-width: 100%;
-    }    
+    }  
+    .profile {
+        margin-top: 90px;
+        }  
 }
  
 @media (max-width: 992px) {
@@ -581,6 +593,9 @@ main {
     .card-img-top {
       margin-top: 80px;
     }
+    .profile {
+        margin-top: 140px;
+        }
 }
 
 @media screen and (min-width: 576px) {
@@ -627,6 +642,9 @@ main {
 .bag-total-mobile,
 .card-img-top {
     margin-top: 20px;
+    }
+.profile {
+    margin-top: 120px;
     }
 }
 

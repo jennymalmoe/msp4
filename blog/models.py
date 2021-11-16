@@ -21,6 +21,7 @@ class BlogPost(models.Model):
 	author 					= models.ForeignKey(User, on_delete=models.CASCADE)
 	slug 					= models.SlugField(blank=True, unique=True)
 
+
 	def __str__(self):
 		return self.title
 
