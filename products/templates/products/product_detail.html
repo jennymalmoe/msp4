@@ -23,13 +23,13 @@
                         <a href="">
                             <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                         </a>
-                    {% endif %}
+                    {% endif %} 
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0"><strong>{{ product.name }}</strong></p>
-                    <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                    <p class="lead mb-0 mt-1 text-left font-weight-bold">${{ product.price }}</p>
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
                         <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -68,7 +68,7 @@
                                 </div>
                             {% endif %}
                             <div class="col-12">
-                                <p class="mt-3"><strong>Quantity:</strong></p>
+                                <p class="mt-4"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
@@ -96,7 +96,7 @@
                             </div>
                             <!-- Column 2, submit btn, keep shopping btn and hidden input that redirect user back to same page as before once the product is added to the bag -->
                             <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 mt-2">
+                                <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 mt-5">
                                     
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
