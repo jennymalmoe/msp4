@@ -352,6 +352,11 @@ main {
     margin-right: 15px;
 }
 
+.share-style {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .footer-arrow {
     text-align: center; 
     font-size: 70px;
@@ -400,16 +405,18 @@ main {
     padding-top: 10px;
 }
 
+.submit-button {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 /* ------------------------------ Checkout form */
 .form-group {
     padding-bottom: 10px;
 }
 
 /* ------------------------------ Blog */
-.form-group1 {
-    padding-top: 200px;
-}
-
+/* Blog intro text */
 .blog-headline {
     padding-top: 200px;
     text-align: center;
@@ -420,7 +427,7 @@ main {
     text-align: center;
 }
 
-.create-post {
+.create-post-btn {
     text-align: center;
     color: #FFFFFF;
 }
@@ -430,21 +437,35 @@ main {
     margin-bottom: 20px;
 }
 
-.inspire-btn {
+/*.inspire-btn {
     margin-bottom: 20px;
     margin-top: 20px;
     font-size: larger;
+ }*/
+
+ /* Blog posts */
+ .page-heading {
+     margin-bottom: 20px;
+     margin-top: 0px;
+     text-align: center;
+ }
+
+ .blog-title {
+     background: #000000;
+     color: #FFFFFF;
  }
  
- .share-style {
-     margin-top: 20px;
+ .read-more {
      margin-bottom: 20px;
  }
 
- .submit-button {
-     margin-bottom: 10px;
-     margin-top: 10px;
+ .create-post-btn {
+     margin-bottom: 20px;
+     margin-top: 20px;
  }
+ 
+
+ 
 
 /* ------------------------------ Bag */
 .lead {
@@ -515,7 +536,9 @@ main {
       left: 0;
        z-index: 1030;
     }
-  
+    
+    
+
     .header-container {
         padding-top: 104px;
     }
