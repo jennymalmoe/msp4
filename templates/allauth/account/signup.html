@@ -6,7 +6,7 @@
 
 {% block inner_content %}
 <hr>
-<h2 class="logo-font mb-4 text-dark margin-t">{% trans "Sign Up" %}</h2>
+<h2 class="logo-font text-dark mb-1 sign-up">{% trans "Sign Up" %}</h2>
 <hr>
 
 <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
@@ -17,7 +17,7 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <button type="submit" class="margin-b">{% trans "Sign Up" %} &raquo;</button>
+  <button type="submit" class="sign-up-btn">{% trans "Sign Up" %} &raquo;</button>
 </form>
 
 {% endblock %}

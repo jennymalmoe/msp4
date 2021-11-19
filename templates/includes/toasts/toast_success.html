@@ -44,6 +44,9 @@
                         </p>
                     {% endif %}
                     <a href="{% url 'view_bag' %}" class="btn btn-dark d-grid gap-2 d-md-block rounded-0 my-3">
+                        <span class="text-uppercase">View bag <i class="fas fa-shopping-cart"></i></span>
+                    </a>
+                    <a href="{% url 'checkout' %}" class="btn btn-dark d-grid gap-2 d-md-block rounded-0 my-3">
                         <span class="text-uppercase">Go To Secure Checkout <i class="fas fa-lock"></i></span>
                     </a>
                 </div>

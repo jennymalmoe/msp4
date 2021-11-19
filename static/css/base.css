@@ -113,10 +113,17 @@ input[name='q']::placeholder {
     color: #aab7c4;
  }
 
+ .sub-text {
+     color:#FFFFFF !important;
+ }
  /* ------------------------------ Delivery alert */
 #delivery-banner h4 {
     font-size: 30px;
     color: #FFFFFF !important;
+}
+
+. {
+    padding-top: 0px;
 }
 
  /* ------------------------------ Hero */
@@ -130,7 +137,7 @@ input[name='q']::placeholder {
 }
 
 .hero-info {
-    margin-left: 240px;
+    margin-left: 170px;
     padding-top: 60px;
     text-shadow: #FC0 1px 0 10px;
     color: #000000;
@@ -210,13 +217,21 @@ a.category-badge > span.badge:hover {
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
+.image-container {
+    padding-top: 80px;
+}
+
+.product-details-container {
+    padding-top: 120px;
+}
+
 /* ------------------------------ Toasts */
 .custom-toast {
     overflow: visible;
 }
 
 .toast-capper {
-    height: 20px;
+    height: 24px;
     background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
 }
 
@@ -237,15 +252,16 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
-.bag-total {
-    text-align: right;
-}
+
 
 .checkout-form {
     padding-top: 10px;
 }
 
 /* ------------------------------ Allauth */
+.allauth {
+    margin-top: 100px;
+}
 .allauth-form-inner-content p {
     margin-top: 1.5rem; 
     color: #6c757d; 
@@ -401,10 +417,11 @@ main {
 }
 
 .text-alerts {
-    color: rgb(247, 162, 4);
     padding-top: 10px;
 }
-
+.icon-exclamation {
+    color: rgb(247, 162, 4);
+}
 .submit-button {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -451,8 +468,7 @@ main {
  }
 
  .blog-title {
-     background: #000000;
-     color: #FFFFFF;
+     font-family: architects daughter;
  }
  
  .read-more {
@@ -479,9 +495,14 @@ main {
 .summary-text {
     margin-top: 20px;
 }
+.shopping-bag {
+    margin-bottom: 120px;
+}
 
 /* ------------------------------ Sign up */
-.margin-b {
+
+.sign-up-btn {
+    padding-top: 10px;
     margin-bottom: 30px;
 }
 
@@ -489,6 +510,9 @@ main {
 .confirm {
     margin-top: 200px;
 }
+
+/* ------------------------------ Login */
+
 
 /* ------------------------------ Logout */
 .margin-b {
@@ -536,13 +560,10 @@ main {
       left: 0;
        z-index: 1030;
     }
-    
-    
-
     .header-container {
         padding-top: 104px;
     }
-  
+    
     .hero-container {
         max-width: 100%;
     }  
@@ -558,7 +579,6 @@ main {
     .hero-container {
        max-width: 100%;
     }
-
     body {
         height: calc(100vh - 116px);
     }
@@ -566,6 +586,7 @@ main {
     .text-black {
         color: #000000 !important;
     }
+    
 
     .display-4.logo-font {
         font-size: 4rem;
@@ -610,14 +631,33 @@ main {
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
-    .image-container, 
-    .bag-total-mobile,
-    .card-img-top {
+    .image-container {
+        padding-top: 110px;
+    } 
+    .bag-total-mobile {
       margin-top: 80px;
     }
     .profile {
         margin-top: 140px;
         }
+    .prod-heading {
+        padding-top: 100px;
+    }
+    .card-img-top {
+        margin-top: 10px;
+    }
+    .allauth {
+        margin-top: 140px;
+    }
+    .hero-info {
+        margin-left: 50px;
+        padding-top: 250px;
+        text-shadow: #FC0 1px 0 10px;
+        color: #000000;
+    }
+    .shopping-bag {
+        margin-bottom: 140px;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -651,6 +691,18 @@ main {
         margin-bottom: 10px;
         margin-top: 10px;
     }
+    .prod-heading {
+        padding-top: 80px;
+    }
+    .product-details-container {
+        padding-top: 0px;
+    }
+    .image-container {
+        padding-top: 110px;
+    }   
+    .allauth {
+        margin-top: 130px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -662,19 +714,21 @@ main {
 
 @media screen and (max-width: 576px) {
 .hero-info {
-    margin-left: 30px;
-    padding-top: 340px;
+    margin-left: 10px;
+    padding-top: 500px;
     text-shadow: #FC0 1px 0 10px;
     color: #000000;
     }
-.image-container, 
 .bag-total-mobile,
 .card-img-top {
-    margin-top: 90px;
+    margin-top: 10px;
     }
 .profile {
     margin-top: 120px;
     }
+.search-term {
+    text-align: center;
+}
 }
 
 
