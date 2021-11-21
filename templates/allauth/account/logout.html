@@ -5,9 +5,8 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block content %}
-<hr>
-<h2 class="logo-font mb-4 mx-5 text-dark margin-b sign-out">{% trans "Sign Out" %}</h2>
-<hr>
+
+<h2 class="logo-font mx-5 text-dark sign-out">{% trans "Sign Out" %}</h2>
 
 <p class="mx-5">{% trans 'Are you sure you want to sign out?' %}</p>
 
@@ -16,7 +15,7 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
   {% endif %}
-  <button class="sign-out mx-auto my-5" type="submit">{% trans 'Sign Out' %}</button>
+  <button class="sign-out-btn my-5 d-flex" type="submit">{% trans 'Sign Out' %}</button>
 </form>
 
 

@@ -34,10 +34,8 @@ h4 {
 
 /* ------------------------------ Buttons */
 .pulse {
-    width: 70px;
-    height: 70px;
-    background-color: red;
-    border-radius: 50%;
+    width: 114px;
+    height: 30px;
     position: relative;
     animation: animate 3s linear infinite
 }
@@ -55,11 +53,11 @@ h4 {
 
 @keyframes animate {
     0% {
-        box-shadow: 0 0 0 0 rgb(255, 109, 74, 0.7), 0 0 0 0 rgb(255, 109, 74, 0.7)
+        box-shadow: 0 0 0 0 rgba(252, 194, 3, 0.7), 0 0 0 0 rgba(236, 210, 59, 0.7)
     }
 
     40% {
-        box-shadow: 0 0 0 50px rgb(255, 109, 74, 0), 0 0 0 0 rgb(255, 109, 74, 0.7)
+        box-shadow: 0 0 0 50px rgb(255, 109, 74, 0), 0 0 0 0 rgba(243, 158, 143, 0.7)
     }
 
     80% {
@@ -442,6 +440,9 @@ main {
 
 
 /* ------------------------------ Checkout */
+.checkout {
+    margin-top: 140px;
+}
 .update-link {
     color: rgb(247, 162, 4);
     cursor: pointer;
@@ -455,7 +456,7 @@ main {
 }
 
 .check-out-content {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .delivery-fieldset {
@@ -500,12 +501,6 @@ main {
     margin-bottom: 20px;
 }
 
-/*.inspire-btn {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: larger;
- }*/
-
  /* Blog posts */
  .page-heading {
      margin-bottom: 20px;
@@ -527,8 +522,6 @@ main {
  }
  
 
- 
-
 /* ------------------------------ Bag */
 .lead {
     margin-top: 15px;
@@ -546,7 +539,6 @@ main {
 }
 
 /* ------------------------------ Sign up */
-
 .sign-up-btn {
     padding-top: 10px;
     margin-bottom: 30px;
@@ -568,6 +560,9 @@ main {
 }
 .sign-out {
     display: block;
+}
+.sign-out-btn {
+    margin-left: 50px;
 }
 
 
@@ -597,7 +592,19 @@ main {
         font-size: xx-small;
     }
     .sign-out {
-        margin-top: 200px;
+        padding-top: 100px;
+    }
+    .shopping-bag {
+        margin-bottom: 200px;
+    }
+    .allauth-form-inner-content {
+        margin-top: 90px;
+    }
+    .prod-head {
+        padding-top: 80px;
+    }
+    .badge-style {
+        font-size: 12px;
     }
 }
 
@@ -655,7 +662,7 @@ main {
         margin-top: 120px;
     }
     .search-term {
-            text-align: center;
+        text-align: center;
     }
     .sub-text {
         font-size:x-small;
@@ -663,8 +670,20 @@ main {
     .logo-font {
         font-size: 25px;
     }
+    .logo-small-devices {
+        font-size: 10px;
+    }
     .shop-text {
         font-size: 20px;
+    }
+    .sign-out {
+        margin-top: 140px;
+    }
+    .pulse {
+        width: 136px;
+        height: 35px;
+        position: relative;
+        animation: animate 3s linear infinite
     }
 }
 
@@ -701,6 +720,12 @@ main {
    .margin-more {
        margin-top: 120px;
    }
+   .shopping-bag {
+    padding-bottom: 30px;
+    }
+    .sign-out {
+        margin-top: 160px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -723,6 +748,18 @@ main {
     }  
     .x {
         margin-top: 90px;
+    }
+    .shopping-bag {
+        margin-bottom: 80px;
+    }
+    .allauth {
+        margin-top: 110px;
+    }
+    .sign-out {
+        margin-top: 240px;
+    }
+    .prod-heading {
+        padding-top: 80px;
     }
 }
  

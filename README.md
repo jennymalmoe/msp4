@@ -16,9 +16,9 @@ This is an e-commerce web application for a fictional company. The application f
 
 This website is only for educational purposes and the stripe functionality is set up to accept test card details, please don't enter your personal card details.
 
-To use the Stripe function use the following details:
+When using the Payment Intents API with Stripe’s client libraries and SDKs, use the following test card number:
 
-Card number: 4242 4242 4242 4242 Date: 4242 CVV Number:424
+No authentication (default U.S. card): 4242 4242 4242 4242 Date: 4242 CVV Number:424
 
 <br>
 

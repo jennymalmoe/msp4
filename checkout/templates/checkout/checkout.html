@@ -18,9 +18,9 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col checkout">
                 <hr>
-                <h2 class="logo-font mb-4 text-dark text-center">Checkout</h2>
+                <h2 class="logo-font text-dark text-center">Checkout</h2>
                 <hr>
             </div>
         </div>
@@ -63,7 +63,7 @@
                 {% endfor %}
                 <hr class="my-0">
                 <!-- Summary, totals and delivery cost-->
-                <div class="row text-black text-end">
+                <div class="row text-end">
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>
                         <p class="my-0">Delivery:</p>
@@ -82,13 +82,13 @@
                     {% csrf_token %}
                     <!-- Details fieldset -->
                     <fieldset class="rounded px-3 details-fieldset">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
+                        <legend class="fieldset-label small px-2 w-auto">Details</legend>
                         {{ order_form.full_name | as_crispy_field }}
                         {{ order_form.email | as_crispy_field }}
                     </fieldset>
                     <!-- Delivery fieldset -->
                     <fieldset class="rounded px-3 mb-5 delivery-fieldset">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
+                        <legend class="fieldset-label small px-2 w-auto">Delivery</legend>
                         {{ order_form.phone_number | as_crispy_field }}
                         {{ order_form.street_address1 | as_crispy_field }}
                         {{ order_form.street_address2 | as_crispy_field }}
@@ -105,7 +105,7 @@
                         
                         
                         {{ order_form.country | as_crispy_field }}
-                        <div class="form-check form-check-inline float-right mr-0">
+                        <div class="form-check form-check-inline float-end mr-0">
                         <div class="form-check form-check-inline float-end mr-0">
                             <!-- Checkbox for authenticated users allowing them to save their info and autofill next time -->
 							{% if user.is_authenticated %}
@@ -122,7 +122,7 @@
                     </fieldset>
                     <!-- Payment fieldset -->
                     <fieldset class="px-3">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+                        <legend class="fieldset-label small px-2 w-auto">Payment</legend>
                         <!-- Stripe card element -->
                         <div class="mb-3" id="card-element"></div>
                         <!-- Used to display form errors -->
