@@ -51,17 +51,16 @@ select:invalid {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   background-image: url('/media/bgimg.jpg');
   background-size: cover;
   z-index: 9999999999;
-  
 }
 
 .loading-spinner {
 	display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
 }

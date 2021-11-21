@@ -8,7 +8,7 @@
 
 <br>
 
-![site on different devices](static/images/mock_up.png) 
+![site on different devices](media/screen_all_devices.png) 
 
 BOHO Living is an online home decor shop that offers a selection of trendy home decor and fashion items inspired by the modern bohemian style.
 
@@ -26,42 +26,55 @@ No authentication (default U.S. card): 4242 4242 4242 4242 Date: 4242 CVV Number
 
 ___
 
-## [User Experience](#user-experience)
-* [**Project Goals**](#project-goals)
-* [**Business Goals**](#business-goals)
-* [**User Stories**](#user-stories)
-* [**Design Choices**](#design-choices)
-    * [Color scheme](#color-scheme)
-    * [Typography](#typography)
-    * [Imagery](#imagery)
-    * [Icons](#icons)
-* [**Wireframes**](#wireframes)
+- [User Experience](#user-experience)
+  * [Project Goals](#project-goals)
+  * [Business Goals](#business-goals)
+  * [User Stories](#user-stories)
+  * [Design Choices](#design-choices)
+    + [Color scheme](#color-scheme)
+    + [Typography](#typography)
+    + [Imagery](#imagery)
+    + [Icons](#icons)
 
-## [Features](#features)
-* [**Existing Features**](#existing-features)
-* [**Features Left to Implement**](#features-left-to-implement)
+  * [Wireframes](#wireframes)
 
-## [Database Design](#database-design)
+<br>
 
-## [Technologies Used](#technologies-used)
-* [**Languages**](#languages)
-* [**Frameworks, Libraries & Programs**](#frameworks,libraries-programs)
+- [Features](#features)
+  * [Existing Features](#existing-features)
+  * [Features Left to Implement](#features-left-to-implement)
 
-## [Testing](#testing)
-* [**Testing User Stories from User Experience (UX) Section**](#testing-user-stories-from-user-experience-(UX)-section)
-* [**Further Testing**](#further-teseting**)
-* [**Known Bugs**](#known-bugs**)
+<br>
 
-## [Deployment](#deployment)
-* [**GitHub Pages**](#github-pages)
-* [**Forking the GitHub Repository**](#forking-the-github-repository)
-* [**Making a Local Clone**](#making-a-local-clone)
+- [Database Design](#database-design)
 
-## [Credits](#credits)
-* [**Code**](#code)
-* [**Content**](#content)
-* [**Media**](#media)
-* [**Acknowledgements**](#acknowledgements)
+<br>
+
+- [Technologies Used](#technologies-used)
+  * [Languages](#languages)
+  * [Frameworks, Libraries & Programs](#frameworks,libraries-programs)
+
+  <br>
+
+- [Testing](#testing)
+  * [Testing User Stories from User Experience (UX) Section](#testing-user-stories-from-user-experience-(UX)-section)
+  * [Further Testing](#further-teseting**)
+  * [Known Bugs](#known-bugs**)
+
+<br>
+
+- [Deployment](#deployment)
+  * [GitHub Pages](#github-pages)
+  * [Forking the GitHub Repository](#forking-the-github-repository)
+  * [Making a Local Clone](#making-a-local-clone)
+
+<br>
+
+- [Credits](#credits)
+  * [Code](#code)
+  * [Content](#content)
+  * [Media](#media)
+  * [Acknowledgements](#acknowledgements)
 
 <br>
 
@@ -83,6 +96,8 @@ Create a web application that allows users/store owner to:
 * Edit products (UPDATE)
 * Delete products (DELETE)
 
+<br>
+
 ## Business Goals
 
 <br>
@@ -90,6 +105,8 @@ Create a web application that allows users/store owner to:
 This e-commerce website focus on maximizing direct sales to new and returning customers (convert a website visitor into a customer) by simplify and optimize content to be easy to shop (user friendly site). Also establishing brand recognition in the industry.  Target audience?
 
 In addition to the goals above; also blog etc
+
+<br>
 
 ## User Stories
 

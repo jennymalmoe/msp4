@@ -1,7 +1,7 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <!-- Menu "Home" -->
-        <li class="nav-item d-block d-md-none">
+        <li class="nav-item d-block">
             <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="{% url 'home' %}" id="home-link">
                 Home
             </a>
@@ -47,13 +47,19 @@
         </li>
         <!-- Menu "Outlet" -->
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-dark" href="{% url 'products' %}?category=outlet" id="outlet-link">
+            <a class="logo-font nav-link text-dark" href="{% url 'products' %}?category=outlet" id="outlet-link">
                 Outlet
             </a>
         </li>
         <!-- Menu "Blog" -->
         <li class="nav-item">
             <a class="logo-font nav-link text-dark" href="{% url 'blog' %}" id="blog-link">BOHO Blog</a>
+        </li>
+        <!-- Menu "About" -->
+        <li class="nav-item">
+            <a class="logo-font nav-link text-dark" href="{% url 'about' %}" id="about">
+                About Us
+            </a>
         </li>
     </ul>
 </div>
