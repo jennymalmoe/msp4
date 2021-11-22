@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+      <div class="col"></div>
+  </div>
+</div>
+{% endblock %}
+
+
+    <!-- About intro -->
+    {% block content %}
+        <div class="container">
+            <div class="row about">
+                <div class="col-12">
+                    <h1>About Us</h1>
+                        <p class="mb-1">At BOHO Living, we believe style is what you make it,
+                           in life and at home. So we’re here to help you make it yours
+                           – make it cozy, confident, moody, mixed – for way less than you thought possible.
+                        </p>  
+                    <div class="footer-arrow">➳</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Matter -->
+        <form onsubmit="return sendMail(this);" id="contactForm">
+            <div class="px-4">
+                <select class="form-select mb-3" aria-label="Default select example" required>
+                    <option value="" selected>Contact Reason</option>
+                    <option value="1">Support</option>
+                    <option value="2">Billing</option>
+                    <option value="3">Other questions</option>
+                </select>
+            </div>
+            <!-- Contact form -->
+            
+
+
+            <div class="mb-3 px-4">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3 px-4">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your message here" rows="5" required></textarea>
+            </div>
+            <!-- Newsletter -->
+            <div class="form-check mb-3 ms-4">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                Subscribe to BOHO Living newsletter?
+                </label>
+            </div>
+            <!-- Submit btn -->
+            <div class="col-12">
+                <button type="submit" class="btn btn-dark mb-5 ms-4" data-toggle="modal" data-target="#message">SUBMIT</button>
+            </div>
+        </form>
+    {% endblock %}
+

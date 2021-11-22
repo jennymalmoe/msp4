@@ -61,7 +61,7 @@
                         </div>
                     </div>
                 {% endfor %}
-                <hr class="my-0">
+                <hr class="my-2">
                 <!-- Summary, totals and delivery cost-->
                 <div class="row text-end">
                     <div class="col-7 offset-2">
@@ -102,12 +102,12 @@
                             </div>
                         </div>
                         {{ order_form.country | as_crispy_field }}
-                        <div class="form-check form-check-inline float-end mr-0">
-                        <div class="form-check form-check-inline float-end mr-0">
+                        <div class="form-check form-check-inline float-end">
+                        <div class="form-check form-check-inline float-end">
                             <!-- Checkbox for authenticated users allowing them to save their info and autofill next time -->
 							{% if user.is_authenticated %}
-								<label class="form-check-label float-end" for="id-save-info">Save this delivery information to my profile</label>
-                                <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
+								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
+                                <input class="form-check-input" type="checkbox" id="id-save-info" name="save-info" checked>
                             <!-- If not authenticated -> links to signup or login -->
 							{% else %}
 								<label class="form-check-label" for="id-save-info">
@@ -139,7 +139,7 @@
 							</span>
 						</button>
                         <!-- Card is about to be charged alert -->
-						<p class="small text-alerts my-0">
+						<p class="small text-alerts mb-5">
 							<span class="icon icon-exclamation">
 								<i class="fas fa-exclamation-circle"></i>
                             </span>

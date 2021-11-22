@@ -414,6 +414,9 @@ main {
     text-align: center; 
     font-size: 70px;
 }
+.footer-arrow-about {
+    
+}
 
 .contact-btn { 
     text-transform: uppercase; 
@@ -559,6 +562,13 @@ main {
 .sign-out-btn {
     margin-left: 50px;
 }
+
+/* ------------------------------ About */
+.about {
+    padding-top: 150px;
+    
+}
+
 
 
 /* -------------------------------- Media Queries */
