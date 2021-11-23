@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.db.models import Q
 from django.http import HttpResponse
 
@@ -10,21 +10,27 @@ from django.contrib.auth.decorators import login_required
 @login_required
 def create_blog_view(request):
 
+
 	context = {}
+	form = CreateBlogPostForm()
+
+	context['form'] = form
 
 	user = request.user
 	if not user.is_authenticated:
 		return redirect('must_authenticate')
 
-	form = CreateBlogPostForm(request.POST or None, request.FILES or None)
-	if form.is_valid():
-		obj = form.save(commit=False)
-		author = request.user
-		obj.author = author
-		obj.save()
-		form = CreateBlogPostForm()
+	if request.method == 'POST':
+		form = CreateBlogPostForm(request.POST or None, request.FILES or None)
+		if form.is_valid():
+			obj = form.save(commit=False)
+			author = request.user
+			obj.author = author
+			obj.save()
+			
+		
+		return redirect(reverse('blog'))
 
-	context['form'] = form
 
 	return render(request, "blog/create_blog.html", context)
 

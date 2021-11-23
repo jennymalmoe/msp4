@@ -518,6 +518,36 @@ main {
      margin-bottom: 20px;
      margin-top: 20px;
  }
+
+ .preferred-size {
+     font-style: italic;
+     color: grey;
+     font-size: 13px;
+ }
+ .create-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    margin-top: 140px;
+}
+.submit-button {
+    max-width: 200px;
+}
+.form-group1 {
+    margin-bottom: 20px;
+}
+.add-bp {
+    font-family: lato;
+    font-weight: 300;
+}
+.card{
+    max-width: 700px;
+}
+.card-body{
+    padding: 20px;
+}
+
+
  
 
 /* ------------------------------ Bag */
@@ -690,6 +720,9 @@ main {
         position: relative;
         animation: animate 3s linear infinite
     }
+    .create-form {
+        margin-top: 130px;
+    }
 }
 
 /* Small devices (576px or more) */
@@ -766,6 +799,9 @@ main {
     }
     .prod-heading {
         padding-top: 80px;
+    }
+    .create-form {
+        margin-top: 200px;
     }
 }
  

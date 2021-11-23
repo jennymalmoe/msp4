@@ -9,13 +9,12 @@
     </div>
 {% endblock %}
 
+<!-- Blog intro text -->
 {% block content %}
-    <!-- Blog intro text -->
-    <div class="overlay"></div>
-    <div class="container-fluid blog-headline mx-auto">
+    <div class="container-fluid blog-headline">
         <div class="row">
-            <div class="col-12 page-heading mt-2 text-center">
-                <h1>BOHO Living<span style="color:rgb(247, 162, 4);"> Community</span></h1>
+            <div class="col-12 page-heading mt-2">
+                <h1>➳BOHO<span style="color:rgb(247, 162, 4);"> Blog</span>➳</h1>
                     <p class="blog-text">Boho - it’s a word associated with French bohemia.
                         It mostly refers to freedom and combines nature-inspired elements like plants and animals,
                         as well a motives from other cultures. Boho chic decor often uses folklore decorations,
@@ -23,6 +22,8 @@
                         then this is the best community for you. This community is simply a group of people who share
                         the passion for boho living!<br>Welcome! Get inspiration and nail the bohemian style in your home!
                     </p>  
+                <!-- Create post btn -->
+                <div class="create-post-btn"> <a href="{% url 'create' %}" class="btn btn-dark text-uppercase">Create blog post</a> </div>
             </div>
         </div>
         <br>
@@ -37,7 +38,7 @@
                         <!-- Post body collapsed -->
                         <p>{{post.body|slice:":200" }}</p>
                         <!-- Read more btn -->
-                        <a class="btn btn-primary read-more" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                        <a class="btn btn-outline-dark read-more" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                             aria-controls="collapseExample">Read More &rarr;
                         </a>
                 
@@ -48,31 +49,13 @@
                             </div>
                         </div>
                         <!-- Post image -->
-                        <a href="{{ post.image }}">
-                            <img class="card-img-top img-fluid" src="{{ post.image }}">
+                        <a href="{{ post.image.url }}">
+                            <img class="card-img-top img-fluid" src="{{ post.image.url }}">
                         </a>
-
-
-                        <!--<div>
-                            <img class="blog-image"><a href="{{ post.image }}"></a></img>
-                        </div>-->
                 </div>
             {% endfor %}
-            
-            <div class="create-post-btn"> <a href="{% url 'create' %}" class="btn btn-outline-dark">Create post</a> </div>
+            <!-- Create post btn -->
+            <div class="create-post-btn"> <a href="{% url 'create' %}" class="btn btn-dark text-uppercase">Create blog post</a> </div>
 
             </div>
-
-
-            
-
-                <!--<div class="container registered-users">
-                    <div class="d-flex justify-content-center flex_column">
-                        <p>Registered users:</p>
-                        {% for users in account %}
-                            <p>{{user}}</p>
-                        {% endfor %}
-                    </div>
-                </div>-->
-
 {% endblock %}

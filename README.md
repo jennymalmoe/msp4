@@ -10,11 +10,11 @@
 
 ![site on different devices](media/screen_all_devices.png) 
 
-BOHO Living is an online home decor shop that offers a selection of trendy home decor and fashion items inspired by the modern bohemian style.
+BOHO Living (addressed as "B.L") is an online home decor shop that offers a selection of trendy home decor and fashion items inspired by the modern bohemian style.
 
-This is an e-commerce web application for a fictional company. The application features e-commerce functionality, payments using stripe, a blog section, confirmation emails, CRUD functionality for admin to add blog posts and stock items, and an admin section, for the admin user to access database records.
+This is an e-commerce web application for a fictional company, created for the purposes of satisfying the requirements for the Code Institute Full Stack Development Course Milestone Project 4. The application features e-commerce functionality, payments using stripe, a blog section for admin as well as users to add blog posts, confirmation emails, CRUD functionality for admin to add stock items, and an admin section, for the admin user to access database records.
 
-This website is only for educational purposes and the stripe functionality is set up to accept test card details, please don't enter your personal card details.
+This website is only for educational purposes and the stripe functionality is set up to only accept the test card details below, please don't enter your personal card details.
 
 When using the Payment Intents API with Stripe’s client libraries and SDKs, use the following test card number:
 
@@ -102,9 +102,15 @@ Create a web application that allows users/store owner to:
 
 <br>
 
-This e-commerce website focus on maximizing direct sales to new and returning customers (convert a website visitor into a customer) by simplify and optimize content to be easy to shop (user friendly site). Also establishing brand recognition in the industry.  Target audience?
+This e-commerce website focus on maximizing direct sales to new and returning customers (convert a website visitor into a customer) by simplify and optimize content to be easy to shop by a user friendly and well designed online shop that enables secure purchases and inspires. Also establishing brand recognition in the industry. Mission statement: *"To offer quality, popular and affordable boho inspired hoeme decor and fashion".* 
 
-In addition to the goals above; also blog etc
+### Target audience
+
+The target audience for B.L is potential customers liking the bohemian style in home decor and fashion. Since this is e-commerce the conversions is the most important part, rather than traffic it self. Conversions take place when targeted traffic meets relevant offer. So it's important that B.L clearly defined what they offers. To avoid irrelevant traffic B.L makes it clear already in its name that thos is boho inspired e-commerce. By basic SEO and a distinct website (mainly the anding page) B.L defines that they offer boho inspired homedecor and fashion. E-commerce sales increaces worldwide, and develop the need to determine target audience, particularly ecommerce stores. B.L ideal customer is a person that likes/has a boho inpired lifestyle, more than demographic data. Online, the location matters less due to home delivery. Age is not what it used to be, the age isn't the defining thing if somebody turns out to be a paying customer. Conversions take place when targeted traffic meets relevant offer, thats why B.L has a really well defined business name, website and offer. 
+
+After created this customer profile, B.L can make use of demographical information, such as name, address, user behavior etc. B.L get the customers details when filling out the order form, where they also can get access to the newsletter. 
+
+In addition to the goals above; 
 
 <br>
 
@@ -116,72 +122,61 @@ This user story template consists of three sections; As a (decription of user), 
 
 | ID  | As a..    | I want to..                                                    | So I..                                                                           |
 | --- | ---------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-|     |            | **_Viewing and Navigation_**                                      |                                                                                       |
-| 1   | Shopper    | Be presented with an intutive site navigation that is user friendly and over all ease-of-use                              |  Get a good impression about the site and company
-| 2   | Shopper    |    Visit a structured and professional website                       | Understand the main purpose of the site/business  
-| 3   | Shopper    | View list of products                                             | Can see what the website has to offer                                                            |
-| 4   | Shopper    | View details of the products                                           | Easily can see price, description, image, sizes if any                                          |                                             |
-| 5   | Shopper    | See my cart's total at any time                                   | Avoid spending too much                                                               |
-| 6   | Shopper    | Be inspired by the site, the products and the design                              |  Find products to buy (both for visitors that searched for products online and got presented to this site as well for those visitors that visited the site by entering sites address) and return to make more purchase. 
-| 7   | Shopper    | Be presented to some kind of contact information/social media links                              |  Feeling a sence of crediblity
-| 8   | Shopper    | Be able to reach out to siteowner                              |  Get answers to any possible questions
-|     |            | **_Registration_**                              |                                                                                       |
+|     |            | *Viewing and Navigation*                                      |                                                                                       |
+| 1   | First Time Visitor    | Be presented with an intutive site navigation that is user friendly and over all ease-of-use                              |  Get a good impression about the site/business
+| 2   | First Time Visitor    |    Visit a structured, clean and modern website                      | Understand the main purpose of the site/business and find key information
+| 2   | First Time Visitor    |    Get the impression af a professional website                      | Feel comfortable enough to make a purchase
+| 3   | First Time Visitor    |    Get visually impressed by the site                       | Find the site appealing
+| 3   | First Time Visitor    | View structured lists of products                                             | Can see what the website has to offer and make a purchase in just a few clicks                                                          |
+| 4   | First Time Visitor    | View details of the products                                           | Easily can see price, description, image, sizes if any                                          |                                             |    
+| 6   | First Time Visitor    | Find items close to what I was searching online                              |  Can find the items I was looking for 
+| 7   | First Time Visitor    | Be presented to some kind of contact information/social media links                              |  Feeling a sence of crediblity
+| 8   | First Time Visitor    | Be able to reach out to siteowner                              |  Get answers to any possible questions
+| 1   | Returning  Visitor    | Be presented with new/seasonal items                               |  Experience that B.I is up to date and offer me new items than last visiting
+|     |            | *Registration*                              |                                                                                       |
 | 5   | User   | Register for an account by entering email, password and confirming my password                                         | Can access to Boho Living                                          |
 | 5   | User   | Register for an account                                           | Save default delivery information and keep a record of order history, get mails with news and offers                                          |
-| 6   | Reg User   | Quickly login/out                                                 | Access my account                                                                     |
+| 6   | Reg User   | Sign in to my account                                                 | Access my account
+| 6   | Reg User   | Sign out of my account                                                 | Secure that nobody else makes a purchase from my account.                                                                    |
 | 7   | User   | Request a password reset                                          | Receive an email to reset my password in case I forget it                            |
 | 8   | User   | Receive an email confirming my registration                       | Verify my account was registered successfully                                         |
 | 9   | User   | Access my user profile                                            | View my order history, manage my personal details                                     |
-|     |            | **_Login_**                                  |                                                                                       |
+| 9   | User   | Save my personal details (address etc) in my account                                            | Can make a smooth and fast purchase next time.                                     |
+|     |            | *Login*                                  |                                                                                       |
 | 25  | Registered User | Login by entering email and password                                            | Can access the application
 | 25  | Registered User | Reset my password  
-|     |            | **_Logout_**                                  |                                                                                       |
+|     |            | *Logout*                                  |                                                                                       |
 | 25  | Registered User | Be able to logout                                            | Ensure that nobody else are in my account                                          | If I forgot the password
-|     |            | **_Sorting and Searching_**                                       |                                                                                       |
-| 10  | Shopper    | Sort the list of available products                               | See the products in a list sorted by price, rating etc            |
-| 11  | Shopper    | Sort a category of products                                       | See the products in a category sorted by name, price, rating, etc                     |
+|     |            | *Sorting and Searching*                                       |                                                                                       |
+| 10  | Shopper    | Sort the list of available products                               | See the products in a list sorted by price, rating, name etc            |
+| 11  | Shopper    | Be able to search by categories                                       | Find what I am looking for                     |
 | 12  | Shopper    | Sort multiple categories simultaneously                           | Find the best rated or best priced across broad categories |
 | 13  | Shopper    | Search for product                                                | Find a specific product I wish to purchase                                               |
 | 14  | Shopper    | View a list of search results                                     | See if the product I want is available to purchase  
 | 15  | Shopper    | View an image and details for each product                                     | So I can decide if I want to add to cart from the detail or search pages or not.                                   |
-|     |            | **_Purchasing and Checkout_**                                     |                                                                                       |
+|     |            | *Purchasing and Checkout*                                     |                                                                                       |
+| 15  | Shopper    | Be able to add products to my shopping bag     | Can buy the item
 | 15  | Shopper    | Easily select the size and quantity whilst purchasing a product     | Ensure I don't accidentally select the wrong product, quantity, or size               |
+| 5   | Shopper    | Get information about delivery charges, how much I need to spend to get free delivery                                     | Can make an informed purchasing decision                                                         |
+| 5   | Shopper    | See my cart's total at any time                                   | Avoid spending too much
 | 16  | Shopper    | Review my cart                                          | Can make adjustments prior to checkout           |
 | 17  | Shopper    | Adjust the quantity of individual items in my bag                 | Easily adjust the amount of an item I intended to purchase (including removing)       |
 | 18  | Shopper    | Easily enter my payment information                               | Checkout quickly and easily                                                      |
 | 19  | Shopper    | Feel my payment and personal information is secure                | Provide the needed payment and personal information, and feel it is handled safely    |
 | 20  | Shopper    | View confirmation of order before completing purchase             | Verify I haven't made any mistakes                                                    |
-| 21  | Shopper    | Receive confirmation email after checking out                     | To keep record of the purchase
+| 21  | Shopper    | Receive confirmation email of my purchase                     | can be confident that the purchase has been made successfully
 | 22  | Shopper    | The store to have some kind of custom service                     | Can get in touch if I have questions, if something is wrong.                                                   |
-|     |            | **_Admin and Store Management_**                                  |                                                                                       |
-| 22  | Administrator | Modify the list of products                                                     | Can adjust our offerings over time                                                       |
-|     |            | **_Site manager_**                                  |                                                                                       |
+|     |            | *Admin and Store Management*                                  |                                                                                       |
+| 22  | Administrator |  Have access to an admin section                      | Can operate the e-commerce                                                                       |
+| 22  | Administrator | Add **(Create)**, write information about the product **(Read)**, edit **(Update)** and remove **(Delete)** products                                                     | Can be flexible and adjust the offers over time
+| 22  | Administrator |  Be able to keep track of the trafic to the site                     | Can understanding the visitors needs (why they come back, what attracts them, which page brings in the most visitors etc.)
+| 22  | Administrator |  Delete users blog posts, if inappropriate                      | Can keep the site proffessional                                                                       |
+|     |            | *Site manager*                                  |                                                                                       |
 | 25  | Shopper | Be able to manage/edit the site                                            | Keep the site relevant and with correct information/sortiment                                        |
-|     |            | **_Community_**                                  |                                                                                       |
+|     |            | *Community*                                  |                                                                                       |
 | 26  | Shopper | Get inspired and get ideas                                            | Buy items that matches my idea of home decoration                                                          |
 | 27  | Shopper | Be able to contibute with my own ideas by adding a post                                             | Be/feel like a part of the community and contrbute with inspiration and ideas                               |
                                              |
-
-
-* First Time Visitor Goals
-
-    * As a first time visitor, I want to easily understand the main purpose of the site. What kind of products, prizes etc.
-    * As a first time visitor, I want the site navigation to be intutive, user friendly and over all ease-of-use.
-    * As a first time visitor, I want to be inspired and interested of buying products.
-    * As a first time visitor, I want to feel it is safe to purchase products from the site. 
-    * As a first time visitor, I want to locate some sort of contact information or social media links to be able to follow and get a feel for the credibility of the site. 
-
-<br>
-
-* Returning Visitor/Customer Goals
-
-    * As a returning visitor, I want to be able to use my previously added information (such as address etc) when purchase a product.  
-   
-<br>
-
-* Frequent Visitor Goals
-
-    * As a frequent visitor, I want to get presented with new products and seasonal products.
 
 <br>
 
@@ -329,6 +324,11 @@ Every page of the website features a consistently responsive and intuitive layou
 * Easier to get contacted by business partners regarding any collaboration, business deals and sponsorship.
 * Get more contact information about the registered users to be able to reach out (newsletters, offers etc).
 * Some kind of chatt/forum for the community to grow. 
+Who the people are, you know how to get to them (the blogs they read, the sites they visit, the stuff they search in Google, etc.)
+What they don’t care about, you can dismiss and cut it from the site
+analytics - This increases your ROI (return on investment) because it allows you to focus on the people who want to hear your message and cuts out the ones who simply have no interest in what you are selling.
+surveys also reach out to blogs influencers in the relevant segment etc
+customers to add reviews to products, so that other customers will feel more confident about making a purchase.
 
 <br>
 
