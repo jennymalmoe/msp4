@@ -36,12 +36,12 @@
                         <h2 class="blog-title text-uppercase">{{ post.title }}</h2>
                         <p class="blog-author text-muted h6">By {{ post.author }} | {{ post.date_published |date:'D d M Y'}}</p>
                         <!-- Post body collapsed -->
-                        <p>{{post.body|slice:":200" }}</p>
+                        <p>{{post.body|slice:":200" }}...</p>
                         <!-- Read more btn -->
                         <a class="btn btn-outline-dark read-more" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                             aria-controls="collapseExample">Read More &rarr;
                         </a>
-                
+                        <br>
                         <div class="collapse" id="collapseExample">
                             <!-- Post body uncollapsed -->
                             <div class="blog-body">
@@ -50,7 +50,7 @@
                         </div>
                         <!-- Post image -->
                         <a href="{{ post.image.url }}">
-                            <img class="card-img-top img-fluid" src="{{ post.image.url }}">
+                            <img class="card-img-top img-fluid blog-image" src="{{ post.image.url }}">
                         </a>
                 </div>
             {% endfor %}

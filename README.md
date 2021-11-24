@@ -642,3 +642,24 @@ bug when stripe no confirmation mail in terminal 404 error, "edit webhook endpoi
 So a word of warning about your webhooks still. This all works fine for your local endpoint, but if you're going to use the heroku one it will need a different WH_SECRET_KEY in your Heroku cvars. You can find this by Reveal the signing secret you find for the heroku endpoint in Stripe website. So both local and deployed site have the same STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY but they will have different STRIPE_WH_SECRET.
 
 SKU explanation most important first, categories, could utveckla detta mer featurers left to do. W=white MV=multicolor B=blue G=green BR=brown HD=home decor 
+
+
+#loading-overlay {
+  display: none;
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/media/bgimg.jpg');
+  background-size: cover;
+  z-index: 9999999999;
+}
+
+.loading-spinner {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+}

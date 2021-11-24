@@ -62,8 +62,10 @@ form.addEventListener('submit', function(ev) {
         'save_info': saveInfo,
     };
     var url = '/checkout/cache_checkout_data/';
+    console.log(postData)
     // Posts form data to the cache_checkout_data view
     $.post(url, postData).done(function () {
+    console.log("post successful")
         // The view updates the payment intent and returns a 200 response -> Call the confirm card payment method from stripe  
         stripe.confirmCardPayment(clientSecret, {
             payment_method: {
@@ -77,7 +79,6 @@ form.addEventListener('submit', function(ev) {
                         line2: $.trim(form.street_address2.value),
                         city: $.trim(form.town_or_city.value),
                         country: $.trim(form.country.value),
-                        state: $.trim(form.county.value),
                     }
                 }
             },
@@ -90,7 +91,6 @@ form.addEventListener('submit', function(ev) {
                     city: $.trim(form.town_or_city.value),
                     country: $.trim(form.country.value),
                     postal_code: $.trim(form.postcode.value),
-                    state: $.trim(form.county.value),
                 }
             },
         }).then(function(result) {

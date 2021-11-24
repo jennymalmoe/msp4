@@ -127,8 +127,8 @@ WSGI_APPLICATION = 'msp4.wsgi.application'
 #    DATABASES = {
 #       'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 #    }
-#else:
-# 
+#else: 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

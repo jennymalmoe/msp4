@@ -248,7 +248,6 @@ a.category-badge > span.badge:hover {
 
 .card-img-top {
     border-radius: 1px;
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 .image-container {
@@ -414,9 +413,6 @@ main {
     text-align: center; 
     font-size: 70px;
 }
-.footer-arrow-about {
-    
-}
 
 .contact-btn { 
     text-transform: uppercase; 
@@ -482,6 +478,7 @@ main {
 .blog-headline {
     padding-top: 200px;
     text-align: center;
+    max-width: 80%;
 }
 
 .blog-text {
@@ -529,9 +526,6 @@ main {
     max-width: 100%;
     padding: 15px;
     margin-top: 140px;
-}
-.submit-button {
-    max-width: 200px;
 }
 .form-group1 {
     margin-bottom: 20px;
@@ -595,8 +589,10 @@ main {
 
 /* ------------------------------ About */
 .about {
-    padding-top: 150px;
-    
+    padding-top: 170px;
+}
+.container-about {
+    max-width: 80%;
 }
 
 
@@ -723,6 +719,9 @@ main {
     .create-form {
         margin-top: 130px;
     }
+    .blog-image {
+        padding-bottom: 20px;
+    }
 }
 
 /* Small devices (576px or more) */
@@ -741,6 +740,7 @@ main {
     }
     .card-img-top {
         margin-top: 10px;
+
     }
     .allauth {
         margin-top: 140px;
@@ -764,6 +764,15 @@ main {
     .sign-out {
         margin-top: 160px;
     }
+    .blog-image {
+        width: 60%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    #delivery-banner h4 {
+        font-size: 20px;
+        color: #FFFFFF !important;
+        }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -802,6 +811,9 @@ main {
     }
     .create-form {
         margin-top: 200px;
+    }
+    .checkout {
+        margin-top: 120px;
     }
 }
  
@@ -855,7 +867,7 @@ main {
     }
     .hero-container {
       height: 1000px;
-      margin-top: 90px;
+      margin-top: 80px;
       max-width: 100%;
     }
     .hero {
