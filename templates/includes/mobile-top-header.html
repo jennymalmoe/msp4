@@ -26,7 +26,7 @@
   <li class="list-inline-item dropdown">
       <a class="text-dark nav-link d-block d-lg-none" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="text-center">
-              <div><i class="fas fa-user fa-lg"></i></div>
+              <div><i class="far fa-user fa-lg"></i></div>
               <p class="my-0">My Account</p>
           </div>
       </a>
@@ -45,9 +45,9 @@
   </li>
   <!-- Btn to access shopping bag -->
   <li class="list-inline-item">
-      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
+      <a class="{% if grand_total %}create font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
           <div class="text-center">
-              <div><i class="fas fa-shopping-cart text-dark fa-lg"></i></div>
+              <div><i class="fas fa-shopping-cart fa-lg"></i></div>
               <p class="my-0 text-dark">
                   {% if grand_total %}
                       ${{ grand_total|floatformat:2 }}

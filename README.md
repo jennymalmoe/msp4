@@ -10,7 +10,7 @@
 
 ![site on different devices](media/screen_all_devices.png) 
 
-BOHO Living (addressed as "B.L") is an online home decor shop that offers a selection of trendy home decor and fashion items inspired by the modern bohemian style.
+BOHO Living (referred to "B.L" in this README) is an online home decor shop that offers a selection of trendy home decor and fashion items inspired by the modern bohemian style.
 
 This is an e-commerce web application for a fictional company, created for the purposes of satisfying the requirements for the Code Institute Full Stack Development Course Milestone Project 4. The application features e-commerce functionality, payments using stripe, a blog section for admin as well as users to add blog posts, confirmation emails, CRUD functionality for admin to add stock items, and an admin section, for the admin user to access database records.
 
@@ -247,7 +247,7 @@ Every page of the website features a consistently responsive and intuitive layou
 **General features**
 * Responsive site on all devices.
 * Fixed navbar to be seen at all times. 
-* Navigation bar works as intended. When you click on the site name, you will be taken directly to the home page. When you press the home button from the drop-down menu, you'll be taken to the home page. The site has four categories, all products, clothing, household items and specials listed in the Large Appliances Center and a drop-down menu for medium and small appliances. In the upper right corner there is a login that takes the user to the page where he can log in or register.
+* Navigation bar works as intended. When you click on the site name, you will be taken directly to the home page. When you press the home button (both from the navbar toggle and from the nav link), you'll be taken to the home page. I choose to have "Home" in both places so it always is easy to find the way back to the home page. The site has following navlinks; Home, All products, Homedecor, Fashion, Outlet, BOHO blog, About us. clothing. Shown in a drop-down menu to the left for medium and small devices. In the upper right corner there is a search function, My account link and cart link. I clicking the My account link, you can choose to either register or login. If clicking the cart icon visitor eiter get presented to what is in the cart at the time or to a "Your bag is empty" message. If you are loged in and clicking "My account" visitor get presented to either visit "My profile" or "Logout". If it is superuser that is loged in, a "Product management" link is presented as well.  
 * Footer on all pages.
 * Shown as a collapsible navbar (hamburger button) triggered at tablets and mobile devices. 
 * Search bar allowing visitors to search for products. 
@@ -644,22 +644,4 @@ So a word of warning about your webhooks still. This all works fine for your loc
 SKU explanation most important first, categories, could utveckla detta mer featurers left to do. W=white MV=multicolor B=blue G=green BR=brown HD=home decor 
 
 
-#loading-overlay {
-  display: none;
-	position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/media/bgimg.jpg');
-  background-size: cover;
-  z-index: 9999999999;
-}
-
-.loading-spinner {
-	display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  height: 100%;
-}
+bug: confirmations page and success toast don't show after a purchase. I remove line 82 and 95 in js checkout. county field removed but forgot to remove it from js, only removed it (county) in forms and models etc. 

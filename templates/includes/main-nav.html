@@ -2,13 +2,13 @@
     <ul class="navbar-nav w-auto mx-auto">
         <!-- Menu "Home" -->
         <li class="nav-item d-block">
-            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="{% url 'home' %}" id="home-link">
+            <a class="logo-font font-weight-bold nav-link text-dark mr-5 font-toggle" href="{% url 'home' %}" id="home-link">
                 Home
             </a>
         </li>
         <!-- Menu "All Products" -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-dark mr-5 font-toggle" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -20,7 +20,7 @@
         </li>
         <!-- Menu "Home Decor" -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="#" id="home_decor-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-dark mr-5 font-toggle" href="#" id="home_decor-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Home Decor
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="home-decor-link">
@@ -34,7 +34,7 @@
         </li>
         <!-- Menu "Fashion" -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="fashion-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 font-toggle" href="#" id="fashion-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Fashion
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="fashion-link">
@@ -47,17 +47,17 @@
         </li>
         <!-- Menu "Outlet" -->
         <li class="nav-item">
-            <a class="logo-font nav-link text-dark" href="{% url 'products' %}?category=outlet" id="outlet-link">
+            <a class="logo-font nav-link text-dark font-toggle" href="{% url 'products' %}?category=outlet" id="outlet-link">
                 Outlet
             </a>
         </li>
         <!-- Menu "Blog" -->
         <li class="nav-item">
-            <a class="logo-font nav-link text-dark" href="{% url 'blog' %}" id="blog-link">BOHO Blog</a>
+            <a class="logo-font nav-link text-dark font-toggle" href="{% url 'blog' %}" id="blog-link">BOHO Blog</a>
         </li>
         <!-- Menu "About" -->
         <li class="nav-item">
-            <a class="logo-font nav-link text-dark" href="{% url 'view_about' %}" id="about-link">About Us</a>
+            <a class="logo-font nav-link text-dark font-toggle" href="{% url 'view_about' %}" id="about-link">About Us</a>
         </li>
     </ul>
 </div>

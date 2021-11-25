@@ -151,8 +151,8 @@ input[name='q']::placeholder {
 
  .sub-text {
      font-weight: bold;
-     
  }
+
  /* ------------------------------ Delivery alert */
 #delivery-banner h4 {
     font-size: 30px;
@@ -283,6 +283,9 @@ a.category-badge > span.badge:hover {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+.del-bg {
+    background-color: rgb(247, 162, 4);
 }
 
 
@@ -471,6 +474,9 @@ main {
 /* ------------------------------ Checkout form */
 .form-group {
     padding-bottom: 10px;
+}
+.create {
+    color: rgb(247, 162, 4);
 }
 
 /* ------------------------------ Blog */
@@ -708,7 +714,7 @@ main {
         font-size: 20px;
     }
     .sign-out {
-        margin-top: 140px;
+        margin-top: 190px;
     }
     .pulse {
         width: 136px;
@@ -721,6 +727,12 @@ main {
     }
     .blog-image {
         padding-bottom: 20px;
+    }
+    .font-toggle {
+        font-size: 20px;
+     }
+    .save {
+        font-size: 13px;
     }
 }
 
@@ -772,7 +784,7 @@ main {
     #delivery-banner h4 {
         font-size: 20px;
         color: #FFFFFF !important;
-        }
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
