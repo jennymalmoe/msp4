@@ -381,6 +381,9 @@ a.category-badge > span.badge:hover {
 .del-info {
     margin-top: 20px;
 }
+.verify {
+    margin-top: 0px;
+}
 
 /* ------------------------------ Footer */
 main {
@@ -734,6 +737,9 @@ main {
     .save {
         font-size: 13px;
     }
+    .confirm {
+        margin-top: 140px;
+    }
 }
 
 /* Small devices (576px or more) */
@@ -785,6 +791,9 @@ main {
         font-size: 20px;
         color: #FFFFFF !important;
     }
+    .confirm {
+        margin-top: 150px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -826,6 +835,9 @@ main {
     }
     .checkout {
         margin-top: 120px;
+    }
+    .confirm {
+        margin-top: 200px;
     }
 }
  
