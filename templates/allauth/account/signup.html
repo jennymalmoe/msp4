@@ -9,13 +9,15 @@
 <h2 class="logo-font text-dark mb-1">{% trans "Sign Up" %}</h2>
 <hr>
 
-<p>{% blocktrans %}Already have an account?? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
 
 <form class="signup text-start" id="signup_form" method="post" action="{% url 'account_signup' %}">
     {% csrf_token %}
     {{ form.as_p }}
     {% if redirect_field_value %}
+        <div class="col-12">
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        </div>
     {% endif %}
       <button type="submit" class="sign-up-btn">{% trans "Sign Up" %} &raquo;</button>
 </form>
