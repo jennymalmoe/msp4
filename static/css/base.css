@@ -810,6 +810,9 @@ main {
     .confirm {
         margin-top: 150px;
     }
+    .sort-select-wrapper {
+        margin-right: 15px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -854,6 +857,9 @@ main {
     }
     .confirm {
         margin-top: 200px;
+    }
+    .sort-select-wrapper {
+        padding-left: 55px;
     }
 }
  
@@ -922,6 +928,9 @@ main {
     }
     .footer-border {
       font-size: 30px;
+    }
+    .sort-select-wrapper {
+        padding-left: 140px;
     }
 }
 
