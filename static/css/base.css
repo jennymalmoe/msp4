@@ -590,7 +590,10 @@ main {
 /* ------------------------------ Sign up */
 .sign-up-btn {
     padding-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+.sign-up {
+    margin-top: 30px;
 }
 
 /* ------------------------------ Confirm email */
