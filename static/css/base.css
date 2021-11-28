@@ -72,7 +72,7 @@ h4 {
 .shop-now-button {
     color: #FFFFFF;
     background-color: #000000;
-    box-shadow: #FC0 1px 0 10px;;
+    box-shadow: #FC0 1px 0 10px;
     font-family: lato !important;
     text-shadow: none !important;
 }
@@ -272,6 +272,7 @@ a.category-badge > span.badge:hover {
 /* ------------------------------ Toasts */
 .custom-toast {
     overflow: visible;
+    display: block;
 }
 
 .toast-capper {
@@ -413,6 +414,10 @@ main {
 .hand {
     font-size: 30px;
     color: #fdcd3b;
+}
+
+.logo-footer {
+    text-decoration: none;
 }
 
 .soc-media  {
@@ -604,6 +609,11 @@ main {
     margin-left: 50px;
 }
 
+/* ------------------------------ Product management */
+.prod-management {
+    margin-top: 150px;
+}
+
 /* ------------------------------ About */
 .about {
     padding-top: 170px;
@@ -623,9 +633,9 @@ main {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
+    margin-top: 100px;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    margin-top: 100px;
   }
   
   /* Modal Content/Box */
@@ -638,6 +648,7 @@ main {
     font-family: architects daughter;
     text-transform: uppercase;
     color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .modal-text {
@@ -647,9 +658,8 @@ main {
   
   /* The Close Button */
   .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
+    color: #FFFFFF;
+    font-size: 30px;
     font-weight: bold;
   }
   
@@ -701,6 +711,9 @@ main {
     }
     .badge-style {
         font-size: 12px;
+    }
+    .prod-management {
+        margin-top: 200px;
     }
 }
 
@@ -897,6 +910,9 @@ main {
     }
     .blog-image {
         padding-bottom: 50px;
+    }
+    .prod-management {
+        margin-top: 120px;
     }
 }
  
