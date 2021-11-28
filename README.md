@@ -650,3 +650,5 @@ bug: modal disappeared direkt, fick byta type="submit" till type="button". the b
 Bug: pga ovan att type är button o inte submit så funkar inte required. 
 
 OBS known bug ("On some iOS devices, this happens....") bug: nothing happens when I click "Register" or "Login" (if I am not signed in) after added item(s) in the bag (=toast). after loged in nothing happens when clicking my profile. logout, need to refresh to be able to. 
+
+modal from https://www.w3schools.com/howto/howto_css_modals.asp
