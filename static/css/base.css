@@ -597,11 +597,6 @@ main {
 
 
 /* ------------------------------ Logout */
-.margin-b {
-    margin-bottom: 200px;
-    margin-top: 150px;
-    margin-left: 30px;
-}
 .sign-out {
     display: block;
 }
@@ -616,6 +611,54 @@ main {
 .container-about {
     max-width: 80%;
 }
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999999999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    margin-top: 100px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: rgb(247, 162, 4);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 3px solid #FFFFFF;
+    width: 80%; /* Could be more or less, depending on screen size */
+    font-family: architects daughter;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  .modal-text {
+      font-family: lato;
+      text-transform:none;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 
 
@@ -667,7 +710,7 @@ main {
         padding-top: 150px;
         text-align: center;
     }
-    .margin-more {
+    .co-success {
         margin-top: 120px;
     }
     .products {
@@ -780,10 +823,7 @@ main {
         margin-left: 50px;
         padding-top: 250px;
     }
-   .margin-less {
-       margin-bottom: 5px;
-   }
-   .margin-more {
+   .co-success {
        margin-top: 120px;
    }
     .sign-out {

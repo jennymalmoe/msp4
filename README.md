@@ -645,3 +645,7 @@ SKU explanation most important first, categories, could utveckla detta mer featu
 
 
 bug: confirmations page and success toast don't show after a purchase. I remove line 82 and 95 in js checkout. county field removed but forgot to remove it from js, only removed it (county) in forms and models etc. 
+
+bug: modal disappeared direkt, fick byta type="submit" till type="button". the button was in a <form> that was temporarily just fetching the same page.I fixed this by adding type="button" to the button element, so that it wouldn't submit the form when clicked.
+
+OBS known bug ("On some iOS devices, this happens....") bug: nothing happens when I click "Register" or "Login" (if I am not signed in) after added item(s) in the bag (=toast). after loged in nothing happens when clicking my profile. logout, need to refresh to be able to. 
