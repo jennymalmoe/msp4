@@ -641,7 +641,7 @@ bug when stripe no confirmation mail in terminal 404 error, "edit webhook endpoi
 
 So a word of warning about your webhooks still. This all works fine for your local endpoint, but if you're going to use the heroku one it will need a different WH_SECRET_KEY in your Heroku cvars. You can find this by Reveal the signing secret you find for the heroku endpoint in Stripe website. So both local and deployed site have the same STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY but they will have different STRIPE_WH_SECRET.
 
-SKU explanation most important first, categories, could utveckla detta mer featurers left to do. W=white MV=multicolor B=blue G=green BR=brown HD=home decor 
+SKU explanation most important first, categories, could utveckla detta mer featurers left to do. W=white MV=multicolor B=blue G=green BR=brown HD=home decor. 
 
 
 bug: confirmations page and success toast don't show after a purchase. I remove line 82 and 95 in js checkout. county field removed but forgot to remove it from js, only removed it (county) in forms and models etc. 
@@ -651,4 +651,4 @@ Bug: pga ovan att type är button o inte submit så funkar inte required.
 
 OBS known bug ("On some iOS devices, this happens....") bug: nothing happens when I click "Register" or "Login" (if I am not signed in) after added item(s) in the bag (=toast). after loged in nothing happens when clicking my profile. logout, need to refresh to be able to. 
 
-modal from https://www.w3schools.com/howto/howto_css_modals.asp
+modal from https://www.w3schools.com/howto/howto_css_modals.asp. 
