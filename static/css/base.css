@@ -280,13 +280,6 @@ a.category-badge > span.badge:hover {
     background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
 }
 
-.message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-    z-index: 99999999999;
-}
-
 .toast-header {
     display: flex;
 }

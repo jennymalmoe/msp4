@@ -246,6 +246,7 @@ Every page of the website features a consistently responsive and intuitive layou
 * Contact possibilities by clicking contact button in footer.
 * Social media icons/links in all pages. 
 * Back to top button on all devices and pages. 
+* An account with Super User privileges has been created for testing purposes. The username and password will be supplied on submission of the project.???
 
 **Home Page**
 * Features a suitable design and eye catching image.
@@ -344,57 +345,58 @@ MongoDB Atlas is used as database backend for storing user and recipes details. 
 
 <br>
 
-**Languages, Frameworks and Libraries**
+## IDE - Integrated Development Environment
+* [GitHub](https://github.com/) - Used to store the projects code after being pushed from Git. 
+
+## Languages
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Used to create the site structure.
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Used to create the styling throughout the site.
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Used for the sidenav, back-to-top button, image preview.
+* [Python](https://www.python.org/) - Used to write the logic that operates the site.
+
+## Database 
+* [SQLite](https://www.sqlite.org/index.html) - Development/Locally.
+* [Heroku](https://www.heroku.com/home) - Deployes site.
+
+## Storage 
+* [Amazon AWS S3](https://aws.amazon.com/?aws-products-compute.sort-by=item.additionalFields.productNameLowercase&aws-products-compute.sort-order=asc&aws-products-iot.sort-by=item.additionalFields.productNameLowercase&aws-products-iot.sort-order=asc&aws-products-security.sort-by=item.additionalFields.productNameLowercase&aws-products-security.sort-order=asc) - Used to store media and static files.
+
+## Payment 
+* [Stripe](https://stripe.com/) - Payment platform. 
+
+## Frameworks 
+* [Bootstrap](https://getbootstrap.com/) - Bootstrap 5.1 used to design and build responsive, mobile-first sites.
+* [Django](https://www.djangoproject.com/) - Web development framework.
 
 <br>
 
-* [Bootstrap](https://getbootstrap.com/) - Bootstrap 5.1 used to design and build responsive, mobile-first sites. 
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - used to create the styling throughout the site.
-* [Google fonts](https://fonts.google.com/) - used to import fonts.
-* [Django](https://www.djangoproject.com/) - framework used to create this project.
-* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - used to create the user sign-in function for the site.
-* [Django Countries](https://pypi.org/project/django-countries/) - used for the country select field in the order form.
-* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - used to utilise the bootstrap form classes.
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - used to create the site structure.
-* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - used for the sidenav, back-to-top button, image preview.
-* [Python](https://www.python.org/) - used to write the logic that operates the site.
-    
-<br>
+## Libraries, Tools, Editors 
 
-**Tools and Editors**
-
-<br>
-
-* [Am I Responsive](http://ami.responsivedesign.is/) - used to validate the responsiveness. 
-* [AWS Amazon Web Services](https://aws.amazon.com/s3/) - Cloud computing platform. S3 (Simple Storage Service) used to store media and static files.
-* [Balsamiq](https://balsamiq.com/) - used to create the wireframes.
-* [Bulma](https://balsamiq.com/) - an open source CSS framework, used for icon class.
-* [Chrome DevTools](https://developer.chrome.com/docs/devtools/)  - used Lighthouse to check sites performance and the dev tool to check responsiveness.
-* [Designwizard](https://www.designwizard.com/) - used for inspirations regarding color combinations.
-* [Font-Awesome](https://fontawesome.com/) - used for icons.
-* [FreeIcons](https://freeicons.io/) - used for icon in tab.
-* [Git](https://git-scm.com/) - used for version control to commit to Git and push to Heroku.
-* [GitHub](https://github.com/) - used to store the projects code after being pushed from Git.
-* [Gitpod](https://gitpod.io/) - IDE used for development.
-* [Gunicorn](https://gunicorn.org/) - used for deploying the project to Heroku.
-* [Heroku](https://www.heroku.com/home) - cloud platform used to deploy application.
-* [Imgur](https://imgur.com/) - used to create url:s for images.
-* [JSONFormatter](https://jsonformatter.org/) - helps to format your JSON text.
-* [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Jinja templating language was used to simplify and display backend data in html.
-* [JSHint](https://jshint.com/) - used to test JS code to ensure there were no errors.
-* [Miniwebtool](https://miniwebtool.com/) - Django Secret Key Generator.
-* [Unsplash](https://unsplash.com/) - images used were obtained from Unsplash.
-* [PEP8](https://www.python.org/dev/peps/pep-0008/) - used as style guide for Python code.
-* [PEP8online](http://pep8online.com/) - used to check code for PEP8 requirements
-* [Pixelmator](https://www.pixelmator.com/mac/) - used to resize images and creating a logo image.
-* [Postimages](https://postimages.org/) - used to create url for images. 
-* [RandomKeygen](https://randomkeygen.com/) - used to generate secure password to Secret Key. 
-* [Stripe](https://stripe.com/) - Payment platform.
-* [TechSini](https://techsini.com/) - mockup generator used for preview of the  website.
-* [TenMinuteMail](https://10minutemail.com/) - used to test registration and get confirmation mail.
+* [Am I Responsive](http://ami.responsivedesign.is/) - Used to validate the responsiveness. 
+* [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+* [Bulma](https://bulma.io/) - Used for icon class.
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/)  - Used Lighthouse to check sites performance and dev tool to check responsiveness.
+* [Dj-database-url](https://pypi.org/project/dj-database-url/) - A utility to help you load your database into your dictionary from the DATABASE_URL environment variable.
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Used to create the user sign-in function for the site.
+* [Django Countries](https://pypi.org/project/django-countries/) - Used for the country select field in the order form.
+* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to utilise the Bootstrap form classes.
+* [Font-Awesome](https://fontawesome.com/) - Used for icons.
+* [Git](https://git-scm.com/) - Used for version control to commit to Git and push to Heroku.
+* [Gitpod](https://gitpod.io/) - Open-source application for ready-to-code developer environments in browser.
+* [Google fonts](https://fonts.google.com/) - Used to import fonts.
+* [Gunicorn](https://gunicorn.org/) - Used for deploying the project to Heroku.
+* [Imgur](https://imgur.com/) - Used to create url:s for images.
+* [JSHint](https://jshint.com/) - JavaScript code quality tool, used to detect errors.
+* [Unsplash](https://unsplash.com/) - Images used throughout the site.
+* [PEP8](https://www.python.org/dev/peps/pep-0008/) - Used to improve the readability and consistency of Python code.
+* [PEP8online](http://pep8online.com/) - Used to check code for PEP8 requirements.
+* [Pillow](https://pillow.readthedocs.io/en/stable/) - Python Imaging Library.
+* [Pixelmator](https://www.pixelmator.com/mac/) - Used to resize images and creating logo.
+* [Postimages](https://postimages.org/) - Used to create url for images. 
+* [TechSini](https://techsini.com/) - Mockup generator used for preview of the website.
 * [Visual Studio Code](https://code.visualstudio.com/) - IDE used for code editing.
-* [W3C Validator](https://validator.w3.org/) - used to test HTML code to ensure there were no errors.
-* [W3C Validator CSS](https://validator.w3.org/) - used to test CSS code to ensure there were no errors.
+* [W3C Validator](https://validator.w3.org/) - Used to test HTML code.
+* [W3C Validator CSS](https://validator.w3.org/) - Used to test CSS code.
 
 <br>
 
@@ -405,10 +407,32 @@ MongoDB Atlas is used as database backend for storing user and recipes details. 
 * [MongoDB](https://www.mongodb.com/3) - used for database functionality.
 * [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) - used to host the database.
 
+## Information Architecture
+Heroku PostgreSQL is used to host the back-end database for this site. B.L contains of these Django apps:
+
+* About
+* Bag
+* Bag
+* Checkout
+* Home
+* Products
+* Profiles
+
+
+
 <br>
 
 # Testing
-See separate [testing.md file](documentation_testing/testing.md)
+Testing section is located here [testing.md file](documentation_testing/testing.md)
+
+Validating code
+* HTML code is validated through [W3C Validator](https://validator.w3.org/)
+
+* CSS code is validated through [W3C Validator CSS](https://validator.w3.org/)
+
+* JavaScript code is validated through [JSHint](https://jshint.com/)
+
+* Python code is validated through [PEP8](https://www.python.org/dev/peps/pep-0008/)
 
 <br>
 

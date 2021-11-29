@@ -50,9 +50,7 @@ form.addEventListener('submit', function(ev) {
     card.update({ 'disabled': true});
     $('#submit-button').attr('disabled', true);
     $('#payment-form').fadeToggle(100);
-    // Triggers loading overlay
-    $('#loading-overlay').fadeToggle(100);
-
+    
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
     // From using {% csrf_token %} in the form
     var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
@@ -105,8 +103,6 @@ form.addEventListener('submit', function(ev) {
                 // Error will be displayed
                 $(errorDiv).html(html);
                 $('#payment-form').fadeToggle(100);
-                // Overlay will be hidden
-                $('#loading-overlay').fadeToggle(100);
                 // Card element re-enabled
                 card.update({ 'disabled': false});
                 $('#submit-button').attr('disabled', false);
