@@ -125,58 +125,55 @@ This user story template consists of three sections; As a (decription of user), 
 |     |            | *Viewing and Navigation*                                      |                                                                                       |
 | 1   | First Time Visitor    | Be presented with an intutive site navigation that is user friendly and over all ease-of-use                              |  Get a good impression about the site/business
 | 2   | First Time Visitor    |    Visit a structured, clean and modern website                      | Understand the main purpose of the site/business and find key information
-| 2   | First Time Visitor    |    Get the impression af a professional website                      | Feel comfortable enough to make a purchase
-| 3   | First Time Visitor    |    Get visually impressed by the site                       | Find the site appealing
-| 3   | First Time Visitor    | View structured lists of products                                             | Can see what the website has to offer and make a purchase in just a few clicks                                                          |
-| 4   | First Time Visitor    | View details of the products                                           | Easily can see price, description, image, sizes if any                                          |                                             |    
-| 6   | First Time Visitor    | Find items close to what I was searching online                              |  Can find the items I was looking for 
-| 7   | First Time Visitor    | Be presented to some kind of contact information/social media links                              |  Feeling a sence of crediblity
-| 8   | First Time Visitor    | Be able to reach out to siteowner                              |  Get answers to any possible questions
-| 1   | Returning  Visitor    | Be presented with new/seasonal items                               |  Experience that B.I is up to date and offer me new items than last visiting
+| 3   | First Time Visitor    |    Get the impression af a professional website                      | Feel comfortable enough to make a purchase
+| 4   | First Time Visitor    |    Get visually impressed by the site                       | Find the site appealing
+| 5   | First Time Visitor    | View structured lists of products                                             | Can see what the website has to offer and make a purchase in just a few clicks                                                          |
+| 6   | First Time Visitor    | View details of the products                                           | Easily can see price, description, image, sizes if any                                          |                                             |    
+| 7   | First Time Visitor    | Find items close to what I was searching online                              |  Can find the items I was looking for 
+| 8   | First Time Visitor    | Be presented to contact information and social media links                              |  Feeling a sence of crediblity
+| 9   | First Time Visitor    | Be able to reach out to siteowner                              |  Get answers to any possible questions
+| 10   | Returning  Visitor    | Be presented with new/seasonal items                               |  Experience that B.I is up to date and offer me new items than last visiting
 |     |            | *Registration*                              |                                                                                       |
-| 5   | User   | Register for an account by entering email, password and confirming my password                                         | Can access to Boho Living                                          |
-| 5   | User   | Register for an account                                           | Save default delivery information and keep a record of order history, get mails with news and offers                                          |
-| 6   | Reg User   | Sign in to my account                                                 | Access my account
-| 6   | Reg User   | Sign out of my account                                                 | Secure that nobody else makes a purchase from my account.                                                                    |
-| 7   | User   | Request a password reset                                          | Receive an email to reset my password in case I forget it                            |
-| 8   | User   | Receive an email confirming my registration                       | Verify my account was registered successfully                                         |
-| 9   | User   | Access my user profile                                            | View my order history, manage my personal details                                     |
-| 9   | User   | Save my personal details (address etc) in my account                                            | Can make a smooth and fast purchase next time.                                     |
+| 11  | User   | Register for an account                                         | Can access to Boho Living                                          |
+| 12  | User   | Be able to have an account                                           | Save default delivery information and keep a record of order history, get mails with news and offers                                          |
+| 13  | User   | Receive an email confirming my registration                       | Verify my account was registered successfully                                         |
 |     |            | *Login*                                  |                                                                                       |
-| 25  | Registered User | Login by entering email and password                                            | Can access the application
-| 25  | Registered User | Reset my password  
+| 14  | Registered User   | Sign in to my account                                                 | Access my account                                                                   |
+| 15  | Registered User   | Access my user profile                                            | View my order history, manage my personal details                                     |
+| 16  | Registered User   | Save my personal details (address etc) in my account                                            | Can make a smooth purchase next time.                                     |
+| 17  | Registered User   | Request a password reset                                          | Receive an email to reset my password in case I forget it  
 |     |            | *Logout*                                  |                                                                                       |
-| 25  | Registered User | Be able to logout                                            | Ensure that nobody else are in my account                                          | If I forgot the password
+| 18  | Registered User   | Sign out of my account                                                 | Secure that nobody else makes a purchase from my account.                                           | 
 |     |            | *Sorting and Searching*                                       |                                                                                       |
-| 10  | Shopper    | Sort the list of available products                               | See the products in a list sorted by price, rating, name etc            |
-| 11  | Shopper    | Be able to search by categories                                       | Find what I am looking for                     |
-| 12  | Shopper    | Sort multiple categories simultaneously                           | Find the best rated or best priced across broad categories |
-| 13  | Shopper    | Search for product                                                | Find a specific product I wish to purchase                                               |
-| 14  | Shopper    | View a list of search results                                     | See if the product I want is available to purchase  
-| 15  | Shopper    | View an image and details for each product                                     | So I can decide if I want to add to cart from the detail or search pages or not.                                   |
+| 19  | Shopper    | Sort the list of available products                               | See the products in a list sorted by price, rating, name etc            |
+| 20  | Shopper    | Be able to search by categories                                       | Find what I am looking for                     |
+| 21  | Shopper    | Sort multiple categories simultaneously                           | Find the best rated or best priced across broad categories |
+| 22  | Shopper    | Search for product                                                | Find a specific product I wish to purchase                                               |
+| 23  | Shopper    | View a list of search results                                     | See if the product I want is available to purchase  
+| 24  | Shopper    | View an image and details for each product                                     | So I can decide if I want to add to cart from the detail or search pages or not.                                   |
 |     |            | *Purchasing and Checkout*                                     |                                                                                       |
-| 15  | Shopper    | Be able to add products to my shopping bag     | Can buy the item
-| 15  | Shopper    | Easily select the size and quantity whilst purchasing a product     | Ensure I don't accidentally select the wrong product, quantity, or size               |
-| 5   | Shopper    | Get information about delivery charges, how much I need to spend to get free delivery                                     | Can make an informed purchasing decision                                                         |
-| 5   | Shopper    | See my cart's total at any time                                   | Avoid spending too much
-| 16  | Shopper    | Review my cart                                          | Can make adjustments prior to checkout           |
-| 17  | Shopper    | Adjust the quantity of individual items in my bag                 | Easily adjust the amount of an item I intended to purchase (including removing)       |
-| 18  | Shopper    | Easily enter my payment information                               | Checkout quickly and easily                                                      |
-| 19  | Shopper    | Feel my payment and personal information is secure                | Provide the needed payment and personal information, and feel it is handled safely    |
-| 20  | Shopper    | View confirmation of order before completing purchase             | Verify I haven't made any mistakes                                                    |
-| 21  | Shopper    | Receive confirmation email of my purchase                     | can be confident that the purchase has been made successfully
-| 22  | Shopper    | The store to have some kind of custom service                     | Can get in touch if I have questions, if something is wrong.                                                   |
+| 25  | Shopper    | Be able to add products to my shopping bag     | Can buy the item
+| 26  | Shopper    | Easily select the size and quantity whilst purchasing a product     | Can get the size and quantity I want              |
+| 27   | Shopper    | Get information about delivery charges, how much I need to spend to get free delivery                                     | Can make an informed purchasing decision                                                         |
+| 28   | Shopper    | See my cart's total at any time                                   | Avoid spending too much
+| 29  | Shopper    | Review my cart                                          | Can make adjustments prior to checkout           |
+| 30  | Shopper    | Adjust the quantity of individual items in my bag                 | Easily adjust the amount of an item I intended to purchase (including removing)       |
+| 31  | Shopper    | Easily enter my payment information                               | Have a smooth checkout                                                      |
+| 32  | Shopper    | Feel my payment and personal information are secure                | Provide the needed payment and personal information, and feel it is handled safely    |
+| 33  | Shopper    | View summery of order before completing purchase             | Verify I haven't made any mistakes                                                    |
+| 34  | Shopper    | Receive confirmation email of my purchase                     | Can be confident that the purchase has been made successfully
+| 35  | Shopper    | Be presented by some kind of custom service contact information                    | Can get in touch
 |     |            | *Admin and Store Management*                                  |                                                                                       |
-| 22  | Administrator |  Have access to an admin section                      | Can operate the e-commerce                                                                       |
-| 22  | Administrator | Add **(Create)**, write information about the product **(Read)**, edit **(Update)** and remove **(Delete)** products                                                     | Can be flexible and adjust the offers over time
-| 22  | Administrator |  Be able to keep track of the trafic to the site                     | Can understanding the visitors needs (why they come back, what attracts them, which page brings in the most visitors etc.)
-| 22  | Administrator |  Delete users blog posts, if inappropriate                      | Can keep the site proffessional                                                                       |
+| 36  | Administrator |  Have access to an admin section                      | Can operate the e-commerce                                                                       |
+| 37  | Administrator | Add a product **(Create)**, write information about the product **(Read)**, edit product **(Update)** and remove product **(Delete)**                                                    | Can adjust the offers
+| 38  | Administrator |  Be able to keep track of the trafic to the site                     | Can understand the visitors needs (why they come back, what attracts them, which page brings in the most visitors etc.)
+| 39  | Administrator |  Delete users blog posts, if inappropriate                      | Can keep the site proffessional                                                                       |
 |     |            | *Site manager*                                  |                                                                                       |
-| 25  | Shopper | Be able to manage/edit the site                                            | Keep the site relevant and with correct information/sortiment                                        |
-|     |            | *Community*                                  |                                                                                       |
-| 26  | Shopper | Get inspired and get ideas                                            | Buy items that matches my idea of home decoration                                                          |
-| 27  | Shopper | Be able to contibute with my own ideas by adding a post                                             | Be/feel like a part of the community and contrbute with inspiration and ideas                               |
-                                             |
+| 40  | Shopper | Be able to manage/edit the site                                            | Keep the site relevant and with correct information/sortiment                                        |
+|     |            | *Blog*                                  |                                                                                       |
+| 41  | Shopper | Get inspired                                            | Get home decoration/fashion ideas                                                          |
+| 42  | Shopper | Be able to contibute with my own ideas by adding a post                                             | Share inspirational ideas                               |
+                                             
 
 <br>
 
@@ -190,7 +187,7 @@ This user story template consists of three sections; As a (decription of user), 
     
     Orange is an attention-grabbing color that tends to stand out visually as an accent standing out against neutral colors. The color orange is often associated with spiritual practices including meditation and compassion, as well as warmth, creativity and emotions. Orange has very high visibility, you can use it to draw attention and highlight the most important elements of your design. I used it as a compliment to the crisp and clean white and black colors. 
 
-    I've used yellow text shadows in a few different places at the site. This bright yellow is an attention-getter, and its contrast with black is the most visible color combination. 
+    I've used yellow text shadows in a few different places at the site. This bright yellow is an attention-getter, and its contrast with white or black is one of the most visible color combinations. 
 
     All buttons are either black, white or orange. 
     
@@ -198,7 +195,7 @@ This user story template consists of three sections; As a (decription of user), 
 
 * Typography
 
-    Lato is an open source, sans-serif font. Lato font is the main font used throughout the site with Major Mono Display used to headers. The font is created to give the letterforms familiar harmony and elegance. The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides stability and seriousness. Lato is used in the body content for the site to appear to be approachable which is the main goal for this website. 
+    Lato is an open source, sans-serif font. Lato font is the main font used throughout the site with Architects Daughter font used to headers and logo. The font is created to give the letterforms familiar harmony and elegance. The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides stability and seriousness. Lato is used in the body content for the site to appear to be approachable which is the main goal for this website. 
     
     Architects Daughter font incorporates the graphic, squared look of architectural writing, combined with the natural feel of daily handwriting. It is clean but unconventional and gives the site a relaxed vibe. The combination of these two fonts represents both the webshop/business side aswell as the relaxed boho approach. 
 
@@ -210,7 +207,7 @@ This user story template consists of three sections; As a (decription of user), 
 
 * Icons
 
-    All icons (except the one at the tab which is taken from FreeIcons) used are taken from Font Awsome. The use of icons in web design is a proven method to modernize a website and help direct user flow. Adding icons to the site's content helps a user better process the information and provides a visual focus point that grounds a user to a specific section. I used icons to improve visual interest and grab the user's attention.
+    All icons used are taken from Font Awsome. The use of icons in web design is a proven method to modernize a website and help direct user flow. Adding icons to the site's content helps a user better process the information and provides a visual focus point that grounds a user to a specific section. I used an arrow icon recurring throughout the site, to improve visual interest and grab the user's attention.  
 
 <br>
 
@@ -224,15 +221,10 @@ This user story template consists of three sections; As a (decription of user), 
 <br>
 
 **Post wireframes design changes:**
-While the project relied on these wireframes, there are some differences between the wireframes and the final product. 
+While the project relied on these wireframes, there are some differences between the wireframes and the final product; 
 
-* Only register button at Home page and no Log In button.
-* I choose to only have one social media channel in footer.
-* There is no qoute at the bottom of Home page.
-* There are no category buttons at Recipe page.
-* Recipe cards at Recipe page has a little bit of different styling than in wireframes. 
-* No user information in Profile page. 
-* Slightly different layout of the recipes after you clicked to view recipe.
+* No spinner icon while Stripe payment is processing.
+* I added a "About Us" page with a contact form. 
 
 <br>
 
@@ -248,28 +240,31 @@ Every page of the website features a consistently responsive and intuitive layou
 * Responsive site on all devices.
 * Fixed navbar to be seen at all times. 
 * Navigation bar works as intended. When you click on the site name, you will be taken directly to the home page. When you press the home button (both from the navbar toggle and from the nav link), you'll be taken to the home page. I choose to have "Home" in both places so it always is easy to find the way back to the home page. The site has following navlinks; Home, All products, Homedecor, Fashion, Outlet, BOHO blog, About us. clothing. Shown in a drop-down menu to the left for medium and small devices. In the upper right corner there is a search function, My account link and cart link. I clicking the My account link, you can choose to either register or login. If clicking the cart icon visitor eiter get presented to what is in the cart at the time or to a "Your bag is empty" message. If you are loged in and clicking "My account" visitor get presented to either visit "My profile" or "Logout". If it is superuser that is loged in, a "Product management" link is presented as well.  
-* Footer on all pages.
 * Shown as a collapsible navbar (hamburger button) triggered at tablets and mobile devices. 
 * Search bar allowing visitors to search for products. 
-* Visitor can contact BOHO Living by clicking at mail address in footer.
-* Visitor can follow BOHO Living at Pinterest by clicking Pinterest icon.
+* Footer in all pages.
+* Contact possibilities by clicking contact button in footer.
+* Social media icons/links in all pages. 
+* Back to top button on all devices and pages. 
 
 **Home Page**
-* Features a modern design and eye catching image.
-* Visitor/Users can get redirected directly to Recipe page. 
+* Features a suitable design and eye catching image.
+* Visitor/Users can get redirected directly to product page. 
 * Registration, visitors allows to register.
+* Visitors/Users get information about BOHO Living and what BOHO Living offers by the info text below the hero image. 
+* Carousel links to different pages on site. 
 
-**Recipe Page**
+**All Products Page**
 * Visitors/Users can search for recipes.
 * Features a clean search bar for user to search. 
 * Visitors/Users can read recipes.
 * Visitors/Users can see who added the recipes.
 
-**Shop Page**
+**Home Decor page**
 * Kitchen ware is presented and visitor can get inspired by the products and get redirected to the site and buy the products.
 * Features some examples of products that goes hand in hand with the rest of the sites purpose; eco and vegan friendly kitchen ware.
 
-**Log In Page**
+**Fashion page**
 * Log In is possible after registered.
 * User gets a success message when loged in to verify user stated right username and password.
 * Features a clean log in form for user to log in.
@@ -277,7 +272,7 @@ Every page of the website features a consistently responsive and intuitive layou
 * Users can contact Lazy Vegan (mail).
 * User get redirected to Profile Page after login in.
 
-**Log Out**
+**Outlet page**
 * User get redirected to Log In Page after login in.
 * User gets a success message when loged out to verify user loged out.
 * Features a clean log out form for user to log out.

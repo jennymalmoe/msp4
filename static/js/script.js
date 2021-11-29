@@ -36,14 +36,23 @@ let toastList = toastElList.map(function (toastEl) {
 
 
 // MODAL
+// Code from www.w3schools.com
+// Prevent the calculator from opening modal without appropriate form submission
+// Source https://codepen.io/hanapiers/pen/EXNrGP
+$("#contactForm").on("submit", function(e) {
+  $("#myModal").modal("show");
+  e.preventDefault();
+});
+
+
 // Get the modal
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("about-btn");
+let btn = document.getElementById("about-btn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
@@ -61,3 +70,4 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+

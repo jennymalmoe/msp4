@@ -47,7 +47,6 @@ h4 {
     align-items: center;
     font-size: 30px;
     color: #fff;
-    height: 100%;
     cursor: pointer
 }
 
@@ -270,9 +269,10 @@ a.category-badge > span.badge:hover {
 }
 
 /* ------------------------------ Toasts */
+
 .custom-toast {
     overflow: visible;
-    display: block;
+    display:block;
 }
 
 .toast-capper {
@@ -724,7 +724,7 @@ main {
         text-align: center;
     }
     .co-success {
-        margin-top: 120px;
+        margin-top: 140px;
     }
     .products {
         margin-top: 5px;
@@ -837,7 +837,7 @@ main {
         padding-top: 250px;
     }
    .co-success {
-       margin-top: 120px;
+       margin-top: 160px;
    }
     .sign-out {
         margin-top: 160px;
@@ -914,6 +914,9 @@ main {
     .prod-management {
         margin-top: 120px;
     }
+    .co-success {
+        margin-top: 110px;
+    }
 }
  
 @media (max-width: 992px) {
@@ -986,8 +989,6 @@ main {
         padding-left: 140px;
     }
 }
-
-
 
 
 
