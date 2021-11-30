@@ -402,6 +402,7 @@ main {
     position: relative;
     background-color: #000000;
     color:#FFFFFF;
+    max-width: 100%;
 }
 
 .hand {
@@ -497,7 +498,6 @@ main {
 .blog-headline {
     padding-top: 150px;
     text-align: center;
-    max-width: 80%;
 }
 
 .blog-text {
@@ -556,6 +556,7 @@ main {
 .card-body{
     padding: 20px;
 }
+
 
 
  
