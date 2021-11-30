@@ -393,6 +393,7 @@ MongoDB Atlas is used as database backend for storing user and recipes details. 
 * [Pillow](https://pillow.readthedocs.io/en/stable/) - Python Imaging Library.
 * [Pixelmator](https://www.pixelmator.com/mac/) - Used to resize images and creating logo.
 * [Postimages](https://postimages.org/) - Used to create url for images. 
+Sweet laerts
 * [TechSini](https://techsini.com/) - Mockup generator used for preview of the website.
 * [Visual Studio Code](https://code.visualstudio.com/) - IDE used for code editing.
 * [W3C Validator](https://validator.w3.org/) - Used to test HTML code.
