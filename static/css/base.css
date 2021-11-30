@@ -615,7 +615,31 @@ main {
 .container-about {
     max-width: 80%;
 }
+/* Contact form */
+.page-content {
 
+} 
+.contact-form {
+
+}
+.contact-text {
+
+}
+.form-group {
+
+}
+#contactForm {
+
+}
+.contact-style-input {
+
+}
+.form-control {
+
+}
+.contact-btn {
+    
+}
 
 
 
@@ -940,9 +964,7 @@ main {
 }
 
 
-body {
-    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
-  }
+
 
 
 

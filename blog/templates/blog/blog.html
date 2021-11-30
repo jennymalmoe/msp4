@@ -50,12 +50,17 @@
                         </div>
                         <!-- Post image -->
                         <a href="{{ post.image.url }}">
-                            <img class="card-img-top img-fluid blog-image" src="{{ post.image.url }}">
+                            <img class="card-img-top img-fluid blog-image" src="{{ post.image.url }}" alt="Uploaded blog post image">
                         </a>
+                    </div>
                 </div>
+        
             {% endfor %}
             <!-- Create post btn -->
-            <div class="create-post-btn"> <a href="{% url 'create' %}" class="btn btn-dark text-uppercase">Create your blog post</a> </div>
+            <div class="create-post-btn"> <a href="{% url 'create' %}" class="btn btn-dark text-uppercase">Create your blog post</a></div>
 
-            </div>
+            
+            
+        </div>
+    </div>
 {% endblock %}

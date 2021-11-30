@@ -19,7 +19,7 @@
 				<!-- Body -->
 				<div class="form-group">
 					<label for="id_body">Add a blog post</label>
-					<textarea class="form-control" rows="10" type="text" name="body" id="id_body"
+					<textarea class="form-control" rows="10" name="body" id="id_body"
 						placeholder="I love this boho inspired..." required></textarea>
 				</div>
 
@@ -33,8 +33,10 @@
 
 				<!-- Submit btn -->
 				<button class="submit-button btn btn-dark float-end mt-1 mb-4" type="submit">POST</button>
-				<!-- Submit btn -->
-				<a href="{% url 'blog' %}" class="submit-button btn btn-outline-dark float-end mt-1 mb-4 mx-2" type="submit">Back to blog</a>
+				<!-- Back btn -->
+				
+				<a href="{% url 'blog' %}"><button class="submit-button btn btn-outline-dark float-end mt-1 mb-4 mx-2" type="submit">Back to blog</button></a>
+				
 			</form> 
 		</div>
 	</div>

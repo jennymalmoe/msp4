@@ -1,6 +1,19 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_js %}
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script> <!-- EmailJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" 
+            integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script> <!-- JQuery Form Validation -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script> <!-- Sweet Alert Import-->
+    
+    <script>
+        (function() {
+            emailjs.init("user_TMxBrvw73ZySzIBKjJ8E8");
+        })();
+    </script>
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -10,7 +23,7 @@
 {% endblock %}
 
     <!-- About intro -->
-    {% block content %}
+{% block content %}
         <div class="container container-about">
             <div class="row about">
                 <div class="col-12">
@@ -33,42 +46,29 @@
         </div>
        
 
-        <!-- Matter -->
-        <form onsubmit="return sendMail(this);" id="contactForm">
-            <div class="px-4">
-                <select class="form-select mb-3" aria-label="Default select example" required>
-                    <option value="" selected>Contact Reason</option>
-                    <option value="1">Support</option>
-                    <option value="2">Billing</option>
-                    <option value="3">Other questions</option>
-                </select>
+        <!-- Contact Form -->
+        <div class="row page-content">
+            <div class="col-12 contact-form contact-text form-group">
+                <form id="contactForm" aria-label="Contact Form">     
+                    <select class="form-select mb-3 contact-style-input form-control" type="text" name="uselect" id="uselect" placeholder="Name" aria-label="Default select example" required>
+                        <option value="" selected>Contact Reason</option>
+                        <option value="1">Support</option>
+                        <option value="2">Billing</option>
+                        <option value="3">Other questions</option>
+                    </select>                           
+                    <input class="contact-style-input form-control" type="text" name="uname" id="uname" placeholder="Name" aria-label="Enter Name" required>
+                    <input class="contact-style-input form-control" type="email" name="uemail" id="uemail" placeholder="Email" aria-label="Enter Email" required>
+                    <textarea class="contact-style-input form-control" name="umessage" id="umessage" placeholder="Leave a message" aria-label="Enter Message" rows="4" required></textarea>
+                    <input id="contactFormSubmit" type="submit" class="btn contact-btn" aria-label="Submit Button" value="Send">
+                </form>
             </div>
-            <!-- Contact form -->
-            <div class="mb-3 px-4">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-            </div>
-            <div class="mb-3 px-4">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your message here" rows="5" required></textarea>
-            </div>
-            <!-- Newsletter -->
-            <div class="form-check mb-3 ms-4">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                Subscribe to BOHO Living newsletter?
-                </label>
-            </div>
-            
-            <button type="button" class="btn btn-dark mb-5 ms-4" data-toggle="modal" data-target="#message" id="about-btn">SUBMIT</button>
-            
-            
+        </div>
+    </div>
+        
 
+{% endblock %}
 
-                
-        </form>
-
-
-
-    {% endblock %}
-
+{% block postloadjs %}
+    {{ block.super }}
+    <script src="{% static 'js/contact_email.js' %}"></script>
+{% endblock %}
