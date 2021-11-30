@@ -2,15 +2,21 @@
 {% load static %}
 
 {% block extra_js %}
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script> <!-- EmailJS -->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" 
             integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script> <!-- JQuery Form Validation -->
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script> <!-- Sweet Alert Import-->
     
-    <script>
-        (function() {
-            emailjs.init("user_TMxBrvw73ZySzIBKjJ8E8");
-        })();
+    
+
+
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_ddvArJdeq2QwxDTphVBB3");
+      })();
     </script>
 {% endblock %}
 
@@ -22,9 +28,10 @@
     </div>
 {% endblock %}
 
-    <!-- About intro -->
+<!-- About intro -->
 {% block content %}
-        <div class="container container-about">
+<div class="overlay"></div>
+        <div class="container container-fluid container-about">
             <div class="row about">
                 <div class="col-12">
                     <h1 class="text-center">About Us</h1>
@@ -56,10 +63,10 @@
                         <option value="2">Billing</option>
                         <option value="3">Other questions</option>
                     </select>                           
-                    <input class="contact-style-input form-control" type="text" name="uname" id="uname" placeholder="Name" aria-label="Enter Name" required>
-                    <input class="contact-style-input form-control" type="email" name="uemail" id="uemail" placeholder="Email" aria-label="Enter Email" required>
-                    <textarea class="contact-style-input form-control" name="umessage" id="umessage" placeholder="Leave a message" aria-label="Enter Message" rows="4" required></textarea>
-                    <input id="contactFormSubmit" type="submit" class="btn contact-btn" aria-label="Submit Button" value="Send">
+                    <input class="contact-style-input form-control" type="text" name="uname" id="uname" placeholder="Enter your name" aria-label="Enter Name" required>
+                    <input class="contact-style-input form-control" type="email" name="uemail" id="uemail" placeholder="Enter your email address" aria-label="Enter Email" required>
+                    <textarea class="contact-style-input form-control" name="umessage" id="umessage" placeholder="Enter your message" aria-label="message" rows="4" required></textarea>
+                    <input oncklick='sendMail()' id="contactFormSubmit" type="button" class="btn btn-dark contact-btn" aria-label="Submit Button" value="Submit">
                 </form>
             </div>
         </div>
@@ -68,7 +75,4 @@
 
 {% endblock %}
 
-{% block postloadjs %}
-    {{ block.super }}
-    <script src="{% static 'js/contact_email.js' %}"></script>
-{% endblock %}
+

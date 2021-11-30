@@ -83,11 +83,16 @@ $('#contactFormSubmit').click(function (event) {
 });
 
 function sendMail(){
-    // reference: CI tutorial and https://www.youtube.com/watch?v=x7Ewtay0Q78
+    // from https://www.youtube.com/watch?v=x7Ewtay0Q78 
     let tempParams = {
         user_name: document.getElementById("uname").value,
         user_email: document.getElementById("uemail").value,
         user_msg: document.getElementById("umessage").value,
     };
-    emailjs.send('service_k339kpr', 'template_lrrt8os', tempParams);
+    emailjs.send('service_5olt1k2', 'msp4', tempParams)
+	.then(function(res){
+		console.log("success", res.status);
+	})
 } 
+
+//document.contact-form.reset(); to reset input?

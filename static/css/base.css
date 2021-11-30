@@ -617,28 +617,29 @@ main {
 }
 /* Contact form */
 .page-content {
-
+    padding: 3% 1%;
 } 
-.contact-form {
-
-}
 .contact-text {
-
+    font-size: .9rem;
+    margin: auto;
 }
 .form-group {
-
-}
-#contactForm {
-
+    max-width: 80%;
 }
 .contact-style-input {
-
-}
-.form-control {
-
+    width: 100%;
+    padding: 7px;
+    margin-top: 16px;
+    resize: none;
 }
 .contact-btn {
-    
+   margin-top: 16px;
+}
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 
@@ -733,8 +734,8 @@ main {
     color: #FFFFFF !important;
     }
     .hero-info {
-        margin-left: 10px;
-        padding-top: 60px;
+        margin-left: 15px;
+        padding-top: 50px;
     }
     .bag-total-mobile,
     .card-img-top {

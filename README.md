@@ -380,6 +380,7 @@ MongoDB Atlas is used as database backend for storing user and recipes details. 
 * [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Used to create the user sign-in function for the site.
 * [Django Countries](https://pypi.org/project/django-countries/) - Used for the country select field in the order form.
 * [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to utilise the Bootstrap form classes.
+https://favicon.io/favicon-generator/
 * [Font-Awesome](https://fontawesome.com/) - Used for icons.
 * [Git](https://git-scm.com/) - Used for version control to commit to Git and push to Heroku.
 * [Gitpod](https://gitpod.io/) - Open-source application for ready-to-code developer environments in browser.
