@@ -74,7 +74,7 @@ $('#contactFormSubmit').click(function (event) {
         Swal.fire({
             icon: 'success',
             title: 'Thank You!',
-            text: 'Your message has been received by BOHO Team',
+            text: 'Your message has been sent to BOHO Team',
             showConfirmButton: false,
             timer: 3000
         });
