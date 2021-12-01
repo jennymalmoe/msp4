@@ -430,22 +430,36 @@ main {
     text-align: center; 
     font-size: 70px;
 }
-
 .contact-btn { 
     text-transform: uppercase; 
     margin-bottom: 40px;  
 }
-
 .contact-btn:hover,
 .contact-btn:active,
 .contact-btn:focus {
     background: rgb(247, 162, 4) !important;
     color: #FFFFFF !important;
 }
-
 .copy {
     padding-bottom: 20px;
     font-size: 15px;
+}
+.footer-links {
+    padding-left: 40px;
+}
+.footer-title {
+    font-size: larger;
+    text-align: left;
+    color: rgb(247, 162, 4);
+    text-align: left;
+}
+.footer-text {
+    text-align: left;
+}
+.footer-text a{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: left;
 }
 
 
@@ -581,7 +595,7 @@ main {
 /* ------------------------------ Sign up */
 .sign-up-btn {
     padding-top: 10px;
-    margin-bottom: 40px;
+    
 }
 .sign-up {
     margin-top: 30px;
@@ -783,6 +797,9 @@ main {
     .confirm {
         margin-top: 140px;
     }
+    .footer-title {
+        font-size:
+    }
 }
 
 /* Small devices (576px or more) */
@@ -830,6 +847,9 @@ main {
     }
     .sort-select-wrapper {
         margin-right: 15px;
+    }
+    .footer-links {
+        margin-left: 17px;
     }
 }
 
@@ -890,6 +910,9 @@ main {
     }
     .co-success {
         margin-top: 110px;
+    }
+    .footer-links {
+        margin-left: 50px;
     }
 }
  

@@ -18,12 +18,9 @@
     <!-- Css -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap"> 
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <link rel="icon" href="media/tab_icon.png" type="image/png"/>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">      
+        
     {% endblock %}
    
     {% block extra_css %}
@@ -173,33 +170,97 @@
                   <h2 class="logo-font">➳BOHO Living➳</h2>
                 </a>
 
-                <a target="_blank" type="submit" href="https://www.facebook.com/">
-                  <i class="fab fa-facebook soc-media fa-lg" aria-hidden="true"></i>
-                </a>
 
-                <a target="_blank" type="submit" href="https://www.instagram.com/">
-                  <i class="fab fa-instagram soc-media fa-lg" aria-hidden="true"></i>
-                </a>
+                <div class="container"></div>
+                  <div class="row w-100 py-4 footer-links">
+                    <div class="col-12"></div>
+                      <!-- Footer links -->
+                      <div class="col">
+                          <div class="row">
+                              <div class="col-12 footer-title">
+                                  Shop Home Decor
+                              </div>
+                              <div class="col-12 footer-text">
+                                  <a href="{% url 'products' %}?category=furnitures">Furnitures</a>
+                              </div>
+                              <div class="col-12 footer-text">
+                                <a href="{% url 'products' %}?category=decor">Decor</a>
+                              </div>
+                              <div class="col-12 footer-text">
+                                <a href="{% url 'products' %}?category=textiles">Textiles</a>
+                              </div>
+                              <div class="col-12 footer-text">
+                                <a href="{% url 'products' %}?category=incense">Incense</a>
+                              </div> 
+                          </div>
+                      </div>
+                      <div class="col">
+                        <div class="row">
+                            <div class="col-12 footer-title">
+                                Shop Fashion
+                            </div>
+                            <div class="col-12 footer-text">
+                                <a href="{% url 'products' %}?category=clothes">Clothes</a>
+                            </div>
+                            <div class="col-12 footer-text">
+                              <a href="{% url 'products' %}?category=accessories">Accessories</a>
+                            </div>
+                            <div class="col-12 footer-text">
+                              <a href="{% url 'products' %}?category=bags">Bags</a>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="row">
+                            <div class="col-12 footer-title">
+                                BOHO Living
+                            </div>
+                            <div class="col-12 footer-text">
+                              <a href="{% url 'view_about' %}">About Us</a>
+                            </div>
+                            <div class="col-12 footer-text">
+                              <a href="{% url 'view_about' %}">Contact</a>
+                            </div>
+                            <div class="col-12 footer-text">
+                              <a href="{% url 'account_login' %}">Log In</a>
+                            </div>
+                            <div class="col-12 footer-text">
+                              <a href="{% url 'account_signup' %}">Sign Up</a>
+                            </div>
+                        </div>
+                      </div>
+                            
+                  </div>
+                </div>
+                <div>
+                  <a target="_blank" type="submit" href="https://www.facebook.com/">
+                    <i class="fab fa-facebook soc-media fa-lg" aria-hidden="true"></i>
+                  </a>
 
-                <a target="_blank" type="submit" href="https://www.pinterest.se/">
-                  <i class="fab fa-pinterest soc-media fa-lg" aria-hidden="true"></i>
-                </a>
+                  <a target="_blank" type="submit" href="https://www.instagram.com/">
+                    <i class="fab fa-instagram soc-media fa-lg" aria-hidden="true"></i>
+                  </a>
 
-                <a target="_blank" type="submit" href="https://twitter.com/">
-                  <i class="fab fa-twitter soc-media fa-lg" aria-hidden="true"></i>
-                </a>
+                  <a target="_blank" type="submit" href="https://www.pinterest.se/">
+                    <i class="fab fa-pinterest soc-media fa-lg" aria-hidden="true"></i>
+                  </a>
 
-                <a target="_blank" type="submit" href="https://www.tiktok.com/">
-                  <i class="fab fa-tiktok soc-media fa-lg" aria-hidden="true"></i>
-                </a>
+                  <a target="_blank" type="submit" href="https://twitter.com/">
+                    <i class="fab fa-twitter soc-media fa-lg" aria-hidden="true"></i>
+                  </a>
 
-                <a target="_blank" type="submit" href="https://accounts.snapchat.com/">
-                  <i class="fab fa-snapchat-ghost soc-media fa-lg" aria-hidden="true"></i>
-                </a>
+                  <a target="_blank" type="submit" href="https://www.tiktok.com/">
+                    <i class="fab fa-tiktok soc-media fa-lg" aria-hidden="true"></i>
+                  </a>
+                
+                  <a target="_blank" type="submit" href="https://accounts.snapchat.com/">
+                    <i class="fab fa-snapchat-ghost soc-media fa-lg" aria-hidden="true"></i>
+                  </a>
+                </div>
 
-                <br>
+                  <br>
 
-                <div class="copy">Copyright©2021 | Jenny Borglin | All rights reserved</div>
+                  <div class="copy">Copyright©2021 | Jenny Borglin | All rights reserved</div>
                 
               </div>
             </div>
