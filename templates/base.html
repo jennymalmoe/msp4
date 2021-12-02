@@ -127,19 +127,30 @@
           </div>            
         </div>
     </header>
-    
+
+    {% if messages %}
+      <div class="message-container">
+          {% for message in messages %}
+              {% with message.level as level %}
+                  {% if level == 40 %}
+                      {% include 'includes/toasts/toast_error.html' %}
+                  {% elif level == 30 %}
+                      {% include 'includes/toasts/toast_warning.html' %}
+                  {% elif level == 25 %}
+                      {% include 'includes/toasts/toast_success.html' %}
+                  {% else %}
+                      {% include 'includes/toasts/toast_info.html' %}
+                  {% endif %}
+                      {% endwith %}
+                  {% endfor %}
+      </div>
+    {% endif %}
+
     {% block page_header %}
     {% endblock %}
-    
+
     {% block content %}
     {% endblock %}
-    
-    {% block postloadjs %}
-      <!-- To show toasts -->
-        <script type="text/javascript">
-          $('.toast').show();
-        </script>
-      {% endblock %}
 
     <!-- Back to top btn -->
     <button class="z-depth-5" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
@@ -267,8 +278,14 @@
           </div>
       </footer>
 
-        
+      <!-- Extra JS -->
+      {% block postloadjs %}
+        <script src="{% static 'js/script.js' %}"></script>
+        <script type="text/javascript">
+          $('.toast').show();
+        </script>
+      {% endblock %}
     
-    <script src="{% static 'js/script.js' %}"></script>
+    
   </body>
 </html>

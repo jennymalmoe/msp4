@@ -10,7 +10,7 @@
 
 ![site on different devices](media/screen_all_devices.png) 
 
-BOHO Living (referred to "B.L" in this README) is an online home decor shop that offers a selection of trendy home decor and fashion items inspired by the modern bohemian style.
+BOHO Living (referred to "B.L" onwards in this README) is an online home decor shop that offers a selection of trendy home decor and fashion items inspired by the modern bohemian style.
 
 This is an e-commerce web application for a fictional company, created for the purposes of satisfying the requirements for the Code Institute Full Stack Development Course Milestone Project 4. The application features e-commerce functionality, payments using stripe, a blog section for admin as well as users to add blog posts, confirmation emails, CRUD functionality for admin to add stock items, and an admin section, for the admin user to access database records.
 
@@ -26,7 +26,7 @@ No authentication (default U.S. card): 4242 4242 4242 4242 Date: 4242 CVV Number
 
 ___
 
-- [User Experience](#user-experience)
+- [UX](#ux) 
   * [Project Goals](#project-goals)
   * [Business Goals](#business-goals)
   * [User Stories](#user-stories)
@@ -40,7 +40,7 @@ ___
 
 <br>
 
-- [Features](#features)
+- [Features](features)
   * [Existing Features](#existing-features)
   * [Features Left to Implement](#features-left-to-implement)
 
@@ -78,7 +78,7 @@ ___
 
 <br>
 
-# User Experience
+## UX
 
 ## Project Goals
 
@@ -247,16 +247,16 @@ Every page of the website features a consistently responsive and intuitive layou
 * Social media icons/links in all pages. 
 * Back to top button on all devices and pages. 
 * An account with Super User privileges has been created for testing purposes. The username and password will be supplied on submission of the project.???
-
-**Home Page**
-* Features a suitable design and eye catching image.
-* Visitor/Users can get redirected directly to product page. 
 * Registration, visitors allows to register.
-* Visitors/Users get information about BOHO Living and what BOHO Living offers by the info text below the hero image. 
-* Carousel links to different pages on site. 
 
-**All Products Page**
-* Visitors/Users can search for recipes.
+**Home**
+The home page features 3 sections apart frpm header and footer.
+* Hero image with CTA (visitor can get redirected directly to product page by clicking "Shop now" button). 
+* Intro text about B.L.
+* Carousel with inspiring images of products that links to the actual products.
+
+**Products**
+* Product section presents the category visiting at the time at the top (except when choosing "All products"), the number of items in this particular category and a by select box. The products are presented in rows including product name, price, category and rating.
 * Features a clean search bar for user to search. 
 * Visitors/Users can read recipes.
 * Visitors/Users can see who added the recipes.
