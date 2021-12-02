@@ -302,9 +302,7 @@ a.category-badge > span.badge:hover {
 
 
 
-.checkout-form {
-    padding-top: 10px;
-}
+
 
 /* ------------------------------ Allauth */
 .allauth {
@@ -505,6 +503,9 @@ main {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+.checkout-form {
+    padding-top: 10px;
+}
 
 /* ------------------------------ Checkout form */
 .form-group {
@@ -610,36 +611,6 @@ main {
     margin-top: 20px;
 }
 
-#id_email {
-   width: 350px;
-   border-width: 1px;
-   padding-top: 6px;
-   padding-bottom: 6px;
-}
-#id_email2 {
-    width: 350px;
-    border-width: 1px;
-    padding-top: 6px;
-    padding-bottom: 6px;
- }
- #id_username {
-    width: 350px;
-    border-width: 1px;
-    padding-top: 6px;
-    padding-bottom: 6px;
- }
- #id_password1 {
-    width: 350px;
-    border-width: 1px;
-    padding-top: 6px;
-    padding-bottom: 6px;
- }
- #id_password2 {
-    width: 350px;
-    border-width: 1px;
-    padding-top: 6px;
-    padding-bottom: 6px;
- }
 
 
 /* ------------------------------ Confirm email */
@@ -679,7 +650,7 @@ main {
     font-size: .9rem;
     margin: auto;
 }
-.form-group {
+.form-groups {
     max-width: 80%;
 }
 .contact-style-input {
@@ -798,7 +769,7 @@ main {
         margin-top: 10px;
     }
     .profile {
-        margin-top: 120px;
+        margin-top: 130px;
     }
     .search-term {
         text-align: center;
@@ -907,6 +878,7 @@ main {
     .hero-container {
         padding-top: 150px;
         height: 500;
+        max-width: 100%;
     } 
     .profile {
         margin-top: 100px;
@@ -1040,7 +1012,38 @@ main {
 
 
 
-
+/*
+#id_email {
+    width: 300px;
+    border-width: 1px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+ }
+ #id_email2 {
+     width: 350px;
+     border-width: 1px;
+     padding-top: 6px;
+     padding-bottom: 6px;
+  }
+ #id_username {
+    width: 350px;
+    border-width: 1px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+ }
+ #id_password1 {
+    width: 350px;
+    border-width: 1px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+ }
+ #id_password2 {
+    width: 350px;
+    border-width: 1px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+ }
+*/
 
 
 

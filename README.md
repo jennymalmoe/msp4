@@ -20,6 +20,8 @@ When using the Payment Intents API with Stripe’s client libraries and SDKs, us
 
 No authentication (default U.S. card): 4242 4242 4242 4242 Date: 4242 CVV Number:424
 
+An account with Super User privileges has been created for testing purposes. The username and password will be supplied when submitting the project.
+
 <br>
 
 ## Table of contents
@@ -167,14 +169,15 @@ This user story template consists of three sections; As a (decription of user), 
 | 36  | Administrator |  Have access to an admin section                      | Can operate the e-commerce                                                                       |
 | 37  | Administrator | Add a product **(Create)**, write information about the product **(Read)**, edit product **(Update)** and remove product **(Delete)**                                                    | Can adjust the offers
 | 38  | Administrator |  Be able to keep track of the trafic to the site                     | Can understand the visitors needs (why they come back, what attracts them, which page brings in the most visitors etc.)
-| 39  | Administrator |  Delete users blog posts, if inappropriate                      | Can keep the site proffessional                                                                       |
+| 39  | Administrator |  Delete users blog posts, if inappropriate                      | Can keep the site proffessional      
+| 40  | Administrator |  Have logical SKU:s                      |       Get a general picture about what category, color etc the product is. (W=white MV=multicolor B=blue G=green BR=brown HD=home decor)
+                                                                 |
 |     |            | *Site manager*                                  |                                                                                       |
-| 40  | Shopper | Be able to manage/edit the site                                            | Keep the site relevant and with correct information/sortiment                                        |
+| 41  | Shopper | Be able to manage/edit the site                                            | Keep the site relevant and with correct information/sortiment                                        |
 |     |            | *Blog*                                  |                                                                                       |
-| 41  | Shopper | Get inspired                                            | Get home decoration/fashion ideas                                                          |
-| 42  | Shopper | Be able to contibute with my own ideas by adding a post                                             | Share inspirational ideas                               |
+| 42  | Shopper | Get inspired                                            | Get home decoration/fashion ideas                                                          |
+| 43  | Shopper | Be able to contibute with my own ideas by adding a post                                             | Share inspirational ideas                               |
                                              
-
 <br>
 
 ## Design Choices
@@ -224,7 +227,7 @@ This user story template consists of three sections; As a (decription of user), 
 While the project relied on these wireframes, there are some differences between the wireframes and the final product; 
 
 * No spinner icon while Stripe payment is processing.
-* I added a "About Us" page with a contact form. 
+* An "About Us" page with a contact form was added. 
 
 <br>
 
@@ -237,95 +240,77 @@ While the project relied on these wireframes, there are some differences between
 Every page of the website features a consistently responsive and intuitive layout and navigational system:
 
 **General features**
+* Fixed navigation bar, including logo or home link that links to home page from all pages, search function, my account ("Sign in", "Sign up", "Product management" and "My profile") and bag total icon and eventual amount.  
+* Main navigations links in navigation bar shown as a collapsible navbar (hamburger button) shown at smaller devices.  
+* Footer with short presentaion/bait of the blog, a contact button, nav links, links to social media and copyright info. 
+* Delivery banner which indicates free delivery on orders over 50$. 
+* Back to top button.
+* An account with Super User privileges has been created for testing purposes.
 * Responsive site on all devices.
-* Fixed navbar to be seen at all times. 
-* Navigation bar works as intended. When you click on the site name, you will be taken directly to the home page. When you press the home button (both from the navbar toggle and from the nav link), you'll be taken to the home page. I choose to have "Home" in both places so it always is easy to find the way back to the home page. The site has following navlinks; Home, All products, Homedecor, Fashion, Outlet, BOHO blog, About us. clothing. Shown in a drop-down menu to the left for medium and small devices. In the upper right corner there is a search function, My account link and cart link. I clicking the My account link, you can choose to either register or login. If clicking the cart icon visitor eiter get presented to what is in the cart at the time or to a "Your bag is empty" message. If you are loged in and clicking "My account" visitor get presented to either visit "My profile" or "Logout". If it is superuser that is loged in, a "Product management" link is presented as well.  
-* Shown as a collapsible navbar (hamburger button) triggered at tablets and mobile devices. 
-* Search bar allowing visitors to search for products. 
-* Footer in all pages.
-* Contact possibilities by clicking contact button in footer.
-* Social media icons/links in all pages. 
-* Back to top button on all devices and pages. 
-* An account with Super User privileges has been created for testing purposes. The username and password will be supplied on submission of the project.???
-* Registration, visitors allows to register.
 
 **Home**
-The home page features 3 sections apart frpm header and footer.
+The home page features 3 sections apart from header and footer.
 * Hero image with CTA (visitor can get redirected directly to product page by clicking "Shop now" button). 
 * Intro text about B.L.
 * Carousel with inspiring images of products that links to the actual products.
 
 **Products**
 * Product section presents the category visiting at the time at the top (except when choosing "All products"), the number of items in this particular category and a by select box. The products are presented in rows including product name, price, category and rating.
-* Features a clean search bar for user to search. 
-* Visitors/Users can read recipes.
-* Visitors/Users can see who added the recipes.
+* Product details displays a detailed view of the product with product name, price, category, rating, description, quantity input field and "Keep shopping" and "Add to bag" button. 
+* Manage products displays a form that enables admin to create, edit or delete products. 
 
-**Home Decor page**
-* Kitchen ware is presented and visitor can get inspired by the products and get redirected to the site and buy the products.
-* Features some examples of products that goes hand in hand with the rest of the sites purpose; eco and vegan friendly kitchen ware.
+**Home Decor**
+* Home Decor section consists of "New in", "furnitures", "Decor", "Textiles", "Incense" and "All home decor". 
 
-**Fashion page**
-* Log In is possible after registered.
-* User gets a success message when loged in to verify user stated right username and password.
-* Features a clean log in form for user to log in.
-* Users can be redirected directly to Registration Page if not already registered.
-* Users can contact Lazy Vegan (mail).
-* User get redirected to Profile Page after login in.
+**Fashion**
+* Fashion section consists of "New in", "Clothes", Accessories", "Bags" and "All fashion". 
 
-**Outlet page**
-* User get redirected to Log In Page after login in.
-* User gets a success message when loged out to verify user loged out.
-* Features a clean log out form for user to log out.
+**Outlet**
+* Outlet page contains products with lower prices. 
 
-**Register Page**
-* Registration, visiters allows to register.
-* User gets a "welcome message" at Profile page when registered to verify user registration. 
-* Features a clean registration form for visitor to sign up.
-* Visitor can be redirected directly to Log In Page if already registered.
-* Visitor can contact Lazy Vegan (mail).
-* User get redirected to Profile Page after registered.
+**Boho Blog**
+* Boho Blog page contains inspiring blog posts added by admin or users. It has an intro text about general boho style and two "Create your blog post" buttons, one above the blog posts and one below. The blog post has a title, author, date, text and "Read more" button and an image. 
 
-**Profile Page**
-* Users can see own added recipes. 
-* If user hasn't added any recipes, a suggestion to do that is presented along with a button to redirect directly to Add Recipe page. 
-* Users can edit, delete and add recipes. 
+**About us**
+* About us page contains short background information about B.L and a contact form. When filling out the form and submit it, an alert shows; "Your message has been sent". User get an email that confirms that B.L has received the question.
 
-**Add Recipes**
-* User can choose between four categories, add a recipe name, image url, choose to use default image insted of own image, see a preview of that image url, add ingredients and directions for the recipe, tell if it is a gluten free recipe or not.
-* User gets a success message when added a recipe to verify adding recipe completed.
-* Features a clean form for user to add a recipe.
-* Done adding recipe get redirected to Recipe Page.
+**My account**
+* Sign up - allows visitor to sign up. If user already has an account there is also a link to log in instead. When signing up a toast whit success message is shown and a confirmation mail is sent.
+* Sign in - allows registered users to log in. When signed in, a welcome toast is shown.
+* Product management - when signed in a product management link is shown in "My Account" dropdown where you can add products by choosing category, SKU, name, description, size, prize, rating, image url.
+* My Profile - if saved, users delivery information is shown, with the possibility to update the information. If user has an order history it is shown here. 
+* Logout - a confirmation text "Are you sure you want to signout?" and a sign out button. 
 
-**Edit Recipe**
-* Edit one or more sections in the recipe (only recipes added by user her self).
-* User gets a success message when edited a recipe to verify updated recipe completed.
-* Delete a recipe (only recipes added by user her self).
-* Features a clean form for user to edit, delete or cancel.
-* Each section is pre-filled with data provided when adding recipe in first place. 
-* Done editing recipe get redirected to Recipe Page.
+**Shopping cart**
+* When shopping cart is empty, an "Your bag is empty"  message displays along with a "Let's shop" button. 
+* When shopping cart has items, shopping bag page is displayed along with the items that are added in bag (product info, prize, quantity, subtotal, product image, product name, size, update, remove, bag total, delivery cost, grand total, message of how much more to spend to get free delivery, "Keep shopping" and "Checkout" button). "Keep shopping" button links to "Products" page. "Checkout" button links to checkout page. 
 
-**Delete Recipe**
-* User gets a success message when deleting a recipe to verify recipe now deleted. 
+**Checkout**
+* Checkout page has 2 sections, one form including Details, delivery and payment details, "Adjust bag" and "Complete order" button. The other section consists of an order summary. When completing the order a success toast is shown and user get redirected to "Thank you for choosing BOHO Living" page that includes order information, a "Check out the latest deals"  that links to new in items. A confirmation mail is sent to user. 
+
+**Toasts**
+There are 4 different kind of toasts: success, info, warning, error, that appears when a certain action has ben triggered by user to get feedback on the action. For example adding something in bag, logging in etc. 
+
+**Django-allauth**
+* A Python package used to the sign up, login, logout, password change features. 
+
+**Emailjs**
+* Used to send confirmation mail after user filled out the contact form.  
 
 <br>
 
 ## Features left to implement
-* Email notification functionality for users to be alerted when a new recipe is added.
-* Be able to search through categories, kind of food (italian, mexican etc).
-* Ability to reset an account password.
-* User profile picture functionality, allowing users to add profile pictures.
-* Allowing/Enabling users to comment the recipes.
-* Present more information about the benefits for being a vegan and living a vegan lifestyle.
+* Comments and ability to share blog posts to social media (potential to convert more readers into paying customers). 
+* Elaborate SKU numbers, to make even more logical to Administrator.
+* More categories. 
+* Function to make users giving rating. To day set by sales numbers.  
+* Email notification functionality for users to be alerted when a new product or service is added.
+* User profile picture functionality, allowing users to add profile pictures. Nice feature if posting blog posts. 
+* Allowing users to comment the products.
 * Easier to get contacted by business partners regarding any collaboration, business deals and sponsorship.
 * Get more contact information about the registered users to be able to reach out (newsletters, offers etc).
-* Some kind of chatt/forum for the community to grow. 
-Who the people are, you know how to get to them (the blogs they read, the sites they visit, the stuff they search in Google, etc.)
-What they don’t care about, you can dismiss and cut it from the site
-analytics - This increases your ROI (return on investment) because it allows you to focus on the people who want to hear your message and cuts out the ones who simply have no interest in what you are selling.
-surveys also reach out to blogs influencers in the relevant segment etc
-customers to add reviews to products, so that other customers will feel more confident about making a purchase.
-
+* Expand blog section to have different categories, ideas, what products is on sale, new in etc.  
+* Customize site based on Analytics statistic, who are the visitors/users. What pages and products are popular and not and adjust sortiment/site to that to increases the ROI (return on investment). 
 <br>
 
 # Database Design
@@ -528,11 +513,10 @@ Making a copy of the original repository on our GitHub account to view or to mak
 <br>
 
 # Credits
-* My mentor Moosa for helpfull feedback througout the project.
 * Code Institute tutor support.
 * Fellow students on Slack for a helping hand when I've got stuck.
 * Google!
-
+* CI for inspiration from the Boutique Ado project. 
 
 
 
@@ -583,7 +567,7 @@ Postgres
 
 bug register my account got an SMTPAuthenticationError at /accounts/signup/. whenever I tried registrate a new user, it said "Already have an account? Then please sign in." I had DEVELOPMENT in my gitpod settings, but scope was set for my msp3 not to my msp4 or */* (to access all). It was trying to use the gmail smtp from Gitpod but gmail was expecting the Heroku app to access it, so it wasn't authenticated and thats why it didn't work. 
 
-code taken from boutique ado 
+ 
 
 security features
 
@@ -601,67 +585,25 @@ https://django-allauth.readthedocs.io/en/latest/installation.html
 google applösenord
 
 
-For the assessor, I have included the admin login details in the comments section when submitting the project.
 
 
 
-from django.db import models
-
-from django.utils.text import slugify
-from django.conf import settings
-from django.db.models.signals import post_delete, pre_save
-from django.dispatch import receiver
-
-from profiles.models import UserProfile
 
 
-def upload_location(instance, filename, **kwargs):
-    file_path = 'blog/{author_id}/{title}-{filename}'.format(
-            author_id=str(instance.author.id), title=str(instance.title), filename=filename
-        )
-    return file_path
-
-class BlogPost(models.Model):
-    title                   = models.CharField(max_length=50, unique=True, null=False, blank=False)
-    body                    = models.TextField(max_length=5000, null=False, blank=False)
-    image                   = models.ImageField(upload_to=upload_location, null=False, blank=False)
-    date_published          = models.DateTimeField(auto_now_add=True, verbose_name="date published")
-    date_updated            = models.DateTimeField(auto_now=True, verbose_name="date updated")
-    user_profile            = models.ForeignKey(UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='blogs')
-    slug                    = models.SlugField(blank=True, unique=True)
-    author                  = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
-   
-
-
-def __str__(self):
-    return self.title
-
-# To make sure to delete the img also when deleting a blog post
-@receiver(post_delete, sender=BlogPost)
-def submission_delete(sender, instance, **kwargs):
-    instance.image.delete(False)
-
-def pre_save_blog_post_receiver(sender, instance, *args, **kwargs):
-    if not instance.slug:
-        instance.slug = slugify(instance.author.username + "-" + instance.title)
-
-pre_save.connect(pre_save_blog_post_receiver, sender=BlogPost)
 
 bug OperationalError at /admin/auth/user, no such column: blog_blogpost.author_id -> which is the reset the migrations, which also resets the database, i will back up your products first though, one moment
 Sean profile
 Ok, would you liek me to reset everything and then restore the prodcuts?
 
-BLOG:Better engagement with your content, i.e., increased comments, social shares, etc.
-Having an active community around your blog is proof and validation that your blog has credibility and authority. This is a critical ingredient for attracting more people into your community.
-Potential to convert more readers into paying customers and clients.
 
-future blog: email lists, push notifications, share on social media, comments, movies, 
+
+
 
 bug when stripe no confirmation mail in terminal 404 error, "edit webhook endpoint" in stripe and then got an 200 error in terminal, payment_intent.succeeded in stripe, but no conf mail still,  then changed from private to public  8000 port. Well, the webhook itself wasn't set up quite right either, so a combo. (STRIPE_WH_SECRET not KEY till slut) så det va det och att the webhook it self wasn't set up right. added 8000- i början and checkout/wh/ in the end. 
 
 So a word of warning about your webhooks still. This all works fine for your local endpoint, but if you're going to use the heroku one it will need a different WH_SECRET_KEY in your Heroku cvars. You can find this by Reveal the signing secret you find for the heroku endpoint in Stripe website. So both local and deployed site have the same STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY but they will have different STRIPE_WH_SECRET.
 
-SKU explanation most important first, categories, could utveckla detta mer featurers left to do. W=white MV=multicolor B=blue G=green BR=brown HD=home decor. 
+ 
 
 
 bug: confirmations page and success toast don't show after a purchase. I remove line 82 and 95 in js checkout. county field removed but forgot to remove it from js, only removed it (county) in forms and models etc. 
@@ -670,5 +612,3 @@ bug: modal disappeared direkt, fick byta type="submit" till type="button". the b
 Bug: pga ovan att type är button o inte submit så funkar inte required. 
 
 OBS known bug ("On some iOS devices, this happens....") bug: nothing happens when I click "Register" or "Login" (if I am not signed in) after added item(s) in the bag (=toast). after loged in nothing happens when clicking my profile. logout, need to refresh to be able to. 
-
-modal from https://www.w3schools.com/howto/howto_css_modals.asp. 

@@ -1,4 +1,4 @@
-{% load account %}{% user_display user as user_display %}{% load i18n %}{% autoescape off %}{% blocktrans %}Hello {{ username }}!
+{% load account %}{% user_display user as user_display %}{% load i18n %}{% autoescape off %}{% blocktrans %}Hi {{ username }}!
 
 You're receiving this e-mail because user {{ user_display }} has given yours as an e-mail address to connect their account.
 
@@ -6,7 +6,7 @@ To confirm this is correct, go to {{ activate_url }}
 {% endblocktrans %}
 {% blocktrans with site_name=current_site.name site_domain=current_site.domain %}If you have any questions, feel free to contact us at customerservice@boholiving.com.
 
-With love,
+Best regards,
 ➳BOHO Living➳
 
 You cannot reply to this email.
