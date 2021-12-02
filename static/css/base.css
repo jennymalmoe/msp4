@@ -272,7 +272,6 @@ a.category-badge > span.badge:hover {
 
 .custom-toast {
     overflow: visible;
-    display:block;
 }
 
 .toast-capper {
@@ -304,7 +303,7 @@ a.category-badge > span.badge:hover {
     margin-top: 100px;
 }
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; 
+    padding-top: 0px; 
     color: #6c757d; 
 }
 
@@ -573,6 +572,7 @@ main {
 
 
 
+
  
 
 /* ------------------------------ Bag */
@@ -595,11 +595,44 @@ main {
 /* ------------------------------ Sign up */
 .sign-up-btn {
     padding-top: 10px;
+    margin-bottom: 40px;
     
 }
 .sign-up {
-    margin-top: 30px;
+    margin-top: 20px;
 }
+
+#id_email {
+   width: 350px;
+   border-width: 1px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+}
+#id_email2 {
+    width: 350px;
+    border-width: 1px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+ }
+ #id_username {
+    width: 350px;
+    border-width: 1px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+ }
+ #id_password1 {
+    width: 350px;
+    border-width: 1px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+ }
+ #id_password2 {
+    width: 350px;
+    border-width: 1px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+ }
+
 
 /* ------------------------------ Confirm email */
 .confirm {
@@ -632,6 +665,7 @@ main {
 /* Contact form */
 .page-content {
     padding: 3% 1%;
+    width: 100vw !important;
 } 
 .contact-text {
     font-size: .9rem;
@@ -796,9 +830,6 @@ main {
     }
     .confirm {
         margin-top: 140px;
-    }
-    .footer-title {
-        font-size:
     }
 }
 
@@ -987,13 +1018,16 @@ main {
     }
 }
 
-
-
-
-
-
-
-
+.loading {
+    display: flex;
+    justify-content: center;
+}
+.loading::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background
+}
 
 
 

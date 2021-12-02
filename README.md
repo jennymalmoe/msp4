@@ -380,7 +380,6 @@ MongoDB Atlas is used as database backend for storing user and recipes details. 
 * [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Used to create the user sign-in function for the site.
 * [Django Countries](https://pypi.org/project/django-countries/) - Used for the country select field in the order form.
 * [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to utilise the Bootstrap form classes.
-https://favicon.io/favicon-generator/
 * [Font-Awesome](https://fontawesome.com/) - Used for icons.
 * [Git](https://git-scm.com/) - Used for version control to commit to Git and push to Heroku.
 * [Gitpod](https://gitpod.io/) - Open-source application for ready-to-code developer environments in browser.
@@ -392,9 +391,9 @@ https://favicon.io/favicon-generator/
 * [PEP8](https://www.python.org/dev/peps/pep-0008/) - Used to improve the readability and consistency of Python code.
 * [PEP8online](http://pep8online.com/) - Used to check code for PEP8 requirements.
 * [Pillow](https://pillow.readthedocs.io/en/stable/) - Python Imaging Library.
-* [Pixelmator](https://www.pixelmator.com/mac/) - Used to resize images and creating logo.
+* [Pixelmator](https://www.pixelmator.com/mac/) - Used to resize images, creating logo and tab icon.
 * [Postimages](https://postimages.org/) - Used to create url for images. 
-Sweet laerts
+Sweet alerts
 * [TechSini](https://techsini.com/) - Mockup generator used for preview of the website.
 * [Visual Studio Code](https://code.visualstudio.com/) - IDE used for code editing.
 * [W3C Validator](https://validator.w3.org/) - Used to test HTML code.

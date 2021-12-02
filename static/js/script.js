@@ -1,5 +1,6 @@
-//BACK TO TOP BTN
-//Get the button:
+// BACK TO TOP BTN
+// Code frpm www.w3schools.com
+// Get the button:
 mybutton = document.getElementById("myBtn");
 
 // When user scrolls down 20px from the top of document, show the button
@@ -21,7 +22,7 @@ function topFunction() {
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// TOASTS
+// Toasts
 // Bootstrap 5 toast initialisation
 let toastElList = [].slice.call(document.querySelectorAll('.toast'))
 let toastList = toastElList.map(function (toastEl) {
@@ -37,10 +38,11 @@ let toastList = toastElList.map(function (toastEl) {
 
 // ALERT
 
-//EmailJs used to send email from contact form
+// EmailJs used to send email from contact form
 
-/* Checking if form is valid 
-Sourced from https://codepen.io/tetnuc/pen/gRqOEO */
+// Checking if form is valid 
+// Code from https:codepen.io/tetnuc/pen/gRqOEO 
+// <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 $('#contactForm').validate({
     rules: {
         uname: {
@@ -95,4 +97,4 @@ function sendMail(){
 	})
 } 
 
-//document.contact-form.reset(); to reset input?
+//document.getElementById("contactForm").reset(); ???
