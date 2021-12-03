@@ -16,9 +16,15 @@ This is an e-commerce web application for a fictional company, created for the p
 
 This website is only for educational purposes and the stripe functionality is set up to only accept the test card details below, please don't enter your personal card details.
 
-When using the Payment Intents API with Stripe’s client libraries and SDKs, use the following test card number:
+When using the Payment Intents API with Stripe’s client libraries and SDKs, use the following test card number and details:
 
-No authentication (default U.S. card): 4242 4242 4242 4242 Date: 4242 CVV Number:424
+**Card Number: 4242 4242 4242 4242**
+
+**Month/Year : 04 / 24**
+
+**CVC: 242**
+
+**ZIP: 42424**
 
 An account with Super User privileges has been created for testing purposes. The username and password will be supplied when submitting the project.
 
@@ -28,7 +34,7 @@ An account with Super User privileges has been created for testing purposes. The
 
 ___
 
-- [UX](#ux) 
+1. [**UX**](#ux) 
   * [Project Goals](#project-goals)
   * [Business Goals](#business-goals)
   * [User Stories](#user-stories)
@@ -91,12 +97,19 @@ The purpose of this project is to
 *"...build a full-stack site based around business logic used to control a centrally-owned dataset. You will set up an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service"* using HTML, CSS, JavaScript, Python+Django, a relational database (recommending MySQL or Postgres), Stripe payments
 and possible additional libraries and API's. 
 
-Create a web application that allows users/store owner to:
-    
-* Add products to the website (CREATE)
-* Find products to purchase online (READ)
-* Edit products (UPDATE)
-* Delete products (DELETE)
+**Value provided:**
+1. By authenticating on the site and paying for some of its services, users can advance their own goals. Before authenticating, the site makes it clear how those goals would be furthered by the site.
+2. The site owner is able to make money by providing this set of services to the users. There is no way for a regular user to bypass the site's mechanisms and derive all of the value available to paid users without paying.
+
+This project has a full set of CRUD (creation, reading, updating and deletion of data records) features. CRUD at user interface level:
+
+|Operation|SQL|HTTP|DDS|Description|
+|---|----|----|----|----|
+|**Create**|INSERT|PUT/POST|Write|Create a resource: Users can create profiles by signing up. Users can create orders by adding items to bag annd then follow the checkout procedure. Users can create a blog post in BOHO Blog page. Admin can create products and blog posts.
+|**Read**|SELECT|GET|Read|Retrieve a resource: Users can retrieve, search and view products.
+|**Update**|UPDATE|PUT/PATCH/POST|Write|Update a resource: Users can update/edit the delivery information. Admin can update/edit products and blog posts.
+|**Delete**|DELETE|DELETE|Dispose|Delete a resource: Admin can delete products, registered users and blog posts.
+
 
 <br>
 
@@ -176,8 +189,8 @@ This user story template consists of three sections; As a (decription of user), 
 | 41  | Shopper | Be able to manage/edit the site                                            | Keep the site relevant and with correct information/sortiment                                        |
 |     |            | *Blog*                                  |                                                                                       |
 | 42  | Shopper | Get inspired                                            | Get home decoration/fashion ideas                                                          |
-| 43  | Shopper | Be able to contibute with my own ideas by adding a post                                             | Share inspirational ideas                               |
-                                             
+| 43  | Shopper | Be able to contibute with my own ideas by adding a post                                             | Share inspirational ideas                                                          |
+
 <br>
 
 ## Design Choices
@@ -237,11 +250,11 @@ While the project relied on these wireframes, there are some differences between
 
 <br>
 
-Every page of the website features a consistently responsive and intuitive layout and navigational system:
+Every page of the website features a consistently responsive and intuitive layout and navigational system.
 
-**General features**
+**General features shown at all pages**
 * Fixed navigation bar, including logo or home link that links to home page from all pages, search function, my account ("Sign in", "Sign up", "Product management" and "My profile") and bag total icon and eventual amount.  
-* Main navigations links in navigation bar shown as a collapsible navbar (hamburger button) shown at smaller devices.  
+* Main navigations links in navigation bar shown as a collapsible navbar (hamburger button) shown at tablets and mobile devices.  
 * Footer with short presentaion/bait of the blog, a contact button, nav links, links to social media and copyright info. 
 * Delivery banner which indicates free delivery on orders over 50$. 
 * Back to top button.
@@ -250,58 +263,60 @@ Every page of the website features a consistently responsive and intuitive layou
 
 **Home**
 The home page features 3 sections apart from header and footer.
-* Hero image with CTA (visitor can get redirected directly to product page by clicking "Shop now" button). 
+* Hero image with CTA (visitor can get redirected directly to product page by clicking "Shop now" button) and text  
 * Intro text about B.L.
 * Carousel with inspiring images of products that links to the actual products.
 
 **Products**
-* Product section presents the category visiting at the time at the top (except when choosing "All products"), the number of items in this particular category and a by select box. The products are presented in rows including product name, price, category and rating.
-* Product details displays a detailed view of the product with product name, price, category, rating, description, quantity input field and "Keep shopping" and "Add to bag" button. 
-* Manage products displays a form that enables admin to create, edit or delete products. 
+* Product section presents the category visiting at the time at the top (except when choosing "All products"), the number of items in this particular category to the left and a by select box to the right. The products are presented in rows including product name, price, category and rating.
+* Product details displays a detailed view of the product with product name, price, category, rating, description, quantity input field and "Keep shopping" and "Add to bag" button all in one column.  
 
 **Home Decor**
-* Home Decor section consists of "New in", "furnitures", "Decor", "Textiles", "Incense" and "All home decor". 
+* Home Decor section consists of following categories: "New in", "furnitures", "Decor", "Textiles", "Incense" and "All home decor". 
 
 **Fashion**
-* Fashion section consists of "New in", "Clothes", Accessories", "Bags" and "All fashion". 
+* Fashion section consists of following categories: "New in", "Clothes", Accessories", "Bags" and "All fashion". 
 
 **Outlet**
 * Outlet page contains products with lower prices. 
 
 **Boho Blog**
-* Boho Blog page contains inspiring blog posts added by admin or users. It has an intro text about general boho style and two "Create your blog post" buttons, one above the blog posts and one below. The blog post has a title, author, date, text and "Read more" button and an image. 
+* Boho Blog page contains inspiring blog posts added by admin or users. It has an intro text about general boho style at the top and two "Create your blog post" buttons, one above the blog posts and one below. The blog post has a title, author, date, text and "Read more" button and an image and is presented in a column. 
 
 **About us**
-* About us page contains short background information about B.L and a contact form. When filling out the form and submit it, an alert shows; "Your message has been sent". User get an email that confirms that B.L has received the question.
+* About us page contains short background information about B.L at the top and a contact form below. When filling out the form and submit it, an alert shows in the top right corner; "Your message has been sent". User get an email that confirms that B.L has received the question.
 
 **My account**
+If not signed in:
 * Sign up - allows visitor to sign up. If user already has an account there is also a link to log in instead. When signing up a toast whit success message is shown and a confirmation mail is sent.
 * Sign in - allows registered users to log in. When signed in, a welcome toast is shown.
-* Product management - when signed in a product management link is shown in "My Account" dropdown where you can add products by choosing category, SKU, name, description, size, prize, rating, image url.
+If signed in:
 * My Profile - if saved, users delivery information is shown, with the possibility to update the information. If user has an order history it is shown here. 
 * Logout - a confirmation text "Are you sure you want to signout?" and a sign out button. 
+If signed in as a superuser:
+* Product management - when signed in a product management link is shown in "My Account" dropdown where you can add products by choosing category, SKU, name, description, size, prize, rating, image url.
 
 **Shopping cart**
-* When shopping cart is empty, an "Your bag is empty"  message displays along with a "Let's shop" button. 
+* When shopping cart is empty, an "Your bag is empty"  message displays in new page, along with a "Let's shop" button below the message. 
 * When shopping cart has items, shopping bag page is displayed along with the items that are added in bag (product info, prize, quantity, subtotal, product image, product name, size, update, remove, bag total, delivery cost, grand total, message of how much more to spend to get free delivery, "Keep shopping" and "Checkout" button). "Keep shopping" button links to "Products" page. "Checkout" button links to checkout page. 
 
 **Checkout**
-* Checkout page has 2 sections, one form including Details, delivery and payment details, "Adjust bag" and "Complete order" button. The other section consists of an order summary. When completing the order a success toast is shown and user get redirected to "Thank you for choosing BOHO Living" page that includes order information, a "Check out the latest deals"  that links to new in items. A confirmation mail is sent to user. 
+* Checkout page has two sections, one column with a form including details, delivery and payment details, "Adjust bag" and "Complete order" button. The other section (column two) consists of an order summary. When completing the order a success toast is shown and user get redirected to "Thank you for choosing BOHO Living" page that includes order information, a "Check out the latest deals" that links to new in items. A confirmation mail is sent to user. 
 
 **Toasts**
-There are 4 different kind of toasts: success, info, warning, error, that appears when a certain action has ben triggered by user to get feedback on the action. For example adding something in bag, logging in etc. 
+There are four different kind of toasts: success, info, warning, error, that appears when a certain action has ben triggered by user to get feedback on the action. For example adding something in bag, logging in etc. 
 
 **Django-allauth**
 * A Python package used to the sign up, login, logout, password change features. 
 
 **Emailjs**
-* Used to send confirmation mail after user filled out the contact form.  
+* Used to send confirmation mail after user filled out the contact form and success message when submitting the form.  
 
 <br>
 
 ## Features left to implement
 * Comments and ability to share blog posts to social media (potential to convert more readers into paying customers). 
-* Elaborate SKU numbers, to make even more logical to Administrator.
+* Elaborate the SKU numbers, to make even more logical to Administrator.
 * More categories. 
 * Function to make users giving rating. To day set by sales numbers.  
 * Email notification functionality for users to be alerted when a new product or service is added.
@@ -315,14 +330,95 @@ There are 4 different kind of toasts: success, info, warning, error, that appear
 
 # Database Design
 
-<br>
-
-MongoDB Atlas is used as database backend for storing user and recipes details. There are three collections; 
-
-<br>
-
 ## Database schema
 ![Database](static/images/db_scheme.png)
+
+## Profile App
+
+### Profile model
+
+|Name             |Database Key            |Field Type         | Validation Requirements                     |
+|-----------------|------------------------|-------------------|---------------------------------------------|
+|User             |user                    |OneToOneField(User)|on_delete=models.CASCADE                     |
+|Phone Number     |default_phone_number    |CharField          |max_length=20, null=True, blank=True         |
+|Street Address 1 |default_street_address1 |CharField          |max_length=80, null=True, blank=True         |
+|Street Address 2 |default_street_address2 |CharField          |max_length=80, null=True, blank=True         |
+|Town or City     |default_town_or_city    |CharField          |max_length=40, null=True, blank=True         |
+|Postcode         |default_postcode        |CharField          |max_length=20, null=True, blank=True         |
+|Country          |default_country         |CountryField       |blank_label='Country', null=True, blank=True |
+
+<br>
+
+## Products App
+
+### Category Model
+
+| Name             | Database Key            | Field Type              | Validation Requirements                               |
+|------------------|-------------------------|-------------------------|-------------------------------------------------------|
+| Name             | name                    | CharField               | max_length=250                                        |
+| Friendly Name    | friendly_name           | CharField               | max_length=250, null=True, blank=True                 |
+
+
+### Product Model
+| Name             | Database Key            | Field Type              | Validation Requirements                               |
+|------------------|-------------------------|-------------------------|-------------------------------------------------------|
+| Category         | category                | ForeignKey              | null=True, blank=True, on_delete=models.SET_NULL      |
+| Sku              | sku                     | CharField               | max_length=250, null=True, blank=True                 |
+| Name             | name                    | CharField               | max_length=250                                        |    
+| Description      | description             | TextField               | None                                                  |
+| Has sizes        | has_size                | BooleanField            | default=False, null=True, blank=True                  |        
+| Price            | price                   | DecimalField            | max_digits=6, decimal_places=2                        |
+| Rating           | rating                  | DecimalField            | max_digits=6, decimal_places=2, null=True, blank=True |    
+| On Sale          | on_sale                 | BooleanField            | default=False, blank=True                             |
+| Discount Percent | discount_percent        | DecimalField            | max_digits=2, decimal_places=0, blank=True, null=True |
+| Image Url        | image_url               | URLField                | max_length=1025, null=True, blank=True                |
+| Image            | image                   | ImageField              | null=True, blank=True                                 |
+
+
+## Checkout App
+
+### Order Model
+| Name                     | Database Key    | Field Type                 | Validation                                                   |
+| ------------------------ | --------------- | ---------------------------| -------------------------------------------------------------|
+| Order Number             | order_number    | CharField                  | max_length=32, null=False, editable=False                    |
+| User Profile             | user_profile    | ForeignKey(UserProfile)    | on_delete=models.SET_NULL, blank=True,null=True, related_name='orders'  |
+| Full Name                | full_name       | CharField                  | max_length=50, null=False, blank=False                       |
+| Email.                   | email           | EmailField                 | max_length=254, null=False, blank=False                      |
+| Phone Number             | phone_number    | CharField                  | max_length=20, null=False, blank=False                       |
+| Country                  | country         | CountryField               | blank_label='Country *', null=False, blank=False             |
+| Postcode                 | postcode        | CharField                  | max_length=20, null=True, blank=True                         |
+| Town or City             | town_or_city    | CharField                  | max_length=40, null=False, blank=False                       |
+| Street Address 1         | street_address1 | CharField                  | max_length=80, null=False, blank=False                       |
+| Street Address 2         | street_address2 | CharField                  | max_length=80, null=True, blank=True                         |
+| Date                     | date            | DateTimeField              | auto_now_add=True                                            |
+| Delivery Cost            | delivery_cost   | DecimalField               | max_digits=6, decimal_places=2, null=False, default=0        |
+| Order Total              | order_total     | DecimalField               | max_digits=10, decimal_places=2, null=False, default=0       |
+| Grand Total              | grand_total     | DecimalField               | max_digits=10, decimal_places=2, null=False, default=0       |
+| Original Bag             | original_bag    | TextField                  | null=False, blank=False, default=''                          |
+| Stripe Payment Intent ID | stripe_pid      | CharField                  | max_length=254, null=False, blank=False, default=''          |
+
+
+### Order Line Item Model
+| Name            | Database Key   | Field Type          | Validation                                                                   |
+| --------------- | -------------- | --------------------| -----------------------------------------------------------------------------|
+| Order           | order          | ForeignKey(Order)   | null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'  |
+| Product         | product        | ForeignKey(Product) | null=False, blank=False, on_delete=models.CASCADE                            |
+| Product Size    | product_size   | CharField           | max_length=2, null=True, blank=True                                          |
+| Quantity        | quantity       | IntegerField        | null=False, blank=False, default=0                                           |
+| Line Item Total | lineitem_total | DecimalField        | max_digits=6, decimal_places=2, null=False, blank=False, editable=False      |
+
+## Blog App
+
+### Blog Model
+| Name            | Database Key   | Field Type          | Validation                                                                   |
+| --------------- | -------------- | --------------------| -----------------------------------------------------------------------------|
+| Title           | title          | CharField           | max_length=150, null=False, blank=False                                      | 
+| Body            | body           | TextField           | max_length=5000, null=False, blank=False                                     |
+| Image           | image          | ImageField          | upload_to='blogimages', null=True, blank=True                                |
+| Date Published  | date_published | DateTimeField       | auto_now_add=True, verbose_name="date published"                             |
+| Date Updated    | date_updated   | DateTimeField       | auto_now=True, verbose_name="date updated"                                   |
+| Author          | author         | ForeignKey          | User, on_delete=models.CASCADE                                               | 
+| Slug            | slug           | SlugField           | max_length=150, blank=True, unique=True                                      |
 
 <br>
 
@@ -612,3 +708,5 @@ bug: modal disappeared direkt, fick byta type="submit" till type="button". the b
 Bug: pga ovan att type är button o inte submit så funkar inte required. 
 
 OBS known bug ("On some iOS devices, this happens....") bug: nothing happens when I click "Register" or "Login" (if I am not signed in) after added item(s) in the bag (=toast). after loged in nothing happens when clicking my profile. logout, need to refresh to be able to. 
+
+The development process is clearly evident through detailed commit messages.

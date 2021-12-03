@@ -40,8 +40,7 @@ def submission_delete(sender, instance, **kwargs):
 
 def pre_save_blog_post_receiver(sender, instance, *args, **kwargs):
     if not instance.slug:
-        instance.slug = slugify
-        (instance.author.username + "-" + instance.title)
+        instance.slug = slugify(instance.author.username + "-" + instance.title)  # noqa: E501
 
 
 pre_save.connect(pre_save_blog_post_receiver, sender=BlogPost)

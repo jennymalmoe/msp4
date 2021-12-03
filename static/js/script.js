@@ -39,7 +39,6 @@ let toastList = toastElList.map(function (toastEl) {
 // ALERT
 
 // EmailJs used to send email from contact form
-
 // Checking if form is valid 
 // Code from https:codepen.io/tetnuc/pen/gRqOEO 
 // <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
