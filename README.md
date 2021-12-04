@@ -229,7 +229,6 @@ This user story template consists of three sections; As a (decription of user), 
 
 ## Wireframes 
 
-
 * [Mobile](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/mobile) 
 * [Tablet](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/tablet)
 * [Desktop](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/desktop)
@@ -241,6 +240,17 @@ While the project relied on these wireframes, there are some differences between
 
 * No spinner icon while Stripe payment is processing.
 * An "About Us" page with a contact form was added. 
+
+**Responsive Screenshot on different devices**
+
+![iPhone_portrait_w375px](media/iPhone_portrait_w375px.png)
+![Android_portrait_w412px](media/Android_portrait_w412px.png)
+![iPhone_landscape_w734px](media/iPhone_landscape_w734px.png)
+![android_landscape_w684px](media/android_landscape_w684px.png)
+![iPad_portrait_w768px](media/iPad_portrait_w768px.png)
+![iPad_landscape_w1024px](media/iPad_landscape_w1024px.png)
+![desktop_1024x768px](media/desktop_1024x768px.png)
+![desktop_1042x600px](media/desktop_1042x600px.png)
 
 <br>
 
@@ -328,14 +338,34 @@ There are four different kind of toasts: success, info, warning, error, that app
 * Customize site based on Analytics statistic, who are the visitors/users. What pages and products are popular and not and adjust sortiment/site to that to increases the ROI (return on investment). 
 <br>
 
+## Issues and Bugs
+
 # Database Design
+
+## Information Architecture
+Heroku PostgreSQL is used to host the backend database for this site. B.L contains of these Django apps:
+
+* About
+* Bag
+* Bag
+* Checkout
+* Home
+* Products
+* Profiles
 
 ## Database schema
 ![Database](static/images/db_scheme.png)
 
-## Profile App
 
-### Profile model
+## Database Model
+
+During development the project used SQLite. The deployed app is using Heroku Postgres.
+
+Full list of data models used: 
+
+### Profile App
+
+**Profile model**
 
 |Name             |Database Key            |Field Type         | Validation Requirements                     |
 |-----------------|------------------------|-------------------|---------------------------------------------|
@@ -349,9 +379,9 @@ There are four different kind of toasts: success, info, warning, error, that app
 
 <br>
 
-## Products App
+### Products App
 
-### Category Model
+**Category Model**
 
 | Name             | Database Key            | Field Type              | Validation Requirements                               |
 |------------------|-------------------------|-------------------------|-------------------------------------------------------|
@@ -359,7 +389,8 @@ There are four different kind of toasts: success, info, warning, error, that app
 | Friendly Name    | friendly_name           | CharField               | max_length=250, null=True, blank=True                 |
 
 
-### Product Model
+**Product Model**
+
 | Name             | Database Key            | Field Type              | Validation Requirements                               |
 |------------------|-------------------------|-------------------------|-------------------------------------------------------|
 | Category         | category                | ForeignKey              | null=True, blank=True, on_delete=models.SET_NULL      |
@@ -375,9 +406,10 @@ There are four different kind of toasts: success, info, warning, error, that app
 | Image            | image                   | ImageField              | null=True, blank=True                                 |
 
 
-## Checkout App
+### Checkout App
 
-### Order Model
+**Order Model**
+
 | Name                     | Database Key    | Field Type                 | Validation                                                   |
 | ------------------------ | --------------- | ---------------------------| -------------------------------------------------------------|
 | Order Number             | order_number    | CharField                  | max_length=32, null=False, editable=False                    |
@@ -398,7 +430,8 @@ There are four different kind of toasts: success, info, warning, error, that app
 | Stripe Payment Intent ID | stripe_pid      | CharField                  | max_length=254, null=False, blank=False, default=''          |
 
 
-### Order Line Item Model
+**Order Line Item Model**
+
 | Name            | Database Key   | Field Type          | Validation                                                                   |
 | --------------- | -------------- | --------------------| -----------------------------------------------------------------------------|
 | Order           | order          | ForeignKey(Order)   | null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'  |
@@ -436,11 +469,11 @@ There are four different kind of toasts: success, info, warning, error, that app
 * [Python](https://www.python.org/) - Used to write the logic that operates the site.
 
 ## Database 
-* [SQLite](https://www.sqlite.org/index.html) - Development/Locally.
-* [Heroku](https://www.heroku.com/home) - Deployes site.
+* [SQLite](https://www.sqlite.org/index.html) - Database used during development.
+* [Heroku Postgres](https://www.heroku.com/home) - Database used for production/deployed app. 
 
 ## Storage 
-* [Amazon AWS S3](https://aws.amazon.com/?aws-products-compute.sort-by=item.additionalFields.productNameLowercase&aws-products-compute.sort-order=asc&aws-products-iot.sort-by=item.additionalFields.productNameLowercase&aws-products-iot.sort-order=asc&aws-products-security.sort-by=item.additionalFields.productNameLowercase&aws-products-security.sort-order=asc) - Used to store media and static files.
+* [Amazon AWS S3](https://aws.amazon.com/?aws-products-compute.sort-by=item.additionalFields.productNameLowercase&aws-products-compute.sort-order=asc&aws-products-iot.sort-by=item.additionalFields.productNameLowercase&aws-products-iot.sort-order=asc&aws-products-security.sort-by=item.additionalFields.productNameLowercase&aws-products-security.sort-order=asc) - The Amazon Web Service s3 Bucket was used to store media and static files.
 
 ## Payment 
 * [Stripe](https://stripe.com/) - Payment platform. 
@@ -467,6 +500,7 @@ There are four different kind of toasts: success, info, warning, error, that app
 * [Google fonts](https://fonts.google.com/) - Used to import fonts.
 * [Gunicorn](https://gunicorn.org/) - Used for deploying the project to Heroku.
 * [Imgur](https://imgur.com/) - Used to create url:s for images.
+* [Jinja](https://jinja.palletsprojects.com/en/2.10.x/) - Jinja templating language was used to simplify and display backend data in html.
 * [JSHint](https://jshint.com/) - JavaScript code quality tool, used to detect errors.
 * [Unsplash](https://unsplash.com/) - Images used throughout the site.
 * [PEP8](https://www.python.org/dev/peps/pep-0008/) - Used to improve the readability and consistency of Python code.
@@ -474,33 +508,13 @@ There are four different kind of toasts: success, info, warning, error, that app
 * [Pillow](https://pillow.readthedocs.io/en/stable/) - Python Imaging Library.
 * [Pixelmator](https://www.pixelmator.com/mac/) - Used to resize images, creating logo and tab icon.
 * [Postimages](https://postimages.org/) - Used to create url for images. 
-Sweet alerts
+* [SweetAlert2](https://sweetalert2.github.io/ - Used to customise the contact form success message
 * [TechSini](https://techsini.com/) - Mockup generator used for preview of the website.
 * [Visual Studio Code](https://code.visualstudio.com/) - IDE used for code editing.
 * [W3C Validator](https://validator.w3.org/) - Used to test HTML code.
 * [W3C Validator CSS](https://validator.w3.org/) - Used to test CSS code.
 
 <br>
-
-### Database Management
-
-<br>
-
-* [MongoDB](https://www.mongodb.com/3) - used for database functionality.
-* [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) - used to host the database.
-
-## Information Architecture
-Heroku PostgreSQL is used to host the back-end database for this site. B.L contains of these Django apps:
-
-* About
-* Bag
-* Bag
-* Checkout
-* Home
-* Products
-* Profiles
-
-
 
 <br>
 
