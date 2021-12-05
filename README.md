@@ -34,7 +34,7 @@ An account with Super User privileges has been created for testing purposes. The
 
 ___
 
-1. [**UX**](#ux) 
+* [UX](#ux) 
   * [Project Goals](#project-goals)
   * [Business Goals](#business-goals)
   * [User Stories](#user-stories)
@@ -191,6 +191,7 @@ This user story template consists of three sections; As a (decription of user), 
 | 42  | Shopper | Get inspired                                            | Get home decoration/fashion ideas                                                          |
 | 43  | Shopper | Be able to contibute with my own ideas by adding a post                                             | Share inspirational ideas                                                          |
 
+
 <br>
 
 ## Design Choices
@@ -233,6 +234,11 @@ This user story template consists of three sections; As a (decription of user), 
 * [Tablet](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/tablet)
 * [Desktop](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/desktop)
 
+## Site Map
+
+Initial site map shown below:
+![sitemap](media/sitemap.png)
+
 <br>
 
 **Post wireframes design changes:**
@@ -271,50 +277,94 @@ Every page of the website features a consistently responsive and intuitive layou
 * An account with Super User privileges has been created for testing purposes.
 * Responsive site on all devices.
 
+![Navbar](media/navbar.png)
+
+![Collapsed navbar](media/collapsed_navbar.png)
+
+![Footer](media/footer.png)
+
+
 **Home**
 The home page features 3 sections apart from header and footer.
 * Hero image with CTA (visitor can get redirected directly to product page by clicking "Shop now" button) and text  
 * Intro text about B.L.
 * Carousel with inspiring images of products that links to the actual products.
 
+![Hero img](media/hero.png)
+
+![Intro text](media/intro_text.png)
+
+![Carousel](media/carousel.png)
+
 **Products**
 * Product section presents the category visiting at the time at the top (except when choosing "All products"), the number of items in this particular category to the left and a by select box to the right. The products are presented in rows including product name, price, category and rating.
 * Product details displays a detailed view of the product with product name, price, category, rating, description, quantity input field and "Keep shopping" and "Add to bag" button all in one column.  
 
+![Products](media/all_products.png)
+
+![Product detail](media/prod_detail.png)
+
 **Home Decor**
 * Home Decor section consists of following categories: "New in", "furnitures", "Decor", "Textiles", "Incense" and "All home decor". 
+
+![Home decor categories](media/hd_cat.png)
 
 **Fashion**
 * Fashion section consists of following categories: "New in", "Clothes", Accessories", "Bags" and "All fashion". 
 
+![Fashion categories](media/fashion_cat.png)
+
 **Outlet**
 * Outlet page contains products with lower prices. 
+
+![Outlet](media/outlet.png)
 
 **Boho Blog**
 * Boho Blog page contains inspiring blog posts added by admin or users. It has an intro text about general boho style at the top and two "Create your blog post" buttons, one above the blog posts and one below. The blog post has a title, author, date, text and "Read more" button and an image and is presented in a column. 
 
+![Blog](media/blog.png)
+
 **About us**
 * About us page contains short background information about B.L at the top and a contact form below. When filling out the form and submit it, an alert shows in the top right corner; "Your message has been sent". User get an email that confirms that B.L has received the question.
+
+![About](media/about.png)
 
 **My account**
 If not signed in:
 * Sign up - allows visitor to sign up. If user already has an account there is also a link to log in instead. When signing up a toast whit success message is shown and a confirmation mail is sent.
 * Sign in - allows registered users to log in. When signed in, a welcome toast is shown.
+
+![Not signed in](media/not_in.png)
+
 If signed in:
 * My Profile - if saved, users delivery information is shown, with the possibility to update the information. If user has an order history it is shown here. 
 * Logout - a confirmation text "Are you sure you want to signout?" and a sign out button. 
+
+![Signed in](media/in.png)
+
 If signed in as a superuser:
 * Product management - when signed in a product management link is shown in "My Account" dropdown where you can add products by choosing category, SKU, name, description, size, prize, rating, image url.
 
+![Signed in as superuser](media/superuser.png)
+
 **Shopping cart**
 * When shopping cart is empty, an "Your bag is empty"  message displays in new page, along with a "Let's shop" button below the message. 
+
+![Bag empty](media/empty_bag.png)
+
 * When shopping cart has items, shopping bag page is displayed along with the items that are added in bag (product info, prize, quantity, subtotal, product image, product name, size, update, remove, bag total, delivery cost, grand total, message of how much more to spend to get free delivery, "Keep shopping" and "Checkout" button). "Keep shopping" button links to "Products" page. "Checkout" button links to checkout page. 
+
+![Bag](media/item_in_bag.png)
 
 **Checkout**
 * Checkout page has two sections, one column with a form including details, delivery and payment details, "Adjust bag" and "Complete order" button. The other section (column two) consists of an order summary. When completing the order a success toast is shown and user get redirected to "Thank you for choosing BOHO Living" page that includes order information, a "Check out the latest deals" that links to new in items. A confirmation mail is sent to user. 
 
+![Checkout](media/checkout.png)
+
 **Toasts**
 There are four different kind of toasts: success, info, warning, error, that appears when a certain action has ben triggered by user to get feedback on the action. For example adding something in bag, logging in etc. 
+
+![Toast example](media/toast.png)
 
 **Django-allauth**
 * A Python package used to the sign up, login, logout, password change features. 
@@ -327,6 +377,7 @@ There are four different kind of toasts: success, info, warning, error, that app
 ## Features left to implement
 * Comments and ability to share blog posts to social media (potential to convert more readers into paying customers). 
 * Elaborate the SKU numbers, to make even more logical to Administrator.
+* Social media login.
 * More categories. 
 * Function to make users giving rating. To day set by sales numbers.  
 * Email notification functionality for users to be alerted when a new product or service is added.
@@ -340,7 +391,32 @@ There are four different kind of toasts: success, info, warning, error, that app
 
 ## Issues and Bugs
 
+* Known bug - On some iOS devices, this happens; Nothing happens when clicking "Register" or "Login" (if I am not signed in) after added item(s) in the bag (=toast). After signed in, nothing happens when clicking my profile or log out either. I need to refresh the page to be able to. Then it works as expected.   
+
+* Some responsive design didn't work as expected, since the project use Bootstrap 5.1 I had to add "-bs-" in "data-toggle", "data-target", "data-autohide". 
+
+* Toast messages didn't show as expected needed to change the JavaScript from: $('toast').toast('show') to $('.toast').show() to make the toast show as expected.
+
+* When register new user at "My Account" an SMTPAuthenticationError at /accounts/signup/ occurred and text showed; "Already have an account? Then please sign in". I had "DEVELOPMENT" in my Gitpod settings, but scope was set for my old milestone project, not to this one (or */* (to access all)). It was trying to use the gmail smtp from Gitpod but gmail was expecting the Heroku app to access it, so it wasn't authenticated and thats why it didn't work. So after changed it to access all (*/*) it worked as expected. 
+
+* No confirmation mail (to the terminal) was sent after making a "payment", just an 404 error in the terminal. I edited webhook endpoint in Stripe and then got an 200 error in terminal and a "payment_intent.succeeded" in Stripe, but no confirmation mail still. The problem was that the webhook itself wasn't set up quite right, I needed to add "8000-" in the beginning of my webhook and added checkout/wh/ in the end. I also had STRIPE_WH_KEY instead of STRIPE_WH_SECRET in Gitpod Environment Variables. When chaged those two things confirmation mail worked as expected. 
+
+## Security features
+
+If user accendentally or intentionally closes the browser window after the payment is confirmed but before the form is submitted, there would be a payment in Stripe, but no order in the database. To prevent this situation; Each time an event occurs on Stripe (such as a payment intent being created) a payment being completed on Stripe a webhook is sent out that we can listen for. Webhooks are like the signals django sends each time a model is saved or deleted. Except that they are sent securely from Stripe to a url we specify. *(from Boutique Ado project, Stripe, part 10)*
+
+
+
+
 # Database Design
+
+This database uses a SQL database through PostgreSQL. Initially the databases were built in JSON files, [link here!](products/fixtures)
+
+## Categories Database
+![Categories database](media/categories.png)
+
+## Products Database
+![Products database](media/products.png)
 
 ## Information Architecture
 Heroku PostgreSQL is used to host the backend database for this site. B.L contains of these Django apps:
@@ -452,6 +528,7 @@ Full list of data models used:
 | Date Updated    | date_updated   | DateTimeField       | auto_now=True, verbose_name="date updated"                                   |
 | Author          | author         | ForeignKey          | User, on_delete=models.CASCADE                                               | 
 | Slug            | slug           | SlugField           | max_length=150, blank=True, unique=True                                      |
+| | |
 
 <br>
 
@@ -482,8 +559,6 @@ Full list of data models used:
 * [Bootstrap](https://getbootstrap.com/) - Bootstrap 5.1 used to design and build responsive, mobile-first sites.
 * [Django](https://www.djangoproject.com/) - Web development framework.
 
-<br>
-
 ## Libraries, Tools, Editors 
 
 * [Am I Responsive](http://ami.responsivedesign.is/) - Used to validate the responsiveness. 
@@ -494,6 +569,7 @@ Full list of data models used:
 * [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Used to create the user sign-in function for the site.
 * [Django Countries](https://pypi.org/project/django-countries/) - Used for the country select field in the order form.
 * [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to utilise the Bootstrap form classes.
+* [drawSQL](https://drawsql.app/) - Used to create database diagram.
 * [Font-Awesome](https://fontawesome.com/) - Used for icons.
 * [Git](https://git-scm.com/) - Used for version control to commit to Git and push to Heroku.
 * [Gitpod](https://gitpod.io/) - Open-source application for ready-to-code developer environments in browser.
@@ -507,14 +583,43 @@ Full list of data models used:
 * [PEP8online](http://pep8online.com/) - Used to check code for PEP8 requirements.
 * [Pillow](https://pillow.readthedocs.io/en/stable/) - Python Imaging Library.
 * [Pixelmator](https://www.pixelmator.com/mac/) - Used to resize images, creating logo and tab icon.
+* [Responsinator](https://www.responsinator.com/) - Used for the responsive screenshoots on different device resolutions. 
+* [Responsive Test Tool](http://responsivetesttool.com/) - Used for the responsive screenshoots on different device resolutions. 
 * [Postimages](https://postimages.org/) - Used to create url for images. 
-* [SweetAlert2](https://sweetalert2.github.io/ - Used to customise the contact form success message
+* [SweetAlert2](https://sweetalert2.github.io/) - Used to customise the contact form success message
 * [TechSini](https://techsini.com/) - Mockup generator used for preview of the website.
 * [Visual Studio Code](https://code.visualstudio.com/) - IDE used for code editing.
 * [W3C Validator](https://validator.w3.org/) - Used to test HTML code.
 * [W3C Validator CSS](https://validator.w3.org/) - Used to test CSS code.
 
-<br>
+
+## Packages/Dependencies
+
+| Name | Purpose |
+|------|---------|
+| asgiref | Allows web apps and servers to communicate |
+| Boto3 | AWS Management |
+| Botocore | AWS Management |
+| crispy-bootstrap5 | Bootstrap5 template pack for django-crispy-forms |
+| dj-database-url | Database Configuration |
+| Django | Framework |
+| django-allauth | Authentication |
+| django-countries | Country Form Field |
+| django-crispy-forms | Front End Form Rendering |
+| django-storages | Custom Storage Backends |
+| gunicorn | WSGI HTTP Server |
+| jmespath | Data driven testcases |
+| oauthlib | Framework |
+| Pillow | Images |
+| psycopg2-binary | PostgreSQL DB Adaptor |
+| python3-openid | Python packages |
+| pytz | Library |
+| requests-oauthlib | Authentication support for Requests |
+| s3transfer | Python library for managing Amazon S3 transfers |
+| sqlparse | Non-validating SQL parser for Python |
+| Stripe | Secure Payment Services |
+| | |
+
 
 <br>
 
@@ -625,67 +730,37 @@ Making a copy of the original repository on our GitHub account to view or to mak
 # Credits
 * Code Institute tutor support.
 * Fellow students on Slack for a helping hand when I've got stuck.
-* Google!
-* CI for inspiration from the Boutique Ado project. 
+* Code Institute for inspiration from the Boutique Ado project.
+* https://codingwithmitch.com/ for code and inspiration to my blog section. 
 
 
 
-
-
-
-
-
-
-
-
-
-https://www.youtube.com/c/CodingWithMitch/videos code to blog section
-
-
-superuser
-installing django-allauth
-installed pillow 
-
-
-
-bug hade inte bs in data-toggle först, ska va data-bs-toggle. Bootstrap Generally, we recommend using a button with the data-bs-target attribute. 
-postgres as a server based db, installed a package (psycopg2) to allow usage of postgres and gunicorn package to act as our web server and replace our my development server once the app is deployed to heroku. 
-git
+Postgres as a server based db, installed a package (psycopg2) to allow usage of postgres and gunicorn package to act as our web server and replace our my development server once the app is deployed to heroku.
 
 
 https://django-allauth.readthedocs.io/en/latest/installation.html
 
 
-bug1: needed <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"> for bootstrap 5. added data-bs-autohide="false". Instead of <div class="toast custom-toast rounded-0 border-top-0" data-autohide="false">
-bug2:changed js from $('toast').toast('show') to 
-{% block postloadjs %}
-      <script type="text/javascript">
-          $('.toast').show()
-      </script>
-    {% endblock %}
-    notification/success messages didn't show. 
-
-bug3: needed data-bs-autohide="false" BS pga bootstrap 5.
-
-If user accendentally or intentionally closes the browser window after the payment is confirmed but before the form is submitted, there would be a payment in stripe but no order in our database. to prevent this situation I've build in some redundancy, each time an event occurs on stripe (such as a payment intent being created) a payment being completed on stripe a webhook is sent out that we can listen for. webhooks are like the signals django sends each time a model is saved or deleted. except that they are sent securely from stripe to a url we specify. (Boutique Adi - stripe - part 10)
 
 
 
-Postgres
 
 
 
-bug register my account got an SMTPAuthenticationError at /accounts/signup/. whenever I tried registrate a new user, it said "Already have an account? Then please sign in." I had DEVELOPMENT in my gitpod settings, but scope was set for my msp3 not to my msp4 or */* (to access all). It was trying to use the gmail smtp from Gitpod but gmail was expecting the Heroku app to access it, so it wasn't authenticated and thats why it didn't work. 
+
+
+
+
 
  
 
-security features
+
 
 
 
 lägga in requiremets in handbook for msp4 in user stories
 
-https://www.youtube.com/watch?v=GcqURKYfv00 https://codingwithmitch.com/ bloggen
+
 
 AWS Policy Generator
 The AWS Policy Generator is a tool that enables you to create policies that control access to Amazon Web Services (AWS) products and resources.
@@ -696,31 +771,13 @@ google applösenord
 
 
 
-
-
-
-
-
-bug OperationalError at /admin/auth/user, no such column: blog_blogpost.author_id -> which is the reset the migrations, which also resets the database, i will back up your products first though, one moment
-Sean profile
-Ok, would you liek me to reset everything and then restore the prodcuts?
-
-
-
-
-
-bug when stripe no confirmation mail in terminal 404 error, "edit webhook endpoint" in stripe and then got an 200 error in terminal, payment_intent.succeeded in stripe, but no conf mail still,  then changed from private to public  8000 port. Well, the webhook itself wasn't set up quite right either, so a combo. (STRIPE_WH_SECRET not KEY till slut) så det va det och att the webhook it self wasn't set up right. added 8000- i början and checkout/wh/ in the end. 
-
 So a word of warning about your webhooks still. This all works fine for your local endpoint, but if you're going to use the heroku one it will need a different WH_SECRET_KEY in your Heroku cvars. You can find this by Reveal the signing secret you find for the heroku endpoint in Stripe website. So both local and deployed site have the same STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY but they will have different STRIPE_WH_SECRET.
 
  
 
 
-bug: confirmations page and success toast don't show after a purchase. I remove line 82 and 95 in js checkout. county field removed but forgot to remove it from js, only removed it (county) in forms and models etc. 
+ 
 
-bug: modal disappeared direkt, fick byta type="submit" till type="button". the button was in a <form> that was temporarily just fetching the same page.I fixed this by adding type="button" to the button element, so that it wouldn't submit the form when clicked.
-Bug: pga ovan att type är button o inte submit så funkar inte required. 
+ 
 
-OBS known bug ("On some iOS devices, this happens....") bug: nothing happens when I click "Register" or "Login" (if I am not signed in) after added item(s) in the bag (=toast). after loged in nothing happens when clicking my profile. logout, need to refresh to be able to. 
 
-The development process is clearly evident through detailed commit messages.
