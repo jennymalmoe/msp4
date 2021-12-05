@@ -354,7 +354,7 @@ Heroku PostgreSQL is used to host the backend database for this site. B.L contai
 * Profiles
 
 ## Database schema
-![Database](static/images/db_scheme.png)
+![Database](media/database_schema.png)
 
 
 ## Database Model
