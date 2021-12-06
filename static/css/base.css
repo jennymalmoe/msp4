@@ -316,7 +316,14 @@ a.category-badge > span.badge:hover {
 .allauth-form-inner-content input {
     border-color: #000000;
     border-radius: 0;
+    border-width: 1px;
     padding-left: 5px;
+    width: 300px;
+    padding-top: 2px;
+}
+
+#id_remember {
+    width: 15px;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
