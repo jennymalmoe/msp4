@@ -183,13 +183,12 @@ This user story template consists of three sections; As a (decription of user), 
 | 37  | Administrator | Add a product **(Create)**, write information about the product **(Read)**, edit product **(Update)** and remove product **(Delete)**                                                    | Can adjust the offers
 | 38  | Administrator |  Be able to keep track of the trafic to the site                     | Can understand the visitors needs (why they come back, what attracts them, which page brings in the most visitors etc.)
 | 39  | Administrator |  Delete users blog posts, if inappropriate                      | Can keep the site proffessional      
-| 40  | Administrator |  Have logical SKU:s                      |       Get a general picture about what category, color etc the product is. (W=white MV=multicolor B=blue G=green BR=brown HD=home decor)
-                                                                 |
+| 40  | Administrator |  Have logical SKU:s                      |       Get a general picture about what category, color etc the product is. (W=white MV=multicolor B=blue G=green BR=brown HD=home decor)                                                              |
 |     |            | *Site manager*                                  |                                                                                       |
 | 41  | Shopper | Be able to manage/edit the site                                            | Keep the site relevant and with correct information/sortiment                                        |
 |     |            | *Blog*                                  |                                                                                       |
 | 42  | Shopper | Get inspired                                            | Get home decoration/fashion ideas                                                          |
-| 43  | Shopper | Be able to contibute with my own ideas by adding a post                                             | Share inspirational ideas                                                          |
+| 43  | Shopper | Be able to contibute with my own ideas by adding a post                                             | Share inspirational ideas                                                          
 
 
 <br>
@@ -285,10 +284,12 @@ Every page of the website features a consistently responsive and intuitive layou
 
 
 **Home**
-The home page features 3 sections apart from header and footer.
-* Hero image with CTA (visitor can get redirected directly to product page by clicking "Shop now" button) and text  
+
+The home page features three sections, apart from the header and the footer.
+
+* Hero image with CTA (clicking "Shop now" redirects visitor immediately to the product page) and text.
 * Intro text about B.L.
-* Carousel with inspiring images of products that links to the actual products.
+* Carousel with inspiring images of products that links to the actual product category.
 
 ![Hero img](media/hero.png)
 
@@ -297,7 +298,8 @@ The home page features 3 sections apart from header and footer.
 ![Carousel](media/carousel.png)
 
 **Products**
-* Product section presents the category visiting at the time at the top (except when choosing "All products"), the number of items in this particular category to the left and a by select box to the right. The products are presented in rows including product name, price, category and rating.
+
+* Product section presents the category visiting at the time at the top of the page (except when choosing "All products"), and the number of items in this particular category and a by select box below. The products are presented in rows (1-4 rows depending on the device) including product name, price, category and rating.
 * Product details displays a detailed view of the product with product name, price, category, rating, description, quantity input field and "Keep shopping" and "Add to bag" button all in one column.  
 
 ![Products](media/all_products.png)
@@ -305,36 +307,50 @@ The home page features 3 sections apart from header and footer.
 ![Product detail](media/prod_detail.png)
 
 **Home Decor**
-* Home Decor section consists of following categories: "New in", "furnitures", "Decor", "Textiles", "Incense" and "All home decor". 
+
+* Home Decor section consists of following categories: "New in", "Furnitures", "Decor", "Textiles", "Incense" and "All home decor", which are presented at the top of the page. 
 
 ![Home decor categories](media/hd_cat.png)
 
 **Fashion**
-* Fashion section consists of following categories: "New in", "Clothes", Accessories", "Bags" and "All fashion". 
+
+* Fashion section consists of following categories: "New in", "Clothes", Accessories", "Bags" and "All fashion", which are presented at the top of the page. 
 
 ![Fashion categories](media/fashion_cat.png)
 
 **Outlet**
-* Outlet page contains products with lower prices. 
+
+* Outlet page contains products with discounted prices, category is presented at the top of the page. 
 
 ![Outlet](media/outlet.png)
 
 **Boho Blog**
-* Boho Blog page contains inspiring blog posts added by admin or users. It has an intro text about general boho style at the top and two "Create your blog post" buttons, one above the blog posts and one below. The blog post has a title, author, date, text and "Read more" button and an image and is presented in a column. 
+
+* Boho Blog page contains inspiring blog posts added by admin or users. It has an intro text about general boho style at the top and two "Create your blog post" buttons, one above the blog posts and one below. Each blog post has a title, author, date, text, "Read more" button and an image. All blog posts are presented in one column. 
 
 ![Blog](media/blog.png)
 
+![Blog](media/blog2.png)
+
 **About us**
-* About us page contains short background information about B.L at the top and a contact form below. When filling out the form and submit it, an alert shows in the top right corner; "Your message has been sent". User get an email that confirms that B.L has received the question.
+
+* About us page contains short background information about B.L at the top and a contact form below. When filling out the form and submit it, an alert shows in the middle of the screen; "Your message has been sent". User also gets an email that confirms that B.L has received the question.
 
 ![About](media/about.png)
 
+![Alert](media/alert.png)
+
 **My account**
+
 If not signed in:
 * Sign up - allows visitor to sign up. If user already has an account there is also a link to log in instead. When signing up a toast whit success message is shown and a confirmation mail is sent.
 * Sign in - allows registered users to log in. When signed in, a welcome toast is shown.
 
 ![Not signed in](media/not_in.png)
+
+![Sign up](media/signup.png)
+
+![Sign in](media/signin.png)
 
 If signed in:
 * My Profile - if saved, users delivery information is shown, with the possibility to update the information. If user has an order history it is shown here. 
@@ -342,31 +358,41 @@ If signed in:
 
 ![Signed in](media/in.png)
 
+![Sign out](media/logout.png)
+
 If signed in as a superuser:
 * Product management - when signed in a product management link is shown in "My Account" dropdown where you can add products by choosing category, SKU, name, description, size, prize, rating, image url.
 
 ![Signed in as superuser](media/superuser.png)
 
+![Product management](media/prod_man.png)
+
 **Shopping cart**
-* When shopping cart is empty, an "Your bag is empty"  message displays in new page, along with a "Let's shop" button below the message. 
+
+* When shopping cart is empty, an "Your bag is empty" message displays at a new page, along with a "Let's shop" button below the message. 
 
 ![Bag empty](media/empty_bag.png)
 
-* When shopping cart has items, shopping bag page is displayed along with the items that are added in bag (product info, prize, quantity, subtotal, product image, product name, size, update, remove, bag total, delivery cost, grand total, message of how much more to spend to get free delivery, "Keep shopping" and "Checkout" button). "Keep shopping" button links to "Products" page. "Checkout" button links to checkout page. 
+* When shopping cart has items, the shopping bag page is displayed along with the products that are added in bag (including product info, prize, quantity, subtotal, product image, product name, size, update, remove, bag total, delivery cost, grand total, message of how much more to spend to get free delivery, "Keep shopping" and "Checkout" button). "Keep shopping" button links to "All products" page. "Checkout" button links to checkout page. 
 
 ![Bag](media/item_in_bag.png)
 
 **Checkout**
-* Checkout page has two sections, one column with a form including details, delivery and payment details, "Adjust bag" and "Complete order" button. The other section (column two) consists of an order summary. When completing the order a success toast is shown and user get redirected to "Thank you for choosing BOHO Living" page that includes order information, a "Check out the latest deals" that links to new in items. A confirmation mail is sent to user. 
+
+* Checkout page contains of two sections, one column with a form including details, delivery and payment details, "Adjust bag" and "Complete order" button. The other section (second column) consists of an order summary. When completing the order, a success toast is shown in upper right corner and user get redirected to "Thank you for choosing BOHO Living" page that includes order information, a "Check out the latest deals" that links to "New in products". A confirmation mail is sent to user. 
 
 ![Checkout](media/checkout.png)
 
 **Toasts**
-There are four different kind of toasts: success, info, warning, error, that appears when a certain action has ben triggered by user to get feedback on the action. For example adding something in bag, logging in etc. 
+
+Four different kind of toasts appears when a certain action has been triggered by user to get feedback on the action (For example adding something in bag, logging in etc.); "Success", "Info", "Warning", "Error".
 
 ![Toast example](media/toast.png)
 
+![Toast example](media/toast2.png)
+
 **Django-allauth**
+
 * A Python package used to the sign up, login, logout, password change features. 
 
 **Emailjs**
@@ -391,7 +417,7 @@ There are four different kind of toasts: success, info, warning, error, that app
 
 ## Issues and Bugs
 
-* Known bug - On some iOS devices, this happens; Nothing happens when clicking "Register" or "Login" (if I am not signed in) after added item(s) in the bag (=toast). After signed in, nothing happens when clicking my profile or log out either. I need to refresh the page to be able to. Then it works as expected.   
+* **Known bug:** On some iOS devices, this happens; Nothing happens when clicking "Register" or "Login" (if I am not signed in) after added item(s) in the bag (=toast). After signed in, nothing happens when clicking my profile or log out either. I need to refresh the page to be able to. Then it works as expected.   
 
 * Some responsive design didn't work as expected, since the project use Bootstrap 5.1 I had to add "-bs-" in "data-toggle", "data-target", "data-autohide". 
 
@@ -423,7 +449,7 @@ Heroku PostgreSQL is used to host the backend database for this site. B.L contai
 
 * About
 * Bag
-* Bag
+* Blog
 * Checkout
 * Home
 * Products
@@ -441,6 +467,8 @@ Full list of data models used:
 
 ### Profile App
 
+<br>
+
 **Profile model**
 
 |Name             |Database Key            |Field Type         | Validation Requirements                     |
@@ -457,6 +485,8 @@ Full list of data models used:
 
 ### Products App
 
+<br>
+
 **Category Model**
 
 | Name             | Database Key            | Field Type              | Validation Requirements                               |
@@ -464,6 +494,7 @@ Full list of data models used:
 | Name             | name                    | CharField               | max_length=250                                        |
 | Friendly Name    | friendly_name           | CharField               | max_length=250, null=True, blank=True                 |
 
+<br>
 
 **Product Model**
 
@@ -481,8 +512,11 @@ Full list of data models used:
 | Image Url        | image_url               | URLField                | max_length=1025, null=True, blank=True                |
 | Image            | image                   | ImageField              | null=True, blank=True                                 |
 
+<br>
 
 ### Checkout App
+
+<br>
 
 **Order Model**
 
@@ -505,6 +539,7 @@ Full list of data models used:
 | Original Bag             | original_bag    | TextField                  | null=False, blank=False, default=''                          |
 | Stripe Payment Intent ID | stripe_pid      | CharField                  | max_length=254, null=False, blank=False, default=''          |
 
+<br>
 
 **Order Line Item Model**
 
@@ -516,9 +551,14 @@ Full list of data models used:
 | Quantity        | quantity       | IntegerField        | null=False, blank=False, default=0                                           |
 | Line Item Total | lineitem_total | DecimalField        | max_digits=6, decimal_places=2, null=False, blank=False, editable=False      |
 
+<br>
+
 ## Blog App
 
+<br>
+
 ### Blog Model
+
 | Name            | Database Key   | Field Type          | Validation                                                                   |
 | --------------- | -------------- | --------------------| -----------------------------------------------------------------------------|
 | Title           | title          | CharField           | max_length=150, null=False, blank=False                                      | 
@@ -735,10 +775,8 @@ Making a copy of the original repository on our GitHub account to view or to mak
 
 
 
-Postgres as a server based db, installed a package (psycopg2) to allow usage of postgres and gunicorn package to act as our web server and replace our my development server once the app is deployed to heroku.
 
 
-https://django-allauth.readthedocs.io/en/latest/installation.html
 
 
 
