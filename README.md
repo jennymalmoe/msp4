@@ -1,6 +1,11 @@
-# BOHO Living!
+# BOHO Living
 
 <br>
+
+BOHO Living -Good vibes only!
+
+*Home decor - Fashion - Free Spirit*
+
 
 [View live website here!](https://msp4.herokuapp.com/)
 
@@ -86,7 +91,12 @@ ___
 
 <br>
 
-## UX
+
+# Strategy
+
+# UX
+
+<br>
 
 ## Project Goals
 
@@ -110,6 +120,11 @@ This project has a full set of CRUD (creation, reading, updating and deletion of
 |**Update**|UPDATE|PUT/PATCH/POST|Write|Update a resource: Users can update/edit the delivery information. Admin can update/edit products and blog posts.
 |**Delete**|DELETE|DELETE|Dispose|Delete a resource: Admin can delete products, registered users and blog posts.
 
+<br>
+
+## Customer Goals
+
+Text massa text....
 
 <br>
 
@@ -117,13 +132,13 @@ This project has a full set of CRUD (creation, reading, updating and deletion of
 
 <br>
 
-This e-commerce website focus on maximizing direct sales to new and returning customers (convert a website visitor into a customer) by simplify and optimize content to be easy to shop by a user friendly and well designed online shop that enables secure purchases and inspires. Also establishing brand recognition in the industry. Mission statement: *"To offer quality, popular and affordable boho inspired hoeme decor and fashion".* 
+This e-commerce website focus on maximizing direct sales to new and returning customers (convert a website visitor into a customer) by simplify and optimize content to be as easy as possible to make a purchase made possible by having a user friendly and well designed online shop that enables secure purchases and inspire consumers and influence their purchases. Also establishing brand recognition in the industry by presenting and stick to a bohemian nich and lifestyle. Mission statement: *"To offer on trend, selected and exclusive boho inspired home decor and fashion items".* 
 
 ### Target audience
 
-The target audience for B.L is potential customers liking the bohemian style in home decor and fashion. Since this is e-commerce the conversions is the most important part, rather than traffic it self. Conversions take place when targeted traffic meets relevant offer. So it's important that B.L clearly defined what they offers. To avoid irrelevant traffic B.L makes it clear already in its name that thos is boho inspired e-commerce. By basic SEO and a distinct website (mainly the anding page) B.L defines that they offer boho inspired homedecor and fashion. E-commerce sales increaces worldwide, and develop the need to determine target audience, particularly ecommerce stores. B.L ideal customer is a person that likes/has a boho inpired lifestyle, more than demographic data. Online, the location matters less due to home delivery. Age is not what it used to be, the age isn't the defining thing if somebody turns out to be a paying customer. Conversions take place when targeted traffic meets relevant offer, thats why B.L has a really well defined business name, website and offer. 
+The target audience for B.L is potential customers liking the bohemian style in home decor and fashion. Since this is e-commerce the conversions is the most important part, rather than traffic it self. Conversions take place when targeted traffic meets relevant offer. So it's important that B.L clearly defined what they offers. Thats why B.L has a really well defined business name, website and offer so it can avoid irrelevant traffic (traffic not interested in boho inspired e-commerce). By basic SEO and a distinct website (mainly the landing page) B.L defines that they offer boho inspired homedecor and fashion. E-commerce sales increaces worldwide, and develop the need to determine target audience, particularly ecommerce stores. B.L ideal customer is a person (gender non relevant) that likes/has a boho inpired lifestyle, more than demographic data. Online, the location matters less due to home delivery. Age is not what it used to be, the age isn't the defining thing if somebody turns out to be a paying customer. While it's important to reach as many people as possible, and it often seems like focusing only on specific segments of the population is limiting, you also need to reach potential consumers that isn't into boho style today, but has the potential to be. 
 
-After created this customer profile, B.L can make use of demographical information, such as name, address, user behavior etc. B.L get the customers details when filling out the order form, where they also can get access to the newsletter. 
+B.L can also make use of the demographical information, such as name, address, user behavior etc. B.L get when users filling out the order form, where they also can get access to the newsletter. 
 
 In addition to the goals above; 
 
@@ -133,19 +148,19 @@ In addition to the goals above;
 
 <br>
 
-This user story template consists of three sections; As a (decription of user), I want (functionality/goal), So that (benefit). It has short descriptions, requirements (who and why), general guidance, no technical details. 
+This user story template consists of three sections; As a (decription of user), I want (functionality/goal), So that I (benefit). It has short descriptions, requirements (who and why), general guidance, no technical details. 
 
 | ID  | As a..    | I want to..                                                    | So I..                                                                           |
 | --- | ---------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 |     |            | *Viewing and Navigation*                                      |                                                                                       |
 | 1   | First Time Visitor    | Be presented with an intutive site navigation that is user friendly and over all ease-of-use                              |  Get a good impression about the site/business
-| 2   | First Time Visitor    |    Visit a structured, clean and modern website                      | Understand the main purpose of the site/business and find key information
+| 2   | First Time Visitor    |    Visit a structured, clean and modern website                      | Can understand the main purpose of the site/business and find key information
 | 3   | First Time Visitor    |    Get the impression af a professional website                      | Feel comfortable enough to make a purchase
 | 4   | First Time Visitor    |    Get visually impressed by the site                       | Find the site appealing
 | 5   | First Time Visitor    | View structured lists of products                                             | Can see what the website has to offer and make a purchase in just a few clicks                                                          |
 | 6   | First Time Visitor    | View details of the products                                           | Easily can see price, description, image, sizes if any                                          |                                             |    
 | 7   | First Time Visitor    | Find items close to what I was searching online                              |  Can find the items I was looking for 
-| 8   | First Time Visitor    | Be presented to contact information and social media links                              |  Feeling a sence of crediblity
+| 8   | First Time Visitor    | Be presented to contact information and social media links                              |  Am feeling a sence of crediblity
 | 9   | First Time Visitor    | Be able to reach out to siteowner                              |  Get answers to any possible questions
 | 10   | Returning  Visitor    | Be presented with new/seasonal items                               |  Experience that B.I is up to date and offer me new items than last visiting
 |     |            | *Registration*                              |                                                                                       |
@@ -153,8 +168,8 @@ This user story template consists of three sections; As a (decription of user), 
 | 12  | User   | Be able to have an account                                           | Save default delivery information and keep a record of order history, get mails with news and offers                                          |
 | 13  | User   | Receive an email confirming my registration                       | Verify my account was registered successfully                                         |
 |     |            | *Login*                                  |                                                                                       |
-| 14  | Registered User   | Sign in to my account                                                 | Access my account                                                                   |
-| 15  | Registered User   | Access my user profile                                            | View my order history, manage my personal details                                     |
+| 14  | Registered User   | Sign in to my account                                                 | Can access my account                                                                   |
+| 15  | Registered User   | Access my user profile                                            | Can view my order history, manage my personal details                                     |
 | 16  | Registered User   | Save my personal details (address etc) in my account                                            | Can make a smooth purchase next time.                                     |
 | 17  | Registered User   | Request a password reset                                          | Receive an email to reset my password in case I forget it  
 |     |            | *Logout*                                  |                                                                                       |
@@ -165,99 +180,38 @@ This user story template consists of three sections; As a (decription of user), 
 | 21  | Shopper    | Sort multiple categories simultaneously                           | Find the best rated or best priced across broad categories |
 | 22  | Shopper    | Search for product                                                | Find a specific product I wish to purchase                                               |
 | 23  | Shopper    | View a list of search results                                     | See if the product I want is available to purchase  
-| 24  | Shopper    | View an image and details for each product                                     | So I can decide if I want to add to cart from the detail or search pages or not.                                   |
+| 24  | Shopper    | View an image and details for each product                                     | Can decide if I want to add to cart from the detail or search pages or not.                                   |
 |     |            | *Purchasing and Checkout*                                     |                                                                                       |
 | 25  | Shopper    | Be able to add products to my shopping bag     | Can buy the item
 | 26  | Shopper    | Easily select the size and quantity whilst purchasing a product     | Can get the size and quantity I want              |
 | 27   | Shopper    | Get information about delivery charges, how much I need to spend to get free delivery                                     | Can make an informed purchasing decision                                                         |
-| 28   | Shopper    | See my cart's total at any time                                   | Avoid spending too much
+| 28   | Shopper    | Be able to see my cart's total at any time                                   | Can avoid spending too much
 | 29  | Shopper    | Review my cart                                          | Can make adjustments prior to checkout           |
-| 30  | Shopper    | Adjust the quantity of individual items in my bag                 | Easily adjust the amount of an item I intended to purchase (including removing)       |
-| 31  | Shopper    | Easily enter my payment information                               | Have a smooth checkout                                                      |
-| 32  | Shopper    | Feel my payment and personal information are secure                | Provide the needed payment and personal information, and feel it is handled safely    |
-| 33  | Shopper    | View summery of order before completing purchase             | Verify I haven't made any mistakes                                                    |
+| 30  | Shopper    | Adjust the quantity of individual items in my bag                 | Easily can adjust the amount of an item I intended to purchase (including removing)       |
+| 31  | Shopper    | Easily enter my payment information                               | Have a smooth checkout experience                                                      |
+| 32  | Shopper    | Experience that my payment and personal information are secure                | Can provide the needed payment and personal information, and feel like it is handled safely    |
+| 33  | Shopper    | View summery of order before completing purchase             | Can verify I haven't made any mistakes                                                    |
 | 34  | Shopper    | Receive confirmation email of my purchase                     | Can be confident that the purchase has been made successfully
 | 35  | Shopper    | Be presented by some kind of custom service contact information                    | Can get in touch
 |     |            | *Admin and Store Management*                                  |                                                                                       |
 | 36  | Administrator |  Have access to an admin section                      | Can operate the e-commerce                                                                       |
 | 37  | Administrator | Add a product **(Create)**, write information about the product **(Read)**, edit product **(Update)** and remove product **(Delete)**                                                    | Can adjust the offers
-| 38  | Administrator |  Be able to keep track of the trafic to the site                     | Can understand the visitors needs (why they come back, what attracts them, which page brings in the most visitors etc.)
-| 39  | Administrator |  Delete users blog posts, if inappropriate                      | Can keep the site proffessional      
-| 40  | Administrator |  Have logical SKU:s                      |       Get a general picture about what category, color etc the product is. (W=white MV=multicolor B=blue G=green BR=brown HD=home decor)                                                              |
+| 38  | Administrator |  Delete users blog posts, if inappropriate                      | Can keep the site proffessional      
+| 39  | Administrator |  Have logical SKU:s                      |       Get a general picture about what category, color etc the product is. (W=white MV=multicolor B=blue G=green BR=brown HD=home decor)                                                              |
 |     |            | *Site manager*                                  |                                                                                       |
-| 41  | Shopper | Be able to manage/edit the site                                            | Keep the site relevant and with correct information/sortiment                                        |
+| 40  | Site Manager | Be able to manage/edit the site                                            | Can keep the site relevant and with correct information/sortiment                                        |
+| 41  | Site Manager | Feel the design harmonize with what B.L: sortiment and image | Am sure that it corresponds to B.L:s design profile                                     |
 |     |            | *Blog*                                  |                                                                                       |
-| 42  | Shopper | Get inspired                                            | Get home decoration/fashion ideas                                                          |
-| 43  | Shopper | Be able to contibute with my own ideas by adding a post                                             | Share inspirational ideas                                                          
-
-
-<br>
-
-## Design Choices
-
-<br>
-
-* Color scheme
-    
-    The page consists of a white base with black, orange and yellow as accent colors. The combination of black and white offers the maximum contrast possible, as they come from opposite ends of the color spectrum. Black and white websites are classical, strong, and powerful. Apart from black and white being a risk-free combination and ensuring a design will look clean, removing color forces a designer to rely on other elements in their web designs such as typography, layout, or grid to catch the viewers' attention. Boho style/the products has asymmetrical layouts, variegated patterns and handcrafted textures. Placed in a clean, contemporary space, layers of colorful textiles deliver an unexpected twist. Thats what I had in mind chosing colors and style for this website.  
-    
-    Orange is an attention-grabbing color that tends to stand out visually as an accent standing out against neutral colors. The color orange is often associated with spiritual practices including meditation and compassion, as well as warmth, creativity and emotions. Orange has very high visibility, you can use it to draw attention and highlight the most important elements of your design. I used it as a compliment to the crisp and clean white and black colors. 
-
-    I've used yellow text shadows in a few different places at the site. This bright yellow is an attention-getter, and its contrast with white or black is one of the most visible color combinations. 
-
-    All buttons are either black, white or orange. 
-    
-    ![Color scheme](media/color_scheme.png)
-
-* Typography
-
-    Lato is an open source, sans-serif font. Lato font is the main font used throughout the site with Architects Daughter font used to headers and logo. The font is created to give the letterforms familiar harmony and elegance. The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides stability and seriousness. Lato is used in the body content for the site to appear to be approachable which is the main goal for this website. 
-    
-    Architects Daughter font incorporates the graphic, squared look of architectural writing, combined with the natural feel of daily handwriting. It is clean but unconventional and gives the site a relaxed vibe. The combination of these two fonts represents both the webshop/business side aswell as the relaxed boho approach. 
-
-    ![Fonts](media/fonts.png)
-
-* Imagery
-
-    Images and the choices of the images is an important component of this site. The hero image on the landing page gives the site a dramatic appearance and sets the tone for the boho inspired page. I use lot of space around images and content to get the visitor an uncluttered and comfortable browsing experience on all device sizes. The product images for the e-commerce part of the site is chosen to be more artistic than detailed to fit the boho-tone. The appearance is aiming to be appealing to the target audience. 
-
-* Icons
-
-    All icons used are taken from Font Awsome. The use of icons in web design is a proven method to modernize a website and help direct user flow. Adding icons to the site's content helps a user better process the information and provides a visual focus point that grounds a user to a specific section. I used an arrow icon recurring throughout the site, to improve visual interest and grab the user's attention.  
+| 42  | Shopper | Get inspired                                            | Can get home decoration/fashion ideas                                                          |
+| 43  | Shopper | Be able to contribute with my own ideas by adding a post                                             | Can share inspirational ideas
+|     |            | *Authentication & Security*                                  |                                                                                       |
+| 44 | User | Verify my email address | Ensure my account is set up securely |
+| 45 | Registered User | Be confident that my password is stored securely | Feel safe from malicious activity |
+|||
 
 <br>
 
-## Wireframes 
-
-* [Mobile](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/mobile) 
-* [Tablet](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/tablet)
-* [Desktop](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/desktop)
-
-## Site Map
-
-Initial site map shown below:
-![sitemap](media/sitemap.png)
-
-<br>
-
-**Post wireframes design changes:**
-While the project relied on these wireframes, there are some differences between the wireframes and the final product; 
-
-* No spinner icon while Stripe payment is processing.
-* An "About Us" page with a contact form was added. 
-
-**Responsive Screenshot on different devices**
-
-![iPhone_portrait_w375px](media/iPhone_portrait_w375px.png)
-![Android_portrait_w412px](media/Android_portrait_w412px.png)
-![iPhone_landscape_w734px](media/iPhone_landscape_w734px.png)
-![android_landscape_w684px](media/android_landscape_w684px.png)
-![iPad_portrait_w768px](media/iPad_portrait_w768px.png)
-![iPad_landscape_w1024px](media/iPad_landscape_w1024px.png)
-![desktop_1024x768px](media/desktop_1024x768px.png)
-![desktop_1042x600px](media/desktop_1042x600px.png)
-
-<br>
+# Scope
 
 # Features
 
@@ -266,6 +220,8 @@ While the project relied on these wireframes, there are some differences between
 <br>
 
 Every page of the website features a consistently responsive and intuitive layout and navigational system.
+
+These feautures also proves that it meets the requirement of each user story. 
 
 **General features shown at all pages**
 * Fixed navigation bar, including logo or home link that links to home page from all pages, search function, my account ("Sign in", "Sign up", "Product management" and "My profile") and bag total icon and eventual amount.  
@@ -405,14 +361,14 @@ Four different kind of toasts appears when a certain action has been triggered b
 * Elaborate the SKU numbers, to make even more logical to Administrator.
 * Social media login.
 * More categories. 
-* Function to make users giving rating. To day set by sales numbers.  
+* Function to make users giving rating. To day set by Admin based on sales.  
 * Email notification functionality for users to be alerted when a new product or service is added.
 * User profile picture functionality, allowing users to add profile pictures. Nice feature if posting blog posts. 
 * Allowing users to comment the products.
-* Easier to get contacted by business partners regarding any collaboration, business deals and sponsorship.
-* Get more contact information about the registered users to be able to reach out (newsletters, offers etc).
-* Expand blog section to have different categories, ideas, what products is on sale, new in etc.  
-* Customize site based on Analytics statistic, who are the visitors/users. What pages and products are popular and not and adjust sortiment/site to that to increases the ROI (return on investment). 
+* Easier to get contacted by business partners regarding any collaboration, business deals and sponsorship if site has an more expanded contact/business information. 
+* Get more contact information about the registered users (by expanding the details in "My Account" to be able to reach out (newsletters, offers etc).
+* Expand blog section to have different categories, ideas, what products are on sale, new in etc.  
+* Customize site based on Google Analytics statistic(and other sources). Who are the visitors and customers? What pages and products are popular and not and adjust sortiment/site according to that information to increases the ROI (return on investment). 
 <br>
 
 ## Issues and Bugs
@@ -431,6 +387,15 @@ Four different kind of toasts appears when a certain action has been triggered b
 
 If user accendentally or intentionally closes the browser window after the payment is confirmed but before the form is submitted, there would be a payment in Stripe, but no order in the database. To prevent this situation; Each time an event occurs on Stripe (such as a payment intent being created) a payment being completed on Stripe a webhook is sent out that we can listen for. Webhooks are like the signals django sends each time a model is saved or deleted. Except that they are sent securely from Stripe to a url we specify. *(from Boutique Ado project, Stripe, part 10)*
 
+# Structure 
+
+## Site Map
+
+Initial site map shown below:
+
+![sitemap](media/sitemap.png)
+
+<br>
 
 
 
@@ -572,6 +537,99 @@ Full list of data models used:
 
 <br>
 
+# Skeleton 
+
+## Wireframes 
+
+* [Mobile](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/mobile) 
+* [Tablet](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/tablet)
+* [Desktop](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/desktop)
+
+
+**Post wireframes design changes:**
+While the project relied on these wireframes, there are some differences between the wireframes and the final product; 
+
+* No spinner icon and background image triggered while Stripe payment is processing.
+* An "About Us" page with a contact form was added. 
+
+**Responsive Screenshots on different devices**
+
+1. iPhone eXpensive portrait · width: 375px
+2. iPhone 6-8 portrait · width: 375px
+3. iPhone 6-8 Plump portrait · width: 414px
+4. Android (Pixel 2) portrait · width: 412px
+
+![iPhone_portrait_w375px](media/iPhone_portrait_w375px.png)
+![iPhone6-8_portrait_w375px](media/iPhone6-8_portrait_w375px.png)
+![iPhone6-8_plumpportrait_w414px](media/iPhone6-8_plumpportrait_w414px.png)
+![Android_portrait_w412px](media/Android_portrait_w412px.png)
+ 
+<br>
+
+1. iPad portrait · width: 768px
+2. iPad landscape · width: 1024px
+
+![iPadportrait_w768px](media/iPadportrait_w768px.png)
+![iPadlandscape_w1024px](media/iPadlandscape_w1024px.png)
+
+<br>
+
+1. iPad Pro · width: 1024px height: 1366px 
+2. iPad Pro Landscape · width: 1366px height: 1024px
+
+![iPadPro1024x1366](media/iPadPro1024x1366.png)
+![iPadProlandscape1366x1024](media/iPadProlandscape1366x1024.png)
+
+<br>
+
+1. Galaxy S5 · width: 360px height: 640px
+2. Surface Duo · width: 540px height: 720px
+
+![galaxyS5](media/galaxyS5.png)
+![surfaceduo540x720](media/surfaceduo540x720.png)
+
+<br>
+
+# Surface
+
+## Design Choices
+
+<br>
+
+* Color scheme
+    
+    The page consists of a white base with black, orange and yellow as accent colors. The combination of black and white offers the maximum contrast possible, as they come from opposite ends of the color spectrum. Black and white websites are classical, strong, and powerful. Apart from black and white being a risk-free combination and ensuring a design will look clean, removing color forces a designer to rely on other elements in their web designs such as the products, typography, layout, or grid to catch the viewers' attention. Boho style/the products has asymmetrical layouts, variegated patterns and handcrafted textures. Placed in a clean, contemporary space, layers of colorful textiles deliver an unexpected twist. Thats what I had in mind chosing colors and style for this website.  
+    
+    Orange is an attention-grabbing color that tends to stand out visually as an accent standing out against neutral colors. The color orange is often associated with spiritual practices including meditation and compassion, as well as warmth, creativity and emotions. Orange has very high visibility, you can use it to draw attention and highlight the most important elements of your design. I used it as a compliment to the crisp and clean white and black colors. 
+
+    I've used yellow text shadows in a few different places at the site. This bright yellow is an attention-getter and at the same time it gives a smooth and soft impression, and its contrast with white or black is one of the most visible color combinations. 
+
+    All buttons are either black, white or orange. 
+    
+    ![Color scheme](media/color_scheme.png)
+
+* Typography
+
+    Lato is an open source, sans-serif font. Lato font is the main font used throughout the site with Architects Daughter font used to headers and logo. The font is created to give the letterforms familiar harmony and elegance. The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides stability and seriousness. Lato is used in the body content for the site to appear to be approachable which is the main goal for this website. 
+    
+    Architects Daughter font incorporates the graphic, squared look of architectural writing, combined with the natural feel of daily handwriting. It is clean but unconventional and gives the site a relaxed vibe. The combination of these two fonts represents both the webshop/business side aswell as the relaxed boho approach. 
+
+    ![Fonts](media/fonts.png)
+
+* Imagery
+
+    Images and the choices of the images is an important component of this site. The hero image on the landing page gives the site a dramatic appearance and sets the tone for the boho inspired page. I use lot of space around images and content to get the visitor an uncluttered and comfortable browsing experience on all device sizes. The product images for the e-commerce part of the site is chosen to be more artistic than detailed/informative to fit the boho-tone. The appearance is aiming to be appealing to the target audience. 
+
+* Icons
+
+    All icons used are taken from Font Awsome. The use of icons in web design is a proven method to modernize a website and help direct user flow. Adding icons to the site's content helps a user better process the information and provides a visual focus point that grounds a user to a specific section. I used an boho inspired arrow icon recurring throughout the site, to improve visual  and keep a common theme throughout the site. 
+
+<br>
+
+
+
+
+
 # Technologies Used
 
 <br>
@@ -618,10 +676,12 @@ Full list of data models used:
 * [Imgur](https://imgur.com/) - Used to create url:s for images.
 * [Jinja](https://jinja.palletsprojects.com/en/2.10.x/) - Jinja templating language was used to simplify and display backend data in html.
 * [JSHint](https://jshint.com/) - JavaScript code quality tool, used to detect errors.
+* [JQuery](https://jquery.com/) - Used for DOM traversal, HTML manipulation, and event handling.
 * [Unsplash](https://unsplash.com/) - Images used throughout the site.
 * [PEP8](https://www.python.org/dev/peps/pep-0008/) - Used to improve the readability and consistency of Python code.
 * [PEP8online](http://pep8online.com/) - Used to check code for PEP8 requirements.
 * [Pillow](https://pillow.readthedocs.io/en/stable/) - Python Imaging Library.
+* [pip](https://pip.pypa.io/en/stable/) - Used to install packages from the Python Package Index.
 * [Pixelmator](https://www.pixelmator.com/mac/) - Used to resize images, creating logo and tab icon.
 * [Responsinator](https://www.responsinator.com/) - Used for the responsive screenshoots on different device resolutions. 
 * [Responsive Test Tool](http://responsivetesttool.com/) - Used for the responsive screenshoots on different device resolutions. 
@@ -679,59 +739,94 @@ Validating code
 
 # Deployment
 
-<br>
-
 Requirements to deploy:
 
-* An IDE (Gitpod)
-* Python3 (In order to to run the application and use Flask)
-* PIP3 (To install all application imports, such as Flask and OS)
-* A template folder (To link app routes)
-* A database (MongoDB Atlas)
+* An IDE (Such as GitPod or VSCode)
+* Git for version control 
+* GitHub account
+* Heroku account
+* AWS S3 account
+* Stripe account
+* Email account
+* Python3 
+* pip for Python package installation
 
 <br>
 
-## MongoDB Configuration
-1. Login to your [MongoDB](https://www.mongodb.com/) Account.
-2. From Clusters tab, click on Connect.
-3. Select Connect to your application.
-4. Select Python as Driver and choose Version 3.6 or later
-5. Create a new env python file in your project, paste and save the connection link and variables.
+## Environment Variables
 
-![mongo](static/images/mongo_db.png)
+### GitPod IDE
 
-6. Create an instance of PyMongo
+| Key | Value |
+|---|---|
+| AWS_SECRET_ACCESS_KEY | ## YOUR AWS_SECRET_ACCESS_KEY ## |
+| AWS_ACCESS_KEY_ID | ## YOUR AWS_ACCESS_KEY_ID ## |
+| DATABASE_URL | ## YOUR DATABASE_URL ## |
+| SECRET_KEY | ## YOUR SECRET_KEY ## |
+| STRIPE_PUBLIC_KEY | ## YOUR STRIPE_PUBLIC_KEY ## |
+| STRIPE_SECRET_KEY | ## YOUR STRIPE_SECRET_KEY ## |
+| STRIPE_WH_SECRET | ## YOUR STRIPE_WH_SECRET ## |
+| | |
 
-![py_mongo](static/images/py_mongo.png)
-
-<br>
-
-## GitHub Pages
-1. Log into [GitHub](https://github.com/)
-2. From the list of repositories, select the repository wanting to deploy.
-3. From the menu items near the top of bthe page, select "Settings"
-4. Scroll down to the GitHub Pages section.
-5. Under "Source" click the drop-down menu labbelled "None" and select "Master Branch"
-6. On selecting "Master Branch" the page is automatically refreshed, website is now deplyed. 
-7. Scroll back down to the GitHub Pages section to retrieve the link to the deployed site. 
+| EMAIL_HOST_USER | ## YOUR EMAIL ADDRESS ## | ????
+| EMAIL_HOST_PASS | ## YOUR EMAIL APP PASS CODE ## | ?????
 
 <br>
 
 ## Forking the GitHub Repository
-Making a copy of the original repository on our GitHub account to view or to make changes without affecting the original repository;
+Making a copy of the original repository on our GitHub account to view or to make changes without affecting the original repository, follow the steps below;
+
 1. Log into [GitHub](https://github.com/) and locate the repository.
-2. At the top of the Repository, just above the "Settings" button on the menu, locate the "Fork" button.
+2. Click on 'Fork' on the top right of the page.
+
+![Fork](media/fork.png)
+
 3. You should now have a copy of the original repository in your GitHub account.
 
 <br>
 
 ## Making a Local Clone
-1. Install the Gitpod Browser Extentions for Chrome.
-2. After installation, restart the browser. 
-3. Log in to [Gitpod](https://www.gitpod.io/) with your gitpod account.
-4. Navigate to the Project GitHub repository.
-5. Click the green "Gitpod" button in the top right corner of the repository.
-6. This triggers a new gitpod workspace to be created from the code in GitHub where you can work locally.
+
+1. Log in to [www.github.com](https://github.com/)) with your GitHub account.
+2. Click the profile dropdown in the upper right corner.
+
+![GitHub](media/github.png)
+
+3. Choose "Your repositories"
+
+![Repo](media/repo.png)
+
+4. Navigate to the relevant [repository](https://github.com/jennymalmoe/MSP4) in the main page of the repositories.
+
+![Choose repo](media/choose_repo.png)
+
+5. Click the "Code" button.
+
+![Gitpod](media/gitpod.png)
+
+6. To clone the repository using HTTPS, under "Clone with HTTPS", click the icon marked in the screenshot. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the icon marked in the screenshot. To clone a repository using GitHub CLI, click Use GitHub CLI, then click the icon marked in the screenshot.
+
+![Clone](media/click.png)
+
+7. Open terminal.
+8. Change the current working directory to the location where you want the cloned directory.
+9. Type **git clone**, and then paste the URL you copied earlier.
+
+![Git clone](media/gitclone.png)
+
+10. Press "Enter" to create your local clone.
+
+![Enter](media/enter.png)
+
+
+
+
+
+
+
+
+
+
 
 ## To work on the project code within a local IDE 
 1. Log in to [GitHub](https://github.com/) and locate the GitHub Repository.
@@ -743,6 +838,19 @@ Making a copy of the original repository on our GitHub account to view or to mak
 7. Press Enter. Your local clone will be created.
 
 <br>
+
+
+
+
+## GitHub Pages
+1. Log into [GitHub](https://github.com/)
+2. From the list of repositories, select the repository wanting to deploy.
+3. From the menu items near the top of bthe page, select "Settings"
+4. Scroll down to the GitHub Pages section.
+5. Under "Source" click the drop-down menu labbelled "None" and select "Master Branch"
+6. On selecting "Master Branch" the page is automatically refreshed, website is now deplyed. 
+7. Scroll back down to the GitHub Pages section to retrieve the link to the deployed site. 
+
 
 ## Heroku Deployment
 1. Before deploying your project create a requirements.txt file by running the following command in the CLI;

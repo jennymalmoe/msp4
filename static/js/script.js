@@ -96,7 +96,4 @@ function sendMail(){
 	})
     const form = document.querySelector('#contactForm');
         form.reset();
-} 
-
-//document.getElementById("contactForm").reset(); 
-//.then(reset());
+}
