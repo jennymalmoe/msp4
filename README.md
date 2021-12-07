@@ -92,8 +92,6 @@ ___
 <br>
 
 
-# Strategy
-
 # UX
 
 <br>
@@ -178,7 +176,7 @@ This user story template consists of three sections; As a (decription of user), 
 | 19  | Shopper    | Sort the list of available products                               | See the products in a list sorted by price, rating, name etc            |
 | 20  | Shopper    | Be able to search by categories                                       | Find what I am looking for                     |
 | 21  | Shopper    | Sort multiple categories simultaneously                           | Find the best rated or best priced across broad categories |
-| 22  | Shopper    | Search for product                                                | Find a specific product I wish to purchase                                               |
+| 22  | Shopper    | Search for products                                                | Find a specific product I wish to purchase                                               |
 | 23  | Shopper    | View a list of search results                                     | See if the product I want is available to purchase  
 | 24  | Shopper    | View an image and details for each product                                     | Can decide if I want to add to cart from the detail or search pages or not.                                   |
 |     |            | *Purchasing and Checkout*                                     |                                                                                       |
@@ -191,7 +189,7 @@ This user story template consists of three sections; As a (decription of user), 
 | 31  | Shopper    | Easily enter my payment information                               | Have a smooth checkout experience                                                      |
 | 32  | Shopper    | Experience that my payment and personal information are secure                | Can provide the needed payment and personal information, and feel like it is handled safely    |
 | 33  | Shopper    | View summery of order before completing purchase             | Can verify I haven't made any mistakes                                                    |
-| 34  | Shopper    | Receive confirmation email of my purchase                     | Can be confident that the purchase has been made successfully
+| 34  | Shopper    | Receive a confirmation email of my purchase                     | Can be confident that the purchase has been made successfully
 | 35  | Shopper    | Be presented by some kind of custom service contact information                    | Can get in touch
 |     |            | *Admin and Store Management*                                  |                                                                                       |
 | 36  | Administrator |  Have access to an admin section                      | Can operate the e-commerce                                                                       |
@@ -211,7 +209,39 @@ This user story template consists of three sections; As a (decription of user), 
 
 <br>
 
-# Scope
+## Design Choices
+
+<br>
+
+* Color scheme
+    
+    The page consists of a white base with black, orange and yellow as accent colors. The combination of black and white offers the maximum contrast possible, as they come from opposite ends of the color spectrum. Black and white websites are classical, strong, and powerful. Apart from black and white being a risk-free combination and ensuring a design will look clean, removing color forces a designer to rely on other elements in their web designs such as the products, typography, layout, or grid to catch the viewers' attention. Boho style/the products has asymmetrical layouts, variegated patterns and handcrafted textures. Placed in a clean, contemporary space, layers of colorful textiles deliver an unexpected twist. Thats what I had in mind chosing colors and style for this website.  
+    
+    Orange is an attention-grabbing color that tends to stand out visually as an accent standing out against neutral colors. The color orange is often associated with spiritual practices including meditation and compassion, as well as warmth, creativity and emotions. Orange has very high visibility, you can use it to draw attention and highlight the most important elements of your design. I used it as a compliment to the crisp and clean white and black colors. 
+
+    I've used yellow text shadows in a few different places at the site. This bright yellow is an attention-getter and at the same time it gives a smooth and soft impression, and its contrast with white or black is one of the most visible color combinations. 
+
+    All buttons are either black, white or orange. 
+    
+    ![Color scheme](media/color_scheme.png)
+
+* Typography
+
+    Lato is an open source, sans-serif font. Lato font is the main font used throughout the site with Architects Daughter font used to headers and logo. The font is created to give the letterforms familiar harmony and elegance. The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides stability and seriousness. Lato is used in the body content for the site to appear to be approachable which is the main goal for this website. 
+    
+    Architects Daughter font incorporates the graphic, squared look of architectural writing, combined with the natural feel of daily handwriting. It is clean but unconventional and gives the site a relaxed vibe. The combination of these two fonts represents both the webshop/business side aswell as the relaxed boho approach. 
+
+    ![Fonts](media/fonts.png)
+
+* Imagery
+
+    Images and the choices of the images is an important component of this site. The hero image on the landing page gives the site a dramatic appearance and sets the tone for the boho inspired page. I use lot of space around images and content to get the visitor an uncluttered and comfortable browsing experience on all device sizes. The product images for the e-commerce part of the site is chosen to be more artistic than detailed/informative to fit the boho-tone. The appearance is aiming to be appealing to the target audience. 
+
+* Icons
+
+    All icons used are taken from Font Awsome. The use of icons in web design is a proven method to modernize a website and help direct user flow. Adding icons to the site's content helps a user better process the information and provides a visual focus point that grounds a user to a specific section. I used an boho inspired arrow icon recurring throughout the site, to improve visual  and keep a common theme throughout the site. 
+
+<br>
 
 # Features
 
@@ -371,23 +401,63 @@ Four different kind of toasts appears when a certain action has been triggered b
 * Customize site based on Google Analytics statistic(and other sources). Who are the visitors and customers? What pages and products are popular and not and adjust sortiment/site according to that information to increases the ROI (return on investment). 
 <br>
 
-## Issues and Bugs
-
-* **Known bug:** On some iOS devices, this happens; Nothing happens when clicking "Register" or "Login" (if I am not signed in) after added item(s) in the bag (=toast). After signed in, nothing happens when clicking my profile or log out either. I need to refresh the page to be able to. Then it works as expected.   
-
-* Some responsive design didn't work as expected, since the project use Bootstrap 5.1 I had to add "-bs-" in "data-toggle", "data-target", "data-autohide". 
-
-* Toast messages didn't show as expected needed to change the JavaScript from: $('toast').toast('show') to $('.toast').show() to make the toast show as expected.
-
-* When register new user at "My Account" an SMTPAuthenticationError at /accounts/signup/ occurred and text showed; "Already have an account? Then please sign in". I had "DEVELOPMENT" in my Gitpod settings, but scope was set for my old milestone project, not to this one (or */* (to access all)). It was trying to use the gmail smtp from Gitpod but gmail was expecting the Heroku app to access it, so it wasn't authenticated and thats why it didn't work. So after changed it to access all (*/*) it worked as expected. 
-
-* No confirmation mail (to the terminal) was sent after making a "payment", just an 404 error in the terminal. I edited webhook endpoint in Stripe and then got an 200 error in terminal and a "payment_intent.succeeded" in Stripe, but no confirmation mail still. The problem was that the webhook itself wasn't set up quite right, I needed to add "8000-" in the beginning of my webhook and added checkout/wh/ in the end. I also had STRIPE_WH_KEY instead of STRIPE_WH_SECRET in Gitpod Environment Variables. When chaged those two things confirmation mail worked as expected. 
-
 ## Security features
 
 If user accendentally or intentionally closes the browser window after the payment is confirmed but before the form is submitted, there would be a payment in Stripe, but no order in the database. To prevent this situation; Each time an event occurs on Stripe (such as a payment intent being created) a payment being completed on Stripe a webhook is sent out that we can listen for. Webhooks are like the signals django sends each time a model is saved or deleted. Except that they are sent securely from Stripe to a url we specify. *(from Boutique Ado project, Stripe, part 10)*
 
-# Structure 
+
+## Wireframes 
+
+* [Mobile](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/mobile) 
+* [Tablet](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/tablet)
+* [Desktop](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/desktop)
+
+
+**Post wireframes design changes:**
+While the project relied on these wireframes, there are some differences between the wireframes and the final product; 
+
+* No spinner icon and background image triggered while Stripe payment is processing.
+* An "About Us" page with a contact form was added. 
+
+**Responsive Screenshots on different devices**
+
+1. iPhone eXpensive portrait · width: 375px
+2. iPhone 6-8 portrait · width: 375px
+3. iPhone 6-8 Plump portrait · width: 414px
+4. Android (Pixel 2) portrait · width: 412px
+
+![iPhone_portrait_w375px](media/iPhone_portrait_w375px.png)
+![iPhone6-8_portrait_w375px](media/iPhone6-8_portrait_w375px.png)
+![iPhone6-8_plumpportrait_w414px](media/iPhone6-8_plumpportrait_w414px.png)
+![Android_portrait_w412px](media/Android_portrait_w412px.png)
+ 
+<br>
+
+1. iPad portrait · width: 768px
+2. iPad landscape · width: 1024px
+
+![iPadportrait_w768px](media/iPadportrait_w768px.png)
+![iPadlandscape_w1024px](media/iPadlandscape_w1024px.png)
+
+<br>
+
+1. iPad Pro · width: 1024px height: 1366px 
+2. iPad Pro Landscape · width: 1366px height: 1024px
+
+![iPadPro1024x1366](media/iPadPro1024x1366.png)
+![iPadProlandscape1366x1024](media/iPadProlandscape1366x1024.png)
+
+<br>
+
+1. Galaxy S5 · width: 360px height: 640px
+2. Surface Duo · width: 540px height: 720px
+
+![galaxyS5](media/galaxyS5.png)
+![surfaceduo540x720](media/surfaceduo540x720.png)
+
+<br>
+
+# Database Design
 
 ## Site Map
 
@@ -396,10 +466,6 @@ Initial site map shown below:
 ![sitemap](media/sitemap.png)
 
 <br>
-
-
-
-# Database Design
 
 This database uses a SQL database through PostgreSQL. Initially the databases were built in JSON files, [link here!](products/fixtures)
 
@@ -422,7 +488,6 @@ Heroku PostgreSQL is used to host the backend database for this site. B.L contai
 
 ## Database schema
 ![Database](media/database_schema.png)
-
 
 ## Database Model
 
@@ -537,99 +602,6 @@ Full list of data models used:
 
 <br>
 
-# Skeleton 
-
-## Wireframes 
-
-* [Mobile](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/mobile) 
-* [Tablet](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/tablet)
-* [Desktop](https://github.com/jennymalmoe/MSP4/tree/main/wireframes/desktop)
-
-
-**Post wireframes design changes:**
-While the project relied on these wireframes, there are some differences between the wireframes and the final product; 
-
-* No spinner icon and background image triggered while Stripe payment is processing.
-* An "About Us" page with a contact form was added. 
-
-**Responsive Screenshots on different devices**
-
-1. iPhone eXpensive portrait · width: 375px
-2. iPhone 6-8 portrait · width: 375px
-3. iPhone 6-8 Plump portrait · width: 414px
-4. Android (Pixel 2) portrait · width: 412px
-
-![iPhone_portrait_w375px](media/iPhone_portrait_w375px.png)
-![iPhone6-8_portrait_w375px](media/iPhone6-8_portrait_w375px.png)
-![iPhone6-8_plumpportrait_w414px](media/iPhone6-8_plumpportrait_w414px.png)
-![Android_portrait_w412px](media/Android_portrait_w412px.png)
- 
-<br>
-
-1. iPad portrait · width: 768px
-2. iPad landscape · width: 1024px
-
-![iPadportrait_w768px](media/iPadportrait_w768px.png)
-![iPadlandscape_w1024px](media/iPadlandscape_w1024px.png)
-
-<br>
-
-1. iPad Pro · width: 1024px height: 1366px 
-2. iPad Pro Landscape · width: 1366px height: 1024px
-
-![iPadPro1024x1366](media/iPadPro1024x1366.png)
-![iPadProlandscape1366x1024](media/iPadProlandscape1366x1024.png)
-
-<br>
-
-1. Galaxy S5 · width: 360px height: 640px
-2. Surface Duo · width: 540px height: 720px
-
-![galaxyS5](media/galaxyS5.png)
-![surfaceduo540x720](media/surfaceduo540x720.png)
-
-<br>
-
-# Surface
-
-## Design Choices
-
-<br>
-
-* Color scheme
-    
-    The page consists of a white base with black, orange and yellow as accent colors. The combination of black and white offers the maximum contrast possible, as they come from opposite ends of the color spectrum. Black and white websites are classical, strong, and powerful. Apart from black and white being a risk-free combination and ensuring a design will look clean, removing color forces a designer to rely on other elements in their web designs such as the products, typography, layout, or grid to catch the viewers' attention. Boho style/the products has asymmetrical layouts, variegated patterns and handcrafted textures. Placed in a clean, contemporary space, layers of colorful textiles deliver an unexpected twist. Thats what I had in mind chosing colors and style for this website.  
-    
-    Orange is an attention-grabbing color that tends to stand out visually as an accent standing out against neutral colors. The color orange is often associated with spiritual practices including meditation and compassion, as well as warmth, creativity and emotions. Orange has very high visibility, you can use it to draw attention and highlight the most important elements of your design. I used it as a compliment to the crisp and clean white and black colors. 
-
-    I've used yellow text shadows in a few different places at the site. This bright yellow is an attention-getter and at the same time it gives a smooth and soft impression, and its contrast with white or black is one of the most visible color combinations. 
-
-    All buttons are either black, white or orange. 
-    
-    ![Color scheme](media/color_scheme.png)
-
-* Typography
-
-    Lato is an open source, sans-serif font. Lato font is the main font used throughout the site with Architects Daughter font used to headers and logo. The font is created to give the letterforms familiar harmony and elegance. The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides stability and seriousness. Lato is used in the body content for the site to appear to be approachable which is the main goal for this website. 
-    
-    Architects Daughter font incorporates the graphic, squared look of architectural writing, combined with the natural feel of daily handwriting. It is clean but unconventional and gives the site a relaxed vibe. The combination of these two fonts represents both the webshop/business side aswell as the relaxed boho approach. 
-
-    ![Fonts](media/fonts.png)
-
-* Imagery
-
-    Images and the choices of the images is an important component of this site. The hero image on the landing page gives the site a dramatic appearance and sets the tone for the boho inspired page. I use lot of space around images and content to get the visitor an uncluttered and comfortable browsing experience on all device sizes. The product images for the e-commerce part of the site is chosen to be more artistic than detailed/informative to fit the boho-tone. The appearance is aiming to be appealing to the target audience. 
-
-* Icons
-
-    All icons used are taken from Font Awsome. The use of icons in web design is a proven method to modernize a website and help direct user flow. Adding icons to the site's content helps a user better process the information and provides a visual focus point that grounds a user to a specific section. I used an boho inspired arrow icon recurring throughout the site, to improve visual  and keep a common theme throughout the site. 
-
-<br>
-
-
-
-
-
 # Technologies Used
 
 <br>
@@ -724,20 +696,13 @@ While the project relied on these wireframes, there are some differences between
 <br>
 
 # Testing
-Testing section is located here [testing.md file](documentation_testing/testing.md)
 
-Validating code
-* HTML code is validated through [W3C Validator](https://validator.w3.org/)
-
-* CSS code is validated through [W3C Validator CSS](https://validator.w3.org/)
-
-* JavaScript code is validated through [JSHint](https://jshint.com/)
-
-* Python code is validated through [PEP8](https://www.python.org/dev/peps/pep-0008/)
-
-<br>
+Testing section is located here [testing.md file](/testing.md)
 
 # Deployment
+
+This project has been developed using Gitpod and GitHub. The project was regularly committed to GitHub during the initial development phase.
+The website was stored as a repository in GitHub, and has later been deployed using Heroku. Static files are stored using Amazon AWS in an Amazon Web Services S3 Bucket.
 
 Requirements to deploy:
 
@@ -753,31 +718,11 @@ Requirements to deploy:
 
 <br>
 
-## Environment Variables
-
-### GitPod IDE
-
-| Key | Value |
-|---|---|
-| AWS_SECRET_ACCESS_KEY | ## YOUR AWS_SECRET_ACCESS_KEY ## |
-| AWS_ACCESS_KEY_ID | ## YOUR AWS_ACCESS_KEY_ID ## |
-| DATABASE_URL | ## YOUR DATABASE_URL ## |
-| SECRET_KEY | ## YOUR SECRET_KEY ## |
-| STRIPE_PUBLIC_KEY | ## YOUR STRIPE_PUBLIC_KEY ## |
-| STRIPE_SECRET_KEY | ## YOUR STRIPE_SECRET_KEY ## |
-| STRIPE_WH_SECRET | ## YOUR STRIPE_WH_SECRET ## |
-| | |
-
-| EMAIL_HOST_USER | ## YOUR EMAIL ADDRESS ## | ????
-| EMAIL_HOST_PASS | ## YOUR EMAIL APP PASS CODE ## | ?????
-
-<br>
-
 ## Forking the GitHub Repository
 Making a copy of the original repository on our GitHub account to view or to make changes without affecting the original repository, follow the steps below;
 
 1. Log into [GitHub](https://github.com/) and locate the repository.
-2. Click on 'Fork' on the top right of the page.
+2. Click on `Fork` on the top right of the page.
 
 ![Fork](media/fork.png)
 
@@ -792,7 +737,7 @@ Making a copy of the original repository on our GitHub account to view or to mak
 
 ![GitHub](media/github.png)
 
-3. Choose "Your repositories"
+3. Choose `Your repositories`
 
 ![Repo](media/repo.png)
 
@@ -800,11 +745,11 @@ Making a copy of the original repository on our GitHub account to view or to mak
 
 ![Choose repo](media/choose_repo.png)
 
-5. Click the "Code" button.
+5. Click the `Code` button.
 
 ![Gitpod](media/gitpod.png)
 
-6. To clone the repository using HTTPS, under "Clone with HTTPS", click the icon marked in the screenshot. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the icon marked in the screenshot. To clone a repository using GitHub CLI, click Use GitHub CLI, then click the icon marked in the screenshot.
+6. To clone the repository using HTTPS, under `Clone with HTTPS`, click the icon marked in the screenshot. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the icon marked in the screenshot. To clone a repository using GitHub CLI, click Use GitHub CLI, then click the icon marked in the screenshot.
 
 ![Clone](media/click.png)
 
@@ -814,74 +759,214 @@ Making a copy of the original repository on our GitHub account to view or to mak
 
 ![Git clone](media/gitclone.png)
 
-10. Press "Enter" to create your local clone.
+10. Press `Enter` to create your local clone.
 
 ![Enter](media/enter.png)
 
-
-
-
-
-
-
-
-
-
-
-## To work on the project code within a local IDE 
-1. Log in to [GitHub](https://github.com/) and locate the GitHub Repository.
-2. Under the repository name, click "Clone or download".
-3. In the clone with HTTPs section, copy the clone URL for the repository.
-4. Open the terminal in your local IDE.
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type **git clone**, and then paste the URL you copied in Step 3.
-7. Press Enter. Your local clone will be created.
-
 <br>
 
+## Download the project
 
+1. Go to [Project Code Repository Location](https://github.com/jennymalmoe/MSP4) on Github. 
+2. Select the Code dropdown and choose the Download ZIP option.
 
+![Zip](media/zip.png)
 
-## GitHub Pages
-1. Log into [GitHub](https://github.com/)
-2. From the list of repositories, select the repository wanting to deploy.
-3. From the menu items near the top of bthe page, select "Settings"
-4. Scroll down to the GitHub Pages section.
-5. Under "Source" click the drop-down menu labbelled "None" and select "Master Branch"
-6. On selecting "Master Branch" the page is automatically refreshed, website is now deplyed. 
-7. Scroll back down to the GitHub Pages section to retrieve the link to the deployed site. 
+3. This will download a copy of the entire project locally as a zip file.
+4. Any required Python dependencies should be installed locally using the terminal command $ pip install -r requirements.txt.
 
+## Set up local testing environment
 
-## Heroku Deployment
-1. Before deploying your project create a requirements.txt file by running the following command in the CLI;
+To set up the local testing environment once the code has been Cloned or Forked, the following environment variables should be added to the Gitpod environment variables.
+Gitpod environment variables can be accessed from the top right of the Gitpod home screen, by clicking on the User icon and selecting Settings, then Variables from the left hand menu.
 
-    ![pip freeze](static/images/pip_freeze.png)
+Variable|Value|
+--------|-----|
+DEVELOPMENT|True|
+SECRET_KEY|`your_django_secret_key`
+STRIPE_PUBLIC_KEY|`your_stripe_public_key`
+STRIPE_SECRET_KEY|`your_stripe_secret_key`
+STRIPE_WH_SECRET|`your_stripe_webhook_secret_key`
 
-2. Create a Procfile file by running the following command in the CLI;
+## Deploy website to Heroku
 
-    ![procfile](static/images/echo.png)
+1. Create an account at [Heroku](https://id.heroku.com/login).
+2. Choose a name for your application, select the region closest to your, and then click `Create app`.
 
-3. git add and git commit the new requirements and Procfile and then git push the project to GitHub.
-3. Log in to [Heroku](https://dashboard.heroku.com/apps).
-4. Select "New" on your dashboard and then select "Create new app".
-5. Choose a name for your application, select your region, and then click "Create app".
-6. From the app dashboard, navigate to "Deploy" tab.
-7. From Deployment method select "Github" and confirm the linking of the Heroku app by clicking "Search" then select your repository name.
-8. Once you select your repository, click on "Connect".
-9. After you connected to your repository, click on "Settings" tab on your app dashboard, and click on "Reveal Config Vars" and add your configuration variables to Heroku.
-10. Navigate to "Deploy" tab, and from Manual deploy choose your master branch, and click "Deploy Branch".
-11. After you deployed your branch "Enable Automatic Deploys".
-12. Site is successfully deployed, any further changes will automatically be updated everytime they are commited and pushed on Github.
+![New app](media/heroku.png)
+
+4. After you created your app click on Resources tab, using the `Add ons` search field find, and select `Heroku Postgres`.
+5. Select your plan and click confirm.
+6. In order to use Heroku Postgres you need to install two dependencies `dj_database_url` and `psycopg2-binary`
+
+![Install](media/pip3.png)
+
+7. After installing the dependencies, freeze your requirements into `requirements.txt`
+
+![Freeze](media/freeze.png)
+
+8. In your settings.py file import `dj_database_url` and replace your current Database settings to:
+    Your `DATABASE_URL` can be found in your Heroku Apps `Config Var`
+
+![Import](media/import.png)
+
+9. After setting your Database, run the following commands to migrate models:
+
+![Migrate](media/migrate.png)
+
+10. Load the data to the database from the db.json file by running following command:
+
+![Load](media/load.png)
+
+11. Create a superuser for your app 
+
+![Super user](media/suser.png)
+
+12. Heroku setup is complete, now add an if statement in your settings.py file to set the DATABASES:
+
+![Database](media/db.png)
+
+13. Install `gunicorn` and freeze your requirements
+
+![Gunicorn](media/gunicorn.png)
+
+14. Create a `Procfile` and add the following code in your `Procfile`
+
+![Procfile](media/procfile.png)
+
+15. Connect to Heroku fom the terminal:
+
+![Heroku login](media/hlogin.png)
+
+16. Go to back to the Settings tab on your Heroku dashboard, and click "Reveal Config Vars" and add the following Config Variable, to temporarily disable `COLLECTSTATIC`:
+
+![Disable](media/dis.png)
+
+17. In your settings.py file add your Heroku app, and `localhost`
+
+![Local host](media/localhost.png)
+
+18. In your Heroku app dashboard, click on `Settings` tab on your Heroku dashboard, and click `Reveal Config Vars` and add the following Config Variables:
+
+    |Key|Value|
+    |---|----|
+    |SECRET_KEY|YOUR_SECRET_KEY|
+    |STRIPE_PUBLIC_KEY|YOUR_STRIPE_PUBLIC_KEY|
+    |STRIPE_SECRET_KEY|YOUR_STRIPE_SECRET_KEY|
+    |STRIPE_WH_SECRET|YOUR_STRIPE_WH_SECRET|
+    |EMAIL_HOST_USER|YOUR_EMAIL_ADDRESS|
+    |EMAIL_HOST_PASS|YOUR_EMAIL_APP_PASSWORD|
+
+19. Then push to Heroku:
+
+![Push](media/push.png)
+
+20. Navigate to `Deploy` tab on your Heroku apps Dashboard, and click on `Enable Automatic Deploys`.
+21. Site is successfully deployed, and any futher changes on the app will automatically be updated everytime they are commited and pushed on Github.
+
+## AWS 
+
+The deployed version of this website has static and media files hosted to it via the web based service; Amazon Web Services S3 Bucket.
+
+1. Create or login to your AWS account at [aws.amazon.com](https://aws.amazon.com/?aws-products-analytics.sort-by=item.additionalFields.productNameLowercase&aws-products-analytics.sort-order=asc&aws-products-business-apps.sort-by=item.additionalFields.productNameLowercase&aws-products-business-apps.sort-order=asc&aws-products-containers.sort-by=item.additionalFields.productNameLowercase&aws-products-containers.sort-order=asc&aws-products-compute.sort-by=item.additionalFields.productNameLowercase&aws-products-compute.sort-order=asc&aws-products-databases.sort-by=item.additionalFields.productNameLowercase&aws-products-databases.sort-order=asc&aws-products-fe-mobile.sort-by=item.additionalFields.productNameLowercase&aws-products-fe-mobile.sort-order=asc&aws-products-game-tech.sort-by=item.additionalFields.productNameLowercase&aws-products-game-tech.sort-order=asc&aws-products-iot.sort-by=item.additionalFields.productNameLowercase&aws-products-iot.sort-order=asc&aws-products-ml.sort-by=item.additionalFields.productNameLowercase&aws-products-ml.sort-order=asc&aws-products-mgmt-govern.sort-by=item.additionalFields.productNameLowercase&aws-products-mgmt-govern.sort-order=asc&aws-products-migration.sort-by=item.additionalFields.productNameLowercase&aws-products-migration.sort-order=asc&aws-products-network.sort-by=item.additionalFields.productNameLowercase&aws-products-network.sort-order=asc&aws-products-security.sort-by=item.additionalFields.productNameLowercase&aws-products-security.sort-order=asc&aws-products-storage.sort-by=item.additionalFields.productNameLowercase&aws-products-storage.sort-order=asc) and click on `Amazon S3`.  
+2. Create a new bucket with the following settings:
+
+* An appropriate name (your project name)
+
+* Region (closest to you)
+
+* Uncheck `Block all Public Access`
+
+* Open the new bucket and `Enable Static Website Hosting` (bottom of page)
+
+* In the permissions tab, edit the CORS configuration (near bottom) and use the following code to set up the required connection between the Heroku app and the bucket:
+
+![Allows](media/allows.png)
+
+* In the permissions tab, click `Edit` on the Bucket Policy and open the policy generator
+
+* Use the following settings to setup the policy correctly:
+
+  + *Type of Policy: `S3 Bucket Policy`*
+
+  + *Principal: `*` to allow all principles*
+
+  + *Action: `Get Object`*
+
+  + *Amazon Resource Name (ARN): Paste your Bucket ARN and add * at the and of your Bucket Resource key arn:aws:s3:::bucket_name/* and then save*
+
+**IMPORTANT! Add "/*" to the end of the resource key to ensure all files are loaded**
+
+* Click on Access Control List (ACL), and enable `List` on `Everyone (public access)` tab.
+
+* On the top of your AWS Management Console, Search for `IAM` or `Identity Access Management`
+
+  + * Click on `User Groups` on the left panel, and `Create Group`
+
+  + * Click on `Policies` and `Create Policy`
+
+  + * Click on JSON and select `Import Managed Policy` and search for `AmazonS3FullAccess` and click import
+
+  + * Copy your `Bucket ARN` and paste it in the `Resource`
+
+![Arn](media/arn.png)
+
+  + * `Click on Review Policy`
+
+* Go back to `User Groups` and click on the group name you just created, click on `Permissions` then `Attach Policies` and search for the policy you've just created and then click on `Attach Policy` to attach the policy to the group
+
+* Click on `Users` and then click on `Add Users`
+
+  + * Set your user's name and give `Programmatic Access`
+
+  + * Click `Next` and add the user in your New Group and `Create User`
+
+  + * After you created the user download user's `.csv` file which contains user's access key and secret access key.
+
+* Go back to your IDE and install the following dependencies in order to connect Django to AWS S3
+
+![Boto3](media/boto.png)
+
+* Freeze your requirements
+
+![Freeze](media/freez.png)
+
+* Add it to your installed apps in your settings.py
+
+* Create `custom_storages.py` file in your project root and add the following code, and then save
+
+![Store](media/store.png)
+
+* In your `settings.py` file add the following code
+
+![be_conf](media/be_conf.png)
+
+* Add the following config variables in your Heroku App, and remove `DISABLE_COLLECTSTATIC=1`
+
+|Key|Value|
+|---|----|
+|USE_AWS|True|
+|AWS_ACCESS_KEY_ID|YOUR_AWS_ACCESS_KEY_ID|
+|AWS_SECRET_ACCESS_KEY|YOUR_AWS_SECRET_ACCESS_KEY|
+
+* Deployment complete!
 
 <br>
 
 # Credits
+
+## Content
 * Code Institute tutor support.
 * Fellow students on Slack for a helping hand when I've got stuck.
 * Code Institute for inspiration from the Boutique Ado project.
 * https://codingwithmitch.com/ for code and inspiration to my blog section. 
 
+## Media
+* All images for the project was taken from [Unsplash](https://unsplash.com/).
 
+## Code
+* Code Institute for inspiration from the Boutique Ado project.
+* https://codingwithmitch.com/ for code and inspiration to my blog section.
 
 
 
