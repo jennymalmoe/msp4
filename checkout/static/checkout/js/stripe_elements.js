@@ -60,10 +60,10 @@ form.addEventListener('submit', function(ev) {
         'save_info': saveInfo,
     };
     var url = '/checkout/cache_checkout_data/';
-    console.log(postData)
+    console.log(postData);
     // Posts form data to the cache_checkout_data view
     $.post(url, postData).done(function () {
-    console.log("post successful")
+    console.log("post successful");
         // The view updates the payment intent and returns a 200 response -> Call the confirm card payment method from stripe  
         stripe.confirmCardPayment(clientSecret, {
             payment_method: {
@@ -116,6 +116,6 @@ form.addEventListener('submit', function(ev) {
     }).fail(function () {
         // If error posting data to view -> page reloads and display error (and not charging user)
         location.reload();
-    })
+    });
 });
 

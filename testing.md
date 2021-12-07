@@ -228,30 +228,65 @@
 
 # Testing
 
-* HTML code is validated through [W3C Validator](https://validator.w3.org/) 
+ Rendered HTML from 'View page source' has been tested.
+
+* HTML code is validated through [W3C Validator](https://validator.w3.org/) - PASS
 
 <details><summary><b>RESULTS</b></summary>
 
 - __Homepage__
 
-![base.html](media/base.png)
-![main-nav.html](media/main-nav1.png)
-![main-nav.html](media/main-nav2.png)
+![Home](media/validator_home.png)
+![All Products](media/validator_allproducts.png)
+![All Home Decor](media/validator_allhomedecor.png)
+![All Fashion](media/validator_allfashion.png)
+![Outlet](media/validator_outlet.png)
+![Blog](media/validator_blog.png)
+![About Us](media/validator_about.png)
 
 
+* CSS code is validated through [W3C Validator CSS](https://jigsaw.w3.org/css-validator/)
 
+<details><summary><b>RESULTS</b></summary>
 
+- __CSS__
 
+![Static/css/base.css](media/validator_css.png)
 
-* CSS code is validated through [W3C Validator CSS](https://validator.w3.org/)
+![Checkout/css/base.css](media/validator_css_stripe.png)
+
+![Profiles/css/base.css](media/validator_css_profile.png)
 
 * JavaScript code is validated through [JSHint](https://jshint.com/)
 
+<details><summary><b>RESULTS</b></summary>
+
+- __JS__
+
+![Static/js/script.js](media/validator_js.png)
+
+![Profile/js/script.js](media/validator_js_profile.png)
+
+![Checkout/js/script.js](media/validator_js_checkout.png)
+
+
 * Python code is validated through [PEP8](https://www.python.org/dev/peps/pep-0008/)
+
+- __Python__
+
+![Python](media/validator_py.png)
+![Python](media/validator_py_bag_views.png)
+![Python](media/validator_py_checkout_views.png)
+
+</details>
+
+<br>
 
 # Debugging 
 
 ## Issues and Bugs
+
+<br>
 
 * **Known bug:** On some iOS devices, this happens; Nothing happens when clicking "Register" or "Login" (if I am not signed in) after added item(s) in the bag (=toast). After signed in, nothing happens when clicking my profile or log out either. I need to refresh the page to be able to. Then it works as expected.   
 

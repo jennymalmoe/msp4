@@ -54,7 +54,7 @@
         <div class="row page-content">
             <div class="col-12 contact-form contact-text form-groups">
                 <form id="contactForm" aria-label="Contact Form">     
-                    <select class="form-select mb-3 contact-style-input form-control" type="text" name="uselect" id="uselect" placeholder="Name" aria-label="Default select example" required>
+                    <select class="form-select mb-3 contact-style-input form-control" name="uselect" id="uselect" aria-label="Default select example" required>
                         <option value="" selected>Contact Reason</option>
                         <option value="1">Support</option>
                         <option value="2">Billing</option>
@@ -63,12 +63,10 @@
                     <input class="contact-style-input form-control" type="text" name="uname" id="uname" placeholder="Enter your name" aria-label="Enter Name" required>
                     <input class="contact-style-input form-control" type="email" name="uemail" id="uemail" placeholder="Enter your email address" aria-label="Enter Email" required>
                     <textarea class="contact-style-input form-control" name="umessage" id="umessage" placeholder="Enter your message" aria-label="message" rows="4" required></textarea>
-                    <input oncklick='sendMail()' id="contactFormSubmit" type="button" class="btn btn-dark contact-btn" aria-label="Submit Button" value="Submit">
+                    <input onclick='sendMail()' id="contactFormSubmit" type="button" class="btn btn-dark contact-btn" aria-label="Submit Button" value="Submit">
                 </form>
             </div>
         </div>
-    </div>
-        
 
 {% endblock %}
 

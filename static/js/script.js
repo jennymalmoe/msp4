@@ -24,16 +24,16 @@ function topFunction() {
 
 // Toasts
 // Bootstrap 5 toast initialisation
-let toastElList = [].slice.call(document.querySelectorAll('.toast'))
+let toastElList = [].slice.call(document.querySelectorAll('.toast'));
 let toastList = toastElList.map(function (toastEl) {
     let option = {
         animation: true,
         autohide: true,
         delay: 5000,
-    }
-  let bsToast = new bootstrap.Toast(toastEl, option)
+    };
+  let bsToast = new bootstrap.Toast(toastEl, option);
   bsToast.show();
-})
+});
 
 
 // ALERT
@@ -41,7 +41,6 @@ let toastList = toastElList.map(function (toastEl) {
 // EmailJs used to send email from contact form
 // Checking if form is valid 
 // Code from https:codepen.io/tetnuc/pen/gRqOEO 
-// <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 $('#contactForm').validate({
     rules: {
         uname: {
@@ -93,7 +92,7 @@ function sendMail(){
     emailjs.send('service_5olt1k2', 'msp4', tempParams)
 	.then(function(res){
 		console.log("success", res.status);
-	})
+	});
     const form = document.querySelector('#contactForm');
         form.reset();
 }

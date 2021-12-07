@@ -68,7 +68,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
               <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                   <li class="list-inline-item dropdown">
-                      <a class="nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <div class="text-center text-black">
                               <div><i class="far fa-user fa-lg"></i></div>
                               <p class="my-0">My Account</p>
@@ -157,11 +157,11 @@
 
       <!-- Footer -->
       <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
 
-                <div class="footer-arrow">➳</div>
+              <div class="footer-arrow">➳</div>
                 <h1>BOHO<span style="color:rgb(247, 162, 4); font-family: lato;"> Blog</span></h1>
                 <h2>Inspire and get inspired</h2>
                 <p class="share-style">Welcome to your community. This is your space - a place to release your inner stylist, help out fellow Boho's and join in discussions
@@ -171,109 +171,108 @@
             
                 
 
-                <div>
-                  <h3>Customer Service</h3>
-                  <p>Do you have any questions?<br>Feel free to contact BOHO Living Customer Service and we will be happy to help you!</p>
-                  <a role="button" href="mailto:customerservice@boholiving.com" class="btn btn-light btn-sm contact-btn">Contact Us</a>
-                </div>
+              <div>
+                <h3>Customer Service</h3>
+                <p>Do you have any questions?<br>Feel free to contact BOHO Living Customer Service and we will be happy to help you!</p>
+                <a role="button" href="mailto:customerservice@boholiving.com" class="btn btn-light btn-sm contact-btn">Contact Us</a>
+              </div>
 
-                <a href="{% url 'home' %}" class="main-logo-link logo-footer">
-                  <h2 class="logo-font">➳BOHO Living➳</h2>
-                </a>
+              <a href="{% url 'home' %}" class="main-logo-link logo-footer">
+                <h2 class="logo-font">➳BOHO Living➳</h2>
+              </a>
 
 
-                <div class="container"></div>
-                  <div class="row w-100 py-4 footer-links">
-                    <div class="col-12"></div>
-                      <!-- Footer links -->
-                      <div class="col">
-                          <div class="row">
-                              <div class="col-12 footer-title">
-                                  Shop Home Decor
-                              </div>
-                              <div class="col-12 footer-text">
-                                  <a href="{% url 'products' %}?category=furnitures">Furnitures</a>
-                              </div>
-                              <div class="col-12 footer-text">
-                                <a href="{% url 'products' %}?category=decor">Decor</a>
-                              </div>
-                              <div class="col-12 footer-text">
-                                <a href="{% url 'products' %}?category=textiles">Textiles</a>
-                              </div>
-                              <div class="col-12 footer-text">
-                                <a href="{% url 'products' %}?category=incense">Incense</a>
-                              </div> 
+              <div class="container"></div>
+                <div class="row w-100 py-4 footer-links">
+                  <div class="col-12"></div>
+                    <!-- Footer links -->
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-12 footer-title">
+                                Shop Home Decor
+                            </div>
+                            <div class="col-12 footer-text">
+                                <a href="{% url 'products' %}?category=furnitures">Furnitures</a>
+                            </div>
+                            <div class="col-12 footer-text">
+                              <a href="{% url 'products' %}?category=decor">Decor</a>
+                            </div>
+                            <div class="col-12 footer-text">
+                              <a href="{% url 'products' %}?category=textiles">Textiles</a>
+                            </div>
+                            <div class="col-12 footer-text">
+                              <a href="{% url 'products' %}?category=incense">Incense</a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="row">
+                          <div class="col-12 footer-title">
+                            Shop Fashion
+                          </div>
+                          <div class="col-12 footer-text">
+                              <a href="{% url 'products' %}?category=clothes">Clothes</a>
+                          </div>
+                          <div class="col-12 footer-text">
+                             <a href="{% url 'products' %}?category=accessories">Accessories</a>
+                          </div>
+                          <div class="col-12 footer-text">
+                            <a href="{% url 'products' %}?category=bags">Bags</a>
                           </div>
                       </div>
-                      <div class="col">
-                        <div class="row">
-                            <div class="col-12 footer-title">
-                                Shop Fashion
-                            </div>
-                            <div class="col-12 footer-text">
-                                <a href="{% url 'products' %}?category=clothes">Clothes</a>
-                            </div>
-                            <div class="col-12 footer-text">
-                              <a href="{% url 'products' %}?category=accessories">Accessories</a>
-                            </div>
-                            <div class="col-12 footer-text">
-                              <a href="{% url 'products' %}?category=bags">Bags</a>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="row">
+                          <div class="col-12 footer-title">
+                              BOHO Living
+                          </div>
+                          <div class="col-12 footer-text">
+                            <a href="{% url 'view_about' %}">About Us</a>
+                          </div>
+                          <div class="col-12 footer-text">
+                            <a href="{% url 'view_about' %}">Contact</a>
+                          </div>
+                          <div class="col-12 footer-text">
+                            <a href="{% url 'account_login' %}">Log In</a>
+                          </div>
+                          <div class="col-12 footer-text">
+                            <a href="{% url 'account_signup' %}">Sign Up</a>
+                          </div>
                       </div>
-                      <div class="col">
-                        <div class="row">
-                            <div class="col-12 footer-title">
-                                BOHO Living
-                            </div>
-                            <div class="col-12 footer-text">
-                              <a href="{% url 'view_about' %}">About Us</a>
-                            </div>
-                            <div class="col-12 footer-text">
-                              <a href="{% url 'view_about' %}">Contact</a>
-                            </div>
-                            <div class="col-12 footer-text">
-                              <a href="{% url 'account_login' %}">Log In</a>
-                            </div>
-                            <div class="col-12 footer-text">
-                              <a href="{% url 'account_signup' %}">Sign Up</a>
-                            </div>
-                        </div>
-                      </div>
+                    </div>
                             
-                  </div>
                 </div>
-                <div>
-                  <a target="_blank" href="https://www.facebook.com/">
-                    <i class="fab fa-facebook soc-media fa-lg" aria-hidden="true"></i>
-                  </a>
-
-                  <a target="_blank" href="https://www.instagram.com/">
-                    <i class="fab fa-instagram soc-media fa-lg" aria-hidden="true"></i>
-                  </a>
-
-                  <a target="_blank" href="https://www.pinterest.se/">
-                    <i class="fab fa-pinterest soc-media fa-lg" aria-hidden="true"></i>
-                  </a>
-
-                  <a target="_blank" href="https://twitter.com/">
-                    <i class="fab fa-twitter soc-media fa-lg" aria-hidden="true"></i>
-                  </a>
-
-                  <a target="_blank" href="https://www.tiktok.com/">
-                    <i class="fab fa-tiktok soc-media fa-lg" aria-hidden="true"></i>
-                  </a>
-                
-                  <a target="_blank" href="https://accounts.snapchat.com/">
-                    <i class="fab fa-snapchat-ghost soc-media fa-lg" aria-hidden="true"></i>
-                  </a>
-                </div>
-
-                  <br>
-
-                  <div class="copy">Copyright©2021 | Jenny Borglin | All rights reserved</div>
-                
               </div>
+              <div>
+                <a target="_blank" href="https://www.facebook.com/">
+                  <i class="fab fa-facebook soc-media fa-lg" aria-hidden="true"></i>
+                </a>
+
+                <a target="_blank" href="https://www.instagram.com/">
+                  <i class="fab fa-instagram soc-media fa-lg" aria-hidden="true"></i>
+                </a>
+
+                <a target="_blank" href="https://www.pinterest.se/">
+                  <i class="fab fa-pinterest soc-media fa-lg" aria-hidden="true"></i>
+                </a>
+
+                <a target="_blank" href="https://twitter.com/">
+                  <i class="fab fa-twitter soc-media fa-lg" aria-hidden="true"></i>
+                </a>
+
+                <a target="_blank" href="https://www.tiktok.com/">
+                  <i class="fab fa-tiktok soc-media fa-lg" aria-hidden="true"></i>
+                </a>
+                
+                <a target="_blank" href="https://accounts.snapchat.com/">
+                  <i class="fab fa-snapchat-ghost soc-media fa-lg" aria-hidden="true"></i>
+                </a>
+              </div>
+
+               <br>
+
+                <div class="copy">Copyright©2021 | Jenny Borglin | All rights reserved</div>
+                
             </div>
           </div>
       </footer>

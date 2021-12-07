@@ -1,9 +1,9 @@
 from django.urls import path
 from blog.views import (
     all_blog_posts,
-        create_blog_view,
-        detail_blog_view,
-        edit_blog_view,
+    create_blog_view,
+    detail_blog_view,
+    edit_blog_view,
 )
 
 #    app_name = 'blog'
