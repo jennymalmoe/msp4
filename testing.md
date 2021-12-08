@@ -1,20 +1,36 @@
-## Contents Table
+# BOHO Living - Test
+
+[README.md](readme.md)
+
+[View live website here!](https://msp4.herokuapp.com/)
+
+# Table of Contents
 
 <br>
 
-1. [**Testing User Stories from UX Section**](#user-stories)
-    - [**First Time Visitor Goals**](#first-time-visitor-goals)
-    - [**Registered Visitor Goals**](#registered-visitor-goals)
-    - [**Admin User Goals**](#admin-user-goals)
+* [Testing User Stories from UX Section](#user-stories)
+    * [First Time Visitor Goals](#first-time-visitor-goals)
+    * [Registered Visitor Goals](#registered-visitor-goals)
+    * [User Goals](#user-goals)
+    * [Registered User goals](#registered-user)
+    * [Shopper goals](#shopper-goals)
+    * [Administrator goals](#administrator-goals)
+    * [Site Manager goals](#site-manager-goals)
+    * [Functionality Testing](#functionality-testing)
+    
+* [Testing](#testing)
+    * [Automated Testing](#automated-testing)
+        + [W3C Markup Validator Results](#html-validator-results)
+        + [W3C CSS Validator Results](#html-validator-results)
+        + [JSHint Results](#jshint-results)
+        + [PEP8 Online Validator Results](#pep8-validator-results)
+        + [Google Lighthouse Testing](#google-lighthouse-testing)
+    * [Manual Testing](#manual-testing)
 
-2. [**Testing**](#testing)
-    - [**W3C Markup Validator Results**](#html-validator-results)
-    - [**W3C CSS Validator Results**](#html-validator-results)
-    - [**JSHint Results**](#jshint-results)
-    - [**PEP8 Online Validator Results**](#pep8-validator-results)
-    - [**Debugging**](#debugging)
+* [Debugging](#debugging)
+    * [Issues and Bugs](#Issues and Bugs)
 
-3. [**Further Manual Testing**](#further-manual-testing)
+* [Further Manual Testing](#further-manual-testing)
 
 <br>
 
@@ -22,7 +38,7 @@
 
 <br>
 
-### First Time Visitor Goals
+## First Time Visitor Goals
 
 * I want to be presented with an intutive site navigation that is user friendly and over all ease-of-use.
 
@@ -62,7 +78,7 @@
 
 <br>
 
-### Returning Visitor Goal
+## Registered Visitor Goals
 
 * I want to be presented with new/seasonal items.
 
@@ -70,7 +86,7 @@
 
 <br>
 
-### User Goal
+## User Goals
 
 * I want to register for an account.
 
@@ -86,7 +102,7 @@
 
 <br>
 
-### Registered User
+## Registered User
 
 * I want to sign in to my account.
 
@@ -114,7 +130,7 @@
 
 <br>
 
-### Shopper
+## Shopper goals
 
 * I want to sort the list of available products. 
 
@@ -194,7 +210,7 @@
 
 <br>
 
-### Administrator
+## Administrator goals
 
 * I want to have access to an admin section. 
 
@@ -214,7 +230,7 @@
 
 <br>
 
-### Site Manager
+## Site Manager goals
 
 * I want to be able to manage/edit the site. 
 
@@ -282,6 +298,102 @@
 
 <br>
 
+## Google Lighthouse Testing
+
+All pages passed through Lighthouse in Chrome DevTools:
+
+### Home page
+
+<details>
+  <summary>Click to see results</summary>
+  <img src="media/lh_home.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### All products page
+
+<details>
+  <summary>Click to see results</summary>
+  <img src="media/lh_allprod.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### All home decor page
+
+<details>
+  <summary>Click to see results</summary>
+  <img src="media/lh_allhd.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### All fashion page
+
+<details>
+  <summary>Click to see results</summary>
+  <img src="media/lh_allfashion.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Outlet page
+
+<details>
+  <summary>Click to see results</summary>
+  <img src="media/lh_oulet.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Blog page
+
+<details>
+  <summary>Click to see results</summary>
+  <img src="media/lh_blog.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### About us page
+
+<details>
+  <summary>Click to see results</summary>
+  <img src="media/lh_about.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Sign up page
+
+<details>
+  <summary>Click to see results</summary>
+  <img src="media/lh_signup.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Sign in page
+
+<details>
+  <summary>Click to see results</summary>
+  <img src="media/lh_signin.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Product detail page
+
+<details>
+  <summary>Click to see results</summary>
+  <img src="media/lh_proddetail.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Bag page
+
+<details>
+  <summary>Click to see results</summary>
+  <img src="media/lh_bag.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Checkout page
+
+<details>
+  <summary>Click to see results</summary>
+  <img src="media/lh_checkout.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+<br>
+
+## Manual Testing
+
+## Functionality Testing
+
+
+
 # Debugging 
 
 ## Issues and Bugs
@@ -298,13 +410,8 @@
 
 * No confirmation mail (to the terminal) was sent after making a "payment", just an 404 error in the terminal. I edited webhook endpoint in Stripe and then got an 200 error in terminal and a "payment_intent.succeeded" in Stripe, but no confirmation mail still. The problem was that the webhook itself wasn't set up quite right, I needed to add "8000-" in the beginning of my webhook and added checkout/wh/ in the end. I also had STRIPE_WH_KEY instead of STRIPE_WH_SECRET in Gitpod Environment Variables. When chaged those two things confirmation mail worked as expected. 
 
-<br>
 
-# Manual Testing
 
-# Functionality Testing
-
-# Google Lighthouse Testing
 
 
 

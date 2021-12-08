@@ -57,7 +57,8 @@ def edit_blog_view(request, slug):
         return HttpResponse('You are not the author of that post.')
 
     if request.POST:
-        form = UpdateBlogPostForm(request.POST or None, request.FILES or None, instance=blog_post)
+        form = UpdateBlogPostForm(request.POST or None,
+                                  request.FILES or None, instance=blog_post)
         if form.is_valid():
             obj = form.save(commit=False)
             obj.save()
@@ -65,7 +66,7 @@ def edit_blog_view(request, slug):
             blog_post = obj
 
     form = UpdateBlogPostForm(
-            initial = {
+            initial={
                     "title": blog_post.title,
                     "body": blog_post.body,
                     "image": blog_post.image,

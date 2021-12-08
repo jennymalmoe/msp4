@@ -35,13 +35,14 @@ An account with Super User privileges has been created for testing purposes. The
 
 <br>
 
-## Table of contents
+## Table of Contents
 
 ___
 
 * [UX](#ux) 
   * [Project Goals](#project-goals)
   * [Business Goals](#business-goals)
+    + [Target Group](#target-group)
   * [User Stories](#user-stories)
   * [Design Choices](#design-choices)
     + [Color scheme](#color-scheme)
@@ -49,48 +50,56 @@ ___
     + [Imagery](#imagery)
     + [Icons](#icons)
 
+<br>
+
+- [Features](#features)
+  * [Existing Features](#existing-features)
+  * [Features Left to Implement](#features-left-to-implement)
+  * [Security Features](#security-features)
   * [Wireframes](#wireframes)
 
 <br>
 
-- [Features](features)
-  * [Existing Features](#existing-features)
-  * [Features Left to Implement](#features-left-to-implement)
-
-<br>
-
 - [Database Design](#database-design)
+  * [Site Map](#site-map)
+  * [Information Architecture](#information-architecture)
+  * [Database Schema](#database-schema)
+  * [Database Model](#database-model)
 
 <br>
 
 - [Technologies Used](#technologies-used)
+  * [IDE](#ide)
   * [Languages](#languages)
-  * [Frameworks, Libraries & Programs](#frameworks,libraries-programs)
+  * [Database](#database)
+  * [Storages](#storages)
+  * [Payment](#payment)
+  * [Frameworks](#frameworks)
+  * [Libraries, Tools, Editors](#libraries-tools-editors)
+  * [Packages/Dependencies](#packages/dependencies)
 
   <br>
 
 - [Testing](#testing)
-  * [Testing User Stories from User Experience (UX) Section](#testing-user-stories-from-user-experience-(UX)-section)
-  * [Further Testing](#further-teseting**)
-  * [Known Bugs](#known-bugs**)
 
 <br>
 
 - [Deployment](#deployment)
-  * [GitHub Pages](#github-pages)
   * [Forking the GitHub Repository](#forking-the-github-repository)
   * [Making a Local Clone](#making-a-local-clone)
-
+  * [Download the project](#download-the-project)
+  * [Set Up Local Testing Environment](#set-up-local-testing-environment)
+  * [Deploy Website to Heroku](#deploy-website-to-heroku)
+  * [AWS](#aws)
+  
 <br>
 
 - [Credits](#credits)
-  * [Code](#code)
   * [Content](#content)
   * [Media](#media)
-  * [Acknowledgements](#acknowledgements)
+  * [Code](#code)
 
 <br>
-
 
 # UX
 
@@ -126,9 +135,9 @@ This project has a full set of CRUD (creation, reading, updating and deletion of
 
 This e-commerce website focus on maximizing direct sales to new and returning customers (convert a website visitor into a customer) by simplify and optimize content to be as easy as possible to make a purchase made possible by having a user friendly and well designed online shop that enables secure purchases and inspire consumers and influence their purchases. Also establishing brand recognition in the industry by presenting and stick to a bohemian nich and lifestyle. Mission statement: *"To offer on trend, selected and exclusive boho inspired home decor and fashion items".* 
 
-### Target audience
+### Target group
 
-The target audience for B.L is potential customers liking the bohemian style in home decor and fashion. Since this is e-commerce the conversions is the most important part, rather than traffic it self. Conversions take place when targeted traffic meets relevant offer. So it's important that B.L clearly defined what they offers. Thats why B.L has a really well defined business name, website and offer so it can avoid irrelevant traffic (traffic not interested in boho inspired e-commerce). By basic SEO and a distinct website (mainly the landing page) B.L defines that they offer boho inspired homedecor and fashion. E-commerce sales increaces worldwide, and develop the need to determine target audience, particularly ecommerce stores. B.L ideal customer is a person (gender non relevant) that likes/has a boho inpired lifestyle, more than demographic data. Online, the location matters less due to home delivery. Age is not what it used to be, the age isn't the defining thing if somebody turns out to be a paying customer. While it's important to reach as many people as possible, and it often seems like focusing only on specific segments of the population is limiting, you also need to reach potential consumers that isn't into boho style today, but has the potential to be. 
+The target group for B.L is potential customers liking the bohemian style in home decor and fashion. Since this is e-commerce the conversions is the most important part, rather than traffic it self. Conversions take place when targeted traffic meets relevant offer. So it's important that B.L clearly defined what they offers. Thats why B.L has a really well defined business name, website and offer so it can avoid irrelevant traffic (traffic not interested in boho inspired e-commerce). By basic SEO and a distinct website (mainly the landing page) B.L defines that they offer boho inspired homedecor and fashion. E-commerce sales increaces worldwide, and develop the need to determine target group, particularly ecommerce stores. B.L ideal customer is a person (gender non relevant) that likes/has a boho inpired lifestyle, more than demographic data. Online, the location matters less due to home delivery. Age is not what it used to be, the age isn't the defining thing if somebody turns out to be a paying customer. While it's important to reach as many people as possible, and it often seems like focusing only on specific segments of the population is limiting, you also need to reach potential consumers that isn't into boho style today, but has the potential to be. 
 
 B.L can also make use of the demographical information, such as name, address, user behavior etc. B.L get when users filling out the order form, where they also can get access to the newsletter. 
 
@@ -207,7 +216,7 @@ This user story template consists of three sections; As a (decription of user), 
 
 <br>
 
-* Color scheme
+### Color scheme
     
     The page consists of a white base with black, orange and yellow as accent colors. The combination of black and white offers the maximum contrast possible, as they come from opposite ends of the color spectrum. Black and white websites are classical, strong, and powerful. Apart from black and white being a risk-free combination and ensuring a design will look clean, removing color forces a designer to rely on other elements in their web designs such as the products, typography, layout, or grid to catch the viewers' attention. Boho style/the products has asymmetrical layouts, variegated patterns and handcrafted textures. Placed in a clean, contemporary space, layers of colorful textiles deliver an unexpected twist. Thats what I had in mind chosing colors and style for this website.  
     
@@ -219,7 +228,7 @@ This user story template consists of three sections; As a (decription of user), 
     
     ![Color scheme](media/color_scheme.png)
 
-* Typography
+### Typography
 
     Lato is an open source, sans-serif font. Lato font is the main font used throughout the site with Architects Daughter font used to headers and logo. The font is created to give the letterforms familiar harmony and elegance. The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides stability and seriousness. Lato is used in the body content for the site to appear to be approachable which is the main goal for this website. 
     
@@ -227,11 +236,11 @@ This user story template consists of three sections; As a (decription of user), 
 
     ![Fonts](media/fonts.png)
 
-* Imagery
+### Imagery
 
     Images and the choices of the images is an important component of this site. The hero image on the landing page gives the site a dramatic appearance and sets the tone for the boho inspired page. I use lot of space around images and content to get the visitor an uncluttered and comfortable browsing experience on all device sizes. The product images for the e-commerce part of the site is chosen to be more artistic than detailed/informative to fit the boho-tone. The appearance is aiming to be appealing to the target audience. 
 
-* Icons
+### Icons
 
     All icons used are taken from Font Awsome. The use of icons in web design is a proven method to modernize a website and help direct user flow. Adding icons to the site's content helps a user better process the information and provides a visual focus point that grounds a user to a specific section. I used an boho inspired arrow icon recurring throughout the site, to improve visual  and keep a common theme throughout the site. 
 
@@ -381,6 +390,7 @@ Four different kind of toasts appears when a certain action has been triggered b
 <br>
 
 ## Features left to implement
+
 * Comments and ability to share blog posts to social media (potential to convert more readers into paying customers). 
 * Elaborate the SKU numbers, to make even more logical to Administrator.
 * Social media login.
@@ -463,10 +473,10 @@ Initial site map shown below:
 
 This database uses a SQL database through PostgreSQL. Initially the databases were built in JSON files, [link here!](products/fixtures)
 
-## Categories Database
+* Categories Database
 ![Categories database](media/categories.png)
 
-## Products Database
+* Products Database
 ![Products database](media/products.png)
 
 ## Information Architecture
@@ -685,7 +695,6 @@ Full list of data models used:
 | sqlparse | Non-validating SQL parser for Python |
 | Stripe | Secure Payment Services |
 | | |
-
 
 <br>
 
@@ -952,7 +961,6 @@ The deployed version of this website has static and media files hosted to it via
 ## Content
 * Code Institute tutor support.
 * Fellow students on Slack for a helping hand when I've got stuck.
-* Code Institute for inspiration from the Boutique Ado project.
 * https://codingwithmitch.com/ for code and inspiration to my blog section. 
 
 ## Media
@@ -961,39 +969,6 @@ The deployed version of this website has static and media files hosted to it via
 ## Code
 * Code Institute for inspiration from the Boutique Ado project.
 * https://codingwithmitch.com/ for code and inspiration to my blog section.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-lägga in requiremets in handbook for msp4 in user stories
-
-
-
-AWS Policy Generator
-The AWS Policy Generator is a tool that enables you to create policies that control access to Amazon Web Services (AWS) products and resources.
-
-https://django-allauth.readthedocs.io/en/latest/installation.html
-
-google applösenord
-
 
 
 So a word of warning about your webhooks still. This all works fine for your local endpoint, but if you're going to use the heroku one it will need a different WH_SECRET_KEY in your Heroku cvars. You can find this by Reveal the signing secret you find for the heroku endpoint in Stripe website. So both local and deployed site have the same STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY but they will have different STRIPE_WH_SECRET.

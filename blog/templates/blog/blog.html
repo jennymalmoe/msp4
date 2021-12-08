@@ -38,11 +38,11 @@
                         <!-- Post body collapsed -->
                         <p>{{post.body|slice:":200" }}...</p>
                         <!-- Read more btn -->
-                        <a class="btn btn-outline-dark read-more" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                        <a class="btn btn-outline-dark read-more" data-bs-toggle="collapse" href="#collapseExample-{{ forloop.counter }}" role="button" aria-expanded="false"
                             aria-controls="collapseExample">Read More &rarr;
                         </a>
                         <br>
-                        <div class="collapse" id="collapseExample">
+                        <div class="collapse" id="collapseExample-{{ forloop.counter }}">
                             <!-- Post body uncollapsed -->
                             <div class="blog-body">
                                 {{ post.body }}
