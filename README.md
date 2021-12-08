@@ -120,12 +120,6 @@ This project has a full set of CRUD (creation, reading, updating and deletion of
 
 <br>
 
-## Customer Goals
-
-Text massa text....
-
-<br>
-
 ## Business Goals
 
 <br>
