@@ -6,7 +6,7 @@ from blog.views import (
     edit_blog_view,
 )
 
-#    app_name = 'blog'
+#  app_name = 'blog'
 
 urlpatterns = [
     path('', all_blog_posts, name="blog"),
