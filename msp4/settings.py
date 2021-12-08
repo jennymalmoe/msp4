@@ -139,6 +139,7 @@ else:
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
+# NAME lines too long in pep8, but needs to be
 
 AUTH_PASSWORD_VALIDATORS = [
     {

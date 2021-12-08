@@ -18,19 +18,18 @@ class BlogPost(models.Model):
     title = models.CharField(max_length=150, null=False, blank=False)
     body = models.TextField(max_length=5000, null=False, blank=False)
     image = models.ImageField(upload_to='blogimages', null=True, blank=True)
-    date_published = models.DateTimeField(auto_now_add=True, verbose_name="date published")
-    date_updated = models.DateTimeField(auto_now=True, verbose_name="date updated")
+    date_published = models.DateTimeField(auto_now_add=True,
+                                          verbose_name="date published")
+    date_updated = models.DateTimeField(auto_now=True,
+                                        verbose_name="date updated")
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     slug = models.SlugField(max_length=150, blank=True, unique=True)
-
 
     class Meta:
         ordering = ['-date_published']
 
-
     def __str__(self):
         return self.title
-
 
 
 @receiver(post_delete, sender=BlogPost)
