@@ -10,7 +10,7 @@
 
 * [Testing User Stories from UX Section](#user-stories)
     * [First Time Visitor Goals](#first-time-visitor-goals)
-    * [Registered Visitor Goals](#registered-visitor-goals)
+    * [Returning Visitor Goals](#registered-visitor-goals)
     * [User Goals](#user-goals)
     * [Registered User goals](#registered-user)
     * [Shopper goals](#shopper-goals)
@@ -38,7 +38,7 @@
 
 <br>
 
-## First Time Visitor Goals
+## First time visitor goals
 
 * I want to be presented with an intutive site navigation that is user friendly and over all ease-of-use.
 
@@ -78,7 +78,7 @@
 
 <br>
 
-## Registered Visitor Goals
+## Returning visitor goals
 
 * I want to be presented with new/seasonal items.
 
@@ -86,7 +86,7 @@
 
 <br>
 
-## User Goals
+## User goals
 
 * I want to register for an account.
 
@@ -102,7 +102,7 @@
 
 <br>
 
-## Registered User
+## Registered user goals
 
 * I want to sign in to my account.
 
@@ -409,6 +409,9 @@ re
 * When register new user at "My Account" an SMTPAuthenticationError at /accounts/signup/ occurred and text showed; "Already have an account? Then please sign in". I had "DEVELOPMENT" in my Gitpod settings, but scope was set for my old milestone project, not to this one (or */* (to access all)). It was trying to use the gmail smtp from Gitpod but gmail was expecting the Heroku app to access it, so it wasn't authenticated and thats why it didn't work. So after changed it to access all (*/*) it worked as expected. 
 
 * No confirmation mail (to the terminal) was sent after making a "payment", just an 404 error in the terminal. I edited webhook endpoint in Stripe and then got an 200 error in terminal and a "payment_intent.succeeded" in Stripe, but no confirmation mail still. The problem was that the webhook itself wasn't set up quite right, I needed to add "8000-" in the beginning of my webhook and added checkout/wh/ in the end. I also had STRIPE_WH_KEY instead of STRIPE_WH_SECRET in Gitpod Environment Variables. When chaged those two things confirmation mail worked as expected. 
+
+* ![Line too long](media/longline_ch_models.png)
+Line too long in checkout/models.py.
 
 
 
