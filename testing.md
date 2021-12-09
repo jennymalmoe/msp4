@@ -1,12 +1,10 @@
 # BOHO Living - Test
 
-[README.md](readme.md)
+Back to [README.md](readme.md)
 
 [View live website here!](https://msp4.herokuapp.com/)
 
 # Table of Contents
-
-<br>
 
 * [Testing User Stories from UX Section](#user-stories)
     * [First Time Visitor Goals](#first-time-visitor-goals)
@@ -28,7 +26,7 @@
     * [Manual Testing](#manual-testing)
 
 * [Debugging](#debugging)
-    * [Issues and Bugs](#Issues and Bugs)
+    * [Issues and Bugs](#issues-and-bugs)
 
 * [Further Manual Testing](#further-manual-testing)
 
@@ -392,59 +390,19 @@ All pages passed through Lighthouse in Chrome DevTools:
 
 **Testing Environments**
 
-The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
-The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
-A large amount of testing was done to ensure that all pages were linking correctly.
-Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+BOHO Living app has been tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers (viewed at different desktop, laptop, tablet and mobile).
 
-Desktop testing:
+All links and required fields in app has been tested. 
 
-Platforms:
-Microsoft SurfaceBook2 (Windows 10)
-Dell Optiplex workstation (Windows 7)
-Fujitsu Lifebook (Windows 8)
-Browsers:
-Chrome
-Firefox
-Edge
-Opera
-Mobile testing:
+App has been reviewed at "Peer code Review" in Code Institutes Slack channel. 
 
-Platforms
-AT&T Radiant Core (Android 9)
-Samsung Galaxy J6 (Android 9)
-OnePlus7 (Android 10)
-Lenovo MTab10 (Android 9)
-Browsers
-Chrome
-Edge
-Opera
-
-Peer code Review
-The project was submitted to peer review on the code institute slack channel.
-
-Student Checklist
-A Final sanity check was done with the student check list to ensure the site fits submission guidelines.
+Code Institutes criteria checklist has been used to check requirements. 
 
 ## Functionality Testing
 
-I used Chrome developer tools throughout the project for testing and solving problems with responsiveness and style issues.
+Chrome dev tools has been used throughout the project for testing.
 
-Main navigation Menu, all the drop-down menus, links and search bar work correctly.
-
-Mobile menu links and dropdown functionality work correctly.
-
-All the buttons throughout the website link correctly and works great, back to top button works.
-
-Home page Flickity carousel works good on all the devices.
-
-All products are displayed correctly at different screen sizes.
-
-Sort for price and name orders items work correctly.
-
-Product cards link through to the product detail page for the product shown.
-
-Carousel at product detail page works correctly. 
+Nav bar links, buttons, sorting, carousel, form, blog posts, all drop-down menus, product display, product detail, links and search bar work correctly.
 
 # Debugging 
 
@@ -462,8 +420,10 @@ Carousel at product detail page works correctly.
 
 * No confirmation mail (to the terminal) was sent after making a "payment", just an 404 error in the terminal. I edited webhook endpoint in Stripe and then got an 200 error in terminal and a "payment_intent.succeeded" in Stripe, but no confirmation mail still. The problem was that the webhook itself wasn't set up quite right, I needed to add "8000-" in the beginning of my webhook and added checkout/wh/ in the end. I also had STRIPE_WH_KEY instead of STRIPE_WH_SECRET in Gitpod Environment Variables. When chaged those two things confirmation mail worked as expected. 
 
-* ![Line too long](media/longline_ch_models.png)
-Line too long in checkout/models.py.
+* Line too long in checkout/models.py. # noqa: E501 note added. 
+
+![Line too long](media/longline_ch_models.png)
+
 
 
 

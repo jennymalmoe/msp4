@@ -2,7 +2,7 @@
 
 <br>
 
-BOHO Living -Good vibes only!
+BOHO Living - Good vibes only!
 
 *Home decor - Fashion - Free Spirit*
 
@@ -15,7 +15,7 @@ BOHO Living -Good vibes only!
 
 ![site on different devices](media/screen_all_devices.png) 
 
-BOHO Living (referred to "B.L" onwards in this README) is an online home decor shop that offers a selection of trendy home decor and fashion items inspired by the modern bohemian style.
+BOHO Living (referred to "B.L" in readme) is an online home decor shop that offers a selection of trendy home decor and fashion items inspired by the modern bohemian style.
 
 This is an e-commerce web application for a fictional company, created for the purposes of satisfying the requirements for the Code Institute Full Stack Development Course Milestone Project 4. The application features e-commerce functionality, payments using stripe, a blog section for admin as well as users to add blog posts, confirmation emails, CRUD functionality for admin to add stock items, and an admin section, for the admin user to access database records.
 
