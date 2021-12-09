@@ -59,9 +59,10 @@ An account with Super User privileges has been created for testing purposes. The
 
 - [Database Design](#database-design)
   * [Site Map](#site-map)
+  * [Database Choice](#database-choice)
   * [Information Architecture](#information-architecture)
   * [Database Schema](#database-schema)
-  * [Database Model](#database-model)
+  * [Database Models](#database-models)
 
 <br>
 
@@ -128,13 +129,13 @@ This project has a full set of CRUD (creation, reading, updating and deletion of
 
 <br>
 
-This e-commerce website focus on maximizing direct sales to new and returning customers (convert a website visitor into a customer) by simplify and optimize content to be as easy as possible to make a purchase made possible by having a user friendly and well designed online shop that enables secure purchases and inspire consumers and influence their purchases. Also establishing brand recognition in the industry by presenting and stick to a bohemian nich and lifestyle. Mission statement: *"To offer on trend, selected and exclusive boho inspired home decor and fashion items".* 
+This e-commerce website focuses on maximizing direct sales to new and returning customers/visitors (convert a website visitor into a customer) by simplify and optimize site content to be as easy as possible to make a purchase. This is made possible by having a user friendly and well designed online shop that enables secure purchases, inspire consumers and has a distinct and specialized sortiment (bohemian). Except that, another goal is to establishing brand recognition in the industry by presenting and stick to a bohemian nich and lifestyle. Mission statement: *"To offer on trend, selected and exclusive boho inspired home decor and fashion items".* 
 
 ### Target group
 
-The target group for B.L is potential customers liking the bohemian style in home decor and fashion. Since this is e-commerce the conversions is the most important part, rather than traffic it self. Conversions take place when targeted traffic meets relevant offer. So it's important that B.L clearly defined what they offers. Thats why B.L has a really well defined business name, website and offer so it can avoid irrelevant traffic (traffic not interested in boho inspired e-commerce). By basic SEO and a distinct website (mainly the landing page) B.L defines that they offer boho inspired homedecor and fashion. E-commerce sales increaces worldwide, and develop the need to determine target group, particularly ecommerce stores. B.L ideal customer is a person (gender non relevant) that likes/has a boho inpired lifestyle, more than demographic data. Online, the location matters less due to home delivery. Age is not what it used to be, the age isn't the defining thing if somebody turns out to be a paying customer. While it's important to reach as many people as possible, and it often seems like focusing only on specific segments of the population is limiting, you also need to reach potential consumers that isn't into boho style today, but has the potential to be. 
+The target group for B.L is potential customers liking the bohemian style in home decor and fashion. Since this is e-commerce the conversions is the most important part, rather than traffic it self. Conversions take place when targeted traffic meets relevant offer. So it's important that B.L clearly defined what they offers. Thats why B.L has a really well defined business name, website and offer so it can avoid irrelevant traffic (traffic not interested in boho inspired e-commerce). By basic SEO and a distinct website (mainly the landing page) B.L defines that they offer boho inspired homedecor and fashion. E-commerce sales increaces worldwide, and develop the need to determine target group, particularly ecommerce stores. B.L ideal customer is a person (gender non relevant) that likes/has a boho inpired lifestyle, more than demographic data. Online, the location matters less due to home delivery. Age is not what it used to be, the age isn't the defining thing if somebody turns out to be a paying customer or not. While it's important to reach as many people as possible, and it often seems like focusing only on specific segments of the population could be limiting, you also need to reach potential consumers that isn't into boho style today, but has the potential to be. 
 
-B.L can also make use of the demographical information, such as name, address, user behavior etc. B.L get when users filling out the order form, where they also can get access to the newsletter. 
+B.L can also make use of the demographical information, such as name, address, user behavior etc. that B.L gets when users filling out the order form, where they also can get access to the newsletter. 
 
 In addition to the goals above; 
 
@@ -468,7 +469,9 @@ Initial site map shown below:
 
 <br>
 
-This database uses a SQL database through PostgreSQL. Initially the databases were built in JSON files, [link here!](products/fixtures)
+## Database Choice
+
+During development the project used SQLite. The deployed app is using Heroku PostgreSQL. Initially the databases were built in JSON files, [link here!](products/fixtures)
 
 * Categories Database
 ![Categories database](media/categories.png)
@@ -477,7 +480,10 @@ This database uses a SQL database through PostgreSQL. Initially the databases we
 ![Products database](media/products.png)
 
 ## Information Architecture
-Heroku PostgreSQL is used to host the backend database for this site. B.L contains of these Django apps:
+
+Heroku PostgreSQL is used to host the backend database for this site. 
+
+B.L contains of these Django apps:
 
 * About
 * Bag
@@ -490,9 +496,7 @@ Heroku PostgreSQL is used to host the backend database for this site. B.L contai
 ## Database schema
 ![Database](media/database_schema.png)
 
-## Database Model
-
-During development the project used SQLite. The deployed app is using Heroku Postgres.
+## Database Models
 
 Full list of data models used: 
 
@@ -642,7 +646,7 @@ Full list of data models used:
 * [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Used to create the user sign-in function for the site.
 * [Django Countries](https://pypi.org/project/django-countries/) - Used for the country select field in the order form.
 * [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to utilise the Bootstrap form classes.
-* [drawSQL](https://drawsql.app/) - Used to create database diagram.
+* [drawSQL](https://drawsql.app/) - Used to create database schema.
 * [Font-Awesome](https://fontawesome.com/) - Used for icons.
 * [FreeFormatter](https://www.freeformatter.com/html-formatter.html) - Formats HTML code.
 * [Git](https://git-scm.com/) - Used for version control to commit to Git and push to Heroku.
