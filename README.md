@@ -33,13 +33,8 @@ When using the Payment Intents API with Stripe’s client libraries and SDKs, us
 
 An account with Super User privileges has been created for testing purposes. The username and password will be supplied when submitting the project.
 
-<br>
-
 ## Table of Contents
-
-___
-
-* [UX](#ux) 
+- [UX](#ux) 
   * [Project Goals](#project-goals)
   * [Business Goals](#business-goals)
     + [Target Group](#target-group)
@@ -57,7 +52,8 @@ ___
   * [Features Left to Implement](#features-left-to-implement)
   * [Security Features](#security-features)
   * [Wireframes](#wireframes)
-
+  * [Site on different devices](#site-on-different-devices)
+  
 <br>
 
 - [Database Design](#database-design)
@@ -245,6 +241,7 @@ This user story template consists of three sections; As a (decription of user), 
     All icons used are taken from Font Awsome. The use of icons in web design is a proven method to modernize a website and help direct user flow. Adding icons to the site's content helps a user better process the information and provides a visual focus point that grounds a user to a specific section. I used an boho inspired arrow icon recurring throughout the site, to improve visual  and keep a common theme throughout the site. 
 
 [Back to top](#boho-living)
+
 <br>
 
 # Features
@@ -404,7 +401,7 @@ Four different kind of toasts appears when a certain action has been triggered b
 * Get more contact information about the registered users (by expanding the details in "My Account" to be able to reach out (newsletters, offers etc).
 * Expand blog section to have different categories, ideas, what products are on sale, new in etc.  
 * Customize site based on Google Analytics statistic(and other sources). Who are the visitors and customers? What pages and products are popular and not and adjust sortiment/site according to that information to increases the ROI (return on investment). 
-<br>
+
 
 ## Security features
 
@@ -424,7 +421,7 @@ While the project relied on these wireframes, there are some differences between
 * No spinner icon and background image triggered while Stripe payment is processing.
 * An "About Us" page with a contact form was added. 
 
-**Responsive Screenshots on different devices**
+## Site on different devices
 
 1. iPhone eXpensive portrait · width: 375px
 2. iPhone 6-8 portrait · width: 375px
@@ -459,6 +456,8 @@ While the project relied on these wireframes, there are some differences between
 
 ![galaxyS5](media/galaxyS5.png)
 ![surfaceduo540x720](media/surfaceduo540x720.png)
+
+[Back to top](#boho-living)
 
 <br>
 
@@ -607,6 +606,8 @@ Full list of data models used:
 
 <br>
 
+[Back to top](#boho-living)
+
 # Technologies Used
 
 <br>
@@ -699,9 +700,13 @@ Full list of data models used:
 
 <br>
 
+[Back to top](#boho-living)
+
 # Testing
 
 Testing section is located here [testing.md file](/testing.md)
+
+[Back to top](#boho-living)
 
 # Deployment
 
@@ -956,6 +961,8 @@ The deployed version of this website has static and media files hosted to it via
 * Deployment complete!
 
 <br>
+
+[Back to top](#boho-living)
 
 # Credits
 
