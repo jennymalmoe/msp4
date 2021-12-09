@@ -3,13 +3,13 @@
         <!-- Menu "Home" -->
         <li class="nav-item d-block">
             <a class="logo-font font-weight-bold nav-link text-dark mr-5 font-toggle" href="{% url 'home' %}" id="home-link">
-                Home
+            Home
             </a>
         </li>
         <!-- Menu "All Products" -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-dark mr-5 font-toggle" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
+            All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
@@ -21,7 +21,7 @@
         <!-- Menu "Home Decor" -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-dark mr-5 font-toggle" href="#" id="home_decor-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Home Decor
+            Home Decor
             </a>
             <div class="dropdown-menu border-0" aria-label="home-decor-link">
                 <a href="{% url 'products' %}?category=new_in_home" class="dropdown-item">New In Home Decor</a>
@@ -35,7 +35,7 @@
         <!-- Menu "Fashion" -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5 font-toggle" href="#" id="fashion-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Fashion
+            Fashion
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="fashion-link">
                 <a href="{% url 'products' %}?category=new_in_fashion" class="dropdown-item">New In Fashion</a>
@@ -48,7 +48,7 @@
         <!-- Menu "Outlet" -->
         <li class="nav-item">
             <a class="logo-font nav-link text-dark font-toggle" href="{% url 'products' %}?category=outlet" id="outlet-link">
-                Outlet
+            Outlet
             </a>
         </li>
         <!-- Menu "Blog" -->

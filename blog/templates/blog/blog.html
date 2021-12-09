@@ -1,66 +1,60 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
-
 <!-- Blog intro text -->
 {% block content %}
-    <div class="container-fluid blog-headline">
-        <div class="row">
-            <div class="col-12 page-heading mt-2">
-                <h1>➳BOHO<span style="color:rgb(247, 162, 4);"> Blog</span>➳</h1>
-                    <p class="blog-text">Boho - it’s a word associated with French bohemia.
-                        It mostly refers to freedom and combines nature-inspired elements like plants and animals,
-                        as well a motives from other cultures. Boho chic decor often uses folklore decorations,
-                        various patterns textures and colors.<br><br>If you are looking for ideas and inspiration on how to decorate your home,
-                        then this is the best community for you. This community is simply a group of people who share
-                        the passion for boho living. Welcome! Get and share inspiration and nail the bohemian style in your home.<br>Feel free to share your ideas, just click the button below!
-                    </p>  
-                <!-- Create post btn -->
-                <div class="create-post-btn"> <a href="{% url 'create' %}" class="btn btn-dark text-uppercase">Create your blog post</a> </div>
-            </div>
-        </div>
-        <br>
-        <!-- Blog post -->
-        <div class="col-lg-12">
-            {% for post in blog_posts %}
-                <div class="blog-post-container">
-                    <div class="blog-body">
-                        <!-- Post title -->
-                        <h2 class="blog-title text-uppercase">{{ post.title }}</h2>
-                        <p class="blog-author text-muted h6">By {{ post.author }} | {{ post.date_published |date:'D d M Y'}}</p>
-                        <!-- Post body collapsed -->
-                        <p>{{post.body|slice:":200" }}...</p>
-                        <!-- Read more btn -->
-                        <a class="btn btn-outline-dark read-more" data-bs-toggle="collapse" href="#collapseExample-{{ forloop.counter }}" role="button" aria-expanded="false"
-                            aria-controls="collapseExample-{{ forloop.counter }}">Read More &rarr;
-                        </a>
-                        <br>
-                        <div class="collapse" id="collapseExample-{{ forloop.counter }}">
-                            <!-- Post body uncollapsed -->
-                            <div class="blog-body">
-                                {{ post.body }}
-                            </div>
-                        </div>
-                        <!-- Post image -->
-                        <a href="{{ post.image.url }}">
-                            <img class="card-img-top img-fluid blog-image" src="{{ post.image.url }}" alt="Uploaded blog post image">
-                        </a>
-                    </div>
-                </div>
-        
-            {% endfor %}
+<div class="container-fluid blog-headline">
+    <div class="row">
+        <div class="col-12 page-heading mt-2">
+            <h1>➳BOHO<span style="color:rgb(247, 162, 4);"> Blog</span>➳</h1>
+            <p class="blog-text">Boho - it’s a word associated with French bohemia.
+                It mostly refers to freedom and combines nature-inspired elements like plants and animals,
+                as well a motives from other cultures. Boho chic decor often uses folklore decorations,
+                various patterns textures and colors.<br><br>If you are looking for ideas and inspiration on how to decorate your home,
+                then this is the best community for you. This community is simply a group of people who share
+                the passion for boho living. Welcome! Get and share inspiration and nail the bohemian style in your home.<br>Feel free to share your ideas, just click the button below!
+            </p>
             <!-- Create post btn -->
-            <div class="create-post-btn"> <a href="{% url 'create' %}" class="btn btn-dark text-uppercase">Create your blog post</a></div>
-
-            
-            
+            <div class="create-post-btn"> <a href="{% url 'create' %}" class="btn btn-dark text-uppercase">Create your blog post</a> </div>
         </div>
     </div>
+    <br>
+    <!-- Blog post -->
+    <div class="col-lg-12">
+        {% for post in blog_posts %}
+        <div class="blog-post-container">
+            <div class="blog-body">
+                <!-- Post title -->
+                <h2 class="blog-title text-uppercase">{{ post.title }}</h2>
+                <p class="blog-author text-muted h6">By {{ post.author }} | {{ post.date_published |date:'D d M Y'}}</p>
+                <!-- Post body collapsed -->
+                <p>{{post.body|slice:":200" }}...</p>
+                <!-- Read more btn -->
+                <a class="btn btn-outline-dark read-more" data-bs-toggle="collapse" href="#collapseExample-{{ forloop.counter }}" role="button" aria-expanded="false"
+                    aria-controls="collapseExample-{{ forloop.counter }}">Read More &rarr;
+                </a>
+                <br>
+                <div class="collapse" id="collapseExample-{{ forloop.counter }}">
+                    <!-- Post body uncollapsed -->
+                    <div class="blog-body">
+                        {{ post.body }}
+                    </div>
+                </div>
+                <!-- Post image -->
+                <a href="{{ post.image.url }}">
+                <img class="card-img-top img-fluid blog-image" src="{{ post.image.url }}" alt="Uploaded blog post image">
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+        <!-- Create post btn -->
+        <div class="create-post-btn"> <a href="{% url 'create' %}" class="btn btn-dark text-uppercase">Create your blog post</a></div>
+    </div>
+</div>
 {% endblock %}

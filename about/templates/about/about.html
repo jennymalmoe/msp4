@@ -1,73 +1,63 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block extra_js %}
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" 
-            integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script> <!-- JQuery Form Validation -->
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script> <!-- Sweet Alert Import-->
-    
-
-    <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function() {
-        emailjs.init("user_ddvArJdeq2QwxDTphVBB3");
-      })();
-    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" 
+    integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script> <!-- JQuery Form Validation -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script> <!-- Sweet Alert Import-->
+<!-- EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+      emailjs.init("user_ddvArJdeq2QwxDTphVBB3");
+    })();
+</script>
 {% endblock %}
-
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
-
 <!-- About intro -->
 {% block content %}
 <div class="overlay"></div>
-        <div class="container container-fluid container-about">
-            <div class="row about">
-                <div class="col-12">
-                    <h1 class="text-center">About Us</h1>
-                        <p class="mb-1 text-center">BOHO Living was founded in Malmö, Sweden in 2021 and is an online shop for a unique collection of Bohemian home decoration. We sell interior design, fashion and accessories. At BOHO Living, we believe style is what you make it,
-                           in life and at home. From rustic wood, cane to velvet & wool. Texture is at the heart of every bohemian home.
-                        </p>  
-                        <div class="footer-arrow">➳</div>
-                </div>
-            </div>
-        </div>
-        <!-- Contact header -->
-        <div class="container container-about">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center pb-2">Contact</h1>
-                        <p class="mb-1 text-center">BOHO Team is happy to answer your questions. Fill out the form and we'll be in touch as soon as possible.</p> 
-                </div>
-            </div>   
-        </div>
-       
-
-        <!-- Contact Form -->
-        <div class="row page-content">
-            <div class="col-12 contact-form contact-text form-groups">
-                <form id="contactForm" aria-label="Contact Form">     
-                    <select class="form-select mb-3 contact-style-input form-control" type="text" name="uselect" id="uselect" placeholder="Name" aria-label="Default select example" required>
-                        <option value="" selected>Contact Reason</option>
-                        <option value="1">Support</option>
-                        <option value="2">Billing</option>
-                        <option value="3">Other questions</option>
-                    </select>                           
-                    <input class="contact-style-input form-control" type="text" name="uname" id="uname" placeholder="Enter your name" aria-label="Enter Name" required>
-                    <input class="contact-style-input form-control" type="email" name="uemail" id="uemail" placeholder="Enter your email address" aria-label="Enter Email" required>
-                    <textarea class="contact-style-input form-control" name="umessage" id="umessage" placeholder="Enter your message" aria-label="message" rows="4" required></textarea>
-                    <input oncklick='sendMail()' id="contactFormSubmit" type="button" class="btn btn-dark contact-btn" aria-label="Submit Button" value="Submit">
-                </form>
-            </div>
+<div class="container container-fluid container-about">
+    <div class="row about">
+        <div class="col-12">
+            <h1 class="text-center">About Us</h1>
+            <p class="mb-1 text-center">BOHO Living was founded in Malmö, Sweden in 2021 and is an online shop for a unique collection of Bohemian home decoration. We sell interior design, fashion and accessories. At BOHO Living, we believe style is what you make it,
+                in life and at home. From rustic wood, cane to velvet & wool. Texture is at the heart of every bohemian home.
+            </p>
+            <div class="footer-arrow">➳</div>
         </div>
     </div>
-        
-
+</div>
+<!-- Contact header -->
+<div class="container container-about">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center pb-2">Contact</h1>
+            <p class="mb-1 text-center">BOHO Team is happy to answer your questions. Fill out the form and we'll be in touch as soon as possible.</p>
+        </div>
+    </div>
+</div>
+<!-- Contact Form -->
+<div class="row page-content">
+    <div class="col-12 contact-form contact-text form-groups">
+        <form id="contactForm" aria-label="Contact Form">
+            <select class="form-select mb-3 contact-style-input form-control" type="text" name="uselect" id="uselect" placeholder="Name" aria-label="Default select example" required>
+                <option value="" selected>Contact Reason</option>
+                <option value="1">Support</option>
+                <option value="2">Billing</option>
+                <option value="3">Other questions</option>
+            </select>
+            <input class="contact-style-input form-control" type="text" name="uname" id="uname" placeholder="Enter your name" aria-label="Enter Name" required>
+            <input class="contact-style-input form-control" type="email" name="uemail" id="uemail" placeholder="Enter your email address" aria-label="Enter Email" required>
+            <textarea class="contact-style-input form-control" name="umessage" id="umessage" placeholder="Enter your message" aria-label="message" rows="4" required></textarea>
+            <input oncklick='sendMail()' id="contactFormSubmit" type="button" class="btn btn-dark contact-btn" aria-label="Submit Button" value="Submit">
+        </form>
+    </div>
+</div>
+</div>
 {% endblock %}

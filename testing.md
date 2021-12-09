@@ -1,13 +1,13 @@
 # BOHO Living - Test
 
-Back to [README.md](readme.md)
+Back to [README.md](#readme.md)
 
 [View live website here!](https://msp4.herokuapp.com/)
 
 
 # Table of Contents
 
-* [Testing User Stories from UX Section](#user-stories)
+* [Testing User Stories from UX Section](#testing-user-stories-from-ux-section)
     * [First Time Visitor Goals](#first-time-visitor-goals)
     * [Returning Visitor Goals](#registered-visitor-goals)
     * [User Goals](#user-goals)

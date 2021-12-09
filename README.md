@@ -644,6 +644,7 @@ Full list of data models used:
 * [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to utilise the Bootstrap form classes.
 * [drawSQL](https://drawsql.app/) - Used to create database diagram.
 * [Font-Awesome](https://fontawesome.com/) - Used for icons.
+* [FreeFormatter](https://www.freeformatter.com/html-formatter.html) - Formats HTML code.
 * [Git](https://git-scm.com/) - Used for version control to commit to Git and push to Heroku.
 * [Gitpod](https://gitpod.io/) - Open-source application for ready-to-code developer environments in browser.
 * [Google fonts](https://fonts.google.com/) - Used to import fonts.
