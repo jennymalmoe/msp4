@@ -4,6 +4,7 @@ Back to [README.md](readme.md)
 
 [View live website here!](https://msp4.herokuapp.com/)
 
+
 # Table of Contents
 
 * [Testing User Stories from UX Section](#user-stories)
@@ -14,8 +15,9 @@ Back to [README.md](readme.md)
     * [Shopper goals](#shopper-goals)
     * [Administrator goals](#administrator-goals)
     * [Site Manager goals](#site-manager-goals)
-    * [Functionality Testing](#functionality-testing)
-    
+
+<br>
+
 * [Testing](#testing)
     * [Automated Testing](#automated-testing)
         + [W3C Markup Validator Results](#html-validator-results)
@@ -25,14 +27,16 @@ Back to [README.md](readme.md)
         + [Google Lighthouse Testing](#google-lighthouse-testing)
     * [Manual Testing](#manual-testing)
 
+<br> 
+
 * [Debugging](#debugging)
     * [Issues and Bugs](#issues-and-bugs)
 
-* [Further Manual Testing](#further-manual-testing)
+
 
 <br>
 
-## Testing User Stories from UX Section
+# Testing User Stories from UX Section
 
 <br>
 
@@ -242,13 +246,14 @@ Back to [README.md](readme.md)
 
 # Testing
 
- Rendered HTML from 'View page source' has been tested.
 
-* HTML code is validated through [W3C Validator](https://validator.w3.org/) - PASS
+### W3C Validator
+
+HTML code is validated through [W3C Validator](https://validator.w3.org/) - NO ERRORS
+
+Rendered HTML from 'View page source' has been tested.
 
 <details><summary><b>RESULTS</b></summary>
-
-- __Homepage__
 
 ![Home](media/validator_home.png)
 ![All Products](media/validator_allproducts.png)
@@ -257,48 +262,60 @@ Back to [README.md](readme.md)
 ![Outlet](media/validator_outlet.png)
 ![Blog](media/validator_blog.png)
 ![About Us](media/validator_about.png)
+</details>
 
+<br>
 
-* CSS code is validated through [W3C Validator CSS](https://jigsaw.w3.org/css-validator/)
+### W3C Validator CSS
+
+CSS code is validated through [W3C Validator CSS](https://jigsaw.w3.org/css-validator/) - One known error in base.css that I didn't change, since I couldn't recreate the style I wanted without the "100" suffix. No other errors either in base.css, checkout.css or profile.css.
 
 <details><summary><b>RESULTS</b></summary>
-
-- __CSS__
 
 ![Static/css/base.css](media/validator_css.png)
-
 ![Checkout/css/base.css](media/validator_css_stripe.png)
-
 ![Profiles/css/base.css](media/validator_css_profile.png)
+</details>
 
-* JavaScript code is validated through [JSHint](https://jshint.com/)
+<br>
+
+### JSHint
+
+JavaScript code is validated through [JSHint](https://jshint.com/) - NO ERRORS
+
+Files being tested: script.js, stripe_elements.js and script.js in Profiles template.
 
 <details><summary><b>RESULTS</b></summary>
 
-- __JS__
-
 ![Static/js/script.js](media/validator_js.png)
-
 ![Profile/js/script.js](media/validator_js_profile.png)
-
 ![Checkout/js/script.js](media/validator_js_checkout.png)
+</details>
 
+<br>
 
-* Python code is validated through [PEP8](https://www.python.org/dev/peps/pep-0008/)
+### PEP8
 
-- __Python__
+Python code is validated through [PEP8](https://www.python.org/dev/peps/pep-0008/) - NO ERRORS
+
+All python files in this project has been tested, had many lines that were too long, broke all those so it passed, except two lines I keept long and added comment: # noqa: E501 to show I'm aware of this. Showing one example below from all the "pass" results in pep8 and the two lines that are too long (from checkout/models.py and checkout/webhooks.py). 
+
+<details><summary><b>RESULTS</b></summary>
 
 ![Python](media/validator_py.png)
-![Python](media/validator_py_bag_views.png)
-![Python](media/validator_py_checkout_views.png)
-
+![Error checkout models](media/error_ch_models.png)
+![Error checkout webhooks](media/error_webhookspy.png)
 </details>
 
 <br>
 
 ## Google Lighthouse Testing
 
+<br>
+
 All pages passed through Lighthouse in Chrome DevTools:
+
+<br>
 
 ### Home page
 
@@ -306,6 +323,7 @@ All pages passed through Lighthouse in Chrome DevTools:
   <summary>Click to see results</summary>
   <img src="media/lh_home.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
+<br>
 
 ### All products page
 
@@ -313,6 +331,7 @@ All pages passed through Lighthouse in Chrome DevTools:
   <summary>Click to see results</summary>
   <img src="media/lh_allprod.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
+<br>
 
 ### All home decor page
 
@@ -320,6 +339,7 @@ All pages passed through Lighthouse in Chrome DevTools:
   <summary>Click to see results</summary>
   <img src="media/lh_allhd.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
+<br>
 
 ### All fashion page
 
@@ -327,6 +347,7 @@ All pages passed through Lighthouse in Chrome DevTools:
   <summary>Click to see results</summary>
   <img src="media/lh_allfashion.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
+<br>
 
 ### Outlet page
 
@@ -334,6 +355,7 @@ All pages passed through Lighthouse in Chrome DevTools:
   <summary>Click to see results</summary>
   <img src="media/lh_oulet.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
+<br>
 
 ### Blog page
 
@@ -341,6 +363,7 @@ All pages passed through Lighthouse in Chrome DevTools:
   <summary>Click to see results</summary>
   <img src="media/lh_blog.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
+<br>
 
 ### About us page
 
@@ -348,6 +371,7 @@ All pages passed through Lighthouse in Chrome DevTools:
   <summary>Click to see results</summary>
   <img src="media/lh_about.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
+<br>
 
 ### Sign up page
 
@@ -355,6 +379,7 @@ All pages passed through Lighthouse in Chrome DevTools:
   <summary>Click to see results</summary>
   <img src="media/lh_signup.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
+<br>
 
 ### Sign in page
 
@@ -362,6 +387,7 @@ All pages passed through Lighthouse in Chrome DevTools:
   <summary>Click to see results</summary>
   <img src="media/lh_signin.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
+<br>
 
 ### Product detail page
 
@@ -369,6 +395,7 @@ All pages passed through Lighthouse in Chrome DevTools:
   <summary>Click to see results</summary>
   <img src="media/lh_proddetail.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
+<br>
 
 ### Bag page
 
@@ -376,6 +403,7 @@ All pages passed through Lighthouse in Chrome DevTools:
   <summary>Click to see results</summary>
   <img src="media/lh_bag.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
+<br>
 
 ### Checkout page
 
@@ -388,21 +416,19 @@ All pages passed through Lighthouse in Chrome DevTools:
 
 ## Manual Testing
 
+<br>
+
 **Testing Environments**
 
 BOHO Living app has been tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers (viewed at different desktop, laptop, tablet and mobile).
 
-All links and required fields in app has been tested. 
+All links, required fields, buttons, sorting function, carousel, forms, blog posts, all drop-down menus, product display, product detail and search bar work as expected.
 
-App has been reviewed at "Peer code Review" in Code Institutes Slack channel. 
+App has been reviewed by other students at "Peer code Review" in Code Institutes Slack channel. 
 
 Code Institutes criteria checklist has been used to check requirements. 
 
-## Functionality Testing
-
-Chrome dev tools has been used throughout the project for testing.
-
-Nav bar links, buttons, sorting, carousel, form, blog posts, all drop-down menus, product display, product detail, links and search bar work correctly.
+<br>
 
 # Debugging 
 
@@ -420,9 +446,8 @@ Nav bar links, buttons, sorting, carousel, form, blog posts, all drop-down menus
 
 * No confirmation mail (to the terminal) was sent after making a "payment", just an 404 error in the terminal. I edited webhook endpoint in Stripe and then got an 200 error in terminal and a "payment_intent.succeeded" in Stripe, but no confirmation mail still. The problem was that the webhook itself wasn't set up quite right, I needed to add "8000-" in the beginning of my webhook and added checkout/wh/ in the end. I also had STRIPE_WH_KEY instead of STRIPE_WH_SECRET in Gitpod Environment Variables. When chaged those two things confirmation mail worked as expected. 
 
-* Line too long in checkout/models.py. # noqa: E501 note added. 
 
-![Line too long](media/longline_ch_models.png)
+
 
 
 
