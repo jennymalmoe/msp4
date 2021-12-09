@@ -34,6 +34,7 @@ When using the Payment Intents API with Stripe’s client libraries and SDKs, us
 An account with Super User privileges has been created for testing purposes. The username and password will be supplied when submitting the project.
 
 ## Table of Contents
+
 - [UX](#ux) 
   * [Project Goals](#project-goals)
   * [Business Goals](#business-goals)
@@ -99,8 +100,6 @@ An account with Super User privileges has been created for testing purposes. The
 
 ## UX
 
-<br>
-
 ### Project Goals
 
 <br>
@@ -149,7 +148,7 @@ This user story template consists of three sections; As a (decription of user), 
 
 | ID  | As a..    | I want to..                                                    | So I..                                                                           |
 | --- | ---------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-|     |            | *Viewing and Navigation*                                      |                                                                                       |
+|     |            | **Viewing and Navigation**                                      |                                                                                       |
 | 1   | First Time Visitor    | Be presented with an intutive site navigation that is user friendly and over all ease-of-use                              |  Get a good impression about the site/business
 | 2   | First Time Visitor    |    Visit a structured, clean and modern website                      | Can understand the main purpose of the site/business and find key information
 | 3   | First Time Visitor    |    Get the impression af a professional website                      | Feel comfortable enough to make a purchase
@@ -160,25 +159,25 @@ This user story template consists of three sections; As a (decription of user), 
 | 8   | First Time Visitor    | Be presented to contact information and social media links                              |  Am feeling a sence of crediblity
 | 9   | First Time Visitor    | Be able to reach out to siteowner                              |  Get answers to any possible questions
 | 10   | Returning  Visitor    | Be presented with new/seasonal items                               |  Experience that B.I is up to date and offer me new items than last visiting
-|     |            | *Registration*                              |                                                                                       |
+|     |            | **Registration**                             |                                                                                       |
 | 11  | User   | Register for an account                                         | Can access to Boho Living                                          |
 | 12  | User   | Be able to have an account                                           | Save default delivery information and keep a record of order history, get mails with news and offers                                          |
 | 13  | User   | Receive an email confirming my registration                       | Verify my account was registered successfully                                         |
-|     |            | *Login*                                  |                                                                                       |
+|     |            | **Login**                                  |                                                                                       |
 | 14  | Registered User   | Sign in to my account                                                 | Can access my account                                                                   |
 | 15  | Registered User   | Access my user profile                                            | Can view my order history, manage my personal details                                     |
 | 16  | Registered User   | Save my personal details (address etc) in my account                                            | Can make a smooth purchase next time.                                     |
 | 17  | Registered User   | Request a password reset                                          | Receive an email to reset my password in case I forget it  
-|     |            | *Logout*                                  |                                                                                       |
+|     |            | **Logout**                                  |                                                                                       |
 | 18  | Registered User   | Sign out of my account                                                 | Secure that nobody else makes a purchase from my account.                                           | 
-|     |            | *Sorting and Searching*                                       |                                                                                       |
+|     |            | **Sorting and Searching**                                       |                                                                                       |
 | 19  | Shopper    | Sort the list of available products                               | See the products in a list sorted by price, rating, name etc            |
 | 20  | Shopper    | Be able to search by categories                                       | Find what I am looking for                     |
 | 21  | Shopper    | Sort multiple categories simultaneously                           | Find the best rated or best priced across broad categories |
 | 22  | Shopper    | Search for products                                                | Find a specific product I wish to purchase                                               |
 | 23  | Shopper    | View a list of search results                                     | See if the product I want is available to purchase  
 | 24  | Shopper    | View an image and details for each product                                     | Can decide if I want to add to cart from the detail or search pages or not.                                   |
-|     |            | *Purchasing and Checkout*                                     |                                                                                       |
+|     |            | **Purchasing and Checkout**                                     |                                                                                       |
 | 25  | Shopper    | Be able to add products to my shopping bag     | Can buy the item
 | 26  | Shopper    | Easily select the size and quantity whilst purchasing a product     | Can get the size and quantity I want              |
 | 27   | Shopper    | Get information about delivery charges, how much I need to spend to get free delivery                                     | Can make an informed purchasing decision                                                         |
@@ -190,18 +189,18 @@ This user story template consists of three sections; As a (decription of user), 
 | 33  | Shopper    | View summery of order before completing purchase             | Can verify I haven't made any mistakes                                                    |
 | 34  | Shopper    | Receive a confirmation email of my purchase                     | Can be confident that the purchase has been made successfully
 | 35  | Shopper    | Be presented by some kind of custom service contact information                    | Can get in touch
-|     |            | *Admin and Store Management*                                  |                                                                                       |
+|     |            | **Admin and Store Management**                                  |                                                                                       |
 | 36  | Administrator |  Have access to an admin section                      | Can operate the e-commerce                                                                       |
 | 37  | Administrator | Add a product **(Create)**, write information about the product **(Read)**, edit product **(Update)** and remove product **(Delete)**                                                    | Can adjust the offers
 | 38  | Administrator |  Delete users blog posts, if inappropriate                      | Can keep the site proffessional      
 | 39  | Administrator |  Have logical SKU:s                      |       Get a general picture about what category, color etc the product is. (W=white MV=multicolor B=blue G=green BR=brown HD=home decor)                                                              |
-|     |            | *Site manager*                                  |                                                                                       |
+|     |            | **Site manager**                                  |                                                                                       |
 | 40  | Site Manager | Be able to manage/edit the site                                            | Can keep the site relevant and with correct information/sortiment                                        |
 | 41  | Site Manager | Feel the design harmonize with what B.L: sortiment and image | Am sure that it corresponds to B.L:s design profile                                     |
-|     |            | *Blog*                                  |                                                                                       |
+|     |            | **Blog**                                  |                                                                                       |
 | 42  | Shopper | Get inspired                                            | Can get home decoration/fashion ideas                                                          |
 | 43  | Shopper | Be able to contribute with my own ideas by adding a post                                             | Can share inspirational ideas
-|     |            | *Authentication & Security*                                  |                                                                                       |
+|     |            | **Authentication & Security**                                  |                                                                                       |
 | 44 | User | Verify my email address | Ensure my account is set up securely |
 | 45 | Registered User | Be confident that my password is stored securely | Feel safe from malicious activity |
 |||
@@ -210,35 +209,33 @@ This user story template consists of three sections; As a (decription of user), 
 
 ## Design Choices
 
-<br>
-
 ### Color scheme
     
-    The page consists of a white base with black, orange and yellow as accent colors. The combination of black and white offers the maximum contrast possible, as they come from opposite ends of the color spectrum. Black and white websites are classical, strong, and powerful. Apart from black and white being a risk-free combination and ensuring a design will look clean, removing color forces a designer to rely on other elements in their web designs such as the products, typography, layout, or grid to catch the viewers' attention. Boho style/the products has asymmetrical layouts, variegated patterns and handcrafted textures. Placed in a clean, contemporary space, layers of colorful textiles deliver an unexpected twist. Thats what I had in mind chosing colors and style for this website.  
-    
-    Orange is an attention-grabbing color that tends to stand out visually as an accent standing out against neutral colors. The color orange is often associated with spiritual practices including meditation and compassion, as well as warmth, creativity and emotions. Orange has very high visibility, you can use it to draw attention and highlight the most important elements of your design. I used it as a compliment to the crisp and clean white and black colors. 
+The page consists of a white base with black, orange and yellow as accent colors. The combination of black and white offers the maximum contrast possible, as they come from opposite ends of the color spectrum. Black and white websites are classical, strong, and powerful. Apart from black and white being a risk-free combination and ensuring a design will look clean, removing color forces a designer to rely on other elements in their web designs such as the products, typography, layout, or grid to catch the viewers' attention. Boho style/the products has asymmetrical layouts, variegated patterns and handcrafted textures. Placed in a clean, contemporary space, layers of colorful textiles deliver an unexpected twist. Thats what I had in mind chosing colors and style for this website.  
+  
+Orange is an attention-grabbing color that tends to stand out visually as an accent standing out against neutral colors. The color orange is often associated with spiritual practices including meditation and compassion, as well as warmth, creativity and emotions. Orange has very high visibility, you can use it to draw attention and highlight the most important elements of your design. I used it as a compliment to the crisp and clean white and black colors. 
 
-    I've used yellow text shadows in a few different places at the site. This bright yellow is an attention-getter and at the same time it gives a smooth and soft impression, and its contrast with white or black is one of the most visible color combinations. 
+I've used yellow text shadows in a few different places at the site. This bright yellow is an attention-getter and at the same time it gives a smooth and soft impression, and its contrast with white or black is one of the most visible color combinations. 
 
-    All buttons are either black, white or orange. 
-    
-    ![Color scheme](media/color_scheme.png)
+All buttons are either black, white or orange. 
+  
+![Color scheme](media/color_scheme.png)
 
 ### Typography
 
-    Lato is an open source, sans-serif font. Lato font is the main font used throughout the site with Architects Daughter font used to headers and logo. The font is created to give the letterforms familiar harmony and elegance. The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides stability and seriousness. Lato is used in the body content for the site to appear to be approachable which is the main goal for this website. 
+Lato is an open source, sans-serif font. Lato font is the main font used throughout the site with Architects Daughter font used to headers and logo. The font is created to give the letterforms familiar harmony and elegance. The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides stability and seriousness. Lato is used in the body content for the site to appear to be approachable which is the main goal for this website. 
     
-    Architects Daughter font incorporates the graphic, squared look of architectural writing, combined with the natural feel of daily handwriting. It is clean but unconventional and gives the site a relaxed vibe. The combination of these two fonts represents both the webshop/business side aswell as the relaxed boho approach. 
+Architects Daughter font incorporates the graphic, squared look of architectural writing, combined with the natural feel of daily handwriting. It is clean but unconventional and gives the site a relaxed vibe. The combination of these two fonts represents both the webshop/business side aswell as the relaxed boho approach. 
 
-    ![Fonts](media/fonts.png)
+![Fonts](media/fonts.png)
 
 ### Imagery
 
-    Images and the choices of the images is an important component of this site. The hero image on the landing page gives the site a dramatic appearance and sets the tone for the boho inspired page. I use lot of space around images and content to get the visitor an uncluttered and comfortable browsing experience on all device sizes. The product images for the e-commerce part of the site is chosen to be more artistic than detailed/informative to fit the boho-tone. The appearance is aiming to be appealing to the target audience. 
+Images and the choices of the images is an important component of this site. The hero image on the landing page gives the site a dramatic appearance and sets the tone for the boho inspired page. I use lot of space around images and content to get the visitor an uncluttered and comfortable browsing experience on all device sizes. The product images for the e-commerce part of the site is chosen to be more artistic than detailed/informative to fit the boho-tone. The appearance is aiming to be appealing to the target audience. 
 
 ### Icons
 
-    All icons used are taken from Font Awsome. The use of icons in web design is a proven method to modernize a website and help direct user flow. Adding icons to the site's content helps a user better process the information and provides a visual focus point that grounds a user to a specific section. I used an boho inspired arrow icon recurring throughout the site, to improve visual  and keep a common theme throughout the site. 
+All icons used are taken from Font Awsome. The use of icons in web design is a proven method to modernize a website and help direct user flow. Adding icons to the site's content helps a user better process the information and provides a visual focus point that grounds a user to a specific section. I used an boho inspired arrow icon recurring throughout the site, to improve visual  and keep a common theme throughout the site. 
 
 [Back to top](#boho-living)
 
@@ -247,8 +244,6 @@ This user story template consists of three sections; As a (decription of user), 
 # Features
 
 ## Existing Features 
-
-<br>
 
 Every page of the website features a consistently responsive and intuitive layout and navigational system.
 
@@ -268,7 +263,6 @@ These feautures also proves that it meets the requirement of each user story.
 ![Collapsed navbar](media/collapsed_navbar.png)
 
 ![Footer](media/footer.png)
-
 
 **Home**
 
