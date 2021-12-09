@@ -390,9 +390,61 @@ All pages passed through Lighthouse in Chrome DevTools:
 
 ## Manual Testing
 
+**Testing Environments**
+
+The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+A large amount of testing was done to ensure that all pages were linking correctly.
+Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+Desktop testing:
+
+Platforms:
+Microsoft SurfaceBook2 (Windows 10)
+Dell Optiplex workstation (Windows 7)
+Fujitsu Lifebook (Windows 8)
+Browsers:
+Chrome
+Firefox
+Edge
+Opera
+Mobile testing:
+
+Platforms
+AT&T Radiant Core (Android 9)
+Samsung Galaxy J6 (Android 9)
+OnePlus7 (Android 10)
+Lenovo MTab10 (Android 9)
+Browsers
+Chrome
+Edge
+Opera
+
+Peer code Review
+The project was submitted to peer review on the code institute slack channel.
+
+Student Checklist
+A Final sanity check was done with the student check list to ensure the site fits submission guidelines.
+
 ## Functionality Testing
 
-re 
+I used Chrome developer tools throughout the project for testing and solving problems with responsiveness and style issues.
+
+Main navigation Menu, all the drop-down menus, links and search bar work correctly.
+
+Mobile menu links and dropdown functionality work correctly.
+
+All the buttons throughout the website link correctly and works great, back to top button works.
+
+Home page Flickity carousel works good on all the devices.
+
+All products are displayed correctly at different screen sizes.
+
+Sort for price and name orders items work correctly.
+
+Product cards link through to the product detail page for the product shown.
+
+Carousel at product detail page works correctly. 
 
 # Debugging 
 

@@ -385,6 +385,7 @@ Four different kind of toasts appears when a certain action has been triggered b
 
 * Comments and ability to share blog posts to social media (potential to convert more readers into paying customers). 
 * Elaborate the SKU numbers, to make even more logical to Administrator.
+* Allow the contact form confirmation mail (in About Us page) to send to the actual person that filled the form out (and not to me as it does to day). 
 * Social media login.
 * More categories. 
 * Function to make users giving rating. To day set by Admin based on sales.  
@@ -399,7 +400,9 @@ Four different kind of toasts appears when a certain action has been triggered b
 
 ## Security features
 
-If user accendentally or intentionally closes the browser window after the payment is confirmed but before the form is submitted, there would be a payment in Stripe, but no order in the database. To prevent this situation; Each time an event occurs on Stripe (such as a payment intent being created) a payment being completed on Stripe a webhook is sent out that we can listen for. Webhooks are like the signals django sends each time a model is saved or deleted. Except that they are sent securely from Stripe to a url we specify. *(from Boutique Ado project, Stripe, part 10)*
+* If user accendentally or intentionally closes the browser window after the payment is confirmed but before the form is submitted, there would be a payment in Stripe, but no order in the database. To prevent this situation; Each time an event occurs on Stripe (such as a payment intent being created) a payment being completed on Stripe a webhook is sent out that we can listen for. Webhooks are like the signals django sends each time a model is saved or deleted. Except that they are sent securely from Stripe to a url we specify. *(from Boutique Ado project, Stripe, part 10)*
+
+* To ensure that the website is secure, code has @login_required decorators in msp4 app, that makes Django check whether the user is logged in before executing the view. If not logged in user get redirected to sign in page. I also use this decorator for the Profile view, since only logged in users should be able to access. If somebody somehow found out the URL for the edit and delete product management, they could possibly delete all products, thats why the decorators are needed. Only superuser are able to edit and delete, just as it should be. 
 
 
 ## Wireframes 

@@ -22,7 +22,7 @@ function topFunction() {
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// Toasts
+// TOASTS
 // Bootstrap 5 toast initialisation
 let toastElList = [].slice.call(document.querySelectorAll('.toast'))
 let toastList = toastElList.map(function (toastEl) {
@@ -34,7 +34,6 @@ let toastList = toastElList.map(function (toastEl) {
   let bsToast = new bootstrap.Toast(toastEl, option)
   bsToast.show();
 })
-
 
 // ALERT
 
