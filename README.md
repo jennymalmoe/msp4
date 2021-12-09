@@ -101,11 +101,11 @@ ___
 
 <br>
 
-# UX
+## UX
 
 <br>
 
-## Project Goals
+### Project Goals
 
 <br>
 
@@ -244,6 +244,7 @@ This user story template consists of three sections; As a (decription of user), 
 
     All icons used are taken from Font Awsome. The use of icons in web design is a proven method to modernize a website and help direct user flow. Adding icons to the site's content helps a user better process the information and provides a visual focus point that grounds a user to a specific section. I used an boho inspired arrow icon recurring throughout the site, to improve visual  and keep a common theme throughout the site. 
 
+[Back to top](#boho-living)
 <br>
 
 # Features

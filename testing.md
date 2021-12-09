@@ -392,7 +392,7 @@ All pages passed through Lighthouse in Chrome DevTools:
 
 ## Functionality Testing
 
-
+re 
 
 # Debugging 
 
