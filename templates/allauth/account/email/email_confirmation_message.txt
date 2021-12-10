@@ -1,4 +1,4 @@
-{% load account %}{% user_display user as user_display %}{% load i18n %}{% autoescape off %}{% blocktrans %}Hi {{ username }}!
+{% load account %}{% user_display user as user_display %}{% load i18n %}{% autoescape off %}{% blocktrans %}Hi {{ user_display }}!
 
 You're receiving this e-mail because user {{ user_display }} has given yours as an e-mail address to connect their account.
 
@@ -9,6 +9,7 @@ To confirm this is correct, go to {{ activate_url }}
 Best regards,
 ➳BOHO Living➳
 
-You cannot reply to this email.
-www.boholiving.com{% endblocktrans %}
+www.boholiving.com
+
+You cannot reply to this email.{% endblocktrans %}
 {% endautoescape %}

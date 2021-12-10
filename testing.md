@@ -1,5 +1,7 @@
 # Testing
 
+[README.md](/readme.md)
+
 [View live website here!](https://msp4.herokuapp.com/)
 
 
