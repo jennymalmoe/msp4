@@ -959,7 +959,7 @@ main {
 	.header-container {
 		padding-top: 104px;
 	}
-	.header-size {
+	#header-id {
 		width: 100vw;
 		margin-right: 0;
 		margin-left: 0;

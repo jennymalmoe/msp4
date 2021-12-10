@@ -214,7 +214,9 @@ This user story template consists of three sections; As a (decription of user), 
     
 The page consists of a white base with black, orange and yellow as accent colors. The combination of black and white offers the maximum contrast possible, as they come from opposite ends of the color spectrum. Black and white websites are classical, strong, and powerful. Apart from black and white being a risk-free combination and ensuring a design will look clean, removing color forces a designer to rely on other elements in their web designs such as the products, typography, layout, or grid to catch the viewers' attention. Boho style/the products has asymmetrical layouts, variegated patterns and handcrafted textures. Placed in a clean, contemporary space, layers of colorful textiles deliver an unexpected twist. Thats what I had in mind chosing colors and style for this website.  
   
-Orange is an attention-grabbing color that tends to stand out visually as an accent standing out against neutral colors. The color orange is often associated with spiritual practices including meditation and compassion, as well as warmth, creativity and emotions. Orange has very high visibility, you can use it to draw attention and highlight the most important elements of your design. I used it as a compliment to the crisp and clean white and black colors. 
+Orange is an attention-grabbing color that tends to stand out visually as an accent standing out against neutral colors. Orange is a very creative color that’s also associated with adventure and youth. It’s perceived as very energetic. Because of orange’s strong ties to 70s style, it can also evoke a retro feeling which corresponds well with B.L.
+
+Orange has very high visibility, you can use it to draw attention and highlight the most important elements of your design. I used it as a compliment to the crisp and clean white and black colors. 
 
 I've used yellow text shadows in a few different places at the site. This bright yellow is an attention-getter and at the same time it gives a smooth and soft impression, and its contrast with white or black is one of the most visible color combinations. 
 
@@ -224,6 +226,8 @@ All buttons are either black, white or orange.
 
 ### Typography
 
+This project contains two different fonts, one type for headings and CTAs (buttons), and another for body. The color contrast between the black and white text, makes it clear and distinct. A reader tends to scan down the left side of the page, looking for interesting key words in left-aligned headings or text. They then tend to stop and read (to the right) when he or she comes to something interesting. The result looks something like an F, thats why this theory is called F-pattern and thats why this project is built with that in mind. There are generously spacing between the text which indicates an element’s meaning and importance using only visuals. 
+
 Lato is an open source, sans-serif font. Lato font is the main font used throughout the site with Architects Daughter font used to headers and logo. The font is created to give the letterforms familiar harmony and elegance. The semi-rounded details of the letters give Lato a feeling of warmth, while the strong structure provides stability and seriousness. Lato is used in the body content for the site to appear to be approachable which is the main goal for this website. 
     
 Architects Daughter font incorporates the graphic, squared look of architectural writing, combined with the natural feel of daily handwriting. It is clean but unconventional and gives the site a relaxed vibe. The combination of these two fonts represents both the webshop/business side aswell as the relaxed boho approach. 
@@ -232,7 +236,9 @@ Architects Daughter font incorporates the graphic, squared look of architectural
 
 ### Imagery
 
-Images and the choices of the images is an important component of this site. The hero image on the landing page gives the site a dramatic appearance and sets the tone for the boho inspired page. I use lot of space around images and content to get the visitor an uncluttered and comfortable browsing experience on all device sizes. The product images for the e-commerce part of the site is chosen to be more artistic than detailed/informative to fit the boho-tone. The appearance is aiming to be appealing to the target audience. 
+This projects strong imagery complements the overall brand story and really takes advantages of the power of visual storytelling. Some say you only have up to 7–8 seconds to capture a user’s attention before they click through to another competitor’s site. The use of persuasive imagery is a good way to try and retain them. Humans tends to process visual information from an image far quicker than text, which makes imagery a powerful tool. When confronted with a powerful image, consumers immediately connect with the brand on an emotional level. Thats why the site has a full-width hero image that reflects the style the business wants to signal. The hero image on the landing page gives the site a dramatic appearance and sets the tone for the boho inspired page. It provides an immediate immersive experience by confronting the user first-off with a strong image which evokes an emotional response. There are a short, sharp and descriptive text-on-image that is not takning any of the power away from the hero image. 
+
+I use lot of space around the product images and content to get the visitor an uncluttered and comfortable browsing experience on all device sizes. The product images for the e-commerce part of the site is chosen to be more artistic than detailed/informative to fit the boho-tone. The appearance is aiming to be appealing to the target audience. All images are choosen to work in tandem with the content. 
 
 ### Icons
 

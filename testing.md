@@ -1,6 +1,6 @@
 # BOHO Living - Test
 
-Back to [README.md](#readme.md)
+Back to [README.md](readme.md)
 
 [View live website here!](https://msp4.herokuapp.com/)
 
@@ -9,9 +9,9 @@ Back to [README.md](#readme.md)
 
 * [Testing User Stories from UX Section](#testing-user-stories-from-ux-section)
     * [First Time Visitor Goals](#first-time-visitor-goals)
-    * [Returning Visitor Goals](#registered-visitor-goals)
+    * [Returning Visitor Goals](#returning-visitor-goals)
     * [User Goals](#user-goals)
-    * [Registered User goals](#registered-user)
+    * [Registered User goals](#registered-user-goals)
     * [Shopper goals](#shopper-goals)
     * [Administrator goals](#administrator-goals)
     * [Site Manager goals](#site-manager-goals)
@@ -20,11 +20,11 @@ Back to [README.md](#readme.md)
 
 * [Testing](#testing)
     * [Automated Testing](#automated-testing)
-        + [W3C Markup Validator Results](#html-validator-results)
-        + [W3C CSS Validator Results](#html-validator-results)
-        + [JSHint Results](#jshint-results)
-        + [PEP8 Online Validator Results](#pep8-validator-results)
-        + [Google Lighthouse Testing](#google-lighthouse-testing)
+        + [W3C Markup Validator](#w3c-markup-validator)
+        + [W3C CSS Validation](#w3c-css-validation)
+        + [JSHint](#jshint)
+        + [PEP8 online check](#pep8-online-check)
+        + [Google Lighthouse](#google-lighthouse)
     * [Manual Testing](#manual-testing)
 
 <br> 
@@ -246,8 +246,9 @@ Back to [README.md](#readme.md)
 
 # Testing
 
+## Automated Testing
 
-### W3C Validator
+### W3C Markup Validator
 
 HTML code is validated through [W3C Validator](https://validator.w3.org/) - NO ERRORS
 
@@ -266,7 +267,7 @@ Rendered HTML from 'View page source' has been tested.
 
 <br>
 
-### W3C Validator CSS
+### W3C CSS Validation
 
 CSS code is validated through [W3C Validator CSS](https://jigsaw.w3.org/css-validator/) - One known error in base.css that I didn't change, since I couldn't recreate the style I wanted without the "100" suffix. No other errors either in base.css, checkout.css or profile.css.
 
@@ -294,7 +295,7 @@ Files being tested: script.js, stripe_elements.js and script.js in Profiles temp
 
 <br>
 
-### PEP8
+### PEP8 online check
 
 Python code is validated through [PEP8](https://www.python.org/dev/peps/pep-0008/) - NO ERRORS
 
@@ -309,7 +310,7 @@ All python files in this project has been tested, had many lines that were too l
 
 <br>
 
-## Google Lighthouse Testing
+## Google Lighthouse
 
 <br>
 
