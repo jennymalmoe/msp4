@@ -246,7 +246,7 @@ I use lot of space around the product images and content to get the visitor an u
 
 ### Icons
 
-All icons used are taken from Font Awsome. The use of icons in web design is a proven method to modernize a website and help direct user flow. Adding icons to the site's content helps a user better process the information and provides a visual focus point that grounds a user to a specific section. I used an boho inspired arrow icon recurring throughout the site, to improve visual  and keep a common theme throughout the site. 
+All icons used are taken from Font Awsome. The use of icons in web design is a proven method to modernize a website and help direct user flow. Adding icons to the site's content helps a user better process the information and provides a visual focus point that grounds a user to a specific section. I used an boho inspired arrow icon recurring throughout the site, to improve visual and keep a common theme throughout the site. 
 
 [Back to top](#boho-living)
 
@@ -710,15 +710,17 @@ Full list of data models used:
 | Stripe | Secure Payment Services |
 | | |
 
-<br>
-
 [Back to top](#boho-living)
+
+<br>
 
 # Testing
 
 Testing section is located here [testing.md file](/testing.md)
 
 [Back to top](#boho-living)
+
+<br>
 
 # Deployment
 
@@ -972,9 +974,9 @@ The deployed version of this website has static and media files hosted to it via
 
 * Deployment complete!
 
-<br>
-
 [Back to top](#boho-living)
+
+<br>
 
 # Credits
 

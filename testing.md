@@ -38,6 +38,7 @@
 
 # Testing User Stories from UX Section
 
+
 ## First time visitor goals
 
 * I want to be presented with an intutive site navigation that is user friendly and over all ease-of-use.
@@ -245,6 +246,8 @@
 [Back to top](#testing)
 
 # Testing
+
+<br>
 
 ## Automated Testing
 
