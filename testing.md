@@ -425,6 +425,20 @@ App has been reviewed by other students at "Peer code Review" in Code Institutes
 
 Code Institutes criteria checklist has been used to check requirements. 
 
+Mails checked:
+
+Confirmation mail when sign up:
+
+![Confirmation mail sign up](media/confirm.png)
+
+Order confirmation mail:
+
+![Confirmation mail order](media/order_confirmation.png)
+
+Contact confirmation mail:
+
+![Confirmation mail contact](media/contact_mail.png)
+
 <br>
 
 [Back to top](#testing)
@@ -437,9 +451,9 @@ Code Institutes criteria checklist has been used to check requirements.
 
 * **Known bug:** On some iOS devices, this happens; Nothing happens when clicking "Register" or "Login" (if I am not signed in) after added item(s) in the bag (=toast). After signed in, nothing happens when clicking my profile or log out either. I need to refresh the page to be able to. Then it works as expected.   
 
-* Some responsive design didn't work as expected, since the project use Bootstrap 5.1 I had to add "-bs-" in "data-toggle", "data-target", "data-autohide". 
+* Some responsive design didn't work as expected, since the project use Bootstrap 5.1 I had to add "-bs-" in "data-toggle", "data-target", "data-autohide" to some classes, then everything worked as expected. 
 
-* Toast messages didn't show as expected needed to change the JavaScript from: $('toast').toast('show') to $('.toast').show() to make the toast show as expected.
+* Toast messages didn't show as expected, needed to change the JavaScript from: $('toast').toast('show') to $('.toast').show() to make the toast show as expected.
 
 * When register new user at "My Account" an SMTPAuthenticationError at /accounts/signup/ occurred and text showed; "Already have an account? Then please sign in". I had "DEVELOPMENT" in my Gitpod settings, but scope was set for my old milestone project, not to this one (or */* (to access all)). It was trying to use the gmail smtp from Gitpod but gmail was expecting the Heroku app to access it, so it wasn't authenticated and thats why it didn't work. So after changed it to access all (*/*) it worked as expected. 
 
