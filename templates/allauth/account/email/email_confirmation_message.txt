@@ -11,5 +11,5 @@ Best regards,
 
 www.boholiving.com
 
-You cannot reply to this email.{% endblocktrans %}
+Please note this email was sent from a notification-only address that cannot accept incoming email. Please do not reply to this message.{% endblocktrans %}
 {% endautoescape %}

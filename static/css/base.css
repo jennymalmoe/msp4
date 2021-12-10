@@ -10,6 +10,10 @@ body {
 	color: rgb(0, 0, 0);
 }
 
+a {
+	text-decoration: none;
+}
+
 h1 {
 	font-family: architects daughter;
 	text-transform: uppercase;
@@ -1010,9 +1014,7 @@ main {
 	.co-success {
 		margin-top: 110px;
 	}
-	.footer-links {
-		margin-left: 50px;
-	}
+
 }
 
 @media (max-width: 992px) {
