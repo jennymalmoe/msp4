@@ -218,7 +218,11 @@ Orange is an attention-grabbing color that tends to stand out visually as an acc
 
 Orange has very high visibility, you can use it to draw attention and highlight the most important elements of your design. I used it as a compliment to the crisp and clean white and black colors. 
 
-I've used yellow text shadows in a few different places at the site. This bright yellow is an attention-getter and at the same time it gives a smooth and soft impression, and its contrast with white or black is one of the most visible color combinations. 
+I've used yellow text shadows in a few different places. This glowing yellow is an attention-getter and at the same time it gives a smooth and soft impression, and its contrast with white or black is one of the most visible color combinations. 
+
+Shop now button at landing page has a subtly animated shadow effect. Well-designed animation can improve usability and make the interaction with a site more engaging and delightful.Optimal speed for interface animation is between 200 and 500 ms. My animation is set to 300 ms. Too much animation can confuse the user and create a negative emotional effect and takes the focus away from the message.
+
+The CTA button is used to help user navigate the site and to get visitors to do what I want them to do (look at the products and make a purchase). The CTA text used is "Shop now", ans is direct and clear. It engages the visitor and makes it crystal clear which action the visitor is expected to take (click and shop). The CTA copy simply states the website’s conversion goal. By adding the word "now", I'm creating a sense of urgency that is a necessary condition for successful CTA copy. 
 
 All buttons are either black, white or orange. 
   
@@ -986,8 +990,6 @@ The deployed version of this website has static and media files hosted to it via
 * Code Institute for inspiration from the Boutique Ado project.
 * https://codingwithmitch.com/ for code and inspiration to my blog section.
 
-
-So a word of warning about your webhooks still. This all works fine for your local endpoint, but if you're going to use the heroku one it will need a different WH_SECRET_KEY in your Heroku cvars. You can find this by Reveal the signing secret you find for the heroku endpoint in Stripe website. So both local and deployed site have the same STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY but they will have different STRIPE_WH_SECRET.
 
  
 
