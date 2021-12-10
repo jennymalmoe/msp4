@@ -1,4 +1,4 @@
-# BOHO Living - Test
+# Testing
 
 Back to [README.md](readme.md)
 
@@ -244,7 +244,9 @@ Back to [README.md](readme.md)
 
 <br>
 
-[Back to top](#boho-living-test)
+[Back to top](testing)
+
+<br>
 
 # Testing
 
@@ -433,6 +435,10 @@ Code Institutes criteria checklist has been used to check requirements.
 
 <br>
 
+[Back to top](testing)
+
+<br>
+
 # Debugging 
 
 ## Issues and Bugs
@@ -448,6 +454,10 @@ Code Institutes criteria checklist has been used to check requirements.
 * When register new user at "My Account" an SMTPAuthenticationError at /accounts/signup/ occurred and text showed; "Already have an account? Then please sign in". I had "DEVELOPMENT" in my Gitpod settings, but scope was set for my old milestone project, not to this one (or */* (to access all)). It was trying to use the gmail smtp from Gitpod but gmail was expecting the Heroku app to access it, so it wasn't authenticated and thats why it didn't work. So after changed it to access all (*/*) it worked as expected. 
 
 * No confirmation mail (to the terminal) was sent after making a "payment", just an 404 error in the terminal. I edited webhook endpoint in Stripe and then got an 200 error in terminal and a "payment_intent.succeeded" in Stripe, but no confirmation mail still. The problem was that the webhook itself wasn't set up quite right, I needed to add "8000-" in the beginning of my webhook and added checkout/wh/ in the end. I also had STRIPE_WH_KEY instead of STRIPE_WH_SECRET in Gitpod Environment Variables. When chaged those two things confirmation mail worked as expected. 
+
+<br>
+
+[Back to top](testing)
 
 
 
