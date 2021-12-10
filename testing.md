@@ -1,7 +1,5 @@
 # Testing
 
-[README.md](#readme.md)
-
 [View live website here!](https://msp4.herokuapp.com/)
 
 
@@ -247,7 +245,6 @@
 
 # Testing
 
-<br>
 
 ## Automated Testing
 
@@ -314,8 +311,6 @@ All python files in this project has been tested, had many lines that were too l
 <br>
 
 ## Google Lighthouse
-
-<br>
 
 All pages passed through Lighthouse in Chrome DevTools:
 
@@ -420,8 +415,6 @@ All pages passed through Lighthouse in Chrome DevTools:
 
 ## Manual Testing
 
-<br>
-
 **Testing Environments**
 
 BOHO Living app has been tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers (viewed at different desktop, laptop, tablet and mobile).
@@ -438,9 +431,9 @@ Code Institutes criteria checklist has been used to check requirements.
 
 # Debugging 
 
+
 ## Issues and Bugs
 
-<br>
 
 * **Known bug:** On some iOS devices, this happens; Nothing happens when clicking "Register" or "Login" (if I am not signed in) after added item(s) in the bag (=toast). After signed in, nothing happens when clicking my profile or log out either. I need to refresh the page to be able to. Then it works as expected.   
 

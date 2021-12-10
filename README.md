@@ -70,11 +70,11 @@ An account with Super User privileges has been created for testing purposes. The
   * [IDE](#ide)
   * [Languages](#languages)
   * [Database](#database)
-  * [Storages](#storages)
+  * [Storage](#storage)
   * [Payment](#payment)
   * [Frameworks](#frameworks)
   * [Libraries, Tools, Editors](#libraries-tools-editors)
-  * [Packages/Dependencies](#packages/dependencies)
+  * [Packages and Dependencies](#packages-and-dependencies)
 
   <br>
 
@@ -623,7 +623,7 @@ Full list of data models used:
 
 <br>
 
-## IDE - Integrated Development Environment
+## IDE
 * [GitHub](https://github.com/) - Used to store the projects code after being pushed from Git. 
 
 ## Languages
@@ -683,7 +683,7 @@ Full list of data models used:
 * [W3C Validator CSS](https://validator.w3.org/) - Used to test CSS code.
 
 
-## Packages/Dependencies
+## Packages and Dependencies
 
 | Name | Purpose |
 |------|---------|
