@@ -350,6 +350,8 @@ If signed in:
 
 ![Signed in](media/in.png)
 
+![My profile](media/my_profile.png)
+
 ![Sign out](media/logout.png)
 
 If signed in as a superuser:
@@ -377,11 +379,9 @@ If signed in as a superuser:
 
 **Toasts**
 
-Four different kind of toasts appears when a certain action has been triggered by user to get feedback on the action (For example adding something in bag, logging in etc.); "Success", "Info", "Warning", "Error".
+Four different kind of toasts appears when a certain action has been triggered by user to get feedback on the action (For example adding something in bag, logging in etc.); "Success", "Info", "Warning", "Error". Toast example:
 
 ![Toast example](media/toast.png)
-
-![Toast example](media/toast2.png)
 
 **Django-allauth**
 
@@ -411,9 +411,9 @@ Four different kind of toasts appears when a certain action has been triggered b
 
 ## Security features
 
-* If user accendentally or intentionally closes the browser window after the payment is confirmed but before the form is submitted, there would be a payment in Stripe, but no order in the database. To prevent this situation; Each time an event occurs on Stripe (such as a payment intent being created) a payment being completed on Stripe a webhook is sent out that we can listen for. Webhooks are like the signals django sends each time a model is saved or deleted. Except that they are sent securely from Stripe to a url we specify. *(from Boutique Ado project, Stripe, part 10)*
-
 * To ensure that the website is secure, code has @login_required decorators in msp4 app, that makes Django check whether the user is logged in before executing the view. If not logged in user get redirected to sign in page. I also use this decorator for the Profile view, since only logged in users should be able to access. If somebody somehow found out the URL for the edit and delete product management, they could possibly delete all products, thats why the decorators are needed. Only superuser are able to edit and delete, just as it should be. 
+
+* If user accendentally or intentionally closes the browser window after the payment is confirmed but before the form is submitted, there would be a payment in Stripe, but no order in the database. To prevent this situation; Each time an event occurs on Stripe (such as a payment intent being created) a payment being completed on Stripe a webhook is sent out that we can listen for. Webhooks are like the signals django sends each time a model is saved or deleted. Except that they are sent securely from Stripe to a url we specify. *(from Boutique Ado project, Stripe, part 10)*
 
 
 ## Wireframes 
@@ -464,6 +464,12 @@ While the project relied on these wireframes, there are some differences between
 
 ![galaxyS5](media/galaxyS5.png)
 ![surfaceduo540x720](media/surfaceduo540x720.png)
+
+1. Desktop 1024x917px 
+2. Desktop 1440x1126
+
+![Desktop](media/desktop_1024x917.png)
+![Desktop large](media/desktop_1440x1146.png)
 
 [Back to top](#boho-living)
 
