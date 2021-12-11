@@ -425,7 +425,7 @@ App has been reviewed by other students at "Peer code Review" in Code Institutes
 
 Code Institutes criteria checklist has been used to check requirements. 
 
-Mails checked:
+### Mails checked:
 
 Confirmation mail when sign up:
 
@@ -438,6 +438,57 @@ Order confirmation mail:
 Contact confirmation mail:
 
 ![Confirmation mail contact](media/contact_mail.png)
+
+Stripe payment works as expected.
+
+![Stripe payment](media/stripe.png)
+
+### Toast confirmations:
+
+Sign up
+
+![Sign up](media/sign_up.png)
+
+Signed in
+
+![Signed in](media/signed_in.png)
+
+Signed out
+
+![Signed out](media/signed_out.png)
+
+Profile updated
+
+![Profile updated](media/profile_updated.png)
+
+Added to bag 
+
+![Added to bag](media/added_to_bag.png)
+
+Removed from bag
+
+![Removed from bag](media/removed.png)
+
+Updated size
+
+![Updated size](media/updated_size.png)
+
+Contact form alert 
+
+![Contact alert](media/contact_alert.png)
+
+My profile and order history
+
+![My profile](media/my_profile.png)
+
+Stripe payment
+
+![Stripe payment](media/stripe_payment.png)
+
+
+Customer service contact mail
+
+![Customer service mail](media/cs_mail.png)
 
 <br>
 
