@@ -25,7 +25,7 @@ When using the Payment Intents API with Stripe’s client libraries and SDKs, us
 
 **Card Number: 4242 4242 4242 4242**
 
-**Month/Year : 04 / 24**
+**Month/Year: 04 / 24**
 
 **CVC: 242**
 
@@ -490,9 +490,11 @@ Initial site map shown below:
 During development the project used SQLite. The deployed app is using Heroku PostgreSQL. Initially the databases were built in JSON files, [link here!](products/fixtures)
 
 * Categories Database
+
 ![Categories database](media/categories.png)
 
 * Products Database
+
 ![Products database](media/products.png)
 
 ## Information Architecture
@@ -621,13 +623,12 @@ Full list of data models used:
 | Slug            | slug           | SlugField           | max_length=150, blank=True, unique=True                                      |
 | | |
 
-<br>
-
 [Back to top](#boho-living)
+
+<br>
 
 # Technologies Used
 
-<br>
 
 ## IDE
 * [GitHub](https://github.com/) - Used to store the projects code after being pushed from Git. 
