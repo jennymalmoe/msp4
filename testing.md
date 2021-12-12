@@ -250,7 +250,7 @@
 
 ### W3C Markup Validator
 
-HTML code is validated through [W3C Validator](https://validator.w3.org/) - NO ERRORS
+HTML code is validated through [W3C Validator](https://validator.w3.org/) - PASS
 
 Rendered HTML from 'View page source' has been tested.
 
@@ -269,7 +269,7 @@ Rendered HTML from 'View page source' has been tested.
 
 ### W3C CSS Validation
 
-CSS code is validated through [W3C Validator CSS](https://jigsaw.w3.org/css-validator/) - One known error in base.css that I didn't change, since I couldn't recreate the style I wanted without the "100" suffix. No other errors either in base.css, checkout.css or profile.css.
+CSS code is validated through [W3C Validator CSS](https://jigsaw.w3.org/css-validator/) - PASS
 
 <details><summary><b>RESULTS</b></summary>
 
@@ -282,7 +282,7 @@ CSS code is validated through [W3C Validator CSS](https://jigsaw.w3.org/css-vali
 
 ### JSHint
 
-JavaScript code is validated through [JSHint](https://jshint.com/) - NO ERRORS
+JavaScript code is validated through [JSHint](https://jshint.com/) - PASS
 
 Files being tested: script.js, stripe_elements.js and script.js in Profiles template.
 
@@ -297,7 +297,7 @@ Files being tested: script.js, stripe_elements.js and script.js in Profiles temp
 
 ### PEP8 online check
 
-Python code is validated through [PEP8](https://www.python.org/dev/peps/pep-0008/) - NO ERRORS
+Python code is validated through [PEP8](https://www.python.org/dev/peps/pep-0008/) - PASS
 
 All python files in this project has been tested, had many lines that were too long, broke all those so it passed, except two lines I keept long and added comment: # noqa: E501 to show I'm aware of this. Showing one example below from all the "pass" results in pep8 and the two lines that are too long (from checkout/models.py and checkout/webhooks.py). 
 
