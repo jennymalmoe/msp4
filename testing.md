@@ -1,7 +1,5 @@
 # Testing
 
-Back to README.md [readme.md file](/readme.md)
-
 [View live website here!](https://msp4.herokuapp.com/)
 
 
@@ -353,7 +351,7 @@ All pages passed through Lighthouse in Chrome DevTools:
 
 <details>
   <summary>Click to see results</summary>
-  <img src="media/lh_oulet.png" alt="Lighthouse results" width="50%" height="50%">
+  <img src="media/lh_outlet.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
 <br>
 
