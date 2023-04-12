@@ -6,6 +6,7 @@ BOHO Living - Good vibes only!
 
 *Home decor - Fashion - Free Spirit*
 
+[View live website here!](https://msp4.herokuapp.com/)
 
 [View GitHub repository here!](https://github.com/jennymalmoe/MSP4)
 
@@ -996,9 +997,6 @@ The deployed version of this website has static and media files hosted to it via
 ## Code
 * Code Institute for inspiration from the Boutique Ado project.
 * https://codingwithmitch.com/ for code and inspiration to my blog section.
-
-
-[View live website here!](https://msp4.herokuapp.com/)
 
 [Back to top](#boho-living)
  
