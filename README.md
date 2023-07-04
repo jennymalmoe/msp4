@@ -6,8 +6,6 @@ BOHO Living - Good vibes only!
 
 *Home decor - Fashion - Free Spirit*
 
-[View live website here!](https://msp4.herokuapp.com/)
-
 [View GitHub repository here!](https://github.com/jennymalmoe/MSP4)
 
 <br>
